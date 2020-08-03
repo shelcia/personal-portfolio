@@ -12,7 +12,7 @@ const Projects = () => {
     <React.Fragment>
       <NavBar />
       <div className="projects" id="projects">
-        <div className="grid">
+        <div className="row">
           {view === "fullstack" && <FullStack setView={setView} />}
           {view === "uidesign" && <UIDesign setView={setView} />}
           {view === "design" && <Design setView={setView} />}
