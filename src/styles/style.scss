@@ -1,0 +1,93 @@
+@import "./components/scrollbar";
+
+$montserrat: "Montserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+$secondary: rgba(255, 255, 255, 0.8);
+$primary: #ed00b3;
+$bg: #161a22;
+$noopacity: rgba(0, 0, 0, 0);
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: $montserrat;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $bg;
+}
+a,
+a:visited,
+a:any-link {
+  text-decoration: none;
+}
+@mixin border {
+  border: 1px solid black;
+}
+@mixin displayFlex($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+@mixin MontserratStyle($size) {
+  font-family: $montserrat;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: $secondary;
+  font-size: $size;
+}
+@mixin fullWidthHeight {
+  width: 100%;
+  height: 100vh;
+}
+
+// NAVBAR
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  background-color: $bg;
+  box-shadow: 0px 6px 6px #00000029;
+  @include displayFlex(space-between);
+  min-height: 10vh;
+  top: 0;
+  width: 100%;
+  .nav-logo {
+    text-align: center;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  .nav-items {
+    @include displayFlex(space-evenly);
+    a {
+      @include MontserratStyle(15px);
+      color: $primary;
+      padding: 0px 1.5rem;
+      transition: all 0.2s ease-in;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+.landingpage {
+  @include fullWidthHeight();
+  background-color: $bg;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  .container {
+    height: 100vh;
+    @include displayFlex(center);
+    @include border();
+    h1 {
+      color: black;
+      font-size: 4rem;
+    }
+  }
+}
+.projects {
+  @include fullWidthHeight();
+}
