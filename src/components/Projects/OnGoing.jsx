@@ -25,7 +25,7 @@ const FullStack = ({ setView }) => {
                 <div className="text-container">
                   <h2>REST API Countries</h2>
                   <p>Project built using REST Countries API</p>
-                  <a href="https://github.com/shelcia/countries">Code</a>
+                  <a href="https://github.com/shelcia/auv">Code</a>
                 </div>
               </div>
               <div className="card">
@@ -35,8 +35,27 @@ const FullStack = ({ setView }) => {
                   <p>
                     I was commisioned to build website for college cultural fest
                   </p>
-                  <a href="https://github.com/shelcia/Samgatha-2020">Code</a>
-                  <a href="http://www.samgatha.live/">Deployment</a>
+                  <a href="https://github.com/shelcia/rasanluinterface">Code</a>
+                </div>
+              </div>
+              <div className="card">
+                <img src={Samgatha} alt="" />
+                <div className="text-container">
+                  <h2>Samgatha</h2>
+                  <p>
+                    I was commisioned to build website for college cultural fest
+                  </p>
+                  <a href="https://github.com/shelcia/soleflowintern">Code</a>
+                </div>
+              </div>
+              <div className="card">
+                <img src={Samgatha} alt="" />
+                <div className="text-container">
+                  <h2>Samgatha</h2>
+                  <p>
+                    I was commisioned to build website for college cultural fest
+                  </p>
+                  <a href="https://github.com/shelcia/social-web">Code</a>
                 </div>
               </div>
             </div>
