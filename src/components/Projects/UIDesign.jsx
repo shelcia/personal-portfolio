@@ -23,7 +23,7 @@ const UIDesign = ({ setView }) => {
               <div className="card">
                 <img src={Countries} alt="" />
                 <div className="text-container">
-                  <h2>REST API Countrie</h2>
+                  <h2>REST API Countries</h2>
                   <p>Project built using REST Countries API</p>
                   <a href="https://github.com/shelcia/countries">Code</a>
                 </div>
