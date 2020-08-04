@@ -344,9 +344,22 @@ a:any-link {
   background-color: black;
 }
 
+.aboutme {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .aboutme .container {
   margin: auto;
-  widows: 80%;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .aboutme .container h1 {
@@ -366,5 +379,46 @@ a:any-link {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.8);
   list-style-type: circle;
+}
+
+.contactme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactme .container {
+  margin: auto;
+  width: 80%;
+}
+
+.contactme .container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  color: #ed00b3;
+}
+
+.contactme .container p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=style.css.map */

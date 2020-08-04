@@ -227,9 +227,13 @@ a:any-link {
 
 .aboutme {
   // @include displayFlex(center);
+  @include fullWidthHeight();
+  flex-direction: column;
   .container {
     margin: auto;
-    widows: 80%;
+    width: 80%;
+    // @include displayFlex(center);
+    flex-direction: column;
     h1 {
       @include MontserratStyle(1.2rem);
       color: $primary;
@@ -238,6 +242,25 @@ a:any-link {
       @include MontserratStyle(0.8rem);
       color: $secondary;
       list-style-type: circle;
+    }
+  }
+}
+
+.contactme {
+  @include displayFlex(center);
+  @include fullWidthHeight();
+  flex-direction: column;
+
+  .container {
+    margin: auto;
+    width: 80%;
+    h1 {
+      @include MontserratStyle(1.2rem);
+      color: $primary;
+    }
+    p {
+      @include MontserratStyle(0.8rem);
+      color: $secondary;
     }
   }
 }
