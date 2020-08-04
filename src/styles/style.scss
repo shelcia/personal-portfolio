@@ -177,7 +177,7 @@ a:any-link {
   .col-sm-10 {
     margin-top: 15vh;
     .container {
-      height: 70vh;
+      height: 80vh;
       overflow-y: scroll;
       overflow-x: scroll !important;
       .row {
@@ -192,6 +192,7 @@ a:any-link {
           border: none !important;
           box-shadow: 0px 3px 6px #00000029;
           background-color: $primary;
+          height: 300px;
           img {
             height: 120px;
             width: auto;
@@ -220,6 +221,23 @@ a:any-link {
           }
         }
       }
+    }
+  }
+}
+
+.aboutme {
+  // @include displayFlex(center);
+  .container {
+    margin: auto;
+    widows: 80%;
+    h1 {
+      @include MontserratStyle(1.2rem);
+      color: $primary;
+    }
+    ul {
+      @include MontserratStyle(0.8rem);
+      color: $secondary;
+      list-style-type: circle;
     }
   }
 }
