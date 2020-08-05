@@ -9,12 +9,12 @@ const LandingPage = () => {
           <div className="col-sm-4">
             <h1>Shelcia</h1>
             <div className="icon-container">
-              <a
+              {/* <a
                 href="https://www.instagram.com/_shelcia._.photography/"
                 target="blank"
               >
                 <i className="fab">&#xf16d;</i>
-              </a>
+              </a> */}
               <a href="https://www.behance.net/shelcia" target="blank">
                 <i className="fab">&#xf1b4;</i>
               </a>

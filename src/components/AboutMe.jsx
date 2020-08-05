@@ -23,9 +23,9 @@ const AboutMe = () => {
             <li>HTML/CSS and JS</li>
             <li>MySQL and MongoDB</li>
             <li>PHP and Python</li>
+            <li>C and C++</li>
             <li>AutoCAD</li>
             <li>Fusion 360 and Catia</li>
-            <li> Fusion 360 and Catia</li>
             <li>Raspberry Pi and Arduino</li>
           </ul>
         </div>

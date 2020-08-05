@@ -1,6 +1,6 @@
 import React from "react";
-import Countries from "../../assets/countries.JPG";
-import Samgatha from "../../assets/samgatha.png";
+// import Countries from "../../assets/countries.JPG";
+// import Samgatha from "../../assets/samgatha.png";
 import AUV from "../../assets/auv.JPG";
 import Bot from "../../assets/bot.JPG";
 import Social from "../../assets/social.JPG";
