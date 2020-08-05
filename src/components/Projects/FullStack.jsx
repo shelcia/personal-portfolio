@@ -11,7 +11,7 @@ const FullStack = ({ setView }) => {
             <p className="active">Full Stack</p>
             <p onClick={() => setView("uidesign")}>UI Design</p>
             <p onClick={() => setView("ongoing")}>On Going</p>
-            <p onClick={() => setView("design")}>Design</p>
+            {/* <p onClick={() => setView("design")}>Design</p> */}
           </div>
         </ScrollAnimation>
       </div>
