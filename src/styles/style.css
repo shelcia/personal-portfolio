@@ -53,8 +53,28 @@ h4.subheading {
 }
 
 .navbar {
-  width: 90%;
-  margin: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navbar .nav-item {
+  color: black;
+}
+
+.navbar .nav-item .nav-link {
+  color: black;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: black;
+}
+
+.navbar .nav-item .nav-link-active {
+  color: #00b2ff;
+}
+
+.navbar .nav-item .nav-link-active:hover {
+  color: #00b2ff;
 }
 
 .landingPage .container {
@@ -229,5 +249,44 @@ h4.subheading {
   to {
     margin-top: -5px;
   }
+}
+
+.about .container {
+  margin-top: 12vh;
+}
+
+.about .container .row {
+  margin-top: 2rem;
+}
+
+.about .container .row .col-sm-6 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.about .container .row .col-sm-6 h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 4.2rem;
+}
+
+.about .container .row .col-sm-6 p {
+  font-size: 1.4rem;
+}
+
+.about .container .row .col-sm-6 #carousel {
+  z-index: 10;
 }
 /*# sourceMappingURL=style.css.map */

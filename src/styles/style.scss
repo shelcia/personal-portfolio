@@ -71,30 +71,24 @@ h4.subheading {
   background-color: $bg !important;
 }
 .navbar {
-  width: 90%;
-  margin: auto;
-  //   border: 1px solid black;
+  padding-left: 50px;
+  padding-right: 50px;
+  .nav-item {
+    color: $primary;
+    .nav-link {
+      color: $primary;
+      &:hover {
+        color: $primary;
+      }
+    }
+    .nav-link-active {
+      color: $linkColour;
+      &:hover {
+        color: $linkColour;
+      }
+    }
+  }
 }
-
-// .navbar .navbar-collapse .navbar-nav .nav-item {
-//   //   margin-bottom: 15px;
-//   .nav-link {
-//     display: inline-block;
-//     color: $primary;
-//     text-decoration: none;
-//     &::after {
-//       content: "";
-//       display: block;
-//       width: 0;
-//       height: 1.5px;
-//       background: $linkColour;
-//       transition: width 0.3s;
-//     }
-//     &:hover::after {
-//       width: 100%;
-//     }
-//   }
-// }
 
 .landingPage .container {
   margin-top: 12vh;
@@ -207,5 +201,36 @@ h4.subheading {
   }
   to {
     margin-top: -5px;
+  }
+}
+
+.about .container {
+  margin-top: 12vh;
+  .row {
+    margin-top: 2rem;
+    .col-sm-6 {
+      position: relative;
+      h1 {
+        font-family: $fontMajor;
+        font-size: $largeSize;
+      }
+      p {
+        font-size: $smallSize;
+      }
+      @include displayFlex(center, left);
+      text-align: left;
+      flex-direction: column !important;
+      // img {
+      //   // position: absolute;
+      //   width: 100%;
+      //   height: auto;
+      //   z-index: 1;
+      // }
+      #carousel {
+        // position: absolute;
+        z-index: 10;
+        // top: 0;
+      }
+    }
   }
 }
