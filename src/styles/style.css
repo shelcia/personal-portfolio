@@ -11,11 +11,45 @@ a {
   font-family: "Syne", sans-serif;
 }
 
-.container {
+.bg-light {
+  background-color: #fdfdfd !important;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-bottom: 15px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #00b2ff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.landingPage .container {
   margin-top: 12vh;
 }
 
-.container .row .col-sm-6 {
+.landingPage .container .row .col-sm-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +66,20 @@ a {
           flex-direction: column !important;
 }
 
-.container .row .col-sm-6 #profile {
+.landingPage .container .row .col-sm-6 h1 {
+  font-family: "Syne", sans-serif;
+  font-size: 4.2rem;
+}
+
+.landingPage .container .row .col-sm-6 p {
+  font-size: 1.4rem;
+}
+
+.landingPage .container .row .col-sm-6 p #downarrow {
+  height: 30px;
+}
+
+.landingPage .container .row .col-sm-6 #profile {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

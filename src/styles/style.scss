@@ -1,13 +1,18 @@
 $fontMinor: "Alegreya", serif;
 $fontMajor: "Syne", sans-serif;
-
+$bg: #fdfdfd;
+$largeSize: 4.2rem;
+$mediumSize: 2.4rem;
+$smallsize: 1.4rem;
+$primary: black;
+$linkColour: #00b2ff;
 * {
   font-family: $fontMinor;
   font-weight: 400;
 }
 
 body {
-  background: #fdfdfd;
+  background: $bg;
 }
 
 a {
@@ -20,11 +25,49 @@ a {
   align-items: $align;
 }
 
-.container {
+.bg-light {
+  background-color: $bg !important;
+}
+.navbar {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+  margin-bottom: 15px;
+  .nav-link {
+    display: inline-block;
+    color: $primary;
+    text-decoration: none;
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      background: $linkColour;
+      transition: width 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.landingPage .container {
   margin-top: 12vh;
   .row {
     .col-sm-6 {
-      //   border: 1px solid black;
+      h1 {
+        font-family: $fontMajor;
+        font-size: $largeSize;
+      }
+      p {
+        font-size: $smallsize;
+        #downarrow {
+          height: 30px;
+        }
+      }
       @include displayFlex(center, left);
       text-align: left;
       flex-direction: column !important;
