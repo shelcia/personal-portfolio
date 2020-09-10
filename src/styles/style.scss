@@ -31,7 +31,7 @@ a {
 .navbar {
   width: 90%;
   margin: auto;
-  border: 1px solid black;
+  //   border: 1px solid black;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -44,7 +44,7 @@ a {
       content: "";
       display: block;
       width: 0;
-      height: 1px;
+      height: 1.5px;
       background: $linkColour;
       transition: width 0.3s;
     }
@@ -65,7 +65,10 @@ a {
       p {
         font-size: $smallsize;
         #downarrow {
-          height: 30px;
+          height: 15px;
+          padding-left: 5px;
+          animation: wobble 0.3s infinite alternate;
+          cursor: pointer;
         }
       }
       @include displayFlex(center, left);
@@ -75,5 +78,14 @@ a {
         width: 100%;
       }
     }
+  }
+}
+
+@keyframes wobble {
+  from {
+    margin-top: 5px;
+  }
+  to {
+    margin-top: -5px;
   }
 }
