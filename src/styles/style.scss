@@ -1,6 +1,8 @@
-$fontMajor: "Alegreya", serif;
-$fontMinor: "Syne", sans-serif;
+$fontMinor: "Alegreya", serif;
+$fontMajor: "Syne", sans-serif;
 
 * {
   font-family: $fontMinor;
+  font-weight: 400;
+  font-style: italic;
 }
