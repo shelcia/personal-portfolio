@@ -40,18 +40,14 @@ const Project = () => {
           </div>
         </div>
         <div className="col-sm-6">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="card" id="fbclone">
-                <img src={FbClone} alt="fbclone" />
-              </div>
+          <div className="col-sm-12 mb-2">
+            <div className="card" id="fbclone">
+              <img src={FbClone} alt="fbclone" />
             </div>
           </div>
-          <div className="row mt-1">
-            <div className="col-sm-12">
-              <div className="card" id="todo">
-                <img src={TodoList} alt="todoList" />
-              </div>
+          <div className="col-sm-12 mt-2">
+            <div className="card" id="todo">
+              <img src={TodoList} alt="todoList" />
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Resume from "../assets/shelcia_resume.pdf";
 
 const Navbar = () => {
   return (
@@ -23,18 +24,18 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <Link className="nav-link" to="/">
-                Work <span className="sr-only">(current)</span>
+                Work
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">
-                Features
+                About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/resume">
+              <a className="nav-link" href={Resume} target="blank">
                 Resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

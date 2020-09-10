@@ -10,6 +10,7 @@ body {
 
 a {
   font-family: "Syne", sans-serif;
+  font-size: 1.4rem;
 }
 
 h4.subheading {
@@ -37,10 +38,6 @@ h4.subheading {
 .navbar {
   width: 90%;
   margin: auto;
-}
-
-.navbar .navbar-collapse .navbar-nav .nav-item {
-  margin-bottom: 15px;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -131,7 +128,9 @@ h4.subheading {
 }
 
 .landingPage .container .row #auv img,
-.landingPage .container .row #samgatha img {
+.landingPage .container .row #samgatha img,
+.landingPage .container .row #fbclone img,
+.landingPage .container .row #todo img {
   height: auto;
   width: 75%;
   margin: auto;
@@ -147,22 +146,17 @@ h4.subheading {
   margin: auto;
 }
 
-.landingPage .container .row #countries,
-.landingPage .container .row #fbclone,
-.landingPage .container .row #todo {
+.landingPage .container .row #countries {
   height: 100%;
 }
 
-.landingPage .container .row #countries img,
-.landingPage .container .row #fbclone img,
-.landingPage .container .row #todo img {
+.landingPage .container .row #countries img {
   height: auto;
   width: 75%;
   margin: auto;
 }
 
-.landingPage .container .row #slidingpuzzle img,
-.landingPage .container .row #cricketgame img {
+.landingPage .container .row #slidingpuzzle img {
   height: auto;
   width: 80%;
   margin: auto;
@@ -172,6 +166,25 @@ h4.subheading {
   height: auto;
   width: 30%;
   margin: auto;
+}
+
+.landingPage .container .row #cricketgame img {
+  height: auto;
+  width: 90%;
+  margin: auto;
+}
+
+.landingPage .container .card-deck .card {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @-webkit-keyframes wobble {

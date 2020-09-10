@@ -3,7 +3,7 @@ $fontMajor: "Syne", sans-serif;
 $bg: #fdfdfd;
 $largeSize: 4.2rem;
 $mediumSize: 2.4rem;
-$smallsize: 1.4rem;
+$smallSize: 1.4rem;
 $primary: black;
 $linkColour: #00b2ff;
 $purple: #f3d9ff;
@@ -34,6 +34,7 @@ body {
 
 a {
   font-family: $fontMajor;
+  font-size: $smallSize;
 }
 
 h4.subheading {
@@ -61,7 +62,7 @@ h4.subheading {
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item {
-  margin-bottom: 15px;
+  //   margin-bottom: 15px;
   .nav-link {
     display: inline-block;
     color: $primary;
@@ -90,7 +91,7 @@ h4.subheading {
         font-size: $largeSize;
       }
       p {
-        font-size: $smallsize;
+        font-size: $smallSize;
         #downarrow {
           height: 15px;
           padding-left: 5px;
@@ -125,7 +126,9 @@ h4.subheading {
       background-color: $orange;
     }
     #auv,
-    #samgatha {
+    #samgatha,
+    #fbclone,
+    #todo {
       img {
         @include marginAuto(75%);
       }
@@ -136,16 +139,13 @@ h4.subheading {
         @include marginAuto(100%);
       }
     }
-    #countries,
-    #fbclone,
-    #todo {
+    #countries {
       height: 100%;
       img {
         @include marginAuto(75%);
       }
     }
-    #slidingpuzzle,
-    #cricketgame {
+    #slidingpuzzle {
       img {
         @include marginAuto(80%);
       }
@@ -154,6 +154,17 @@ h4.subheading {
       img {
         @include marginAuto(30%);
       }
+    }
+    #cricketgame {
+      img {
+        @include marginAuto(90%);
+      }
+    }
+  }
+  .card-deck {
+    .card {
+      height: 250px;
+      @include displayFlex(center, center);
     }
   }
 }
