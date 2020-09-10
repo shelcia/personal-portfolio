@@ -35,6 +35,11 @@ h4.subheading {
   font-size: 2.4rem;
 }
 
+h6.subtitle {
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
 .card {
   border: none;
   -webkit-box-shadow: 3px 6px 5px #00000005;
@@ -288,5 +293,42 @@ h4.subheading {
 
 .about .container .row .col-sm-6 #carousel {
   z-index: 10;
+}
+
+.about .container .row .col-sm-6 .skilllist li {
+  font-size: 1.2rem;
+}
+
+.about .container p {
+  font-size: 1.4rem;
+}
+
+.about .container #connect {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.about .container #connect a {
+  font-size: 2.4rem;
+  color: black;
+}
+
+.about .container #footer {
+  width: 100%;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about .container #footer p {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -56,7 +56,10 @@ h4.subheading {
   font-family: $fontMajor;
   font-size: $mediumSize;
 }
-
+h6.subtitle {
+  font-size: 1.8rem;
+  font-style: italic;
+}
 .card {
   border: none;
   box-shadow: 3px 6px 5px #00000005;
@@ -220,17 +223,34 @@ h4.subheading {
       @include displayFlex(center, left);
       text-align: left;
       flex-direction: column !important;
-      // img {
-      //   // position: absolute;
-      //   width: 100%;
-      //   height: auto;
-      //   z-index: 1;
-      // }
       #carousel {
-        // position: absolute;
         z-index: 10;
-        // top: 0;
       }
+      .skilllist {
+        li {
+          font-size: $smallerSize;
+        }
+      }
+    }
+  }
+  p {
+    font-size: $smallSize;
+  }
+  #connect {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    a {
+      font-size: $mediumSize;
+      color: $primary;
+    }
+  }
+  #footer {
+    width: 100%;
+    margin-top: 2rem;
+    @include displayFlex(center, center);
+    text-align: center;
+    p {
+      font-size: $smallerSize;
     }
   }
 }

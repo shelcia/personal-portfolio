@@ -1,6 +1,10 @@
 import React from "react";
 import AboutArt from "../../assets/aboutart.png";
 import Carousal from "./Carousal";
+import SkillSets from "./SkillSets";
+import Internships from "./Internships";
+import Connect from "../LandingPage/Connect";
+import Footer from "../LandingPage/Footer";
 
 const About = () => {
   return (
@@ -24,6 +28,11 @@ const About = () => {
               <Carousal />
             </div>
           </div>
+          <h4 className="subheading mt-5">Skill Sets</h4>
+          <SkillSets />
+          <Internships />
+          <Connect />
+          <Footer />
         </div>
       </div>
     </React.Fragment>

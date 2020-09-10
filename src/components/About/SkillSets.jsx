@@ -5,7 +5,10 @@ const SkillSets = () => {
     <React.Fragment>
       <div className="row">
         <div className="col-sm-6">
-          <ul>
+          <ul
+            style={{ listStyleType: "circle", lineHeight: "200%" }}
+            className="skilllist"
+          >
             <li>ReactJs</li>
             <li>NodeJs</li>
             <li>Express</li>
@@ -19,7 +22,10 @@ const SkillSets = () => {
           </ul>
         </div>
         <div className="col-sm-6">
-          <ul>
+          <ul
+            style={{ listStyleType: "circle", lineHeight: "200%" }}
+            className="skilllist"
+          >
             <li>Heroku</li>
             <li>Python</li>
             <li>MySQL</li>
