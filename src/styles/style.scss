@@ -4,6 +4,7 @@ $bg: #fdfdfd;
 $largeSize: 4.2rem;
 $mediumSize: 2.4rem;
 $smallSize: 1.4rem;
+$smallerSize: 1.2rem;
 $primary: black;
 $linkColour: #00b2ff;
 $purple: #f3d9ff;
@@ -34,7 +35,21 @@ body {
 
 a {
   font-family: $fontMajor;
-  font-size: $smallSize;
+  font-size: $smallerSize;
+  display: inline-block;
+  color: $primary;
+  text-decoration: none;
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1.7px;
+    background: $linkColour;
+    transition: width 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 h4.subheading {
@@ -61,25 +76,25 @@ h4.subheading {
   //   border: 1px solid black;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item {
-  //   margin-bottom: 15px;
-  .nav-link {
-    display: inline-block;
-    color: $primary;
-    text-decoration: none;
-    &::after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 1.5px;
-      background: $linkColour;
-      transition: width 0.3s;
-    }
-    &:hover::after {
-      width: 100%;
-    }
-  }
-}
+// .navbar .navbar-collapse .navbar-nav .nav-item {
+//   //   margin-bottom: 15px;
+//   .nav-link {
+//     display: inline-block;
+//     color: $primary;
+//     text-decoration: none;
+//     &::after {
+//       content: "";
+//       display: block;
+//       width: 0;
+//       height: 1.5px;
+//       background: $linkColour;
+//       transition: width 0.3s;
+//     }
+//     &:hover::after {
+//       width: 100%;
+//     }
+//   }
+// }
 
 .landingPage .container {
   margin-top: 12vh;
@@ -165,6 +180,23 @@ h4.subheading {
     .card {
       height: 250px;
       @include displayFlex(center, center);
+    }
+  }
+  #connect {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    a {
+      font-size: $mediumSize;
+      color: $primary;
+    }
+  }
+  #footer {
+    width: 100%;
+    margin-top: 2rem;
+    @include displayFlex(center, center);
+    text-align: center;
+    p {
+      font-size: $smallerSize;
     }
   }
 }

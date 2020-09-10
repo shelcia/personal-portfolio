@@ -52,6 +52,8 @@ const Project = () => {
           </div>
         </div>
       </div>
+      <h4 className="subheading mt-5">Games (Mini Project)</h4>
+      <hr />
       <div className="row">
         <div className="col-sm-4">
           <div className="card" id="slidingpuzzle">
