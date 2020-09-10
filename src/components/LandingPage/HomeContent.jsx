@@ -1,6 +1,6 @@
 import React from "react";
-import ProfilePic from "../assets/profile.png";
-import DownArrow from "../assets/icons/arrow_down.png";
+import ProfilePic from "../../assets/profile.png";
+import DownArrow from "../../assets/icons/arrow_down.png";
 
 const HomeContent = () => {
   return (

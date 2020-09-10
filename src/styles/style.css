@@ -1,6 +1,7 @@
 * {
   font-family: "Alegreya", serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,24 @@ body {
 
 a {
   font-family: "Syne", sans-serif;
+}
+
+h4.subheading {
+  font-family: "Syne", sans-serif;
+  font-size: 2.4rem;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 3px 6px 5px #00000005;
+          box-shadow: 3px 6px 5px #00000005;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-box-shadow: 3px 6px 10px #00000015;
+          box-shadow: 3px 6px 10px #00000015;
 }
 
 .bg-light {
@@ -48,6 +67,10 @@ a {
   margin-top: 12vh;
 }
 
+.landingPage .container .row {
+  margin-top: 2rem;
+}
+
 .landingPage .container .row .col-sm-6 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +107,71 @@ a {
 
 .landingPage .container .row .col-sm-6 #profile {
   width: 100%;
+}
+
+.landingPage .container .row #auv,
+.landingPage .container .row #countries,
+.landingPage .container .row #cricketgame {
+  padding: 10px;
+  background-color: #c7eeff;
+}
+
+.landingPage .container .row #samgatha,
+.landingPage .container .row #fbclone,
+.landingPage .container .row #slidingpuzzle {
+  padding: 10px;
+  background-color: #f3d9ff;
+}
+
+.landingPage .container .row #crm,
+.landingPage .container .row #todo,
+.landingPage .container .row #tictactoe {
+  padding: 10px;
+  background-color: #fff3e5;
+}
+
+.landingPage .container .row #auv img,
+.landingPage .container .row #samgatha img {
+  height: auto;
+  width: 75%;
+  margin: auto;
+}
+
+.landingPage .container .row #crm {
+  padding: 20px 60px;
+}
+
+.landingPage .container .row #crm img {
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.landingPage .container .row #countries,
+.landingPage .container .row #fbclone,
+.landingPage .container .row #todo {
+  height: 100%;
+}
+
+.landingPage .container .row #countries img,
+.landingPage .container .row #fbclone img,
+.landingPage .container .row #todo img {
+  height: auto;
+  width: 75%;
+  margin: auto;
+}
+
+.landingPage .container .row #slidingpuzzle img,
+.landingPage .container .row #cricketgame img {
+  height: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.landingPage .container .row #tictactoe img {
+  height: auto;
+  width: 30%;
+  margin: auto;
 }
 
 @-webkit-keyframes wobble {

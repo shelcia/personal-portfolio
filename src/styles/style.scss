@@ -6,23 +6,49 @@ $mediumSize: 2.4rem;
 $smallsize: 1.4rem;
 $primary: black;
 $linkColour: #00b2ff;
+$purple: #f3d9ff;
+$orange: #fff3e5;
+$blue: #c7eeff;
+
 * {
   font-family: $fontMinor;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
   background: $bg;
 }
 
-a {
-  font-family: $fontMajor;
-}
-
 @mixin displayFlex($justify, $align) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin marginAuto($width) {
+  height: auto;
+  width: $width;
+  margin: auto;
+}
+
+a {
+  font-family: $fontMajor;
+}
+
+h4.subheading {
+  font-family: $fontMajor;
+  font-size: $mediumSize;
+}
+
+.card {
+  border: none;
+  box-shadow: 3px 6px 5px #00000005;
+  border-radius: 1rem;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 3px 6px 10px #00000015;
+  }
 }
 
 .bg-light {
@@ -57,6 +83,7 @@ a {
 .landingPage .container {
   margin-top: 12vh;
   .row {
+    margin-top: 2rem;
     .col-sm-6 {
       h1 {
         font-family: $fontMajor;
@@ -76,6 +103,56 @@ a {
       flex-direction: column !important;
       #profile {
         width: 100%;
+      }
+    }
+
+    #auv,
+    #countries,
+    #cricketgame {
+      padding: 10px;
+      background-color: $blue;
+    }
+    #samgatha,
+    #fbclone,
+    #slidingpuzzle {
+      padding: 10px;
+      background-color: $purple;
+    }
+    #crm,
+    #todo,
+    #tictactoe {
+      padding: 10px;
+      background-color: $orange;
+    }
+    #auv,
+    #samgatha {
+      img {
+        @include marginAuto(75%);
+      }
+    }
+    #crm {
+      padding: 20px 60px;
+      img {
+        @include marginAuto(100%);
+      }
+    }
+    #countries,
+    #fbclone,
+    #todo {
+      height: 100%;
+      img {
+        @include marginAuto(75%);
+      }
+    }
+    #slidingpuzzle,
+    #cricketgame {
+      img {
+        @include marginAuto(80%);
+      }
+    }
+    #tictactoe {
+      img {
+        @include marginAuto(30%);
       }
     }
   }

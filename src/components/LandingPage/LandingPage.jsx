@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 import HomeContent from "./HomeContent";
+import Work from "./Work";
 
 const LandingPage = () => {
   return (
@@ -8,6 +9,7 @@ const LandingPage = () => {
       <Navbar />
       <div className="landingPage">
         <HomeContent />
+        <Work />
       </div>
     </React.Fragment>
   );
