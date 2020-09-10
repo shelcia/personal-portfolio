@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" href="/">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <Link className="navbar-brand" to="/">
           Shelcia.
         </Link>
         <button
@@ -17,23 +17,23 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link className="nav-link" href="/">
-                Work <span class="sr-only">(current)</span>
+              <Link className="nav-link" to="/">
+                Work <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/about">
+              <Link className="nav-link" to="/about">
                 Features
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/resume">
-                Pricing
+              <Link className="nav-link" to="/resume">
+                Resume
               </Link>
             </li>
           </ul>

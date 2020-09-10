@@ -1,6 +1,38 @@
 * {
   font-family: "Alegreya", serif;
   font-weight: 400;
-  font-style: italic;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+a {
+  font-family: "Syne", sans-serif;
+}
+
+.container {
+  margin-top: 12vh;
+}
+
+.container .row .col-sm-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.container .row .col-sm-6 #profile {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

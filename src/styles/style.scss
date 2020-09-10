@@ -4,5 +4,33 @@ $fontMajor: "Syne", sans-serif;
 * {
   font-family: $fontMinor;
   font-weight: 400;
-  font-style: italic;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+a {
+  font-family: $fontMajor;
+}
+
+@mixin displayFlex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.container {
+  margin-top: 12vh;
+  .row {
+    .col-sm-6 {
+      //   border: 1px solid black;
+      @include displayFlex(center, left);
+      text-align: left;
+      flex-direction: column !important;
+      #profile {
+        width: 100%;
+      }
+    }
+  }
 }
