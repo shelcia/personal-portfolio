@@ -73,13 +73,7 @@ const Project = () => {
             }}
           >
             <div className="card-inner" id="countries">
-              <div
-                className="card-front"
-                // style={{
-                //   marginTop: "50%",
-                //   transform: "translateY(-50%)",
-                // }}
-              >
+              <div className="card-front">
                 <img src={Countries} alt="countries" />
               </div>
               <div className="card-back">
@@ -92,7 +86,7 @@ const Project = () => {
           </div>
         </div>
         <div className="col-sm-6">
-          <div className="col-sm-12 mb-2">
+          <div className="col-sm-12 mb-2 p-0">
             <div className="card">
               <div className="card-inner" id="fbclone">
                 <div className="card-front">
@@ -107,7 +101,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 mt-2">
+          <div className="col-sm-12 mt-2 p-0">
             <div className="card">
               <div className="card-inner" id="todo">
                 <div className="card-front">

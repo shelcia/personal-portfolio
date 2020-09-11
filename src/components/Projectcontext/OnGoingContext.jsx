@@ -6,16 +6,7 @@ export const OnGoingContext = createContext();
 export const OnGoingProvider = (props) => {
   const [ongoing] = useState([
     {
-      id: "11",
-      name: "AUV- IIITDM",
-      description:
-        "I was commisioned to build website for college AUV community",
-      deploy: false,
-      deployment: "",
-      code: "https://github.com/shelcia/auv",
-    },
-    {
-      id: "12",
+      id: "21",
       name: "SoleFlow",
       description:
         "I was commisioned to build website interface to create chat bots",
@@ -24,7 +15,7 @@ export const OnGoingProvider = (props) => {
       code: "https://github.com/shelcia/soleflowintern",
     },
     {
-      id: "13",
+      id: "22",
       name: "Social gram",
       description:
         "As Part of Hobby Project i am builidng a social app in react",

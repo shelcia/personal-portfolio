@@ -74,6 +74,8 @@ h6.subtitle {
 .bg-light {
   background-color: $bg !important;
 }
+//NAVBAR
+
 .navbar {
   padding-left: 50px;
   padding-right: 50px;
@@ -91,6 +93,13 @@ h6.subtitle {
         color: $linkColour;
       }
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -249,6 +258,20 @@ h6.subtitle {
     }
   }
 }
+@media (max-width: 500px) {
+  .landingPage .container .row {
+    #samgatha {
+      margin-top: 1.5rem;
+    }
+    #crm {
+      padding: 10px 20px;
+    }
+    #fbclone {
+      margin-top: 1.5rem;
+      width: 100%;
+    }
+  }
+}
 
 @keyframes wobble {
   from {
@@ -321,6 +344,23 @@ h6.subtitle {
     text-align: center;
     p {
       font-size: $smallerSize;
+    }
+  }
+}
+.project .container {
+  margin-top: 12vh;
+  a:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+  .row {
+    .col-sm-6 {
+      p {
+        font-size: $smallSize;
+      }
+      img.art {
+        width: 100%;
+      }
     }
   }
 }

@@ -82,6 +82,13 @@ h6.subtitle {
   color: #00b2ff;
 }
 
+@media (max-width: 500px) {
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .landingPage .container {
   margin-top: 12vh;
 }
@@ -329,6 +336,19 @@ h6.subtitle {
   font-size: 1.2rem;
 }
 
+@media (max-width: 500px) {
+  .landingPage .container .row #samgatha {
+    margin-top: 1.5rem;
+  }
+  .landingPage .container .row #crm {
+    padding: 10px 20px;
+  }
+  .landingPage .container .row #fbclone {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
+
 @-webkit-keyframes wobble {
   from {
     margin-top: 5px;
@@ -444,5 +464,22 @@ h6.subtitle {
 
 .about .container #footer p {
   font-size: 1.2rem;
+}
+
+.project .container {
+  margin-top: 12vh;
+}
+
+.project .container a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.project .container .row .col-sm-6 p {
+  font-size: 1.4rem;
+}
+
+.project .container .row .col-sm-6 img.art {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
