@@ -6,7 +6,7 @@ export const ProjectsContext = createContext();
 export const ProjectsProvider = (props) => {
   const [projects] = useState([
     {
-      id: "1",
+      id: "crm",
       name: "Customer Relations Management",
       description: "Full stack Project based on CRM with NodeJS and React",
       deploy: false,
@@ -14,7 +14,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/crm-frontend",
     },
     {
-      id: "31",
+      id: "weatherapp",
       name: "REST API Countries",
       description: "Project built using REST Countries API",
       deploy: false,
@@ -22,7 +22,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/countries",
     },
     {
-      id: "32",
+      id: "samgatha",
       name: "Samgatha",
       description:
         "I was commisioned to build website for college cultural fest",
@@ -31,7 +31,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/Samgatha-2020",
     },
     {
-      id: "2",
+      id: "nlu",
       name: "Rasa NLU",
       description:
         "I was commisioned to build Frontend Interface For NLU applications",
@@ -40,7 +40,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/rasanluinterface",
     },
     {
-      id: "11",
+      id: "auv",
       name: "AUV- IIITDM",
       description:
         "I was commisioned to build website for college AUV community",
@@ -49,7 +49,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/auv",
     },
     {
-      id: "12",
+      id: "soleflow",
       name: "SoleFlow",
       description:
         "I was commisioned to build website interface to create chat bots",
@@ -58,7 +58,7 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/soleflowintern",
     },
     {
-      id: "13",
+      id: "socialgram",
       name: "Social gram",
       description:
         "As Part of Hobby Project i am builidng a social app in react",

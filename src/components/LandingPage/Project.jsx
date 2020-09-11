@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AUV from "../../assets/mockups/auv.png";
 import Samgatha from "../../assets/mockups/samgatha.png";
 import CRM from "../../assets/mockups/crm.png";
@@ -16,38 +17,109 @@ const Project = () => {
       <hr />
       <div className="row">
         <div className="col-sm-6">
-          <div className="card" id="auv">
-            <img src={AUV} alt="auv" />
+          <div className="card">
+            <div className="card-inner" id="auv">
+              <div className="card-front">
+                <img src={AUV} alt="auv" />
+              </div>
+              <div className="card-back">
+                <h6 className="subtitle">AUV IIITDM</h6>
+                <Link to="/project/auv" className=" mt-2">
+                  See More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-sm-6">
-          <div className="card" id="samgatha">
-            <img src={Samgatha} alt="samgatha" />
+          <div className="card">
+            <div className="card-inner" id="samgatha">
+              <div className="card-front">
+                <img src={Samgatha} alt="samgatha" />
+              </div>
+              <div className="card-back">
+                <h6 className="subtitle">Samgatha</h6>
+                <Link to="/project/samgatha" className=" mt-2">
+                  See More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-12">
-          <div className="card" id="crm">
-            <img src={CRM} alt="crm" />
+          <div className="card">
+            <div className="card-inner" id="crm">
+              <div className="card-front">
+                <img src={CRM} alt="crm" />
+              </div>
+              <div className="card-back">
+                <h6 className="subtitle">Customer Relations Management</h6>
+                <Link to="/project/crm" className=" mt-2">
+                  See More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-6">
-          <div className="card" id="countries">
-            <img src={Countries} alt="countries" />
+          <div
+            className="card"
+            style={{
+              height: "100%",
+            }}
+          >
+            <div className="card-inner" id="countries">
+              <div
+                className="card-front"
+                // style={{
+                //   marginTop: "50%",
+                //   transform: "translateY(-50%)",
+                // }}
+              >
+                <img src={Countries} alt="countries" />
+              </div>
+              <div className="card-back">
+                <h6 className="subtitle">Weather App</h6>
+                <Link to="/project/weatherapp" className=" mt-2">
+                  See More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-sm-6">
           <div className="col-sm-12 mb-2">
-            <div className="card" id="fbclone">
-              <img src={FbClone} alt="fbclone" />
+            <div className="card">
+              <div className="card-inner" id="fbclone">
+                <div className="card-front">
+                  <img src={FbClone} alt="fbclone" />
+                </div>
+                <div className="card-back">
+                  <h6 className="subtitle">Facebook Clone</h6>
+                  <Link to="/project/fbclone" className=" mt-2">
+                    See More
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-sm-12 mt-2">
-            <div className="card" id="todo">
-              <img src={TodoList} alt="todoList" />
+            <div className="card">
+              <div className="card-inner" id="todo">
+                <div className="card-front">
+                  <img src={TodoList} alt="todoList" />
+                </div>
+                <div className="card-back">
+                  <h6 className="subtitle">Todo App</h6>
+                  <Link to="/project/todoapp" className=" mt-2">
+                    See More
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

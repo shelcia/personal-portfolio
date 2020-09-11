@@ -44,7 +44,7 @@ h6.subtitle {
   border: none;
   -webkit-box-shadow: 3px 6px 5px #00000005;
           box-shadow: 3px 6px 5px #00000005;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   cursor: pointer;
 }
 
@@ -128,9 +128,72 @@ h6.subtitle {
   width: 100%;
 }
 
+.landingPage .container .row .card {
+  background-color: #00000000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.landingPage .container .row .card-inner {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.landingPage .container .row .card-back {
+  position: absolute;
+  color: black;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  top: 0px;
+  z-index: 100;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landingPage .container .row .card-back a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.landingPage .container .row .card:hover .card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.landingPage .container .row .card-front {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 .landingPage .container .row #auv,
 .landingPage .container .row #countries,
 .landingPage .container .row #cricketgame {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   padding: 10px;
   background-color: #c7eeff;
 }
@@ -138,6 +201,8 @@ h6.subtitle {
 .landingPage .container .row #samgatha,
 .landingPage .container .row #fbclone,
 .landingPage .container .row #slidingpuzzle {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   padding: 10px;
   background-color: #f3d9ff;
 }
@@ -145,8 +210,18 @@ h6.subtitle {
 .landingPage .container .row #crm,
 .landingPage .container .row #todo,
 .landingPage .container .row #tictactoe {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   padding: 10px;
   background-color: #fff3e5;
+}
+
+.landingPage .container .row #auv,
+.landingPage .container .row #samgatha,
+.landingPage .container .row #fbclone,
+.landingPage .container .row #todo {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .landingPage .container .row #auv img,
@@ -159,6 +234,8 @@ h6.subtitle {
 }
 
 .landingPage .container .row #crm {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   padding: 20px 60px;
 }
 
@@ -169,6 +246,8 @@ h6.subtitle {
 }
 
 .landingPage .container .row #countries {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   height: 100%;
 }
 
@@ -207,6 +286,18 @@ h6.subtitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.landingPage .container .card-deck #soleflow {
+  background-color: #c7eeff;
+}
+
+.landingPage .container .card-deck #chatapp {
+  background-color: #fff3e5;
+}
+
+.landingPage .container .card-deck #socialgram {
+  background-color: #f3d9ff;
 }
 
 .landingPage .container #connect {
@@ -264,11 +355,31 @@ h6.subtitle {
   margin-top: 2rem;
 }
 
+.about .container .row .card {
+  background-color: #ffffff68;
+}
+
 .about .container .row #carouselcolumn {
   background: url("aboutart.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.about .container .row #carouselcolumn #carousel,
+.about .container .row #carouselcolumn .carousel-inner,
+.about .container .row #carouselcolumn .carousel-item .card {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  border-radius: 0.8rem;
+  padding: 1rem 0px;
+}
+
+.about .container .row #carouselcolumn #carousel .w-75,
+.about .container .row #carouselcolumn .carousel-inner .w-75,
+.about .container .row #carouselcolumn .carousel-item .card .w-75 {
+  margin: auto;
 }
 
 .about .container .row .col-sm-6 {

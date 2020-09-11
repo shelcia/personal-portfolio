@@ -19,44 +19,68 @@ const Carousel = () => {
         id="carousel"
         className="carousel slide"
         data-ride="carousel"
-        data-interval="500"
+        data-interval="1000"
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="d-block w-100" src={ReactIcon} alt="First slide" />
+            <div className="card">
+              <img className="d-block w-75" src={ReactIcon} alt="First slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={NodeJs} alt="Second slide" />
+            <div className="card">
+              <img className="d-block w-75" src={NodeJs} alt="Second slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={Python} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={Python} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={JS} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={JS} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={MongoDB} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={MongoDB} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={CSS} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={CSS} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={BS} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={BS} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={MySql} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={MySql} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={AdobeXD} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={AdobeXD} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={Figma} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={Figma} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={C} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={C} alt="Third slide" />
+            </div>
           </div>
           <div className="carousel-item">
-            <img className="d-block w-100" src={Cpluplus} alt="Third slide" />
+            <div className="card">
+              <img className="d-block w-75" src={Cpluplus} alt="Third slide" />
+            </div>
           </div>
         </div>
       </div>
