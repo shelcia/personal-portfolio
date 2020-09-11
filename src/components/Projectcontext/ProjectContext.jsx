@@ -9,7 +9,7 @@ export const ProjectsProvider = (props) => {
       id: "crm",
       name: "Customer Relations Management",
       description:
-        "This is my first attempt in building a first open source project focusing on crm. Customer Relationship Management is one of many different approaches that allow a company to manage and analyse its own interactions with its past, current and potential customers.",
+        "This is my first attempt in building a open source project focusing on CRM. Customer Relationship Management is one of many different approaches that allow a company to manage and analyse its own interactions with its past, current and potential customers.",
       techstack: "React, MongoDB, NodeJS, ExpressJs, Bootstrap",
       deploy: true,
       deployment: "https://crm-frontend-shelcia.netlify.app/",
@@ -63,6 +63,35 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://hubstaff-clone.netlify.app/",
       code: "https://github.com/shelcia/hubstaffclone-frontend",
+    },
+    {
+      id: "slidingpuzzle",
+      name: "Sliding Puzzle",
+      description:
+        "A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along certain routes (usually on a board) to establish a certain end-configuration. The pieces to be moved may consist of simple shapes, or they may be imprinted with colors, patterns, sections of a larger picture (like a jigsaw puzzle), numbers, or letters.",
+      techstack: "Vanilla JS, HTML/CSS",
+      deploy: true,
+      deployment: "https://sliding-puzzle-dom.netlify.app/",
+      code: "https://github.com/shelcia/sliding-puzzle",
+    },
+    {
+      id: "tictactoe",
+      name: "Tic Tac Toe",
+      description:
+        "Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.",
+      techstack: "Typescript",
+      deploy: true,
+      deployment: "https://typescript-tic-tac-toe.netlify.app/",
+      code: "https://github.com/shelcia/typescript-tic-tac-toe",
+    },
+    {
+      id: "cricket",
+      name: "Cricket Game",
+      description: "Cricket game made with typescript",
+      techstack: "Typescript",
+      deploy: true,
+      deployment: "https://cricket-game-typescript.netlify.app/",
+      code: "https://github.com/shelcia/cricket-game",
     },
   ]);
   return (

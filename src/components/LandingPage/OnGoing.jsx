@@ -7,13 +7,13 @@ const Ongoing = () => {
       <hr />
       <div className="card-deck mb-5">
         <div className="card" id="soleflow">
-          Soleflow
+          <p>Soleflow</p>
         </div>
         <div className="card" id="chatapp">
-          Chat App
+          <p>Chat App</p>
         </div>
         <div className="card" id="socialgram">
-          Social Gram
+          <p>Social Gram</p>
         </div>
       </div>
       <hr />

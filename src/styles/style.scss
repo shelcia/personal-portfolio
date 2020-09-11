@@ -229,6 +229,10 @@ h6.subtitle {
     .card {
       height: 250px;
       @include displayFlex(center, center);
+      p {
+        font-size: $mediumSize;
+        font-style: italic;
+      }
     }
     #soleflow {
       background-color: $blue;
@@ -260,11 +264,13 @@ h6.subtitle {
 }
 @media (max-width: 500px) {
   .landingPage .container .row {
-    #samgatha {
+    #samgatha,
+    #tictactoe,
+    #cricketgame {
       margin-top: 1.5rem;
     }
     #crm {
-      padding: 10px 20px;
+      padding: 25px 10px;
     }
     #fbclone {
       margin-top: 1.5rem;
