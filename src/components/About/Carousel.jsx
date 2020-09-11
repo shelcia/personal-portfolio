@@ -12,10 +12,15 @@ import Figma from "../../assets/skillicons/figma.png";
 import C from "../../assets/skillicons/c.png";
 import Cpluplus from "../../assets/skillicons/c++.png";
 
-const Carousal = () => {
+const Carousel = () => {
   return (
     <React.Fragment>
-      <div id="carousel" className="carousel slide" data-ride="carousel">
+      <div
+        id="carousel"
+        className="carousel slide"
+        data-ride="carousel"
+        data-interval="500"
+      >
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img className="d-block w-100" src={ReactIcon} alt="First slide" />
@@ -59,4 +64,4 @@ const Carousal = () => {
   );
 };
 
-export default Carousal;
+export default Carousel;

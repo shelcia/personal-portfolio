@@ -211,6 +211,12 @@ h6.subtitle {
   margin-top: 12vh;
   .row {
     margin-top: 2rem;
+    #carouselcolumn {
+      background: url("aboutart.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
     .col-sm-6 {
       position: relative;
       h1 {
@@ -223,6 +229,7 @@ h6.subtitle {
       @include displayFlex(center, left);
       text-align: left;
       flex-direction: column !important;
+
       #carousel {
         z-index: 10;
       }
@@ -233,9 +240,7 @@ h6.subtitle {
       }
     }
   }
-  p {
-    font-size: $smallSize;
-  }
+
   #connect {
     margin-top: 7rem;
     margin-bottom: 4rem;

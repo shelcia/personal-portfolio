@@ -264,6 +264,13 @@ h6.subtitle {
   margin-top: 2rem;
 }
 
+.about .container .row #carouselcolumn {
+  background: url("aboutart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .about .container .row .col-sm-6 {
   position: relative;
   display: -webkit-box;
@@ -297,10 +304,6 @@ h6.subtitle {
 
 .about .container .row .col-sm-6 .skilllist li {
   font-size: 1.2rem;
-}
-
-.about .container p {
-  font-size: 1.4rem;
 }
 
 .about .container #connect {

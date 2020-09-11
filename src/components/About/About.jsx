@@ -1,6 +1,5 @@
 import React from "react";
-import AboutArt from "../../assets/aboutart.png";
-import Carousal from "./Carousal";
+import Carousel from "./Carousel";
 import SkillSets from "./SkillSets";
 import Internships from "./Internships";
 import Connect from "../LandingPage/Connect";
@@ -24,8 +23,8 @@ const About = () => {
                 web development for past two years
               </p>
             </div>
-            <div className="col-sm-6" style={{ backgroundImage: { AboutArt } }}>
-              <Carousal />
+            <div className="col-sm-6" id="carouselcolumn">
+              <Carousel />
             </div>
           </div>
           <h4 className="subheading mt-5">Skill Sets</h4>
