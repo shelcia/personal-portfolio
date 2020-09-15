@@ -19,6 +19,7 @@ const SkillSets = () => {
             <li>Figma</li>
             <li>Bootstrap</li>
             <li>HTML/CSS</li>
+            <li>Sass</li>
           </ul>
         </div>
         <div className="col-sm-6">

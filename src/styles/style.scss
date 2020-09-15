@@ -316,6 +316,10 @@ h6.subtitle {
 }
 
 .about .container {
+  p {
+    font-size: $smallSize;
+  }
+
   margin-top: 12vh;
   .row {
     margin-top: 2rem;

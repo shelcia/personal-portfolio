@@ -10,22 +10,22 @@ const Internships = () => {
           Solera Life Science Private Limited
         </h6>
         <p className="mt-3 mb-5">
-          I am currently working as website developer and designer building
-          couple of products. One of them Is basically a E-commerce app for
-          Pharma products and other product is based on building chat bot
-          interface (familiar example DialogueFlow)
+          I am currently working as a website developer and designer building a
+          couple of products. One of them is basically an E-commerce app for
+          Pharma products and another product is based on building chatbot
+          interface (familiar example DialogueFlow).
         </p>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeInUp">
-        <h6 className="mt-3 mb-3 subtitle">
-          National University of Singapore{" "}
-        </h6>
+        <h6 className="mt-3 mb-3 subtitle">National University of Singapore</h6>
         <p className="mt-3 mb-3">
-          I was involved in academic internship in Singapore.Over there i had
-          handful experience in networking architecture, building security
-          focused on IOT systems. I built two projects, one was based IOT based
-          Disaster management system and the second project was based on
-          visualising data in admin Dashboard.
+          I was involved in an academic internship in Singapore. Over there I
+          had a handful of experience in networking architecture, building
+          security-focused on IoT systems. I built two projects, one was based
+          IOT based Disaster management system under the guidance of Professor
+          Tan Wee Kek and the second project was based on visualising data in
+          the admin Dashboard under the guidance of Mr Shanthanu Pandey, Hewlett
+          Packard.
         </p>
       </ScrollAnimation>
     </React.Fragment>
