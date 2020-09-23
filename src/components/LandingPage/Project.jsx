@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import AUV from "../../assets/mockups/auv.png";
 import Samgatha from "../../assets/mockups/samgatha.png";
 import CRM from "../../assets/mockups/crm.png";
+import ChatApp from "../../assets/mockups/chat-app.png";
+import GoogleDocs from "../../assets/mockups/google-docs.png";
 import Countries from "../../assets/mockups/countries.png";
 import FbClone from "../../assets/mockups/fbclone.png";
 import TodoList from "../../assets/mockups/todo.png";
@@ -73,6 +75,44 @@ const Project = () => {
       </div>
       <div className="row">
         <div className="col-sm-6">
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="card">
+              <div className="card-inner" id="chatapp">
+                <div className="card-front">
+                  <img src={ChatApp} alt="chatapp" />
+                </div>
+                <div className="card-back">
+                  <h6 className="subtitle">Web Chat App</h6>
+                  <Link to="/project/chatapp" className=" mt-2">
+                    See More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+        <div className="col-sm-6">
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="card">
+              <div className="card-inner" id="googledocs">
+                <div className="card-front">
+                  <img src={GoogleDocs} alt="googledocs" />
+                </div>
+                <div className="card-back">
+                  <h6 className="subtitle">
+                    Google docs Clone <p style={{ color: "red" }}>*Ongoing*</p>
+                  </h6>
+                  <Link to="/project/googledocsclone" className=" mt-2">
+                    See More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-6">
           <ScrollAnimation
             animateIn="fadeInUp"
             style={{
@@ -108,8 +148,8 @@ const Project = () => {
                     <img src={FbClone} alt="fbclone" />
                   </div>
                   <div className="card-back">
-                    <h6 className="subtitle">Facebook Clone</h6>
-                    <Link to="/project/fbclone" className=" mt-2">
+                    <h6 className="subtitle">Social Gram</h6>
+                    <Link to="/project/socialgram" className=" mt-2">
                       See More
                     </Link>
                   </div>

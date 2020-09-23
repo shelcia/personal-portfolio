@@ -21,8 +21,9 @@ const About = () => {
                 </p>
                 <br></br>
                 <p>
-                  I am a final year engineering graduate working with Design and
-                  web development for past two years
+                  I have a passion for learning and building interesting things.
+                  I love how technologies evolve and have a major impact on our
+                  day to day lives.
                 </p>
               </div>
               <div className="col-sm-6" id="carouselcolumn">

@@ -193,22 +193,24 @@ h6.subtitle {
     }
 
     #auv,
-    #countries,
-    #cricketgame {
+    #cricketgame,
+    #googledocs,
+    #todo {
       perspective: 1000px;
       padding: 10px;
       background-color: $blue;
     }
     #samgatha,
     #fbclone,
-    #slidingpuzzle {
+    #slidingpuzzle,
+    #chatapp {
       perspective: 1000px;
       padding: 10px;
       background-color: $purple;
     }
     #crm,
-    #todo,
-    #tictactoe {
+    #tictactoe,
+    #countries {
       perspective: 1000px;
       padding: 10px;
       background-color: $orange;

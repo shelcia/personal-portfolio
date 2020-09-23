@@ -10,10 +10,10 @@ const Ongoing = () => {
           <p>Soleflow</p>
         </div>
         <div className="card" id="chatapp">
-          <p>Chat App</p>
+          <p>Corona Dashboard</p>
         </div>
         <div className="card" id="socialgram">
-          <p>Social Gram</p>
+          <p>Online Code Editor</p>
         </div>
       </div>
       <hr />

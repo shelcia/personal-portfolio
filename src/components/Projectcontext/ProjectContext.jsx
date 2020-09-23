@@ -45,8 +45,28 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/auv",
     },
     {
-      id: "fbclone",
-      name: "Facebook Clone",
+      id: "chatapp",
+      name: "Web Chat App",
+      description:
+        "As a part of hobby project I tried recreating Whatsapp web using socket.io. It has features like mulitple chat rooms , emoji enabled input box (and emoji popup keyboard) and no signup requirements.",
+      techstack: "React, NodeJS, Socket.io, Bootstrap",
+      deploy: true,
+      deployment: "https://whatsapp-clone-socketio.netlify.app/",
+      code: "https://github.com/shelcia/chat-app-frontend",
+    },
+    {
+      id: "googledocsclone",
+      name: "Google Docs Clone",
+      description:
+        "As a part of hobby project I tried recreating GoogleDocs using socket.io. It has features like live editing , formatting and automatic save as of now. I am still working on it's other features.",
+      techstack: "React, NodeJS, Socket.io, Bootstrap, Slate.js",
+      deploy: false,
+      deployment: "https://whatsapp-clone-socketio.netlify.app/",
+      code: "https://github.com/shelcia/googledocsclone",
+    },
+    {
+      id: "socialgram",
+      name: "Social Gram",
       description:
         "As part of my hobby projects, I challenged myself with creating a Facebook clone, which allows the user to create a post and like them. I will be adding more features in future.",
       techstack: "React, MongoDB, NodeJS, ExpressJS, Redux",

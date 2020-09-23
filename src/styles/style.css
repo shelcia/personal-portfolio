@@ -234,8 +234,9 @@ h6.subtitle {
 }
 
 .landingPage .container .row #auv,
-.landingPage .container .row #countries,
-.landingPage .container .row #cricketgame {
+.landingPage .container .row #cricketgame,
+.landingPage .container .row #googledocs,
+.landingPage .container .row #todo {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   padding: 10px;
@@ -244,7 +245,8 @@ h6.subtitle {
 
 .landingPage .container .row #samgatha,
 .landingPage .container .row #fbclone,
-.landingPage .container .row #slidingpuzzle {
+.landingPage .container .row #slidingpuzzle,
+.landingPage .container .row #chatapp {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   padding: 10px;
@@ -252,8 +254,8 @@ h6.subtitle {
 }
 
 .landingPage .container .row #crm,
-.landingPage .container .row #todo,
-.landingPage .container .row #tictactoe {
+.landingPage .container .row #tictactoe,
+.landingPage .container .row #countries {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   padding: 10px;
