@@ -7,7 +7,7 @@ import ChatApp from "../../assets/mockups/chat-app.png";
 import GoogleDocs from "../../assets/mockups/google-docs.png";
 import Countries from "../../assets/mockups/countries.png";
 import FbClone from "../../assets/mockups/fbclone.png";
-import TodoList from "../../assets/mockups/todo.png";
+import Blog from "../../assets/mockups/blog.png";
 import SlidingPuzzle from "../../assets/mockups/slidingpuzzle.png";
 import TicTacToe from "../../assets/mockups/tic-tac-toe.png";
 import CricketGame from "../../assets/mockups/cricketgame.png";
@@ -162,11 +162,11 @@ const Project = () => {
               <div className="card">
                 <div className="card-inner" id="todo">
                   <div className="card-front">
-                    <img src={TodoList} alt="todoList" />
+                    <img src={Blog} alt="todoList" />
                   </div>
                   <div className="card-back">
-                    <h6 className="subtitle">Todo App</h6>
-                    <Link to="/project/todoapp" className=" mt-2">
+                    <h6 className="subtitle">Bloggram</h6>
+                    <Link to="/project/bloggram" className=" mt-2">
                       See More
                     </Link>
                   </div>

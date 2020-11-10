@@ -75,6 +75,16 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/fb-clone",
     },
     {
+      id: "bloggram",
+      name: "Bloggram",
+      description:
+        "As part of my hobby projects, I created a blog social website where users can edit, add and delte blogs. It has the got features where everything is put into majoy categories and UI will be an eye treat for black and white lovers.",
+      techstack: "React , Bootstrap, NodeJS, MongoDB",
+      deploy: true,
+      deployment: "https://bloggram.netlify.app/",
+      code: "https://github.com/shelcia/Blog-website",
+    },
+    {
       id: "todoapp",
       name: "Todo App",
       description:
