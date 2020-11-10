@@ -78,7 +78,7 @@ export const ProjectsProvider = (props) => {
       id: "bloggram",
       name: "Bloggram",
       description:
-        "As part of my hobby projects, I created a blog social website where users can edit, add and delte blogs. It has the got features where everything is put into majoy categories and UI will be an eye treat for black and white lovers.",
+        "As part of my hobby projects, I created a blog social website where users can edit, add and delete blogs. It has got features where all blogs are put into majoy categories, like, dislike and add hearts to blog, seperate comment section/discussion for users in all blogs and UI will be an eye treat for black and white lovers.",
       techstack: "React , Bootstrap, NodeJS, MongoDB",
       deploy: true,
       deployment: "https://bloggram.netlify.app/",

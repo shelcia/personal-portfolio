@@ -96,9 +96,6 @@ h6.subtitle {
   height: 100vh;
   width: 100%;
   @include displayFlex(center, center);
-  .spinner-grow {
-    margin: 10px;
-  }
 }
 
 //NAVBAR
