@@ -41,7 +41,7 @@ export const ProjectsProvider = (props) => {
         "I was commissioned to build a website for IIITDM Kancheepuram's AUV Society. AUV society consists of an intellectual interdisciplinary team of undergraduate engineers working to build an autonomous underwater vehicle for various underwater robotics competitions. I was the sole developer and designer until completion. I had to showcase their achievements, accolades, blogs and lure more sponsors. I have also created an API to send form responses through the mail.",
       techstack: "React, NodeJS, Nodemailer, Adobe XD, Bootstrap",
       deploy: true,
-      deployment: "https://auv-iiitdm.netlify.app/",
+      deployment: "https://auviiitdm.github.io/",
       code: "https://github.com/shelcia/auv",
     },
     {
