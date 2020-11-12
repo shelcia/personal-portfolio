@@ -14,7 +14,7 @@ const App = () => {
   const [isLoading, setLoading] = useState(true);
   useEffect(() => {
     let isLoading = null;
-    isLoading = setTimeout(() => setLoading(false), 6000);
+    isLoading = setTimeout(() => setLoading(false), 500);
     return () => clearInterval(isLoading);
   });
   return (
