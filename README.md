@@ -1,3 +1,6 @@
+## Deployment
+
+https://shelcia-portfolio.netlify.app/
 
 
 ### To Use this repo for development 
