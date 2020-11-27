@@ -10,6 +10,7 @@ export const OnGoingProvider = (props) => {
       name: "SoleFlow",
       description:
         "I was commisioned to build website interface to create chat bots",
+      techstack: "React , Bootstrap, NodeJS, MongoDB",
       deploy: false,
       deployment: "",
       code: "https://github.com/shelcia/soleflowintern",
@@ -19,6 +20,7 @@ export const OnGoingProvider = (props) => {
       name: "Social gram",
       description:
         "As Part of Hobby Project i am builidng a social app in react",
+      techstack: "React , Bootstrap, NodeJS, MongoDB",
       deploy: false,
       deployment: "",
       code: "https://github.com/shelcia/social-web",
