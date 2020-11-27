@@ -6,6 +6,14 @@ const Internships = () => {
     <React.Fragment>
       <ScrollAnimation animateIn="fadeInUp">
         <h4 className="subheading mt-5 mb-5">Internships</h4>
+        <h6 className="mt-3 mb-3 subtitle">Guvi Geeks Private Limited</h6>
+        <p className="mt-3 mb-5">
+          I am currently working as a website developer building a portals
+          mainly using Jquery, AJAX and plain HTML/ CSS.
+        </p>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeInUp">
+        <h4 className="subheading mt-5 mb-5">Internships</h4>
         <h6 className="mt-3 mb-3 subtitle">
           Solera Life Science Private Limited
         </h6>
