@@ -1,36 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$background: #222222;
+$primarycolor: #030dff;
+$secondarycolor: rgb(249, 248, 248);
+
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
 body {
-  background-color: #222222;
-  color: rgb(249, 248, 248);
+  background-color: $background;
+  color: $secondarycolor;
 }
 
-.container {
-  position: relative;
-}
-
-.page {
-  position: absolute;
-  left: 15px;
-  right: 15px;
-}
-
-.page-enter {
-  opacity: 0;
-  transform: scale(1.1);
-}
-
-.page-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.page-exit {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.page-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+.navbar-dark {
+  background-color: $background !important;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 
-function About() {
+const About = () => {
   return (
-    <>
+    <React.Fragment>
       <h1>About</h1>
       <p>
         Donec sit amet augue at enim sollicitudin porta. Praesent finibus ex
@@ -11,8 +11,8 @@ function About() {
         nulla, eleifend eget dui faucibus, facilisis aliquet ante. Suspendisse
         sollicitudin nibh lacus, ut bibendum risus elementum a.
       </p>
-    </>
+    </React.Fragment>
   );
-}
+};
 
 export default About;

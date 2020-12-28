@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const TopBar = ({ routes }) => {
+const TopBar = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-md bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow-lg mb-5">
         <a className="navbar-brand" href="/">
           Navbar
         </a>
@@ -20,20 +20,36 @@ const TopBar = ({ routes }) => {
 
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
-            {routes.map((route) => (
-              <li className="nav-item">
-                <NavLink
-                  key={route.path}
-                  // as={NavLink}
-                  to={route.path}
-                  className="nav-link"
-                  activeClassName="active"
-                  exact
-                >
-                  {route.name}
-                </NavLink>
-              </li>
-            ))}
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/about"
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/contact"
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

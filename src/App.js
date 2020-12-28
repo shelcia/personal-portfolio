@@ -1,44 +1,24 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import "./styles/style.css";
+import Home from "./pages/Home";
 import TopBar from "./partials/Topbar";
+import "./styles/style.css";
 
-const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/about", name: "About", Component: About },
-  { path: "/contact", name: "Contact", Component: Contact },
-];
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-      <TopBar routes={routes} />
-      <div className="container">
+    <React.Fragment>
+      <BrowserRouter>
+        <TopBar />
         <Switch>
-          {routes.map(({ path, Component }) => (
-            <Route key={path} exact path={path}>
-              {({ match }) => (
-                <CSSTransition
-                  in={match != null}
-                  timeout={300}
-                  classNames="page"
-                  unmountOnExit
-                >
-                  <div className="page">
-                    <Component />
-                  </div>
-                </CSSTransition>
-              )}
-            </Route>
-          ))}
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
         </Switch>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
