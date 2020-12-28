@@ -5,8 +5,8 @@ const TopBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow-lg mb-5">
-        <a className="navbar-brand" href="/">
-          Navbar
+        <a className="navbar-brand px-4" href="/">
+          Shelcia.
         </a>
 
         <button
@@ -19,7 +19,7 @@ const TopBar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ml-auto px-4">
             <li className="nav-item">
               <NavLink
                 className="nav-link"

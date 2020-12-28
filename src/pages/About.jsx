@@ -19,14 +19,17 @@ const About = () => {
               About
             </h1>
             <p className="mt-12">
-              Donec sit amet augue at enim sollicitudin porta. Praesent finibus
-              ex velit, quis faucibus libero congue et. Quisque convallis eu
-              nisl et congue. Vivamus eget augue quis ante malesuada
-              ullamcorper. Sed orci nulla, eleifend eget dui faucibus, facilisis
-              aliquet ante. Suspendisse sollicitudin nibh lacus, ut bibendum
-              risus elementum a.
+              I am a final year engineering graduate working with Design and web
+              development for past two years.
             </p>
-            <button className="btn btn-primary">Add me trouble</button>
+            <p className="mt-3">
+              I have a passion for learning and building interesting things. I
+              love how technologies evolve and have a major impact on our day to
+              day lives.
+            </p>
+            <button className="btn">
+              <div className="btn-text">Add me trouble</div>
+            </button>
           </div>
         </div>
       </div>

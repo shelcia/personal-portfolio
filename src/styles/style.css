@@ -78,8 +78,38 @@
   }
 }
 
+@-webkit-keyframes btn-border {
+  from {
+    background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
+    background: linear-gradient(to right, #f0f, #0ff);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, right top, from(#0ff), to(#f0f));
+    background: linear-gradient(to right, #0ff, #f0f);
+  }
+}
+
+@keyframes btn-border {
+  from {
+    background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
+    background: linear-gradient(to right, #f0f, #0ff);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, right top, from(#0ff), to(#f0f));
+    background: linear-gradient(to right, #0ff, #f0f);
+  }
+}
+
 .mt-12 {
   margin-top: 6rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-style: italic;
 }
 
 * {
@@ -89,10 +119,6 @@
 body {
   background-color: #222222;
   color: #f9f8f8;
-}
-
-p {
-  font-style: italic;
 }
 
 .navbar-dark {
@@ -105,13 +131,30 @@ p {
 }
 
 .btn {
-  background-color: #030dff;
+  border: none !important;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  -webkit-animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
+          animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
+}
+
+.btn .btn-text {
+  background: #222222;
+  color: #f9f8f8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 0.6rem 1rem;
+  font-style: italic;
+}
+
+.btn .btn-text:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
+  background: linear-gradient(to right, #f0f, #0ff);
 }
 
 .glitch {
-  color: #fff;
+  color: #f9f8f8;
   position: absolute;
-  font-size: 4rem;
 }
 
 .glitch:before, .glitch:after {

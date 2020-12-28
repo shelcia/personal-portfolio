@@ -1,3 +1,6 @@
+$glitch1: #f0f;
+$glitch2: #0ff;
+
 @keyframes page-fade {
   from {
     transform: scale(0.9);
@@ -27,5 +30,14 @@
   }
   to {
     transform: translate(0);
+  }
+}
+
+@keyframes btn-border {
+  from {
+    background: linear-gradient(to right, $glitch1, $glitch2);
+  }
+  to {
+    background: linear-gradient(to right, $glitch2, $glitch1);
   }
 }

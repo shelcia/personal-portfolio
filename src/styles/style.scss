@@ -17,10 +17,6 @@ body {
   color: $secondarycolor;
 }
 
-p {
-  font-style: italic;
-}
-
 .navbar-dark {
   background-color: $background !important;
 }
@@ -30,13 +26,26 @@ p {
 }
 
 .btn {
-  background-color: $primarycolor;
+  border: none !important;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
+
+  .btn-text {
+    background: $background;
+    color: $secondarycolor;
+    transition: all 0.3s ease-in-out;
+    padding: 0.6rem 1rem;
+    font-style: italic;
+    &:hover {
+      background: linear-gradient(to right, $glitch1, $glitch2);
+    }
+  }
 }
 
 .glitch {
-  color: #fff;
+  color: $secondarycolor;
   position: absolute;
-  font-size: 4rem;
   &:before,
   &:after {
     display: block;
