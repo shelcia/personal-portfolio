@@ -13,6 +13,30 @@ body {
   color: $secondarycolor;
 }
 
+p {
+  font-style: italic;
+}
+
 .navbar-dark {
   background-color: $background !important;
+}
+
+.page-fade {
+  animation: page-fade 0.8s;
+}
+
+@keyframes page-fade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn {
+  background-color: $primarycolor;
 }

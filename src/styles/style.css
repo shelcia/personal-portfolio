@@ -8,7 +8,46 @@ body {
   color: #f9f8f8;
 }
 
+p {
+  font-style: italic;
+}
+
 .navbar-dark {
   background-color: #222222 !important;
+}
+
+.page-fade {
+  -webkit-animation: page-fade 0.8s;
+          animation: page-fade 0.8s;
+}
+
+@-webkit-keyframes page-fade {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes page-fade {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn {
+  background-color: #030dff;
 }
 /*# sourceMappingURL=style.css.map */
