@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow-lg mb-5">
-        <a className="navbar-brand px-4" href="/">
+        <Link className="navbar-brand px-4 glitch" data-text="Shelcia." to="/">
           Shelcia.
-        </a>
+        </Link>
 
         <button
           className="navbar-toggler"
