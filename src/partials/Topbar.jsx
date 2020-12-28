@@ -27,7 +27,7 @@ const TopBar = () => {
                 exact
                 to="/"
               >
-                Home
+                Works
               </NavLink>
             </li>
             <li className="nav-item">
@@ -47,7 +47,7 @@ const TopBar = () => {
                 exact
                 to="/contact"
               >
-                Contact
+                Resume
               </NavLink>
             </li>
           </ul>

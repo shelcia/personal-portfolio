@@ -1,4 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@-webkit-keyframes page-fade {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes page-fade {
+  from {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+  }
+  60% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+  80% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-5px, 5px);
+            transform: translate(-5px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+  }
+  60% {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+  80% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+.mt-12 {
+  margin-top: 6rem;
+}
+
 * {
   font-family: "Fira Sans", sans-serif;
 }
@@ -21,33 +104,37 @@ p {
           animation: page-fade 0.8s;
 }
 
-@-webkit-keyframes page-fade {
-  from {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes page-fade {
-  from {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
 .btn {
   background-color: #030dff;
+}
+
+.glitch {
+  color: #fff;
+  position: absolute;
+  font-size: 4rem;
+}
+
+.glitch:before, .glitch:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.glitch:after {
+  color: #f0f;
+  z-index: -2;
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
+}
+
+.glitch:before {
+  color: #0ff;
+  z-index: -1;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) reverse both infinite;
 }
 /*# sourceMappingURL=style.css.map */
