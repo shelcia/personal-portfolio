@@ -1,27 +1,9 @@
-$color: skyblue;
-$lineColor: hotpink;
+$color: #0ff;
+$lineColor: #f0f;
 $fontColor: #bbb;
-$bgColor1: #222;
-$bgColor2: #444;
 $yearBgColor: #333;
 
 $breakpoint: 700px;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-image: linear-gradient(to bottom, $bgColor1, $bgColor2);
-  color: $fontColor;
-  padding: 1rem;
-  font-family: "Playfair Display", serif;
-}
-
-h1 {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-}
 
 .timeline {
   position: relative;
@@ -128,7 +110,6 @@ h1 {
 
 .timeline__title {
   margin: 0;
-  font-family: "Raleway", sans-serif;
   font-size: 1.5em;
 }
 

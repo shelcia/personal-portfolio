@@ -17,7 +17,7 @@ const Intro = () => {
           <h1 className="glitch" data-text="About">
             About
           </h1>
-          <p className="mt-12">
+          <p className="mt-4">
             I am a final year engineering graduate working with Design and web
             development for past two years.
           </p>
