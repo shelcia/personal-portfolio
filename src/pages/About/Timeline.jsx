@@ -35,25 +35,29 @@ const Timeline = () => {
 
         <h2 className="timeline__item timeline__item--year">2020</h2>
         <div className="timeline__item">
-          <h3 className="timeline__title">Academic Internship @ NUS</h3>
+          <h3 className="timeline__title">
+            Solera Life Science Private Limited
+          </h3>
+          <p className="timeline__blurb">
+            I worked as website developer and designer intern building a couple
+            of products.
+          </p>
+        </div>
+        <div className="timeline__item">
+          <h3 className="timeline__title">Guvi Geeks Private Limited</h3>
           <p className="timeline__blurb">
             Started taking classes to learn aerial silks, hoop, and hammock.
           </p>
         </div>
         <div className="timeline__item">
-          <h3 className="timeline__title">Academic Internship @ NUS</h3>
+          <h3 className="timeline__title">NYX Wolves Private Limited</h3>
           <p className="timeline__blurb">
             Started taking classes to learn aerial silks, hoop, and hammock.
           </p>
         </div>
+        <h2 className="timeline__item timeline__item--year">2021</h2>
         <div className="timeline__item">
-          <h3 className="timeline__title">Academic Internship @ NUS</h3>
-          <p className="timeline__blurb">
-            Started taking classes to learn aerial silks, hoop, and hammock.
-          </p>
-        </div>
-        <div className="timeline__item">
-          <h3 className="timeline__title">Academic Internship @ NUS</h3>
+          <h3 className="timeline__title">Expected Graduation</h3>
           <p className="timeline__blurb">
             Started taking classes to learn aerial silks, hoop, and hammock.
           </p>

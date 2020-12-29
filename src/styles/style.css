@@ -303,4 +303,12 @@ body {
   z-index: -1;
   animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) reverse both infinite;
 }
+
+.column.is-2.buttons.are-small.has-addons {
+  margin-top: -100px;
+}
+
+.button {
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
