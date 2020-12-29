@@ -239,8 +239,9 @@ p {
 }
 
 body {
-  background-color: #222222;
   color: #f9f8f8;
+  background: #003577;
+  background: linear-gradient(135deg, #003577 0%, #090979 30%, #00a1ff 100%);
 }
 
 .navbar-dark {
@@ -250,65 +251,5 @@ body {
 .page-fade {
   -webkit-animation: page-fade 0.8s;
           animation: page-fade 0.8s;
-}
-
-.btn {
-  -webkit-animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-          animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-  border: none !important;
-  padding: 0.1rem;
-  border-radius: 0.2rem;
-}
-
-.btn .btn-text {
-  background: #222222;
-  color: #f9f8f8;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 0.6rem 1rem;
-  font-style: italic;
-}
-
-.btn .btn-text:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
-  background: linear-gradient(to right, #f0f, #0ff);
-}
-
-.glitch {
-  color: #f9f8f8;
-  position: relative;
-  z-index: 1500;
-}
-
-.glitch:before, .glitch:after {
-  display: block;
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-}
-
-.glitch:after {
-  color: #f0f;
-  z-index: -2;
-  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-}
-
-.glitch:before {
-  color: #0ff;
-  z-index: -1;
-  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) reverse both infinite;
-}
-
-.column.is-2.buttons.are-small.has-addons {
-  margin-top: -100px;
-}
-
-.button {
-  border: none;
 }
 /*# sourceMappingURL=style.css.map */
