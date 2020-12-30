@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 const TopBar = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow-lg mb-5">
-        <Link className="navbar-brand px-4 glitch" to="/">
-          <h5 className="glitch m-0 p-0" data-text="Shelcia.">
+      <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow-sm px-5">
+        <Link className="navbar-brand px-5" to="/">
+          <h5 className="m-0 p-0" data-text="Shelcia.">
             Shelcia.
           </h5>
         </Link>
@@ -21,7 +21,7 @@ const TopBar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul className="navbar-nav ml-auto px-4">
+          <ul className="navbar-nav ml-auto px-5">
             <li className="nav-item">
               <NavLink
                 className="nav-link"

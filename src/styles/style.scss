@@ -2,36 +2,49 @@
 @import "./components/animations";
 @import "./components/classes";
 @import "./components/timeline";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-$background: #222222;
-$primarycolor: #030dff;
+$background1: #1a1a2e;
+$background2: #16213e;
+$primarycolor: #e94560;
+// $primarycolor: #efa830;
+// 0f3460
 $secondarycolor: rgb(249, 248, 248);
-$glitch1: #f0f;
-$glitch2: #0ff;
 
-* {
+p,
+a {
   font-family: "Fira Sans", sans-serif;
 }
 
+h1,
+.navbar-brand {
+  font-family: "Lobster", cursive !important;
+  color: $primarycolor !important;
+}
+
 body {
-  // background-color: $background;
   color: $secondarycolor;
-  background: rgb(0, 53, 119);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 53, 119, 1) 0%,
-    rgba(9, 9, 121, 1) 30%,
-    rgba(0, 161, 255, 1) 100%
-  );
 }
 
 .navbar-dark {
-  background-color: $background !important;
+  background-color: $background2 !important;
 }
 
-.page-fade {
-  animation: page-fade 0.8s;
-}
+// body {
+//   // background-color: $background;
+//color: $secondarycolor;
+//   background: rgb(0, 53, 119);
+//   background: linear-gradient(
+//     135deg,
+//     rgba(0, 53, 119, 1) 0%,
+//     rgba(9, 9, 121, 1) 30%,
+//     rgba(0, 161, 255, 1) 100%
+//   );
+// }
+
+// .page-fade {
+//   animation: page-fade 0.8s;
+// }
 
 // .btn {
 //   animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;

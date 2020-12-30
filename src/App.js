@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact";
-import Home from "./pages/Home";
+import Home from "./pages/Works/Home";
 import TopBar from "./partials/Topbar";
 import "./styles/style.css";
 
