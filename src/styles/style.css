@@ -105,7 +105,11 @@
   margin-top: 6rem;
 }
 
-h1 {
+h1.title {
+  font-size: 8rem;
+}
+
+h1.subtitle {
   font-size: 4rem;
 }
 
@@ -114,7 +118,7 @@ p {
 }
 
 .h-80 {
-  height: 80vh !important;
+  min-height: 80vh !important;
 }
 
 .bg-1 {
