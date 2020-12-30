@@ -269,4 +269,14 @@ body {
 .navbar-dark {
   background-color: #16213e !important;
 }
+
+.fab {
+  color: #e94560;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+hr.title-hr {
+  border-top: 0.3rem solid #e94560;
+}
 /*# sourceMappingURL=style.css.map */

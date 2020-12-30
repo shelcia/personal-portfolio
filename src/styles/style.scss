@@ -30,6 +30,14 @@ body {
   background-color: $background2 !important;
 }
 
+.fab {
+  color: $primarycolor;
+  font-size: 2rem;
+  cursor: pointer;
+}
+hr.title-hr {
+  border-top: 0.3rem solid $primarycolor;
+}
 // body {
 //   // background-color: $background;
 //color: $secondarycolor;
