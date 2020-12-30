@@ -2,6 +2,7 @@
 @import "./components/animations";
 @import "./components/classes";
 @import "./components/timeline";
+@import "./components/button";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background1: #1a1a2e;
@@ -11,14 +12,18 @@ $primarycolor: #e94560;
 // 0f3460
 $secondarycolor: rgb(249, 248, 248);
 
+$primaryfont: "Fira Sans", sans-serif;
+$secondaryfont: "Lobster", cursive;
+
 p,
-a {
-  font-family: "Fira Sans", sans-serif;
+a,
+h4 {
+  font-family: $primaryfont;
 }
 
 h1,
 .navbar-brand {
-  font-family: "Lobster", cursive !important;
+  font-family: $secondaryfont !important;
   color: $primarycolor !important;
 }
 
@@ -34,77 +39,18 @@ body {
   color: $primarycolor;
   font-size: 2rem;
   cursor: pointer;
+  &:hover {
+    text-shadow: 2px 2px 0px white;
+  }
 }
 hr.title-hr {
   border-top: 0.3rem solid $primarycolor;
 }
-// body {
-//   // background-color: $background;
-//color: $secondarycolor;
-//   background: rgb(0, 53, 119);
-//   background: linear-gradient(
-//     135deg,
-//     rgba(0, 53, 119, 1) 0%,
-//     rgba(9, 9, 121, 1) 30%,
-//     rgba(0, 161, 255, 1) 100%
-//   );
-// }
-
-// .page-fade {
-//   animation: page-fade 0.8s;
-// }
-
-// .btn {
-//   animation: btn-border 1s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-//   border: none !important;
-//   padding: 0.1rem;
-//   border-radius: 0.2rem;
-//   .btn-text {
-//     background: $background;
-//     color: $secondarycolor;
-//     transition: all 0.3s ease-in-out;
-//     padding: 0.6rem 1rem;
-//     font-style: italic;
-//     &:hover {
-//       background: linear-gradient(to right, $glitch1, $glitch2);
-//     }
-//   }
-// }
-
-// .glitch {
-//   color: $secondarycolor;
-//   position: relative;
-//   z-index: 1500;
-//   &:before,
-//   &:after {
-//     display: block;
-//     content: attr(data-text);
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//     opacity: 0.8;
-//   }
-//   &:after {
-//     color: $glitch1;
-//     z-index: -2;
-//     // z-index: 1398;
-//     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) both infinite;
-//   }
-//   &:before {
-//     color: $glitch2;
-//     z-index: -1;
-//     // z-index: 1399;
-//     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.74) reverse both
-//       infinite;
-//   }
-// }
-
-// .column.is-2.buttons.are-small.has-addons {
-//   margin-top: -100px;
-// }
-
-// .button {
-//   border: none;
-// }
+.github-card {
+  width: 250px;
+  span {
+    color: $primarycolor;
+    font-size: 3rem;
+    font-family: $secondaryfont !important;
+  }
+}

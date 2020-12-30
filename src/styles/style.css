@@ -251,8 +251,70 @@ p {
   margin: 0.5rem 0 0;
 }
 
+.btn {
+  text-transform: uppercase;
+  padding: 1.4rem 4.2rem;
+  -webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  letter-spacing: 1.1rem;
+  color: #f9f8f8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+.btn::after, .btn::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: inherit;
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: #f9f8f8;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  left: 0;
+  width: 100%;
+}
+
+.btn:hover::after {
+  background: #f9f8f8;
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+  top: 0;
+  height: 100%;
+}
+
+.btn::after {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: #f9f8f8;
+}
+
+.btn::before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 0;
+  border: 1px solid #f9f8f8;
+  border-left: 0;
+  border-right: 0;
+}
+
 p,
-a {
+a,
+h4 {
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -276,7 +338,21 @@ body {
   cursor: pointer;
 }
 
+.fab:hover {
+  text-shadow: 2px 2px 0px white;
+}
+
 hr.title-hr {
   border-top: 0.3rem solid #e94560;
+}
+
+.github-card {
+  width: 250px;
+}
+
+.github-card span {
+  color: #e94560;
+  font-size: 3rem;
+  font-family: "Lobster", cursive !important;
 }
 /*# sourceMappingURL=style.css.map */

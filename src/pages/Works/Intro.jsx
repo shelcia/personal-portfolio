@@ -40,8 +40,13 @@ const Intro = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6">
-              <p>Full Stack Devleoper and Deisgmer</p>
+            <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column">
+              <h4>Full Stack Developer and Designer, based in Chennai</h4>
+              <p>
+                I love developing stuff in React and Javascript. I work on open
+                source and does freelance occasionally.
+              </p>
+              <button className="btn">See My works!</button>
             </div>
           </div>
         </div>
