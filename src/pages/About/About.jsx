@@ -1,18 +1,16 @@
 import React from "react";
+import Experience from "./Experience";
 import Intro from "./Intro";
+import Skills from "./Skills";
 // import Timeline from "./Timeline";
 
 const About = () => {
   return (
-    <React.Fragment>
-      <div className="page-fade">
-        <div className="bg-2 h-80">
-          <div className="container">
-            <Intro />
-          </div>
-        </div>
-      </div>
-    </React.Fragment>
+    <div className="page-fade">
+      <Intro />
+      <Skills />
+      <Experience />
+    </div>
   );
 };
 

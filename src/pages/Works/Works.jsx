@@ -1,4 +1,5 @@
 import React from "react";
+import AUV from "../../assets/project/AUV.png";
 
 const Works = () => {
   return (
@@ -6,11 +7,11 @@ const Works = () => {
       <div className="bg-2 h-80">
         <div className="container pt-5">
           <div className="row">
-            <div className="col-sm-6">
-              <h1>Shelcia</h1>
+            <div className="col-sm-6 px-4">
+              <img src={AUV} alt="" className="img-fluid" />
             </div>
-            <div className="col-sm-6">
-              <p>Full Stack Devleoper and Deisgmer</p>
+            <div className="col-sm-6 px-4">
+              <img src={AUV} alt="" className="img-fluid" />
             </div>
           </div>
         </div>
