@@ -5,18 +5,22 @@ const Intro = () => {
     {
       classname: "fab fa-github",
       link: "https://github.com/shelcia",
+      title: "Github",
     },
     {
       classname: "fab fa-linkedin-in",
       link: "https://www.linkedin.com/in/shelcia/",
+      title: "LinkedIn",
     },
     {
       classname: "fab fa-medium-m",
       link: "https://medium.com/@shelcia",
+      title: "Medium",
     },
     {
       classname: "fab fa-behance",
       link: "https://www.behance.net/shelcia",
+      title: "Behance",
     },
   ]);
 
@@ -26,7 +30,6 @@ const Intro = () => {
         <div className="container pt-5">
           <div className="row">
             <div className="col-sm-6">
-              {/* <h1 className="title">Shelcia David.</h1> */}
               <h1 className="popout title">
                 <span>S</span>
                 <span>h</span>
@@ -48,7 +51,12 @@ const Intro = () => {
               <div className="w-50">
                 <div className="d-flex justify-content-between">
                   {icons.map((icon, index) => (
-                    <a href={icon.link} target="blank" key={index + 1}>
+                    <a
+                      href={icon.link}
+                      target="blank"
+                      key={index + 1}
+                      title={icon.title}
+                    >
                       <i className={icon.classname} />
                     </a>
                   ))}
@@ -61,7 +69,7 @@ const Intro = () => {
                 I love developing stuff in React and Javascript. I work on open
                 source and does freelance occasionally.
               </p>
-              <button className="button from-top">See My works!</button>
+              <button className="button mt-5">See My works!</button>
             </div>
           </div>
         </div>

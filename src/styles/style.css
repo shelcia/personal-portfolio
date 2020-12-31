@@ -39,82 +39,6 @@
   }
 }
 
-@-webkit-keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-            transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-            transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes glitch {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-5px, 5px);
-            transform: translate(-5px, 5px);
-  }
-  40% {
-    -webkit-transform: translate(-5px, -5px);
-            transform: translate(-5px, -5px);
-  }
-  60% {
-    -webkit-transform: translate(5px, 5px);
-            transform: translate(5px, 5px);
-  }
-  80% {
-    -webkit-transform: translate(5px, -5px);
-            transform: translate(5px, -5px);
-  }
-  to {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@-webkit-keyframes btn-border {
-  from {
-    background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
-    background: linear-gradient(to right, #f0f, #0ff);
-  }
-  to {
-    background: -webkit-gradient(linear, left top, right top, from(#0ff), to(#f0f));
-    background: linear-gradient(to right, #0ff, #f0f);
-  }
-}
-
-@keyframes btn-border {
-  from {
-    background: -webkit-gradient(linear, left top, right top, from(#f0f), to(#0ff));
-    background: linear-gradient(to right, #f0f, #0ff);
-  }
-  to {
-    background: -webkit-gradient(linear, left top, right top, from(#0ff), to(#f0f));
-    background: linear-gradient(to right, #0ff, #f0f);
-  }
-}
-
 .mt-12 {
   margin-top: 6rem;
 }
@@ -281,6 +205,7 @@ button {
   margin: 1px;
   font-family: "Fira Sans", sans-serif;
   position: relative;
+  outline: none;
 }
 
 button {
@@ -295,6 +220,7 @@ button:hover,
 button:focus {
   border-color: var(--hover);
   color: #e94560;
+  font-weight: 500;
 }
 
 .button:hover,
@@ -355,6 +281,12 @@ h1,
 
 body {
   color: #f9f8f8;
+  background-color: #16213e;
+}
+
+.page-fade {
+  -webkit-animation: page-fade 0.5s;
+          animation: page-fade 0.5s;
 }
 
 .navbar-dark {

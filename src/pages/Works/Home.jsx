@@ -7,10 +7,12 @@ import Works from "./Works";
 const Home = () => {
   return (
     <React.Fragment>
-      <Intro />
-      <Github />
-      <Works />
-      <Animation />
+      <div className="page-fade">
+        <Intro />
+        <Github />
+        <Works />
+        <Animation />
+      </div>
     </React.Fragment>
   );
 };

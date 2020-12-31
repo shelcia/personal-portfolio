@@ -29,6 +29,11 @@ h1,
 
 body {
   color: $secondarycolor;
+  background-color: $background2;
+}
+
+.page-fade {
+  animation: page-fade 0.5s;
 }
 
 .navbar-dark {

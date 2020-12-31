@@ -18,6 +18,7 @@ button {
   margin: 1px;
   font-family: $primaryfont;
   position: relative;
+  outline: none;
 }
 button {
   color: var(--color);
@@ -28,6 +29,7 @@ button:hover,
 button:focus {
   border-color: var(--hover);
   color: $primarycolor;
+  font-weight: 500;
 }
 
 .button:hover,
@@ -65,23 +67,6 @@ button::before {
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
-
-// button::after {
-//   bottom: 0;
-//   right: 0;
-//   border-top-color: transparent;
-//   border-left-color: transparent;
-//   border-bottom-color: $color1;
-//   border-right-color: $color1;
-// }
-// button::before {
-//   top: 0;
-//   left: 0;
-//   border-top-color: transparent;
-//   border-left-color: transparent;
-//   border-bottom-color: $color1;
-//   border-right-color: $color1;
-// }
 
 button:hover:after,
 button:hover:before {
