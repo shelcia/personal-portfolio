@@ -1,6 +1,12 @@
 $glitch1: #f0f;
 $glitch2: #0ff;
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+}
+
 @keyframes page-fade {
   from {
     transform: scale(0.9);

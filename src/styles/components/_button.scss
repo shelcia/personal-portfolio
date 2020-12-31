@@ -1,48 +1,37 @@
+$primaryfont: "Fira Sans", sans-serif;
+$primarycolor: #e94560;
 $secondarycolor: rgb(249, 248, 248);
-.btn {
+
+.button {
+  --color: rgb(249, 248, 248);
+  --hover: rgb(249, 248, 248);
+}
+
+button {
+  background: none;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  padding: 1.4rem 4.2rem;
-  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  letter-spacing: 1.1rem;
-  color: $secondarycolor;
-  user-select: none;
-  position: relative;
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    transition: inherit;
-    z-index: -1;
-  }
-  &:hover {
-    color: $secondarycolor;
-    transition-delay: 0.5s;
-    &::before {
-      transition-delay: 0s;
-      left: 0;
-      width: 100%;
-    }
-    &::after {
-      background: $secondarycolor;
-      transition-delay: 0.35s;
-      top: 0;
-      height: 100%;
-    }
-  }
-  &::after {
-    bottom: 0;
-    left: 0;
-    height: 0;
-    width: 100%;
-    background: $secondarycolor;
-  }
-  &::before {
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 0;
-    border: 1px solid $secondarycolor;
-    border-left: 0;
-    border-right: 0;
-  }
+  border: none;
+  margin: 1px;
+  font-family: $primaryfont;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+  transition: all 400ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: $primarycolor;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: inset -10.5em 0 0 0 var(--hover), inset 10.5em 0 0 0 var(--hover),
+    10px 10px 1px #00000012;
+  border: -1px solid white;
 }

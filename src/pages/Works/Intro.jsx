@@ -46,7 +46,7 @@ const Intro = () => {
                 I love developing stuff in React and Javascript. I work on open
                 source and does freelance occasionally.
               </p>
-              <button className="btn">See My works!</button>
+              <button className="button from-top">See My works!</button>
             </div>
           </div>
         </div>
