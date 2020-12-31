@@ -26,7 +26,22 @@ const Intro = () => {
         <div className="container pt-5">
           <div className="row">
             <div className="col-sm-6">
-              <h1 className="title">Shelcia David.</h1>
+              {/* <h1 className="title">Shelcia David.</h1> */}
+              <h1 className="popout title">
+                <span>S</span>
+                <span>h</span>
+                <span>e</span>
+                <span>l</span>
+                <span>c</span>
+                <span>i</span>
+                <span>a</span>
+                <br />
+                <span>D</span>
+                <span>a</span>
+                <span>v</span>
+                <span>i</span>
+                <span>d</span>
+              </h1>
               <div className="w-25 mb-5">
                 <hr className="title-hr mt-0" />
               </div>

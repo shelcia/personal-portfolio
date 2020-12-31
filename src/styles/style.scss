@@ -7,10 +7,10 @@
 
 $background1: #1a1a2e;
 $background2: #16213e;
+
 $primarycolor: #e94560;
-// $primarycolor: #efa830;
-// 0f3460
 $secondarycolor: rgb(249, 248, 248);
+$ternarycolor: #0f3460;
 
 $primaryfont: "Fira Sans", sans-serif;
 $secondaryfont: "Lobster", cursive;
@@ -57,59 +57,63 @@ hr.title-hr {
     font-family: $secondaryfont !important;
   }
 }
-.perspective-text {
-  color: white;
-  font-family: Arial;
-  font-size: 58px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-}
 
-.perspective-line {
-  height: 50px;
-  overflow: hidden;
-  position: relative;
-}
+$t: 1s;
+$d: 0.08em;
+$n: 3;
+$e: cubic-bezier(0.86, 0, 0.07, 1);
+$front: #e94560;
+$back: #0f3460;
+// .popout {
+//   font-family: $secondaryfont !important;
+//   letter-spacing: 0.4rem;
 
-p {
-  margin: 0;
-  height: 50px;
-  line-height: 50px;
-  transition: all 0.5s ease-in-out;
-}
+//   @keyframes ani {
+//     0% {
+//       transform: translate3d(0, 0, 0);
+//       text-shadow: 0em 0em 0 $back;
+//       color: $front;
+//     }
+//     30% {
+//       transform: translate3d(0, 0, 0);
+//       text-shadow: 0em 0em 0 $back;
+//       color: $front;
+//     }
+//     70% {
+//       transform: translate3d($d, -$d, 0);
+//       text-shadow: -$d $d $back;
+//       color: $front;
+//     }
+//     100% {
+//       transform: translate3d($d, -$d, 0);
+//       text-shadow: -$d $d $back;
+//       color: $front;
+//     }
+//   }
+//   span {
+//     position: relative;
+//     display: inline-block;
+//     animation: ani $t infinite alternate $e;
+//     @for $i from 1 through $n {
+//       &:nth-last-child(#{$i}n) {
+//         animation-delay: -$t * $i/$n/2;
+//       }
+//     }
+//   }
+// }
 
-.perspective-line:nth-child(odd) {
-  transform: skew(60deg, -30deg) scaleY(0.667);
-}
-
-.perspective-line:nth-child(even) {
-  transform: skew(0deg, -30deg) scaleY(1.337);
-}
-
-.perspective-text:hover p {
-  transform: translate(0, -50px);
-}
-
-.perspective-line:nth-child(1) {
-  left: 29px;
-}
-
-.perspective-line:nth-child(2) {
-  left: 58px;
-  background: #f07e6e;
-}
-
-.perspective-line:nth-child(3) {
-  left: 87px;
-  background: #84cdfa;
-}
-
-.perspective-line:nth-child(4) {
-  left: 116px;
-  background: #5ad1cd;
-}
-
-.perspective-line:nth-child(5) {
-  left: 145px;
+.popout {
+  span {
+    transform: translate3d($d, -$d, 0);
+    text-shadow: -$d $d $back;
+    color: $front;
+    // text-shadow: -0.0075em 0.0075em 0 mix(#fff, $ternarycolor, 94%),
+    //   0.005em 0.005em 0 mix(#fff, $ternarycolor, 60%),
+    //   0.01em 0.01em 0 mix(#fff, $ternarycolor, 62%),
+    //   0.015em 0.015em mix(#fff, $ternarycolor, 64%),
+    //   0.02em 0.02em 0 mix(#fff, $ternarycolor, 66%),
+    //   0.025em 0.025em 0 mix(#fff, $ternarycolor, 68%),
+    //   0.03em 0.03em 0 mix(#fff, $ternarycolor, 70%),
+    //   0.035em 0.035em 0 mix(#fff, $ternarycolor, 72%);
+  }
 }
