@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../partials/Footer";
 import Animation from "./Animations";
 import Github from "./Github";
 import Intro from "./Intro";
@@ -12,6 +13,7 @@ const Home = () => {
         <Github />
         <Works />
         <Animation />
+        <Footer />
       </div>
     </React.Fragment>
   );

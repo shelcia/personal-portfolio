@@ -23,8 +23,14 @@ $secondaryfont: "Lobster", cursive;
 
 p,
 a,
-h4 {
+h4,
+h5 {
   font-family: $primaryfont;
+}
+h6 {
+  font-family: $secondaryfont;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 h1,
@@ -70,10 +76,14 @@ hr.title-hr {
 
 h1.title {
   span {
-    transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em $ternarycolor;
+    animation: title 0.5s 0.5s 1 forwards ease-in;
     color: $primarycolor;
   }
+}
+
+h1.subtitle {
+  text-shadow: -0.04em 0.04em $ternarycolor,
+    -0.06em 0.06em rgba(255, 255, 255, 0.8);
 }
 
 .is-gapless {

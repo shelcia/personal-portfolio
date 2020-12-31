@@ -5,7 +5,7 @@ const Skills = () => {
     <React.Fragment>
       <div className="bg-1 h-80">
         <div className="container py-4" id="skills">
-          <h1>Skills</h1>
+          <h1 className="subtitle">Skills</h1>
           <div className="row">
             <div className="col-sm-12"></div>
           </div>

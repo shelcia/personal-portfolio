@@ -1,3 +1,5 @@
+$ternarycolor: #0f3460;
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 white;
@@ -13,5 +15,16 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes title {
+  from {
+    transform: translate3d(0, 0, 0);
+    text-shadow: none;
+  }
+  to {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em $ternarycolor;
   }
 }

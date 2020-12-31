@@ -39,6 +39,32 @@
   }
 }
 
+@-webkit-keyframes title {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: none;
+  }
+  to {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #0f3460;
+  }
+}
+
+@keyframes title {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    text-shadow: none;
+  }
+  to {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+            transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #0f3460;
+  }
+}
+
 .mt-12 {
   margin-top: 6rem;
 }
@@ -338,8 +364,15 @@ button:hover:before {
 
 p,
 a,
-h4 {
+h4,
+h5 {
   font-family: "Fira Sans", sans-serif;
+}
+
+h6 {
+  font-family: "Lobster", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 }
 
 h1,
@@ -391,10 +424,13 @@ hr.title-hr {
 }
 
 h1.title span {
-  -webkit-transform: translate3d(0.08em, -0.08em, 0);
-          transform: translate3d(0.08em, -0.08em, 0);
-  text-shadow: -0.08em 0.08em #0f3460;
+  -webkit-animation: title 0.5s 0.5s 1 forwards ease-in;
+          animation: title 0.5s 0.5s 1 forwards ease-in;
   color: #e94560;
+}
+
+h1.subtitle {
+  text-shadow: -0.04em 0.04em #0f3460, -0.06em 0.06em rgba(255, 255, 255, 0.8);
 }
 
 .is-gapless {

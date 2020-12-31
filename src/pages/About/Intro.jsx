@@ -16,7 +16,7 @@ const Intro = () => {
               />
             </div>
             <div className="col-sm-8 d-flex justify-content-center  flex-column">
-              <h1>About</h1>
+              <h1 className="subtitle">About</h1>
               <p className="mt-4">
                 I am a final year engineering graduate working with Design and
                 web development for past two years.

@@ -5,7 +5,7 @@ const Experience = () => {
     <React.Fragment>
       <div className="bg-2 h-80">
         <div className="container py-4" id="skills">
-          <h1>Experience</h1>
+          <h1 className="subtitle">Experience</h1>
         </div>
       </div>
     </React.Fragment>
