@@ -1,0 +1,20 @@
+$primarycolor: #e94560;
+$secondarycolor: rgb(249, 248, 248);
+$ternarycolor: #0f3460;
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: $primarycolor;
+  border-radius: 0.25rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $primarycolor;
+  width: 5px;
+  cursor: pointer;
+}
