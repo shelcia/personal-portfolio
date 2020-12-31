@@ -51,7 +51,8 @@ h1.subtitle {
   font-size: 4rem;
 }
 
-p {
+p,
+.nav-link {
   font-style: italic;
 }
 
@@ -321,10 +322,14 @@ hr.title-hr {
   font-family: "Lobster", cursive !important;
 }
 
-.popout span {
+h1.title span {
   -webkit-transform: translate3d(0.08em, -0.08em, 0);
           transform: translate3d(0.08em, -0.08em, 0);
   text-shadow: -0.08em 0.08em #0f3460;
   color: #e94560;
+}
+
+.is-gapless {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

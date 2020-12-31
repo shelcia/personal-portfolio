@@ -13,9 +13,7 @@ const Contact = () => {
         </h1>
         <div className="text-center">
           <a href="/static/media/Shelcia_Resume.7ac723c5.pdf" target="blank">
-            <button className="btn mb-5">
-              <div className="btn-text">Download PDF</div>
-            </button>
+            <button className="button mb-5">Download PDF</button>
           </a>
         </div>
 
