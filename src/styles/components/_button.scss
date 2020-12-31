@@ -30,6 +30,7 @@ button:focus {
   border-color: var(--hover);
   color: $primarycolor;
   font-weight: 500;
+  outline: none;
 }
 
 .button:hover,

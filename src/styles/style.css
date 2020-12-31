@@ -52,7 +52,8 @@ h1.subtitle {
 }
 
 p,
-.nav-link {
+.nav-link,
+small {
   font-style: italic;
 }
 
@@ -66,6 +67,10 @@ p,
 
 .bg-2 {
   background-color: #16213e !important;
+}
+
+small {
+  font-family: "Fira Sans", sans-serif;
 }
 
 .timeline {
@@ -222,6 +227,7 @@ button:focus {
   border-color: var(--hover);
   color: #e94560;
   font-weight: 500;
+  outline: none;
 }
 
 .button:hover,

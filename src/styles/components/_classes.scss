@@ -1,5 +1,6 @@
 $background1: #1a1a2e;
 $background2: #16213e;
+$primaryfont: "Fira Sans", sans-serif;
 
 .mt-12 {
   margin-top: 6rem;
@@ -14,7 +15,8 @@ h1.subtitle {
 }
 
 p,
-.nav-link {
+.nav-link,
+small {
   font-style: italic;
 }
 
@@ -28,4 +30,8 @@ p,
 
 .bg-2 {
   background-color: $background2 !important;
+}
+
+small {
+  font-family: $primaryfont;
 }

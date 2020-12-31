@@ -13,10 +13,8 @@ const Intro = () => {
             title="Happy Shelcia !!"
           />
         </div>
-        <div className="col-sm-8">
-          <h1 className="glitch" data-text="About">
-            About
-          </h1>
+        <div className="col-sm-8 d-flex justify-content-center  flex-column">
+          <h1>About</h1>
           <p className="mt-4">
             I am a final year engineering graduate working with Design and web
             development for past two years.
@@ -36,9 +34,10 @@ const Intro = () => {
             in startup(s) where she ended up creating web apps. Shelcia loves
             open source contributions and does freelance occasionally.
           </p>
-          <div>
+          <div className="mt-5 d-flex justify-content-between">
             <button className="button">My Skills</button>
             <button className="button">My Experience</button>
+            <button className="button">Others</button>
           </div>
         </div>
       </div>
