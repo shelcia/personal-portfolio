@@ -1,0 +1,29 @@
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+  .card-deck {
+    scroll-snap-align: start;
+    box-shadow: -1rem 0 3rem #000;
+    min-width: 350px;
+    min-height: 350px;
+    transition: 0.2s;
+    clear: both;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4rem !important;
+    border: none;
+  }
+  .card-deck:focus-within ~ .card-deck,
+  .card-deck:hover ~ .card-deck {
+    transform: translateX(130px);
+  }
+
+  .card-deck:hover {
+    transform: translateY(-1rem);
+  }
+
+  .card-deck:not(:first-child) {
+    margin-left: -130px;
+  }
+}

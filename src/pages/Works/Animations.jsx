@@ -1,28 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ProjectsContext } from "../../context/ProjectContext";
 
 const Animation = () => {
+  const projects = useContext(ProjectsContext);
   return (
     <React.Fragment>
-      <div className="perspective-text">
-        <div className="perspective-line">
-          <p></p>
-          <p>Reality</p>
-        </div>
-        <div className="perspective-line">
-          <p>Reality</p>
-          <p>Is Only</p>
-        </div>
-        <div className="perspective-line">
-          <p>Is Only</p>
-          <p>A Matter Of</p>
-        </div>
-        <div className="perspective-line">
-          <p>A Matter Of</p>
-          <p>Perception</p>
-        </div>
-        <div className="perspective-line">
-          <p>Perception</p>
-          <p></p>
+      <div className="bg-1 h-80">
+        <div className="container">
+          <div className="card-list">
+            {projects.map((project) => (
+              <div className="card card-deck" key={project.id}>
+                <img className="card-img-top" src={project.image} alt="" />
+                <div className="card-img-overlay">
+                  <h4 className="card-title">{project.name}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </React.Fragment>

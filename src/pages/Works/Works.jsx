@@ -6,7 +6,7 @@ const Works = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-2 h-80">
+      <div className="bg-2 h-80" id="projects">
         <div className="container pt-5">
           <div className="card-columns">
             {projects.map((project) => (

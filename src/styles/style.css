@@ -274,6 +274,48 @@ button:hover:before {
   height: 100%;
 }
 
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card-list .card-deck {
+  scroll-snap-align: start;
+  -webkit-box-shadow: -1rem 0 3rem #000;
+          box-shadow: -1rem 0 3rem #000;
+  min-width: 350px;
+  min-height: 350px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  clear: both;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4rem !important;
+  border: none;
+}
+
+.card-list .card-deck:focus-within ~ .card-deck,
+.card-list .card-deck:hover ~ .card-deck {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
+}
+
+.card-list .card-deck:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.card-list .card-deck:not(:first-child) {
+  margin-left: -130px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
 p,
 a,
 h4 {

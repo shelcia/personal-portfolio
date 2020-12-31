@@ -3,6 +3,7 @@
 @import "./components/classes";
 @import "./components/timeline";
 @import "./components/button";
+@import "./components/cards";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background1: #1a1a2e;
@@ -14,6 +15,10 @@ $ternarycolor: #0f3460;
 
 $primaryfont: "Fira Sans", sans-serif;
 $secondaryfont: "Lobster", cursive;
+
+* {
+  scroll-behavior: smooth;
+}
 
 p,
 a,
@@ -45,7 +50,6 @@ body {
   font-size: 2rem;
   cursor: pointer;
   &:hover {
-    // text-shadow: 2px 2px 0px white;
     border-radius: 50ex;
     box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
     animation: pulse 1s;
