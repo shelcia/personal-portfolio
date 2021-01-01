@@ -34,7 +34,7 @@ h6 {
 }
 
 h1,
-.navbar-brand {
+.navbar-brand > h5 {
   font-family: $secondaryfont !important;
   color: $primarycolor !important;
 }

@@ -376,7 +376,7 @@ h6 {
 }
 
 h1,
-.navbar-brand {
+.navbar-brand > h5 {
   font-family: "Lobster", cursive !important;
   color: #e94560 !important;
 }

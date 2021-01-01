@@ -31,17 +31,19 @@ const Footer = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-2 text-center container py-5">
-        <div className="d-flex justify-content-center align-items-center">
-          {link.map((link, index) => (
-            <div key={index + 1} className="px-4">
-              <a href={link.link} target="blank" title={link.title}>
-                <i className={link.classname} />
-              </a>
-            </div>
-          ))}
+      <div className="bg-1 w-100">
+        <div className="bg-1 text-center container py-5">
+          <div className="d-flex justify-content-center align-items-center">
+            {link.map((link, index) => (
+              <div key={index + 1} className="px-4">
+                <a href={link.link} target="blank" title={link.title}>
+                  <i className={link.classname} />
+                </a>
+              </div>
+            ))}
+          </div>
+          <h6 className="mt-4">Shelcia — Copyright © 2020</h6>
         </div>
-        <h6 className="mt-4">Shelcia — Copyright © 2020</h6>
       </div>
     </React.Fragment>
   );
