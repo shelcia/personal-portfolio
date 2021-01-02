@@ -1169,6 +1169,109 @@ label.toggle-item:before {
   }
 }
 
+.tag-button {
+  --offset: 3px;
+  --border-size: 1px;
+  display: block;
+  position: relative;
+  padding: 0.5em 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+          box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  -webkit-transition: background 0.8s ease;
+  transition: background 0.8s ease;
+}
+
+.tag-button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+
+.tag-button__horizontal, .tag-button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+  will-change: transform;
+}
+
+.tag-button__horizontal::before, .tag-button__vertical::before {
+  content: "";
+  position: absolute;
+  border: inherit;
+}
+
+.tag-button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+
+.tag-button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+
+.tag-button:hover .tag-button__horizontal {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.tag-button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+
+.tag-button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.tag-button:hover .tag-button__vertical {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.tag-1 {
+  color: #e55743;
+}
+
+.tag-2 {
+  color: #43e54b;
+}
+
+.tag-3 {
+  color: #43cfe5;
+}
+
+.tag-4 {
+  color: #f93976;
+}
+
+.tag-5 {
+  color: #ecf939;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -1264,6 +1367,18 @@ h1.subtitle {
   }
   h1.subtitle {
     font-size: 3rem;
+  }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .btn-ctn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .btn-ctn a {
+    margin: 0.75rem auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

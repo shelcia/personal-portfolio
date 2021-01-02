@@ -15,7 +15,7 @@ const Intro = () => {
                 title="Happy Shelcia !!"
               />
             </div>
-            <div className="col-sm-8 d-flex justify-content-center  flex-column">
+            <div className="col-sm-8 d-flex justify-content-center flex-column py-4">
               <h1 className="subtitle">About</h1>
               <p className="mt-4">
                 I am a final year engineering graduate working with Design and
@@ -37,7 +37,7 @@ const Intro = () => {
                 creating web apps. Shelcia loves open source contributions and
                 does freelance occasionally.
               </p>
-              <div className="mt-5 d-flex justify-content-between">
+              <div className="mt-5 d-flex justify-content-between flex-wrap">
                 <button className="button">My Skills</button>
                 <button className="button">My Experience</button>
                 <button className="button">Others</button>

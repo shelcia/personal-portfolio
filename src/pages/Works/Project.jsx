@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Image from "./Image";
+import TagButton from "./TagButton";
 
 const Project = ({ match }) => {
   const projectDetails = useContext(ProjectsContext);
@@ -27,10 +28,11 @@ const Project = ({ match }) => {
                 <div className="d-flex justify-content-evenly">
                   {details.length &&
                     project.techstack.map((tech, index) => (
-                      <div key={index + 1}>{tech}</div>
+                      // <div key={index + 1}>{tech}</div>
+                      <TagButton index={index + 1} key={index} tag={tech} />
                     ))}
                 </div>
-                <div className="d-flex justify-content-between mt-5">
+                <div className="d-flex justify-content-between mt-5 btn-ctn flex-wrap">
                   <a href={project.deployment} target="blank">
                     <button className="button">
                       <i className="fas fa-rocket pr-2" />

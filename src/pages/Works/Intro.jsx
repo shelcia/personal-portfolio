@@ -63,7 +63,7 @@ const Intro = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column">
+            <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column py-4">
               <h4>Full Stack Developer and Designer, based in Chennai</h4>
               <p>
                 I love developing stuff in React and Javascript. I work on open

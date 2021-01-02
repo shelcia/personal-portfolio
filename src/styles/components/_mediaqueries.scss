@@ -20,4 +20,14 @@
   h1.subtitle {
     font-size: 3rem;
   }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .btn-ctn {
+    align-items: center;
+    a {
+      margin: 0.75rem auto;
+    }
+  }
 }
