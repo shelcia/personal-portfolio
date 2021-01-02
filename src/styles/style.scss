@@ -5,6 +5,7 @@
 @import "./components/button";
 @import "./components/cards";
 @import "./components/scrollbar";
+@import "./components/toggle";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background1: #1a1a2e;
@@ -88,4 +89,17 @@ h1.subtitle {
 
 .is-gapless {
   display: none;
+}
+
+.project-card {
+  cursor: pointer;
+  background-color: $background1;
+  backface-visibility: hidden;
+  border-radius: 1rem !important;
+  .card-img-top {
+    border-radius: 1rem !important;
+  }
+  .card-img-overlay {
+    border-radius: 1rem !important;
+  }
 }

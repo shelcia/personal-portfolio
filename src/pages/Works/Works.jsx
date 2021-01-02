@@ -9,15 +9,28 @@ const Works = () => {
   return (
     <React.Fragment>
       <div className="bg-2 h-80" id="projects">
-        <div className="container pt-5">
+        <div className="container py-5">
           <h1 className="subtitle">Works</h1>
 
-          <button
-            className="button"
-            onClick={() => setView(view === "cards" ? "classic" : "cards")}
-          >
-            Toggle
-          </button>
+          <div className="d-flex justify-content-center align-items-center my-5">
+            <h4 className="px-4">Card Decks</h4>
+            <div className="toggle pancake-stack">
+              <input
+                id="pancake"
+                type="checkbox"
+                onClick={() => setView(view === "cards" ? "classic" : "cards")}
+              />
+              <label className="toggle-item" htmlFor="pancake">
+                <div className="pancakes">
+                  <div className="pancake"></div>
+                  <div className="pancake"></div>
+                  <div className="pancake"></div>
+                  <div className="butter"></div>
+                </div>
+              </label>
+            </div>
+            <h4 className="px-4">Classic List</h4>
+          </div>
 
           {view === "cards" && <Animation />}
 
@@ -25,7 +38,7 @@ const Works = () => {
             <div className="card-columns">
               {projects.map((project) => (
                 <div
-                  className="card project-card border-0 border-radius-0 shadow-lg"
+                  className="card project-card border-0 shadow-lg"
                   key={project.id}
                 >
                   <img className="card-img-top" src={project.image} alt="" />
