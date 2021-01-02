@@ -6,13 +6,10 @@ const Project = ({ match }) => {
   const projectDetails = useContext(ProjectsContext);
   const [details, setDetails] = useState([]);
 
-  // console.log(details);
-
   useEffect(() => {
     const filterResults = projectDetails.filter(
       (project) => project.id === match.params.id
     );
-    console.log(filterResults);
     setDetails(filterResults);
   }, [projectDetails, match.params.id]);
 
@@ -27,10 +24,11 @@ const Project = ({ match }) => {
                 <h4>Description</h4>
                 <p>{project.description}</p>
                 <h4 className="mt-5">Tech Stack</h4>
-                <div className="d-flex justify-content-between ">
-                  {project.techstack.map((tech, index) => (
-                    <div key={index + 1}>{tech}</div>
-                  ))}
+                <div className="d-flex justify-content-evenly">
+                  {details.length &&
+                    project.techstack.map((tech, index) => (
+                      <div key={index + 1}>{tech}</div>
+                    ))}
                 </div>
                 <div className="d-flex justify-content-between mt-5">
                   <a href={project.deployment} target="blank">
@@ -46,16 +44,9 @@ const Project = ({ match }) => {
                   </a>
                 </div>
               </div>
-              <div className="col-sm-6">
-                <div className="w-100 p-5">
-                  <Image />
-                  {/* <div className="image-container">
-                    <img
-                      src={project.image}
-                      alt=""
-                      className="img-fluid rounded-lg"
-                    />
-                  </div> */}
+              <div className="col-sm-6 d-flex justify-content-center py-5">
+                <div className="w-100">
+                  <Image image={project.imageURL} />
                 </div>
               </div>
             </div>

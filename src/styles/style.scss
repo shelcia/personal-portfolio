@@ -92,15 +92,4 @@ h1.subtitle {
   display: none;
 }
 
-// .image-container::before {
-//   content: "";
-//   position: absolute;
-//   height: 80%;
-//   width: 80%;
-//   z-index: -1;
-//   top: 15px;
-//   left: 0;
-//   background-size: cover;
-//   background-image: url("../assets/project/AUV.png");
-//   filter: blur(100px);
-// }
+@import "./components/mediaqueries";
