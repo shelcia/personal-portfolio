@@ -91,15 +91,27 @@ h1.subtitle {
   display: none;
 }
 
-.project-card {
-  cursor: pointer;
-  background-color: $background1;
+.card-columns {
   backface-visibility: hidden;
-  border-radius: 1rem !important;
-  .card-img-top {
-    border-radius: 1rem !important;
+  &:hover {
+    .project-card:not(:hover) {
+      filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
+    }
   }
-  .card-img-overlay {
-    border-radius: 1rem !important;
+  .project-card {
+    cursor: pointer;
+    background-color: $background1;
+    backface-visibility: hidden;
+    border-radius: 0.75rem !important;
+    transition: all 0.3s ease-in;
+    .card-img-top {
+      border-radius: 0.75rem !important;
+    }
+    .card-img-overlay {
+      border-radius: 0.75rem !important;
+    }
+    &:hover {
+      transform: scale(1.05) translateZ(0);
+    }
   }
 }

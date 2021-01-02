@@ -16,14 +16,14 @@
   }
   .card-deck:focus-within ~ .card-deck,
   .card-deck:hover ~ .card-deck {
-    transform: translateX(130px);
+    transform: translateX(140px);
   }
 
   .card-deck:hover {
-    transform: translateY(-1rem);
+    transform: translateY(-1.4rem);
   }
 
   .card-deck:not(:first-child) {
-    margin-left: -130px;
+    margin-left: -140px;
   }
 }
