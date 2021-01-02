@@ -319,7 +319,7 @@ button:hover:before {
   clear: both;
   position: relative;
   cursor: pointer;
-  border-radius: 4rem !important;
+  background-color: #1a1a2e;
   border: none;
 }
 
@@ -336,6 +336,42 @@ button:hover:before {
 
 .card-list .card-deck:not(:first-child) {
   margin-left: -140px;
+}
+
+.card-columns {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-filter 200ms ease-in;
+  transition: -webkit-filter 200ms ease-in;
+  transition: filter 200ms ease-in;
+  transition: filter 200ms ease-in, -webkit-filter 200ms ease-in;
+}
+
+.card-columns:hover .project-card:not(:hover) {
+  -webkit-filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
+          filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
+}
+
+.card-columns .project-card {
+  cursor: pointer;
+  background-color: #1a1a2e;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 0.75rem !important;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.card-columns .project-card .card-img-top,
+.card-columns .project-card .card-img-overlay {
+  border-radius: 0.75rem !important;
+}
+
+.card-columns .project-card:hover {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
 }
 
 ::-webkit-scrollbar {
@@ -499,6 +535,1759 @@ label.toggle-item:before {
           transition-delay: 0.6s;
 }
 
+.reflection-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.reflection-container:before {
+  content: "";
+  color: #fff;
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  font-size: 6vh;
+  -webkit-transform: translateX(-100%) translateY(-50%);
+          transform: translateX(-100%) translateY(-50%);
+}
+
+.reflection-container .reflection-content {
+  height: 80vh;
+  width: 80vh;
+  background: #000 url(https://unsplash.it/800/800/?random);
+  background-size: cover;
+  background-position: center;
+  -webkit-transform: rotateX(0) rotateY(0);
+          transform: rotateX(0) rotateY(0);
+  pointer-events: none;
+  -webkit-transition: 100ms linear transform;
+  transition: 100ms linear transform;
+  overflow: hidden;
+}
+
+.reflection-container .reflection-content:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+  top: -50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.reflection-container .reflection-grid-cell {
+  position: absolute;
+  z-index: 1;
+  width: 10%;
+  height: 10%;
+}
+
+.reflection-container .reflection-grid-cell-1 {
+  top: 0%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-1:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(-20deg);
+          transform: rotateX(20deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-1:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-2 {
+  top: 0%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-2:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(-15deg);
+          transform: rotateX(20deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-2:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-3 {
+  top: 0%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-3:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(-10deg);
+          transform: rotateX(20deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-3:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-4 {
+  top: 0%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-4:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(-5deg);
+          transform: rotateX(20deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-4:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-5 {
+  top: 0%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-5:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(0deg);
+          transform: rotateX(20deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-5:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-6 {
+  top: 0%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-6:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(5deg);
+          transform: rotateX(20deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-6:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-7 {
+  top: 0%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-7:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(10deg);
+          transform: rotateX(20deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-7:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-8 {
+  top: 0%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-8:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(15deg);
+          transform: rotateX(20deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-8:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-9 {
+  top: 0%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-9:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(20deg);
+          transform: rotateX(20deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-9:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-10 {
+  top: 0%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-10:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(20deg) rotateY(25deg);
+          transform: rotateX(20deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-10:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.reflection-container .reflection-grid-cell-11 {
+  top: 10%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-11:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(-20deg);
+          transform: rotateX(15deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-11:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-12 {
+  top: 10%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-12:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(-15deg);
+          transform: rotateX(15deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-12:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-13 {
+  top: 10%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-13:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(-10deg);
+          transform: rotateX(15deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-13:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-14 {
+  top: 10%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-14:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(-5deg);
+          transform: rotateX(15deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-14:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-15 {
+  top: 10%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-15:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(0deg);
+          transform: rotateX(15deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-15:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-16 {
+  top: 10%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-16:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(5deg);
+          transform: rotateX(15deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-16:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-17 {
+  top: 10%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-17:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(10deg);
+          transform: rotateX(15deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-17:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-18 {
+  top: 10%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-18:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(15deg);
+          transform: rotateX(15deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-18:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-19 {
+  top: 10%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-19:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(20deg);
+          transform: rotateX(15deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-19:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-20 {
+  top: 10%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-20:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(15deg) rotateY(25deg);
+          transform: rotateX(15deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-20:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+
+.reflection-container .reflection-grid-cell-21 {
+  top: 20%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-21:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(-20deg);
+          transform: rotateX(10deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-21:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-22 {
+  top: 20%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-22:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(-15deg);
+          transform: rotateX(10deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-22:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-23 {
+  top: 20%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-23:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(-10deg);
+          transform: rotateX(10deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-23:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-24 {
+  top: 20%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-24:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(-5deg);
+          transform: rotateX(10deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-24:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-25 {
+  top: 20%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-25:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(0deg);
+          transform: rotateX(10deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-25:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-26 {
+  top: 20%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-26:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(5deg);
+          transform: rotateX(10deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-26:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-27 {
+  top: 20%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-27:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(10deg);
+          transform: rotateX(10deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-27:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-28 {
+  top: 20%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-28:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(15deg);
+          transform: rotateX(10deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-28:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-29 {
+  top: 20%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-29:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(20deg);
+          transform: rotateX(10deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-29:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-30 {
+  top: 20%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-30:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(10deg) rotateY(25deg);
+          transform: rotateX(10deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-30:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.reflection-container .reflection-grid-cell-31 {
+  top: 30%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-31:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(-20deg);
+          transform: rotateX(5deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-31:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-32 {
+  top: 30%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-32:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(-15deg);
+          transform: rotateX(5deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-32:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-33 {
+  top: 30%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-33:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(-10deg);
+          transform: rotateX(5deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-33:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-34 {
+  top: 30%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-34:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(-5deg);
+          transform: rotateX(5deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-34:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-35 {
+  top: 30%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-35:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(0deg);
+          transform: rotateX(5deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-35:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-36 {
+  top: 30%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-36:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(5deg);
+          transform: rotateX(5deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-36:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-37 {
+  top: 30%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-37:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(10deg);
+          transform: rotateX(5deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-37:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-38 {
+  top: 30%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-38:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(15deg);
+          transform: rotateX(5deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-38:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-39 {
+  top: 30%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-39:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(20deg);
+          transform: rotateX(5deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-39:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-40 {
+  top: 30%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-40:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(5deg) rotateY(25deg);
+          transform: rotateX(5deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-40:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.reflection-container .reflection-grid-cell-41 {
+  top: 40%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-41:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(-20deg);
+          transform: rotateX(0deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-41:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-42 {
+  top: 40%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-42:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(-15deg);
+          transform: rotateX(0deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-42:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-43 {
+  top: 40%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-43:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(-10deg);
+          transform: rotateX(0deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-43:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-44 {
+  top: 40%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-44:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(-5deg);
+          transform: rotateX(0deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-44:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-45 {
+  top: 40%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-45:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+          transform: rotateX(0deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-45:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-46 {
+  top: 40%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-46:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(5deg);
+          transform: rotateX(0deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-46:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-47 {
+  top: 40%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-47:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(10deg);
+          transform: rotateX(0deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-47:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-48 {
+  top: 40%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-48:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(15deg);
+          transform: rotateX(0deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-48:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-49 {
+  top: 40%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-49:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(20deg);
+          transform: rotateX(0deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-49:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-50 {
+  top: 40%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-50:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(0deg) rotateY(25deg);
+          transform: rotateX(0deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-50:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.reflection-container .reflection-grid-cell-51 {
+  top: 50%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-51:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(-20deg);
+          transform: rotateX(-5deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-51:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-52 {
+  top: 50%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-52:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(-15deg);
+          transform: rotateX(-5deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-52:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-53 {
+  top: 50%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-53:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(-10deg);
+          transform: rotateX(-5deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-53:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-54 {
+  top: 50%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-54:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(-5deg);
+          transform: rotateX(-5deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-54:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-55 {
+  top: 50%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-55:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(0deg);
+          transform: rotateX(-5deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-55:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-56 {
+  top: 50%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-56:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(5deg);
+          transform: rotateX(-5deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-56:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-57 {
+  top: 50%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-57:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(10deg);
+          transform: rotateX(-5deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-57:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-58 {
+  top: 50%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-58:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(15deg);
+          transform: rotateX(-5deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-58:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-59 {
+  top: 50%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-59:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(20deg);
+          transform: rotateX(-5deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-59:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-60 {
+  top: 50%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-60:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-5deg) rotateY(25deg);
+          transform: rotateX(-5deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-60:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.reflection-container .reflection-grid-cell-61 {
+  top: 60%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-61:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(-20deg);
+          transform: rotateX(-10deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-61:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-62 {
+  top: 60%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-62:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(-15deg);
+          transform: rotateX(-10deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-62:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-63 {
+  top: 60%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-63:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(-10deg);
+          transform: rotateX(-10deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-63:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-64 {
+  top: 60%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-64:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(-5deg);
+          transform: rotateX(-10deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-64:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-65 {
+  top: 60%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-65:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(0deg);
+          transform: rotateX(-10deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-65:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-66 {
+  top: 60%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-66:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(5deg);
+          transform: rotateX(-10deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-66:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-67 {
+  top: 60%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-67:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(10deg);
+          transform: rotateX(-10deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-67:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-68 {
+  top: 60%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-68:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(15deg);
+          transform: rotateX(-10deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-68:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-69 {
+  top: 60%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-69:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(20deg);
+          transform: rotateX(-10deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-69:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-70 {
+  top: 60%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-70:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-10deg) rotateY(25deg);
+          transform: rotateX(-10deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-70:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.reflection-container .reflection-grid-cell-71 {
+  top: 70%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-71:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(-20deg);
+          transform: rotateX(-15deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-71:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-72 {
+  top: 70%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-72:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(-15deg);
+          transform: rotateX(-15deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-72:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-73 {
+  top: 70%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-73:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(-10deg);
+          transform: rotateX(-15deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-73:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-74 {
+  top: 70%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-74:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(-5deg);
+          transform: rotateX(-15deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-74:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-75 {
+  top: 70%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-75:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(0deg);
+          transform: rotateX(-15deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-75:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-76 {
+  top: 70%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-76:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(5deg);
+          transform: rotateX(-15deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-76:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-77 {
+  top: 70%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-77:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(10deg);
+          transform: rotateX(-15deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-77:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-78 {
+  top: 70%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-78:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(15deg);
+          transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-78:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-79 {
+  top: 70%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-79:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(20deg);
+          transform: rotateX(-15deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-79:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-80 {
+  top: 70%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-80:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-15deg) rotateY(25deg);
+          transform: rotateX(-15deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-80:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.reflection-container .reflection-grid-cell-81 {
+  top: 80%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-81:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(-20deg);
+          transform: rotateX(-20deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-81:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-82 {
+  top: 80%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-82:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(-15deg);
+          transform: rotateX(-20deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-82:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-83 {
+  top: 80%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-83:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(-10deg);
+          transform: rotateX(-20deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-83:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-84 {
+  top: 80%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-84:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(-5deg);
+          transform: rotateX(-20deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-84:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-85 {
+  top: 80%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-85:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(0deg);
+          transform: rotateX(-20deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-85:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-86 {
+  top: 80%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-86:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(5deg);
+          transform: rotateX(-20deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-86:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-87 {
+  top: 80%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-87:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(10deg);
+          transform: rotateX(-20deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-87:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-88 {
+  top: 80%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-88:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(15deg);
+          transform: rotateX(-20deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-88:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-89 {
+  top: 80%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-89:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(20deg);
+          transform: rotateX(-20deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-89:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-90 {
+  top: 80%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-90:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-20deg) rotateY(25deg);
+          transform: rotateX(-20deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-90:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+}
+
+.reflection-container .reflection-grid-cell-91 {
+  top: 90%;
+  left: 0%;
+}
+
+.reflection-container .reflection-grid-cell-91:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(-20deg);
+          transform: rotateX(-25deg) rotateY(-20deg);
+}
+
+.reflection-container .reflection-grid-cell-91:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-92 {
+  top: 90%;
+  left: 10%;
+}
+
+.reflection-container .reflection-grid-cell-92:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(-15deg);
+          transform: rotateX(-25deg) rotateY(-15deg);
+}
+
+.reflection-container .reflection-grid-cell-92:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-93 {
+  top: 90%;
+  left: 20%;
+}
+
+.reflection-container .reflection-grid-cell-93:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(-10deg);
+          transform: rotateX(-25deg) rotateY(-10deg);
+}
+
+.reflection-container .reflection-grid-cell-93:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-94 {
+  top: 90%;
+  left: 30%;
+}
+
+.reflection-container .reflection-grid-cell-94:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(-5deg);
+          transform: rotateX(-25deg) rotateY(-5deg);
+}
+
+.reflection-container .reflection-grid-cell-94:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-95 {
+  top: 90%;
+  left: 40%;
+}
+
+.reflection-container .reflection-grid-cell-95:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(0deg);
+          transform: rotateX(-25deg) rotateY(0deg);
+}
+
+.reflection-container .reflection-grid-cell-95:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-96 {
+  top: 90%;
+  left: 50%;
+}
+
+.reflection-container .reflection-grid-cell-96:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(5deg);
+          transform: rotateX(-25deg) rotateY(5deg);
+}
+
+.reflection-container .reflection-grid-cell-96:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-97 {
+  top: 90%;
+  left: 60%;
+}
+
+.reflection-container .reflection-grid-cell-97:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(10deg);
+          transform: rotateX(-25deg) rotateY(10deg);
+}
+
+.reflection-container .reflection-grid-cell-97:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-98 {
+  top: 90%;
+  left: 70%;
+}
+
+.reflection-container .reflection-grid-cell-98:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(15deg);
+          transform: rotateX(-25deg) rotateY(15deg);
+}
+
+.reflection-container .reflection-grid-cell-98:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-99 {
+  top: 90%;
+  left: 80%;
+}
+
+.reflection-container .reflection-grid-cell-99:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(20deg);
+          transform: rotateX(-25deg) rotateY(20deg);
+}
+
+.reflection-container .reflection-grid-cell-99:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.reflection-container .reflection-grid-cell-100 {
+  top: 90%;
+  left: 90%;
+}
+
+.reflection-container .reflection-grid-cell-100:hover
+~ .reflection-content {
+  -webkit-transform: rotateX(-25deg) rotateY(25deg);
+          transform: rotateX(-25deg) rotateY(25deg);
+}
+
+.reflection-container .reflection-grid-cell-100:hover
+~ .reflection-content:before {
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -572,38 +2361,5 @@ h1.subtitle {
 
 .is-gapless {
   display: none;
-}
-
-.card-columns {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.card-columns:hover .project-card:not(:hover) {
-  -webkit-filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
-          filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
-}
-
-.card-columns .project-card {
-  cursor: pointer;
-  background-color: #1a1a2e;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 0.75rem !important;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.card-columns .project-card .card-img-top {
-  border-radius: 0.75rem !important;
-}
-
-.card-columns .project-card .card-img-overlay {
-  border-radius: 0.75rem !important;
-}
-
-.card-columns .project-card:hover {
-  -webkit-transform: scale(1.05) translateZ(0);
-          transform: scale(1.05) translateZ(0);
 }
 /*# sourceMappingURL=style.css.map */

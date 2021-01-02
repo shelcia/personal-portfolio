@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Animation from "./Works2.0";
 
@@ -37,15 +38,16 @@ const Works = () => {
           {view === "classic" && (
             <div className="card-columns">
               {projects.map((project) => (
-                <div
-                  className="card project-card border-0 shadow-lg"
+                <Link
+                  className="card project-card border-0 shadow-lg text-light"
                   key={project.id}
+                  to={`/project/${project.id}`}
                 >
                   <img className="card-img-top" src={project.image} alt="" />
                   <div className="card-img-overlay">
                     <h4 className="card-title">{project.name}</h4>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           )}

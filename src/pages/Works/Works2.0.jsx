@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 
 const Animation = () => {
@@ -7,12 +8,16 @@ const Animation = () => {
     <React.Fragment>
       <div className="card-list">
         {projects.map((project) => (
-          <div className="card card-deck" key={project.id}>
+          <Link
+            className="card card-deck text-light"
+            key={project.id}
+            to={`/project/${project.id}`}
+          >
             <img className="card-img-top" src={project.image} alt="" />
             <div className="card-img-overlay">
               <h4 className="card-title">{project.name}</h4>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </React.Fragment>

@@ -6,6 +6,7 @@
 @import "./components/cards";
 @import "./components/scrollbar";
 @import "./components/toggle";
+@import "./components/imageproject";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background1: #1a1a2e;
@@ -91,27 +92,15 @@ h1.subtitle {
   display: none;
 }
 
-.card-columns {
-  backface-visibility: hidden;
-  &:hover {
-    .project-card:not(:hover) {
-      filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
-    }
-  }
-  .project-card {
-    cursor: pointer;
-    background-color: $background1;
-    backface-visibility: hidden;
-    border-radius: 0.75rem !important;
-    transition: all 0.3s ease-in;
-    .card-img-top {
-      border-radius: 0.75rem !important;
-    }
-    .card-img-overlay {
-      border-radius: 0.75rem !important;
-    }
-    &:hover {
-      transform: scale(1.05) translateZ(0);
-    }
-  }
-}
+// .image-container::before {
+//   content: "";
+//   position: absolute;
+//   height: 80%;
+//   width: 80%;
+//   z-index: -1;
+//   top: 15px;
+//   left: 0;
+//   background-size: cover;
+//   background-image: url("../assets/project/AUV.png");
+//   filter: blur(100px);
+// }

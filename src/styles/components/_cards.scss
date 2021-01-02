@@ -1,3 +1,5 @@
+$background1: #1a1a2e;
+
 .card-list {
   display: flex;
   padding: 3rem;
@@ -11,7 +13,7 @@
     clear: both;
     position: relative;
     cursor: pointer;
-    border-radius: 4rem !important;
+    background-color: $background1;
     border: none;
   }
   .card-deck:focus-within ~ .card-deck,
@@ -25,5 +27,29 @@
 
   .card-deck:not(:first-child) {
     margin-left: -140px;
+  }
+}
+
+.card-columns {
+  backface-visibility: hidden;
+  transition: filter 200ms ease-in;
+  &:hover {
+    .project-card:not(:hover) {
+      filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
+    }
+  }
+  .project-card {
+    cursor: pointer;
+    background-color: $background1;
+    backface-visibility: hidden;
+    border-radius: 0.75rem !important;
+    transition: transform 200ms ease-in;
+    .card-img-top,
+    .card-img-overlay {
+      border-radius: 0.75rem !important;
+    }
+    &:hover {
+      transform: scale(1.05) translateZ(0);
+    }
   }
 }
