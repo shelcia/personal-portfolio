@@ -1,16 +1,17 @@
+$primaryfont: "Fira Sans", sans-serif;
+
 .tag-button {
   --offset: 3px;
   --border-size: 1px;
-  display: block;
-  position: relative;
   padding: 0.5em 1em;
-  appearance: none;
   border: 0;
   background: transparent;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   outline: none;
+  font-family: $primaryfont;
   margin-right: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
@@ -73,18 +74,35 @@
   }
 }
 
-.tag-1 {
+.tag-1,
+.tag-1:hover {
   color: #e55743;
 }
-.tag-2 {
+.tag-2,
+.tag-2:hover {
   color: #43e54b;
 }
-.tag-3 {
+.tag-3,
+.tag-3:hover {
   color: #43cfe5;
 }
-.tag-4 {
+.tag-4,
+.tag-4:hover {
   color: #f93976;
 }
-.tag-5 {
+.tag-5,
+.tag-5:hover {
   color: #ecf939;
+}
+.tag-6,
+.tag-6:hover {
+  color: #6108fa;
+}
+.tag-7,
+.tag-7:hover {
+  color: #0830fa;
+}
+.tag-8,
+.tag-8:hover {
+  color: #6dfa08;
 }

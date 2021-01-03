@@ -1172,18 +1172,15 @@ label.toggle-item:before {
 .tag-button {
   --offset: 3px;
   --border-size: 1px;
-  display: block;
-  position: relative;
   padding: 0.5em 1em;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   border: 0;
   background: transparent;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   outline: none;
+  font-family: "Fira Sans", sans-serif;
   margin-right: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
   font-weight: bold;
   border-radius: 0;
@@ -1252,24 +1249,44 @@ label.toggle-item:before {
           transform: scaleY(0);
 }
 
-.tag-1 {
+.tag-1,
+.tag-1:hover {
   color: #e55743;
 }
 
-.tag-2 {
+.tag-2,
+.tag-2:hover {
   color: #43e54b;
 }
 
-.tag-3 {
+.tag-3,
+.tag-3:hover {
   color: #43cfe5;
 }
 
-.tag-4 {
+.tag-4,
+.tag-4:hover {
   color: #f93976;
 }
 
-.tag-5 {
+.tag-5,
+.tag-5:hover {
   color: #ecf939;
+}
+
+.tag-6,
+.tag-6:hover {
+  color: #6108fa;
+}
+
+.tag-7,
+.tag-7:hover {
+  color: #0830fa;
+}
+
+.tag-8,
+.tag-8:hover {
+  color: #6dfa08;
 }
 
 * {
@@ -1345,6 +1362,44 @@ h1.subtitle {
 
 .is-gapless {
   display: none;
+}
+
+h4.subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  text-align: center;
+  font-size: 5vw;
+  background: linear-gradient(-45deg, #4bc0c8 25%, #feac5e 25%, #feac5e 50%, #4bc0c8 50%, #4bc0c8 75%, #feac5e 75%, #feac5e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 20px 20px;
+  background-position: 0 0;
+  -webkit-animation: stripes 1s linear infinite;
+          animation: stripes 1s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 20px 0, 20px 0, 20px 0;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 20px 0, 20px 0, 20px 0;
+  }
 }
 
 @media (max-width: 767px) {

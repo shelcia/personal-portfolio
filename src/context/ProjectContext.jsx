@@ -19,7 +19,7 @@ export const ProjectsProvider = (props) => {
       name: "AUV-IIITDM",
       image: AUV,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010664023851018/AUV.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795039511368171540/AUV.png",
       description:
         "I was commissioned to build a website for IIITDM Kancheepuram's AUV Society. AUV society consists of an intellectual interdisciplinary team of undergraduate engineers working to build an autonomous underwater vehicle for various underwater robotics competitions. I was the sole developer and designer until completion. I had to showcase their achievements, accolades, blogs and lure more sponsors. I have also created an API to send form responses through the mail.",
       techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],
@@ -32,7 +32,7 @@ export const ProjectsProvider = (props) => {
       name: "Customer Relations Management",
       image: CRM,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010666737303582/CRM.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795040076366741564/CRM.png",
       description:
         "This is my first attempt in building an open-source project focusing on CRM. Customer Relationship Management is one of many different approaches that allow a company to manage and analyse its interactions with its past, current and potential customers.",
       techstack: ["React", "MongoDB", "NodeJS", "ExpressJs", "Bootstrap"],
@@ -57,7 +57,7 @@ export const ProjectsProvider = (props) => {
       name: "Samgatha",
       image: Samgatha,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010666737303582/Samgatha.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795036237948911646/Samgatha.png",
       description:
         "I was part of the web development team (consisting of two members) which built the website for college fest of IIITDM. We used Bootstrap for frontend and NodeJS for the backend. The design is based on the theme DREAM. We used backend to fetch event data from the database.",
       deploy: true,
@@ -70,7 +70,7 @@ export const ProjectsProvider = (props) => {
       name: "Web Chat App",
       image: ChatApp,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010666737303582/ChatApp.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795035633214947359/Whatsapp.png",
       description:
         "As a part of hobby project I tried recreating Whatsapp web using socket.io. It has features like mulitple chat rooms , emoji enabled input box (and emoji popup keyboard) and no signup requirements.",
       techstack: ["React", "NodeJS", "Socket.io", "Bootstrap"],
@@ -83,7 +83,7 @@ export const ProjectsProvider = (props) => {
       name: "Google Docs Clone",
       image: DocsClone,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010666737303582/DocsClone.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795037102919778324/DocsClone.png",
       description:
         "As a part of hobby project I tried recreating GoogleDocs using socket.io. It has features like live editing , formatting and automatic save as of now. I am still working on it's other features.",
       techstack: ["React", "NodeJS", "Socket.io", "Bootstrap", "Slate.js"],
@@ -96,7 +96,7 @@ export const ProjectsProvider = (props) => {
       name: "Social Gram",
       image: Socialgram,
       imageURL:
-        "https://cdn.discordapp.com/attachments/795010536365752320/795010666737303582/Socialgram.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/795040698654261268/Socialgram.png",
       description:
         "As part of my hobby projects, I challenged myself with creating a Facebook clone, which allows the user to create a post and like them. I will be adding more features in future.",
       techstack: ["React", "MongoDB", "NodeJS", "ExpressJS", "Redux"],
@@ -136,7 +136,7 @@ export const ProjectsProvider = (props) => {
         "https://cdn.discordapp.com/attachments/795010536365752320/795016627066372126/SlidingPuzzle.png",
       description:
         "A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along certain routes (usually on a board) to establish a certain end-configuration. The pieces to be moved may consist of simple shapes, or they may be imprinted with colours, patterns, sections of a larger picture (like a jigsaw puzzle), numbers, or letters.",
-      techstack: "Vanilla JS, HTML/CSS",
+      techstack: ["Vanilla JS", "HTML", "CSS"],
       deploy: true,
       deployment: "https://shelcia.github.io/sliding-puzzle/",
       code: "https://github.com/shelcia/sliding-puzzle",
