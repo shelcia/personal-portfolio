@@ -419,6 +419,7 @@ label.toggle-item {
   transition: all 0.3s ease;
   -webkit-transform-origin: 20% center;
           transform-origin: 20% center;
+  margin-bottom: 0%;
   cursor: pointer;
 }
 
@@ -1289,6 +1290,335 @@ label.toggle-item:before {
   color: #6dfa08;
 }
 
+.sign {
+  letter-spacing: 1.8;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  font-size: 2em;
+  color: #ffe6f1;
+  text-shadow: 0 0 0.4rem #ffe6f1, 0 0 1.3rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
+  -webkit-animation: shine 2s forwards, flicker 3s infinite;
+          animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6f1;
+    text-shadow: 0 0 0.6rem #ffe6f1, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6f1;
+    text-shadow: 0 0 0.6rem #ffe6f1, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  -webkit-animation: shine 2s forwards, blink 3s 2s infinite;
+          animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  -webkit-animation: shine 2s forwards, blink 10s 1s infinite;
+          animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6f1;
+    text-shadow: 0 0 0.6rem #ffe6f1, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
+  }
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6f1;
+    text-shadow: 0 0 0.6rem #ffe6f1, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
+  }
+}
+
+@-webkit-keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.9;
+  }
+  6% {
+    opacity: 0.85;
+  }
+  8% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  11% {
+    opacity: 0.922;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  14% {
+    opacity: 0.95;
+  }
+  16% {
+    opacity: 0.98;
+  }
+  17% {
+    opacity: 0.9;
+  }
+  19% {
+    opacity: 0.93;
+  }
+  20% {
+    opacity: 0.99;
+  }
+  24% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0.94;
+  }
+  28% {
+    opacity: 0.98;
+  }
+  37% {
+    opacity: 0.93;
+  }
+  38% {
+    opacity: 0.5;
+  }
+  39% {
+    opacity: 0.96;
+  }
+  42% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0.97;
+  }
+  46% {
+    opacity: 0.94;
+  }
+  56% {
+    opacity: 0.9;
+  }
+  58% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.99;
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  72% {
+    opacity: 0.95;
+  }
+  93% {
+    opacity: 0.93;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  97% {
+    opacity: 0.93;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.9;
+  }
+  6% {
+    opacity: 0.85;
+  }
+  8% {
+    opacity: 0.95;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  11% {
+    opacity: 0.922;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  14% {
+    opacity: 0.95;
+  }
+  16% {
+    opacity: 0.98;
+  }
+  17% {
+    opacity: 0.9;
+  }
+  19% {
+    opacity: 0.93;
+  }
+  20% {
+    opacity: 0.99;
+  }
+  24% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0.94;
+  }
+  28% {
+    opacity: 0.98;
+  }
+  37% {
+    opacity: 0.93;
+  }
+  38% {
+    opacity: 0.5;
+  }
+  39% {
+    opacity: 0.96;
+  }
+  42% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0.97;
+  }
+  46% {
+    opacity: 0.94;
+  }
+  56% {
+    opacity: 0.9;
+  }
+  58% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.99;
+  }
+  68% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  72% {
+    opacity: 0.95;
+  }
+  93% {
+    opacity: 0.93;
+  }
+  95% {
+    opacity: 0.95;
+  }
+  97% {
+    opacity: 0.93;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1.error {
+  display: inline-block;
+  color: white !important;
+  font-family: "Lobster", cursive !important;
+  text-shadow: 0.03em 0.03em 0 #1a1a2e !important;
+  position: relative;
+}
+
+h1.error::after {
+  content: attr(data-shadow);
+  position: absolute;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(45deg, transparent 45%, #ebe9e0 45%, #ebe9e0 55%, transparent 0);
+  background-size: 0.05em 0.05em;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shad-anim 15s linear infinite;
+          animation: shad-anim 15s linear infinite;
+}
+
+@-webkit-keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+h1.error {
+  font-size: 12em !important;
+}
+
+h1.error::after {
+  left: 0.06em;
+}
+
+p.error {
+  color: white !important;
+  font-family: "Lobster", cursive !important;
+  text-shadow: -0.04em 0.04em #0f3460, -0.06em 0.06em #e94560;
+  font-size: 3rem;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -1362,44 +1692,6 @@ h1.subtitle {
 
 .is-gapless {
   display: none;
-}
-
-h4.subheading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-  font-weight: normal;
-  width: 100%;
-  text-align: center;
-  font-size: 5vw;
-  background: linear-gradient(-45deg, #4bc0c8 25%, #feac5e 25%, #feac5e 50%, #4bc0c8 50%, #4bc0c8 75%, #feac5e 75%, #feac5e);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 20px 20px;
-  background-position: 0 0;
-  -webkit-animation: stripes 1s linear infinite;
-          animation: stripes 1s linear infinite;
-}
-
-@-webkit-keyframes stripes {
-  100% {
-    background-position: 20px 0, 20px 0, 20px 0;
-  }
-}
-
-@keyframes stripes {
-  100% {
-    background-position: 20px 0, 20px 0, 20px 0;
-  }
 }
 
 @media (max-width: 767px) {

@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Works/Home";
 import Project from "./pages/Works/Project";
+import ErrorPage from "./partials/404Page";
 import TopBar from "./partials/Topbar";
 import "./styles/style.css";
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/project/:id" component={Project} />
+            <Route component={ErrorPage} />
           </Switch>
         </BrowserRouter>
       </ProjectsProvider>

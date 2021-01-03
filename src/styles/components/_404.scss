@@ -1,0 +1,53 @@
+$background1: #1a1a2e;
+$secondaryfont: "Lobster", cursive;
+
+$primarycolor: #e94560;
+$secondarycolor: rgb(249, 248, 248);
+$ternarycolor: #0f3460;
+
+h1.error {
+  display: inline-block;
+  color: white !important;
+  font-family: $secondaryfont !important;
+  text-shadow: 0.03em 0.03em 0 $background1 !important;
+  position: relative;
+}
+h1.error::after {
+  content: attr(data-shadow);
+  position: absolute;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+h1.error {
+  font-size: 12em !important;
+  &::after {
+    left: 0.06em;
+  }
+}
+p.error {
+  color: white !important;
+  font-family: $secondaryfont !important;
+  text-shadow: -0.04em 0.04em $ternarycolor, -0.06em 0.06em $primarycolor;
+  font-size: 3rem;
+}

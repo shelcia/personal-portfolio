@@ -22,10 +22,10 @@ const Project = ({ match }) => {
             <h1 className="subtitle"> {project.name} </h1>
             <div className="row">
               <div className="col-sm-6 d-flex justify-content-center flex-column">
-                <h4 className="subheading">Description</h4>
-                <p>{project.description}</p>
-                <h4 className="mt-5 subheading">Tech Stack</h4>
-                <div className="d-flex justify-content-evenly flex-wrap">
+                <h4 style={{ fontStyle: "italic" }}>Description</h4>
+                <p className="mt-3">{project.description}</p>
+                <h4 style={{ fontStyle: "italic" }}>Tech Stack</h4>
+                <div className="d-flex justify-content-evenly flex-wrap mt-3">
                   {details.length &&
                     project.techstack.map((tech, index) => (
                       <TagButton index={index + 1} key={index} tag={tech} />

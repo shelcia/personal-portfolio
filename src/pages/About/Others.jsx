@@ -39,7 +39,7 @@ const Others = () => {
                       />
                     </div>
                     <div className="col-sm-8">
-                      <h4>{article.title}</h4>
+                      <h4 className="mb-4">{article.title}</h4>
                       {article.categories.map((category, index) => (
                         <TagButton
                           index={index + 1}

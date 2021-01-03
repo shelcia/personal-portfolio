@@ -21,6 +21,7 @@ label.toggle-item {
   position: relative;
   transition: all 0.3s ease;
   transform-origin: 20% center;
+  margin-bottom: 0%;
   cursor: pointer;
   &:before {
     display: block;

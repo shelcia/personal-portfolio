@@ -8,6 +8,8 @@
 @import "./components/toggle";
 @import "./components/imageproject";
 @import "./components/tagbutton";
+@import "./components/glowtext";
+@import "./components/404";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 $background1: #1a1a2e;
@@ -16,6 +18,11 @@ $background2: #16213e;
 $primarycolor: #e94560;
 $secondarycolor: rgb(249, 248, 248);
 $ternarycolor: #0f3460;
+
+$color1: #ffe6f1;
+$color2: #ff65bd;
+$color3: #e94560;
+$color3: #6b1839;
 
 $primaryfont: "Fira Sans", sans-serif;
 $secondaryfont: "Lobster", cursive;
@@ -91,42 +98,6 @@ h1.subtitle {
 
 .is-gapless {
   display: none;
-}
-
-$size: 20px;
-
-h4.subheading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  font-weight: normal;
-  width: 100%;
-  text-align: center;
-
-  font-size: 5vw;
-  background: linear-gradient(
-    -45deg,
-    #4bc0c8 25%,
-    #feac5e 25%,
-    #feac5e 50%,
-    #4bc0c8 50%,
-    #4bc0c8 75%,
-    #feac5e 75%,
-    #feac5e
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: $size $size;
-  background-position: 0 0;
-  animation: stripes 1s linear infinite;
-}
-
-@keyframes stripes {
-  100% {
-    background-position: $size 0, $size 0, $size 0;
-  }
 }
 
 @import "./components/mediaqueries";

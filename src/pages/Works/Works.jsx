@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Animation from "./Works2.0";
+import GlowText from "../../partials/GlowText";
 
 const Works = () => {
   const projects = useContext(ProjectsContext);
@@ -14,8 +15,9 @@ const Works = () => {
           <h1 className="subtitle">Works</h1>
 
           <div className="d-flex justify-content-center align-items-center my-5">
-            <h4 className="px-4">Card Decks</h4>
-            <div className="toggle pancake-stack">
+            {/* <h4 className="px-4">Card Decks</h4> */}
+            <GlowText first="C" second="ard D" third="e" fourth="cks" />
+            <div className="toggle pancake-stack px-5">
               <input
                 id="pancake"
                 type="checkbox"
