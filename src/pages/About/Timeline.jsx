@@ -4,27 +4,31 @@ import { experience } from "../../context/ExperinceContext";
 const Timeline = () => {
   return (
     <>
-      <div id="cd-timeline" className="cd-container mx-auto py-5">
+      <div id="cd-timeline" className="cd-container mx-auto py-5 w-100">
         {experience.map((exp) => (
-          <div className="cd-timeline-block">
+          <div className="cd-timeline-block" key={exp.name}>
             <div className="cd-timeline-img cd-picture"></div>
             <div className="cd-timeline-content">
               <h4>{exp.name}</h4>
               <div className="timeline-content-info">
                 <span className="timeline-content-info-title">
                   <i className="fas fa-laptop-code" />
-                  {exp.designation}
+                  <p className="d-inline">{exp.designation}</p>
                 </span>
                 <span className="timeline-content-info-date">
                   <i className="fas fa-calendar-alt" />
-                  {exp.year}
+                  <p className="d-inline">{exp.year}</p>
                 </span>
               </div>
               <p>{exp.desc}</p>
-              <span className="cd-date">{exp.date}</span>
+              <span className="cd-date">
+                <h4>{exp.date}</h4>
+              </span>
               <ul className="content-skills">
                 {exp.skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
+                  <li key={skill}>
+                    <p className="d-inline m-0">{skill}</p>
+                  </li>
                 ))}
               </ul>
             </div>
