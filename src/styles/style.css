@@ -65,6 +65,20 @@
   }
 }
 
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: translateX(-7px);
+            transform: translateX(-7px);
+  }
+}
+
 .mt-12 {
   margin-top: 6rem;
 }
@@ -298,6 +312,12 @@ button:hover:after,
 button:hover:before {
   width: 100%;
   height: 100%;
+}
+
+button > i {
+  animation: spin 0.4s linear infinite alternate-reverse;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .card-list {
@@ -1267,12 +1287,12 @@ label.toggle-item:before {
 
 .tag-4,
 .tag-4:hover {
-  color: #f93976;
+  color: #ecf939;
 }
 
 .tag-5,
 .tag-5:hover {
-  color: #ecf939;
+  color: #f93976;
 }
 
 .tag-6,

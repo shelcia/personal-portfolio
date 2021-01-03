@@ -77,7 +77,10 @@ const Intro = () => {
                 source and does freelance occasionally.
               </p>
               <a href="#projects">
-                <button className="button mt-4">See My works!</button>
+                <button className="button mt-4">
+                  <i className="pr-2 fas fa-suitcase" />
+                  See My works!
+                </button>
               </a>
             </div>
           </div>

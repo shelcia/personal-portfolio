@@ -19,7 +19,7 @@ const Project = ({ match }) => {
       <div className="container py-3">
         {details.map((project) => (
           <React.Fragment key={project.id}>
-            <h1 className="subtitle"> {project.name} </h1>
+            <h1 className="subtitle mb-5"> {project.name} </h1>
             <div className="row">
               <div className="col-sm-6 d-flex justify-content-center flex-column">
                 <h4 style={{ fontStyle: "italic" }}>Description</h4>

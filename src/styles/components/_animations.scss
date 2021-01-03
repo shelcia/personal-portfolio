@@ -28,3 +28,9 @@ $ternarycolor: #0f3460;
     text-shadow: -0.08em 0.08em $ternarycolor;
   }
 }
+
+@keyframes spin {
+  100% {
+    transform: translateX(-7px);
+  }
+}
