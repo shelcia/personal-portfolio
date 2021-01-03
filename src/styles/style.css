@@ -1768,6 +1768,7 @@ h1.subtitle {
 .icons-list li > img {
   height: 30px;
   width: auto;
+  margin-right: 1rem;
   background-color: black;
   border-radius: 50ex;
   padding: 0.5rem;
