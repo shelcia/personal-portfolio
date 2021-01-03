@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Image from "./Image";
-import TagButton from "./TagButton";
+import TagButton from "../../partials/TagButton";
 
 const Project = ({ match }) => {
   const projectDetails = useContext(ProjectsContext);

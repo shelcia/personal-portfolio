@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TagButton from "../Works/TagButton";
+import TagButton from "../../partials/TagButton";
 
 const Others = () => {
   const [articles, setArticles] = useState([]);
