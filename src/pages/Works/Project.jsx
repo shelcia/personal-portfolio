@@ -15,7 +15,7 @@ const Project = ({ match }) => {
   }, [projectDetails, match.params.id]);
 
   return (
-    <React.Fragment>
+    <div className="bg-2 page-slide border-left border-primary">
       <div className="container py-3">
         {details.map((project) => (
           <React.Fragment key={project.id}>
@@ -56,7 +56,7 @@ const Project = ({ match }) => {
           </React.Fragment>
         ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 

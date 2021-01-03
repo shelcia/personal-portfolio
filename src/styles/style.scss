@@ -100,4 +100,37 @@ h1.subtitle {
   display: none;
 }
 
+.page-slide {
+  animation: slideIn 0.5s ease-in;
+  transform-origin: top;
+}
+
+.border-primary {
+  border-color: $primarycolor !important;
+  border-width: 2px;
+}
+
+.icons-list {
+  list-style: none;
+  // padding-bottom: 8rem;
+  li {
+    font-family: $primaryfont;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+  li > i {
+    background-color: black;
+    border-radius: 50ex;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+  li > img {
+    height: 30px;
+    width: auto;
+    background-color: black;
+    border-radius: 50ex;
+    padding: 0.5rem;
+  }
+}
+
 @import "./components/mediaqueries";

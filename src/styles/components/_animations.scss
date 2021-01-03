@@ -34,3 +34,12 @@ $ternarycolor: #0f3460;
     transform: translateX(-7px);
   }
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(1400px);
+  }
+  to {
+    transform: translateX(-1px);
+  }
+}
