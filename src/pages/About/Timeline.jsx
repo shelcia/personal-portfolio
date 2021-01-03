@@ -1,69 +1,109 @@
 import React from "react";
+import { experience } from "../../context/ExperinceContext";
 
 const Timeline = () => {
   return (
-    <div className="my-5">
-      <h1 className="glitch" data-text="Work Experiences">
-        Work Experiences
-      </h1>
+    <>
+      <div id="cd-timeline" className="cd-container mx-auto py-5">
+        {experience.map((exp) => (
+          <div className="cd-timeline-block">
+            <div className="cd-timeline-img cd-picture"></div>
+            <div className="cd-timeline-content">
+              <h4>{exp.name}</h4>
+              <div className="timeline-content-info">
+                <span className="timeline-content-info-title">
+                  <i className="fas fa-laptop-code" />
+                  {exp.designation}
+                </span>
+                <span className="timeline-content-info-date">
+                  <i className="fas fa-calendar-alt" />
+                  {exp.year}
+                </span>
+              </div>
+              <p>{exp.desc}</p>
+              <span className="cd-date">{exp.date}</span>
+              <ul className="content-skills">
+                {exp.skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
 
-      <div className="timeline mt-12">
-        <h2 className="timeline__item timeline__item--year">1999</h2>
+        {/* <div className="cd-timeline-block">
+          <div className="cd-timeline-img cd-movie"></div>
 
-        <div className="timeline__item">
-          <h3 className="timeline__title">Born</h3>
+          <div className="cd-timeline-content">
+            <h2>Title of section 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+              optio, dolorum provident rerum aut hic quasi placeat iure tempora
+              laudantium ipsa ad debitis unde?
+            </p>
+            <span className="cd-date">Jan 18</span>
+          </div>
         </div>
 
-        <h2 className="timeline__item timeline__item--year">2017</h2>
+        <div className="cd-timeline-block">
+          <div className="cd-timeline-img cd-picture"></div>
 
-        <div className="timeline__item">
-          <h3 className="timeline__title">Graduated High School</h3>
-          <p className="timeline__blurb">
-            Graduated with 93.8% and scoring 95% in all PCM Subjects and
-            clearing JEE exams
-          </p>
+          <div className="cd-timeline-content">
+            <h2>Title of section 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Excepturi, obcaecati, quisquam id molestias eaque asperiores
+              voluptatibus cupiditate error assumenda delectus odit similique
+              earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit,
+              itaque, deserunt corporis vero ipsum nisi eius odio natus ullam
+              provident pariatur temporibus quia eos repellat consequuntur
+              perferendis enim amet quae quasi repudiandae sed quod veniam
+              dolore possimus rem voluptatum eveniet eligendi quis fugiat
+              aliquam sunt similique aut adipisci.
+            </p>
+            <span className="cd-date">Jan 24</span>
+          </div>
         </div>
 
-        <h2 className="timeline__item timeline__item--year">2019</h2>
+        <div className="cd-timeline-block">
+          <div className="cd-timeline-img cd-location"></div>
 
-        <div className="timeline__item">
-          <h3 className="timeline__title">Academic Internship @ NUS</h3>
-          <p className="timeline__blurb">
-            Started taking classes to learn aerial silks, hoop, and hammock.
-          </p>
+          <div className="cd-timeline-content">
+            <h2>Title of section 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+              optio, dolorum provident rerum aut hic quasi placeat iure tempora
+              laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis
+              qui ut.
+            </p>
+            <span className="cd-date">Feb 14</span>
+          </div>
         </div>
 
-        <h2 className="timeline__item timeline__item--year">2020</h2>
-        <div className="timeline__item">
-          <h3 className="timeline__title">
-            Solera Life Science Private Limited
-          </h3>
-          <p className="timeline__blurb">
-            I worked as website developer and designer intern building a couple
-            of products.
-          </p>
+        <div className="cd-timeline-block">
+          <div className="cd-timeline-img cd-location"></div>
+
+          <div className="cd-timeline-content">
+            <h2>Title of section 5</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+              optio, dolorum provident rerum.
+            </p>
+            <span className="cd-date">Feb 18</span>
+          </div>
         </div>
-        <div className="timeline__item">
-          <h3 className="timeline__title">Guvi Geeks Private Limited</h3>
-          <p className="timeline__blurb">
-            Started taking classes to learn aerial silks, hoop, and hammock.
-          </p>
-        </div>
-        <div className="timeline__item">
-          <h3 className="timeline__title">NYX Wolves Private Limited</h3>
-          <p className="timeline__blurb">
-            Started taking classes to learn aerial silks, hoop, and hammock.
-          </p>
-        </div>
-        <h2 className="timeline__item timeline__item--year">2021</h2>
-        <div className="timeline__item">
-          <h3 className="timeline__title">Expected Graduation</h3>
-          <p className="timeline__blurb">
-            Started taking classes to learn aerial silks, hoop, and hammock.
-          </p>
-        </div>
+
+        <div className="cd-timeline-block">
+          <div className="cd-timeline-img cd-movie"></div>
+
+          <div className="cd-timeline-content">
+            <h2>Final Section</h2>
+            <p>This is the content of the last section</p>
+            <span className="cd-date">Feb 26</span>
+          </div>
+        </div> */}
       </div>
-    </div>
+    </>
   );
 };
 
