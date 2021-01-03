@@ -1,9 +1,9 @@
 import React from "react";
 import Experience from "./Experience";
 import Intro from "./Intro";
-import Others from "./Others";
+// import Others from "./Others";
 import Skills from "./Skills";
-// import Timeline from "./Timeline";
+import Footer from "../../partials/Footer";
 
 const About = () => {
   return (
@@ -11,7 +11,8 @@ const About = () => {
       <Intro />
       <Skills />
       <Experience />
-      <Others />
+      {/* <Others /> */}
+      <Footer />
     </div>
   );
 };

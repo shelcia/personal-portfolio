@@ -1835,8 +1835,8 @@ body {
 }
 
 .page-fade {
-  -webkit-animation: page-fade 0.5s;
-          animation: page-fade 0.5s;
+  -webkit-animation: page-fade 0.4s;
+          animation: page-fade 0.4s;
 }
 
 .navbar-dark {
@@ -1908,6 +1908,20 @@ h1.subtitle {
   border-radius: 50ex;
   padding: 0.5rem;
   margin-right: 1rem;
+  position: relative;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.icons-list li > i::after {
+  border-radius: 50ex;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-animation: icons-list 2s ease-in 4s infinite normal;
+          animation: icons-list 2s ease-in 4s infinite normal;
 }
 
 .icons-list li > img {
@@ -1951,6 +1965,52 @@ h1.subtitle {
   }
   .btn-ctn a {
     margin: 0.75rem auto;
+  }
+}
+
+@-webkit-keyframes icons-list {
+  0% {
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: none;
+    transition: none;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: none;
+    transition: none;
+  }
+  100% {
+    width: 120%;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+}
+
+@keyframes icons-list {
+  0% {
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: none;
+    transition: none;
+  }
+  50% {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: none;
+    transition: none;
+  }
+  100% {
+    width: 120%;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import GlowText from "../../partials/GlowText";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Intro = () => {
   const [icons] = useState([
@@ -64,24 +65,26 @@ const Intro = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column py-4">
-              {/* <h4>Full Stack Developer and Designer, based in Chennai</h4> */}
-              <GlowText
-                first="F"
-                second="ull Stack Developer "
-                third="a"
-                fourth="nd Designer, based in Chennai"
-              />
-              <p className="mt-5">
-                I love developing stuff in React and Javascript. I work on open
-                source and does freelance occasionally.
-              </p>
-              <a href="#projects">
-                <button className="button mt-4">
-                  <i className="pr-2 fas fa-suitcase" />
-                  See My works!
-                </button>
-              </a>
+              <ScrollAnimation animateIn="fadeInUp">
+                <GlowText
+                  first="F"
+                  second="ull Stack Developer "
+                  third="a"
+                  fourth="nd Designer, based in Chennai"
+                />
+                <p className="mt-5">
+                  I love developing stuff in React and Javascript. I work on
+                  open source and does freelance occasionally.
+                </p>
+                <a href="#projects">
+                  <button className="button mt-4">
+                    <i className="pr-2 fas fa-suitcase" />
+                    See My works!
+                  </button>
+                </a>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

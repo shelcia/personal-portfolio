@@ -38,9 +38,13 @@ const Intro = () => {
                 does freelance occasionally.
               </p>
               <div className="mt-5 d-flex justify-content-between flex-wrap">
-                <button className="button">My Skills</button>
-                <button className="button">My Experience</button>
-                <button className="button">Others</button>
+                <a href="#skills">
+                  <button className="button">My Skills</button>
+                </a>
+                <a href="#experiences">
+                  <button className="button">My Experience</button>
+                </a>
+                {/* <button className="button">Others</button> */}
               </div>
             </div>
           </div>
