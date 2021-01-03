@@ -9,12 +9,13 @@ const Contact = () => {
     <React.Fragment>
       <div className="container page-fade">
         <h1 className="subtitle">Resume</h1>
-        <div className="text-center">
+        <div className="text-center mb-5">
           <a href="/static/media/Shelcia_Resume.7ac723c5.pdf" target="blank">
-            <button className="button mb-5">
+            <button className="button">
               Download PDF <i className="fas fa-download"></i>
             </button>
           </a>
+          <p>Size: 111 Kb</p>
         </div>
 
         <PDFViewer

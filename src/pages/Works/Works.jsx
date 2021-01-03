@@ -15,7 +15,6 @@ const Works = () => {
           <h1 className="subtitle">Works</h1>
 
           <div className="d-flex justify-content-center align-items-center my-5">
-            {/* <h4 className="px-4">Card Decks</h4> */}
             <GlowText first="C" second="ard D" third="e" fourth="cks" />
             <div className="toggle pancake-stack px-5">
               <input
@@ -32,7 +31,7 @@ const Works = () => {
                 </div>
               </label>
             </div>
-            <h4 className="px-4">Classic List</h4>
+            <GlowText first="C" second="lassic " third="L" fourth="ist" />
           </div>
 
           {view === "cards" && <Animation />}

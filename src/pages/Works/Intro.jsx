@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import GlowText from "../../partials/GlowText";
 
 const Intro = () => {
   const [icons] = useState([
@@ -64,13 +65,19 @@ const Intro = () => {
               </div>
             </div>
             <div className="col-sm-6 d-flex justify-content-center align-items-center flex-column py-4">
-              <h4>Full Stack Developer and Designer, based in Chennai</h4>
-              <p>
+              {/* <h4>Full Stack Developer and Designer, based in Chennai</h4> */}
+              <GlowText
+                first="F"
+                second="ull Stack Developer "
+                third="a"
+                fourth="nd Designer, based in Chennai"
+              />
+              <p className="mt-5">
                 I love developing stuff in React and Javascript. I work on open
                 source and does freelance occasionally.
               </p>
               <a href="#projects">
-                <button className="button mt-5">See My works!</button>
+                <button className="button mt-4">See My works!</button>
               </a>
             </div>
           </div>

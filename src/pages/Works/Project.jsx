@@ -31,13 +31,15 @@ const Project = ({ match }) => {
                       <TagButton index={index + 1} key={index} tag={tech} />
                     ))}
                 </div>
-                <div className="d-flex justify-content-between mt-5 btn-ctn flex-wrap">
-                  <a href={project.deployment} target="blank">
-                    <button className="button">
-                      <i className="fas fa-rocket pr-2" />
-                      Deployement
-                    </button>
-                  </a>
+                <div className="d-flex justify-content-between mt-3 btn-ctn flex-wrap">
+                  {project.deploy && (
+                    <a href={project.deployment} target="blank">
+                      <button className="button">
+                        <i className="fas fa-rocket pr-2" />
+                        Deployement
+                      </button>
+                    </a>
+                  )}
                   <a href={project.code} target="blank">
                     <button className="button">
                       <i className="fas fa-code pr-2" /> Source Code

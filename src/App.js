@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ProjectsProvider } from "./context/ProjectContext";
 import About from "./pages/About/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Resume";
 import Home from "./pages/Works/Home";
 import Project from "./pages/Works/Project";
 import ErrorPage from "./partials/404Page";
