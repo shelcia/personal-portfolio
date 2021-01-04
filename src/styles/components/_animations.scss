@@ -43,3 +43,14 @@ $ternarycolor: #0f3460;
     transform: translateX(-1px);
   }
 }
+
+$violet: rgb(255, 39, 255);
+$blue: rgb(0, 255, 255);
+
+@keyframes spin-icons {
+  100% {
+    box-shadow: 0 0 5px #fff, 2px 0 5px $blue, -2px 0 5px $violet,
+      2px 0 5px $blue, -2px 0 5px $violet, 0 0 6px #fff, -1px 0 5px $blue,
+      1px 0 5px $violet;
+  }
+}

@@ -16,7 +16,7 @@ const Project = ({ match }) => {
 
   return (
     <div className="bg-2 page-slide border-left border-primary">
-      <div className="container py-3">
+      <div className="container py-3 mb-5">
         {details.map((project) => (
           <React.Fragment key={project.id}>
             <h1 className="subtitle mb-5"> {project.name} </h1>

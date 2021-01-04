@@ -44,10 +44,6 @@ $background1: #1a1a2e;
     backface-visibility: hidden;
     border-radius: 0.75rem !important;
     transition: transform 200ms ease-in;
-    .card-img-top,
-    .card-img-overlay {
-      border-radius: 0.75rem !important;
-    }
     &:hover {
       transform: scale(1.05) translateZ(0);
     }

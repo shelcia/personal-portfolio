@@ -1,11 +1,17 @@
 export const experience = [
   {
     name: "Expected Graduation",
-    designation: "  GPA: 8.36; CGPA:9.4",
+    designation: "  GPA: 8.36; CGPA:9.6",
     year: "May 2021",
     desc:
       "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
-    skills: [],
+    skills: [
+      "Human Computer Interface",
+      "Database Management System",
+      "Data Structures and Algorithm",
+      "Computational Engineering",
+      "Engineering Entrepreneurship",
+    ],
     date: "May 2021",
   },
   {
@@ -55,7 +61,7 @@ export const experience = [
     name: "Graduted School",
     designation: "  Score: 93.8%",
     year: "May 2017",
-    desc: "",
+    desc: "Graduated in PCM with Major in Computer Science",
     skills: [],
     date: "May 2017",
   },
