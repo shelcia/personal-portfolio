@@ -1822,6 +1822,26 @@ p.error {
   font-size: 3rem;
 }
 
+.nav-link {
+  display: inline-block;
+  color: #e94560;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e94560;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -1984,6 +2004,9 @@ h1.subtitle {
 }
 
 @media (max-width: 430px) {
+  .sign {
+    font-size: 1.2rem;
+  }
   .c-glitch {
     width: 90vw;
     height: calc(45vh - 200px);

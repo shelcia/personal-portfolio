@@ -14,18 +14,21 @@ const Github = () => {
                 <div className="github-card shadow bg-2 p-5 rounded-lg text-center">
                   <CountUp end={1536} duration={5} delay={5} />
                   <p>Open Source Contributions</p>
+                  <p className="text-muted">as of 11 Jan 2021</p>
                 </div>
               </div>
               <div className="col-sm-4 py-4">
                 <div className="github-card shadow bg-2 p-5 rounded-lg text-center">
                   <CountUp end={1112058} duration={5} delay={5} />
                   <p>No of Lines written on Github</p>
+                  <p className="text-muted">as of 11 Jan 2021</p>
                 </div>
               </div>
               <div className="col-sm-4 py-4">
                 <div className="github-card shadow bg-2 p-5 rounded-lg text-center">
                   <CountUp end={10} duration={5} delay={5} /> <span>+</span>
                   <p>Projects</p>
+                  <p className="text-muted">as of 11 Jan 2021</p>
                 </div>
               </div>
             </div>

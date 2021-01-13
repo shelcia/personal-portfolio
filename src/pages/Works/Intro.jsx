@@ -75,8 +75,8 @@ const Intro = () => {
                   fourth="nd Designer, based in Chennai"
                 />
                 <p className="mt-5">
-                  I love developing stuff in React and Javascript. I work on
-                  open source and does freelance occasionally.
+                  I love developing stuff with MERN stack. I work on open source
+                  and does freelance occasionally.
                 </p>
                 <a href="#projects">
                   <button className="button mt-4">

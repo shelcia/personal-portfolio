@@ -1,6 +1,7 @@
 import React from "react";
 import PDFViewer from "pdf-viewer-reactjs";
 import Resume from "../assets/Shelcia_Resume.pdf";
+import Footer from "../partials/Footer";
 
 const Contact = () => {
   console.log(Resume);
@@ -24,6 +25,7 @@ const Contact = () => {
           }}
         />
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

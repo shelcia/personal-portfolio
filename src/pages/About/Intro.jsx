@@ -18,15 +18,10 @@ const Intro = () => {
             <div className="col-sm-8 d-flex justify-content-center flex-column py-4">
               <h1 className="subtitle">About</h1>
               <p className="mt-4">
-                I am a final year engineering graduate working with Design and
-                web development for past two years.
+                Shelcia is a final year engineering graduate working with Design
+                and web development for past two years.
               </p>
               <p className="mt-3">
-                I have a passion for learning and building interesting things. I
-                love how technologies evolve and have a major impact on our day
-                to day lives.
-              </p>
-              <p>
                 Shelcia is a confident, focus-driven individual. Shelcia has got
                 good experience working as a Web developer with modern tech
                 stacks like MERN and some old good stuff like LAMP, and not to
@@ -37,7 +32,11 @@ const Intro = () => {
                 creating web apps. Shelcia loves open source contributions and
                 does freelance occasionally.
               </p>
-              <div className="mt-5 d-flex justify-content-between flex-wrap">
+
+              <p className="text-muted mt-3">
+                P.S Using first person is cliche !!!
+              </p>
+              <div className="mt-3 d-flex justify-content-between flex-wrap">
                 <a href="#skills">
                   <button className="button">My Skills</button>
                 </a>

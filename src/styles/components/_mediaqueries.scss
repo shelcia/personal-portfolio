@@ -10,6 +10,9 @@
 }
 
 @media (max-width: 430px) {
+  .sign {
+    font-size: 1.2rem;
+  }
   .c-glitch {
     width: 90vw;
     height: calc(45vh - 200px);

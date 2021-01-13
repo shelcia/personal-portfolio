@@ -1,7 +1,7 @@
 export const experience = [
   {
     name: "Expected Graduation",
-    designation: "  GPA: 8.36; CGPA:9.6",
+    designation: "CGPA: 8.42; GPA:9.6",
     year: "May 2021",
     desc:
       "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
