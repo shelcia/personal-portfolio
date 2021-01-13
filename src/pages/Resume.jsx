@@ -1,5 +1,4 @@
 import React from "react";
-import PDFViewer from "pdf-viewer-reactjs";
 import Resume from "../assets/Shelcia_Resume.pdf";
 import Footer from "../partials/Footer";
 
@@ -18,12 +17,13 @@ const Contact = () => {
           </a>
           <p>Size: 111 Kb</p>
         </div>
-
-        <PDFViewer
-          document={{
-            url: "/static/media/Shelcia_Resume.7ac723c5.pdf",
-          }}
-        />
+        <div className="w-75 mx-auto mb-5">
+          <img
+            src="https://cdn.discordapp.com/attachments/795010536365752320/799057911669981184/Shelcia_Resume-1.png"
+            alt=""
+            className="img-fluid"
+          />
+        </div>
       </div>
       <Footer />
     </React.Fragment>
