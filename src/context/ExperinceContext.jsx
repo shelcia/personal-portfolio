@@ -28,9 +28,9 @@ export const experience = [
     designation: "Software Developer",
     year: "Oct 2020 - Present",
     desc:
-      "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
+      "Part of 5 member taking care of new version of Edu Tutor web app; Implementing new design;",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
-    date: "Jan 18",
+    date: "October 2020",
   },
   {
     name: "Solera Life Scienece",
