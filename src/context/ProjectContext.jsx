@@ -72,10 +72,10 @@ export const ProjectsProvider = (props) => {
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795035633214947359/Whatsapp.png",
       description:
-        "As a part of hobby project I tried recreating Whatsapp web using socket.io. It has features like mulitple chat rooms , emoji enabled input box (and emoji popup keyboard) and no signup requirements.",
+        "As a part of hobby project I tried recreating Whatsapp web using socket.io. It has features like mulitple chat rooms, emoji enabled input box (and emoji popup keyboard) and no signup requirements.",
       techstack: ["React", "NodeJS", "Socket.io", "Bootstrap"],
       deploy: true,
-      deployment: "https://whatsapp-clone-socketio.netlify.app/",
+      deployment: "https://freee-chatapp.netlify.app/",
       code: "https://github.com/shelcia/chat-app-frontend",
     },
     {
