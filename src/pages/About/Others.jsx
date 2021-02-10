@@ -29,27 +29,35 @@ const Others = () => {
           <div className="row">
             <div className="col-sm-12">
               {articles.map((article, index) => (
-                <div className="card bg-2 p-4 shadow-lg" key={index + 1}>
+                <div className="card bg-2 p-4 shadow-lg mb-4" key={index + 1}>
                   <div className="row">
                     <div className="col-sm-4 d-flex justify-content-center">
                       <img
                         src={article.thumbnail}
                         alt=""
                         className="img-fluid"
+                        style={{ maxHeight: "200px", objectFit: "contain" }}
                       />
                     </div>
-                    <div className="col-sm-8">
+                    <div className="col-sm-8 d-flex justify-content-between flex-column">
                       <h4 className="mb-4">{article.title}</h4>
-                      {article.categories.map((category, index) => (
-                        <TagButton
-                          index={index + 1}
-                          tag={category}
-                          key={index + 1}
-                        />
-                      ))}
-                      <div className="d-flex justify-content-between">
-                        <a href={article.link}> Article Link </a>
-                        <p>{article.pubDate}</p>
+                      <div>
+                        {article.categories.map((category, index) => (
+                          <TagButton
+                            index={index + 1}
+                            tag={category}
+                            key={index + 1}
+                          />
+                        ))}
+                      </div>
+
+                      <div className="d-flex mt-4 justify-content-between">
+                        <a href={article.link} className="mb-0">
+                          Article Link
+                        </a>
+                        <p className="mb-0">
+                          Published: {article.pubDate.split(" ")[0]}
+                        </p>
                       </div>
                     </div>
                   </div>

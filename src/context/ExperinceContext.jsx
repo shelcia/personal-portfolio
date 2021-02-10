@@ -1,7 +1,7 @@
 export const experience = [
   {
     name: "Expected Graduation",
-    designation: "CGPA: 8.42; GPA:9.6",
+    designation: "CGPA:8.42;  GPA:9.6;",
     year: "May 2021",
     desc:
       "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
@@ -16,7 +16,7 @@ export const experience = [
   },
   {
     name: "NYX Wolves Private Limited",
-    designation: "Junior MERN Stack Developer",
+    designation: "Jr. Full Stack Developer",
     year: "November 2020 - Present",
     desc:
       "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
@@ -25,10 +25,10 @@ export const experience = [
   },
   {
     name: "Guvi Geeks Private Limited",
-    designation: "Software Developer",
-    year: "Oct 2020 - Present",
+    designation: "Software Developer Intern",
+    year: "Oct 2020 - Dec 2020",
     desc:
-      "Part of 5 member taking care of new version of Edu Tutor web app; Implementing new design;",
+      "Part of 5 members taking care of the new version of Edu Tutor web app; Implementing new design;",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
     date: "October 2020",
   },
@@ -37,7 +37,7 @@ export const experience = [
     designation: "Web Developer Intern",
     year: "May 2020 - Oct 2020",
     desc:
-      "I am worked as a website developer and designer building a couple of products. One of them is basically an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
+      "I am worked as a website developer and designer building a couple of products. One of them is an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
     skills: [
       "ReactJS",
       "NodeJS",

@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="bg-2 h-80">
         <div className="container">
           <div className="row">
-            <div className="col-sm-4">
+            <div className="col-sm-4 d-flex justify-content-center align-items-center">
               <img
                 src={Shelcia}
                 alt="gif"
@@ -17,25 +17,25 @@ const Intro = () => {
             </div>
             <div className="col-sm-8 d-flex justify-content-center flex-column py-4">
               <h1 className="subtitle">About</h1>
-              <p className="mt-4">
-                Shelcia is a final year engineering graduate working with Design
-                and web development for past two years.
-              </p>
-              <p className="mt-3">
-                Shelcia is a confident, focus-driven individual. Shelcia has got
-                good experience working as a Web developer with modern tech
-                stacks like MERN and some old good stuff like LAMP, and not to
-                forget the goddess Vanilla JS. Shelcia is often driven by
-                purpose so she is looking forward to being part of something
-                which means a big deal to her. She has good experience working
-                as a Web developer and Designer in startup(s) where she ended up
-                creating web apps. Shelcia loves open source contributions and
-                does freelance occasionally.
-              </p>
 
-              <p className="text-muted mt-3">
-                P.S Using first person is cliche !!!
+              <p className="mt-4">
+                Shelcia is a Full-Stack Developer Engineer at NYX Wolves a
+                startup based in Chennai focusing on Digital Marketing. She's
+                worked for other places, including GUVI Geeks PVT Limited and
+                Solera Health Sciences. She's active in the developer community
+                and loves contributing to Open source projects. Apart from this,
+                she writes articles occasionally and mentors developers in open
+                source competition. She loves photography and takes up a
+                freelance project apart from her college work. She is currently
+                a final year undergraduate at IIITDM K.
               </p>
+              <p className="mt-4">
+                Shelcia loves Javascript and React. She has developed both
+                mobile and web application. She is currently into Go and VueJs.{" "}
+              </p>
+              {/* <p className="text-muted mt-3">
+                P.S Using first person is cliche !!!
+              </p> */}
               <div className="mt-3 d-flex justify-content-between flex-wrap">
                 <a href="#skills">
                   <button className="button">My Skills</button>
