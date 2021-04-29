@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.5",
+    "@testing-library/user-event": "^13.1.6",
     "react": "^17.0.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-countup": "^4.3.3",
