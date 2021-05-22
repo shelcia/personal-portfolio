@@ -1,10 +1,24 @@
 export const experience = [
   {
+    name: "Front End Developer",
+    designation: "Front End Developer",
+    year: "May 2021 - Present",
+    desc: "Designing Team's product UI and developing it from Scratch",
+    skills: [
+      "ReactJS",
+      "Bootstrap",
+      "SpringBoot",
+      "JavaScript",
+      "AdobeXD",
+      "Figma",
+    ],
+    date: "May 2021",
+  },
+  {
     name: "Expected Graduation",
-    designation: "CGPA:8.42;  GPA:9.6;",
-    year: "May 2021",
-    desc:
-      "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
+    designation: "CGPA 8.42;  GPA 9.6;",
+    year: "May 2017 - May 2021",
+    desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
     skills: [
       "Human Computer Interface",
       "Database Management System",
@@ -17,18 +31,16 @@ export const experience = [
   {
     name: "NYX Wolves Private Limited",
     designation: "Jr. Full Stack Developer",
-    year: "November 2020 - Present",
-    desc:
-      "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
-    skills: ["ReactJS", "MongoDB", "NodeJs"],
+    year: "November 2020 - May 2021",
+    desc: "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
+    skills: ["ReactJS", "MongoDB", "NodeJs", "Docker", "Keycloak"],
     date: "November 2020",
   },
   {
     name: "Guvi Geeks Private Limited",
     designation: "Software Developer Intern",
     year: "Oct 2020 - Dec 2020",
-    desc:
-      "Part of 5 members taking care of the new version of Edu Tutor web app; Implementing new design;",
+    desc: "Part of 5 members taking care of the new version of Edu Tutor web app; Implementing new design;",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
     date: "October 2020",
   },
@@ -36,8 +48,7 @@ export const experience = [
     name: "Solera Life Scienece",
     designation: "Web Developer Intern",
     year: "May 2020 - Oct 2020",
-    desc:
-      "I am worked as a website developer and designer building a couple of products. One of them is an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
+    desc: "I am worked as a website developer and designer building a couple of products. One of them is an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
     skills: [
       "ReactJS",
       "NodeJS",
@@ -52,8 +63,7 @@ export const experience = [
     name: "NUS Computing",
     designation: "Academic Intern",
     year: "May 2019 - June 2019",
-    desc:
-      "I was involved in an academic internship in Singapore. Over there I had a handful of experience in networking architecture, building security-focused on IoT systems. I built two projects, one was based IOT based Disaster management system under the guidance of Professor Tan Wee Kek and the second project was based on visualising data in the admin Dashboard under the guidance of Mr Shanthanu Pandey, Hewlett Packard.",
+    desc: "I was involved in an academic internship in Singapore. Over there I had a handful of experience in networking architecture, building security-focused on IoT systems. I built two projects, one was based IOT based Disaster management system under the guidance of Professor Tan Wee Kek and the second project was based on visualising data in the admin Dashboard under the guidance of Mr Shanthanu Pandey, Hewlett Packard.",
     skills: ["IOT", "Robotics", "HTML", "CSS"],
     date: "May 2019",
   },

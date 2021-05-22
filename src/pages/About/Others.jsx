@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TagButton from "../../partials/TagButton";
+import Carousel from "./Carousel";
+import GlowText from "../../partials/GlowText";
 
 const Others = () => {
   const [articles, setArticles] = useState([]);
@@ -25,8 +27,9 @@ const Others = () => {
     <React.Fragment>
       <div className="bg-1 h-80">
         <div className="container py-4" id="skills">
-          <h1 className="subtitle">Others</h1>
-          <div className="row">
+          <h1 className="subtitle mb-5">Others</h1>
+          <GlowText first="M" second="edium" third="A" fourth="rticles" />
+          <div className="row my-5">
             <div className="col-sm-12">
               {articles.map((article, index) => (
                 <div className="card bg-2 p-4 shadow-lg mb-4" key={index + 1}>
@@ -65,6 +68,7 @@ const Others = () => {
               ))}
             </div>
           </div>
+          <Carousel />
         </div>
       </div>
     </React.Fragment>
