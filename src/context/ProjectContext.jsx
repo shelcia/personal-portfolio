@@ -1,14 +1,14 @@
 import React from "react";
 import { useState, createContext } from "react";
-import AUV from "../assets/project/AUV.png";
-import Socialgram from "../assets/project/Socialgram.png";
-import Samgatha from "../assets/project/Samgatha.png";
-import CRM from "../assets/project/CRM.png";
-import ChatApp from "../assets/project/ChatApp.png";
-import WeatherApp from "../assets/project/WeatherApp.png";
-import SlidingPuzzle from "../assets/project/SlidingPuzzle.png";
-import Bloggram from "../assets/project/Bloggram.png";
-import DocsClone from "../assets/project/DocsClone.png";
+import AUV from "../assets/project/AUV.jpeg";
+import Socialgram from "../assets/project/Socialgram.jpeg";
+import Samgatha from "../assets/project/Samgatha.jpeg";
+import CRM from "../assets/project/CRM.jpeg";
+import ChatApp from "../assets/project/ChatApp.jpeg";
+import WeatherApp from "../assets/project/WeatherApp.jpeg";
+import SlidingPuzzle from "../assets/project/SlidingPuzzle.jpeg";
+import Bloggram from "../assets/project/Bloggram.jpeg";
+import DocsClone from "../assets/project/DocsClone.jpeg";
 
 export const ProjectsContext = createContext();
 
@@ -143,17 +143,32 @@ export const ProjectsProvider = (props) => {
       deployment: "https://noobcodes.netlify.app/",
       code: "https://github.com/shelcia/noobcodes",
     },
+    // {
+    //   id: "edith",
+    //   name: "Edith Form",
+    //   image:
+    //     "https://cdn.discordapp.com/attachments/795010536365752320/809149054801149962/form.png",
+    //   description:
+    //     "A client project where in a form customized for college students to participate in Hidden Flag competition within a time window.  Admin dashboard has been built within for evaluation with time stamps for every submission made.",
+    //   techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+    //   deploy: true,
+    //   deployment: "https://edith-club-form.netlify.app/",
+    //   code: "https://github.com/shelcia/Edith",
+    // },
     {
-      id: "edith",
-      name: "Edith Form",
+      id: "irul-theme",
+      name: "Irul Theme",
       image:
-        "https://cdn.discordapp.com/attachments/795010536365752320/809149054801149962/form.png",
+        "https://cdn.discordapp.com/attachments/795010536365752320/845622282592452628/irul-theme.png",
+      imageURL:
+        "https://cdn.discordapp.com/attachments/795010536365752320/831635555875422268/demo-1.png",
       description:
-        "A client project where in a form customized for college students to participate in Hidden Flag competition within a time window.  Admin dashboard has been built within for evaluation with time stamps for every submission made.",
-      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+        "IRUL means Dark in Tamil. Irul theme is a Dark Minimal Theme for VS Code Based on Halcyon. It aims to be aesthetic and ease on eyes for long coding sessions. As of now 2 versions of IRUL theme is available in VS Code market place.IRUL means Dark in Tamil. Irul theme is a Dark Minimal Theme for VS Code Based on Halcyon. It aims to be aesthetic and easy on the eyes for long coding sessions. As of now, 2 versions of the IRUL theme is available in VS Code marketplace.",
+      techstack: ["JSON"],
       deploy: true,
-      deployment: "https://edith-club-form.netlify.app/",
-      code: "https://github.com/shelcia/Edith",
+      deployment:
+        "https://marketplace.visualstudio.com/items?itemName=shelcia.irul-theme",
+      code: "https://github.com/shelcia/irul-theme",
     },
     {
       id: "dynamicportfolio",

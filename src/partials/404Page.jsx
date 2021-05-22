@@ -12,11 +12,9 @@ const ErrorPage = () => {
         <p data-shadow="Page not found!" className="error">
           Page not found!
         </p>
-
-        {/* <ul>
-          <li>Either I screwed up or</li>
-          <li>You tried kinky links</li>
-        </ul> */}
+        <p>Either I screwed up</p>
+        <p>OR</p>
+        <p>You tried kinky links</p>
       </div>
     </React.Fragment>
   );

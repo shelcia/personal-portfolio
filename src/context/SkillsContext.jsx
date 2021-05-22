@@ -3,7 +3,7 @@ export const iconscol1 = [
   { icon: "devicon-javascript-plain colored", name: "Javascript" },
   { icon: "devicon-typescript-plain colored", name: "Typescript" },
   { icon: "devicon-react-original colored", name: "React" },
-  { icon: "devicon-vuejs-plain colored", name: "Vue Js" },
+  { icon: "devicon-docker-plain colored", name: "Docker" },
   { icon: "devicon-redux-original colored", name: "Redux" },
   { icon: "devicon-react-original", name: "React Native" },
   { icon: "devicon-nodejs-plain colored", name: "NodeJs" },
