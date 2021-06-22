@@ -1,42 +1,36 @@
 import React from "react";
 import GlowText from "../../partials/GlowText";
-import Img1 from "../../assets/photography/Blinding Lights.JPEG";
-import Img2 from "../../assets/photography/Fire.JPEG";
-import Img3 from "../../assets/photography/Lonely.JPEG";
-import Img4 from "../../assets/photography/Pursuit.JPEG";
-import Img5 from "../../assets/photography/Reflection.JPEG";
-import Img6 from "../../assets/photography/The Flowe.JPEG";
-import Img7 from "../../assets/photography/Two Faces.JPEG";
 
 const Carousel = () => {
   const Images = [
     {
-      caption: "Blinding Lights",
-      image: Img1,
+      caption: "Two Faces",
+      image: "https://ik.imagekit.io/shelcia/Two_Faces_oOB4mwNDx.JPEG",
     },
     {
       caption: "Fire",
-      image: Img2,
-    },
-    {
-      caption: "Lonely",
-      image: Img3,
-    },
-    {
-      caption: "Pursuit of Happiness",
-      image: Img4,
-    },
-    {
-      caption: "Reflection",
-      image: Img5,
+      image: "https://ik.imagekit.io/shelcia/Fire_pYpV_b9n6.JPEG",
     },
     {
       caption: "The Flower",
-      image: Img6,
+      image: "https://ik.imagekit.io/shelcia/The_Flowe_jDDP6FNs_.JPEG",
     },
     {
-      caption: "Two Faces",
-      image: Img7,
+      caption: "Blinding Lights",
+      image: "https://ik.imagekit.io/shelcia/Blinding_Lights_IuN14vtKG.JPEG",
+    },
+
+    {
+      caption: "Lonely",
+      image: "https://ik.imagekit.io/shelcia/Lonely_-GKnpFcB8.JPEG",
+    },
+    {
+      caption: "Pursuit of Happiness",
+      image: "https://ik.imagekit.io/shelcia/Pursuit_YDMdKamb2.JPEG",
+    },
+    {
+      caption: "Reflection",
+      image: "https://ik.imagekit.io/shelcia/Reflection_FRW19h0N4.JPEG",
     },
   ];
   return (

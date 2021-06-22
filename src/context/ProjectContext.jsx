@@ -1,14 +1,5 @@
 import React from "react";
 import { useState, createContext } from "react";
-import AUV from "../assets/project/AUV.jpeg";
-import Socialgram from "../assets/project/Socialgram.jpeg";
-import Samgatha from "../assets/project/Samgatha.jpeg";
-import CRM from "../assets/project/CRM.jpeg";
-import ChatApp from "../assets/project/ChatApp.jpeg";
-import WeatherApp from "../assets/project/WeatherApp.jpeg";
-import SlidingPuzzle from "../assets/project/SlidingPuzzle.jpeg";
-import Bloggram from "../assets/project/Bloggram.jpeg";
-import DocsClone from "../assets/project/DocsClone.jpeg";
 
 export const ProjectsContext = createContext();
 
@@ -17,7 +8,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "auv",
       name: "AUV-IIITDM",
-      image: AUV,
+      image: "https://ik.imagekit.io/shelcia/AUV_7Q43x5NZs.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795039511368171540/AUV.png",
       description:
@@ -30,7 +21,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "crm",
       name: "Customer Relations Management",
-      image: CRM,
+      image: "https://ik.imagekit.io/shelcia/CRM_nRi2C4QnF.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795040076366741564/CRM.png",
       description:
@@ -43,7 +34,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "weatherapp",
       name: "Weather App",
-      image: WeatherApp,
+      image: "https://ik.imagekit.io/shelcia/WeatherApp_WXLwHj6aZ.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795016629385560084/WeatherApp.png",
       description: `I have used Open Weather API and Rest Countries API to build a weather app which allows user to see current weather conditions in almost every part of the world and also contain general details of all countries.`,
@@ -55,20 +46,20 @@ export const ProjectsProvider = (props) => {
     {
       id: "samgatha",
       name: "Samgatha",
-      image: Samgatha,
+      image: "https://ik.imagekit.io/shelcia/Samgatha_hle-c2ldu.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795036237948911646/Samgatha.png",
       description:
         "I was part of the web development team (consisting of two members) which built the website for college fest of IIITDM. We used Bootstrap for frontend and NodeJS for the backend. The design is based on the theme DREAM. We used the backend to fetch event data from the database.",
       deploy: true,
       techstack: ["Bootstrap", "MongoDB", "NodeJS"],
-      deployment: "http://www.samgatha.live/",
+      deployment: "http://samgatha2020.herokuapp.com/",
       code: "https://github.com/shelcia/Samgatha-2020",
     },
     {
       id: "chatapp",
       name: "Web Chat App",
-      image: ChatApp,
+      image: "https://ik.imagekit.io/shelcia/ChatApp_mIL3_FCCk.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795035633214947359/Whatsapp.png",
       description:
@@ -81,7 +72,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "googledocsclone",
       name: "Google Docs Clone",
-      image: DocsClone,
+      image: "https://ik.imagekit.io/shelcia/DocsClone_vswpwEzXc.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795037102919778324/DocsClone.png",
       description:
@@ -94,7 +85,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "socialgram",
       name: "Social Gram",
-      image: Socialgram,
+      image: "https://ik.imagekit.io/shelcia/Socialgram_0s_m-XvPm.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795040698654261268/Socialgram.png",
       description:
@@ -107,7 +98,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "bloggram",
       name: "Bloggram",
-      image: Bloggram,
+      image: "https://ik.imagekit.io/shelcia/Bloggram_cRBiVzVaw.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795016631042179122/Bloggram.png",
       description:
@@ -121,7 +112,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "slidingpuzzle",
       name: "Sliding Puzzle",
-      image: SlidingPuzzle,
+      image: "https://ik.imagekit.io/shelcia/SlidingPuzzle_KRJe6fD7_.jpeg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/795016627066372126/SlidingPuzzle.png",
       description:
