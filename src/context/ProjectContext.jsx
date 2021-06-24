@@ -125,8 +125,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "noobcodes",
       name: "Noob Codes",
-      image:
-        "https://cdn.discordapp.com/attachments/795010536365752320/809149057624309810/noobcodes.png",
+      image: "https://ik.imagekit.io/shelcia/noobcodes_OJ3l4KljG.jpg",
       description:
         "Full-stack Project developed to simplify data structures and algorithms in Python with dynamic content which could be updated from inbuilt admin dashboard.",
       techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
@@ -149,8 +148,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "irul-theme",
       name: "Irul Theme",
-      image:
-        "https://cdn.discordapp.com/attachments/795010536365752320/845622282592452628/irul-theme.png",
+      image: "https://ik.imagekit.io/shelcia/irul-theme_19g3c0ndc.jpg",
       imageURL:
         "https://cdn.discordapp.com/attachments/795010536365752320/831635555875422268/demo-1.png",
       description:
@@ -164,8 +162,7 @@ export const ProjectsProvider = (props) => {
     {
       id: "dynamicportfolio",
       name: "Dynamic Portfolio Maker",
-      image:
-        "https://cdn.discordapp.com/attachments/795010536365752320/809149052293087252/dynamic-portfolio.png",
+      image: "https://ik.imagekit.io/shelcia/dynamic-portfolio_-llE8gQzw.jpg",
       description:
         "An Ongoing project concentrating on creating a ready-made portfolio website with hosting just under 5 minutes without any prior knowledge of coding.",
       techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
