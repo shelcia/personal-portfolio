@@ -10,16 +10,16 @@ const Contact = () => {
       <div className="container page-fade">
         <h1 className="subtitle">Resume</h1>
         <div className="text-center mb-5">
-          <a href="/static/media/Shelcia_Resume.7ac723c5.pdf" target="blank">
+          <a href="/static/media/Shelcia_Resume.f98370c4.pdf" target="blank">
             <button className="button">
               Download PDF <i className="fas fa-download"></i>
             </button>
           </a>
-          <p>Size: 111 Kb</p>
+          <p>Size: 115 Kb</p>
         </div>
-        <div className="w-75 mx-auto mb-5">
+        <div className="text-center mb-5">
           <img
-            src="https://cdn.discordapp.com/attachments/795010536365752320/799057911669981184/Shelcia_Resume-1.png"
+            src="https://cdn.discordapp.com/attachments/795010536365752320/869646892684959774/Shelcia_Resume_.png"
             alt=""
             className="img-fluid"
           />

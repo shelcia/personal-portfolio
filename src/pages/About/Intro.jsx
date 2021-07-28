@@ -25,13 +25,13 @@ const Intro = () => {
                 Solera Health Sciences. She's active in the developer community
                 and loves contributing to Open source projects. Apart from this,
                 she writes articles occasionally and mentors developers in open
-                source competition. She loves photography and takes up a
+                source competitions. She loves photography and takes up a
                 freelance project apart from her college work. She is currently
                 a final year undergraduate at IIITDM K.
               </p>
               <p className="mt-4">
                 Shelcia loves Javascript and React. She has developed both
-                mobile and web application. She is currently into Go and VueJs.{" "}
+                mobile and web applications. She is currently into Go and VueJs.
               </p>
               {/* <p className="text-muted mt-3">
                 P.S Using first person is cliche !!!

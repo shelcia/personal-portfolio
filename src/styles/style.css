@@ -739,125 +739,6 @@ button > i {
   margin: 12px 0;
 }
 
-/* =Variables
-------------------------------------- */
-/* =Functions
-------------------------------------- */
-/* =Styles
-------------------------------------- */
-.c-intro {
-  -webkit-animation: fe30-anime 1s ease-in-out 4s forwards;
-          animation: fe30-anime 1s ease-in-out 4s forwards;
-  opacity: 0;
-}
-
-.c-fe30 {
-  color: white;
-  margin-top: 2.5rem;
-  text-align: center;
-}
-
-.c-fe30 a {
-  color: white;
-}
-
-.c-fe30 a:hover {
-  text-decoration: none;
-}
-
-.c-ryanyu {
-  background-color: transparent;
-  display: block;
-  height: 4.375rem;
-  margin: 1.25rem auto 0;
-  position: relative;
-  text-align: center;
-  width: 4.375rem;
-}
-
-.c-ryanyu img {
-  background-color: white;
-  border: 0.1875rem solid #fa9600;
-  border-radius: 50%;
-  height: 4.375rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 4.375rem;
-}
-
-.c-ryanyu__front {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  -webkit-transform: rotateX(0) rotateY(0);
-          transform: rotateX(0) rotateY(0);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  z-index: 2000;
-}
-
-.c-ryanyu:hover .c-ryanyu__front {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.c-ryanyu__back {
-  background-color: white;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 50%;
-  color: #fa9600;
-  height: inherit;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  width: inherit;
-  z-index: 1000;
-}
-
-.c-ryanyu__back::before {
-  content: "";
-  display: block;
-  -webkit-transform: rotate(-45deg) translate(-4px, 25px);
-          transform: rotate(-45deg) translate(-4px, 25px);
-  width: 3.125rem;
-}
-
-.c-ryanyu:hover .c-ryanyu__back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
-@-webkit-keyframes fe30-anime {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fe30-anime {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* =Custom Styles
-------------------------------------- */
 .c-glitch,
 .c-glitch__img {
   background-repeat: no-repeat;
@@ -870,7 +751,7 @@ button > i {
   overflow: hidden;
   position: relative;
   width: 45vw;
-  height: calc(75vh - 200px);
+  height: calc(75vh - 175px);
 }
 
 .c-glitch__img {
