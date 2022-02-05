@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Animation from "./Works2.0";
 import GlowText from "../../partials/GlowText";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Works = () => {
   const projects = useContext(ProjectsContext);
@@ -30,28 +29,26 @@ const Works = () => {
           </div>
 
           {view === "cards" && (
-            <ScrollAnimation animateIn="fadeIn">
+            <div data-aos="zoom-in">
               <Animation />
-            </ScrollAnimation>
+            </div>
           )}
 
           {view === "classic" && (
-            <ScrollAnimation animateIn="fadeIn">
-              <div className="card-columns">
-                {projects.map((project) => (
-                  <Link
-                    className="card project-card border-0 shadow-lg text-light"
-                    key={project.id}
-                    to={`/project/${project.id}`}
-                  >
-                    <img className="card-img-top" src={project.image} alt="" />
-                    <div className="card-img-overlay">
-                      <h4 className="card-title">{project.name}</h4>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </ScrollAnimation>
+            <div className="card-columns" data-aos="zoom-in">
+              {projects.map((project) => (
+                <Link
+                  className="card project-card border-0 shadow-lg text-light"
+                  key={project.id}
+                  to={`/project/${project.id}`}
+                >
+                  <img className="card-img-top" src={project.image} alt="" />
+                  <div className="card-img-overlay">
+                    <h4 className="card-title">{project.name}</h4>
+                  </div>
+                </Link>
+              ))}
+            </div>
           )}
         </div>
       </div>
