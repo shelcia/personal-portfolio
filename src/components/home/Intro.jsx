@@ -80,7 +80,7 @@ const Intro = () => {
                 </p>
                 <a href="#projects">
                   <button className="button mt-4">
-                    <i className="pr-2 fas fa-suitcase" />
+                    <i className="ps-2 fas fa-suitcase" />
                     See My works!
                   </button>
                 </a>

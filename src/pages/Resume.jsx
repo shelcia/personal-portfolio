@@ -1,8 +1,8 @@
 import React from "react";
 import Resume from "../assets/Shelcia_Resume.pdf";
-import Footer from "../partials/Footer";
+import Footer from "../components/common/Footer";
 
-const Contact = () => {
+const ContactPage = () => {
   console.log(Resume);
 
   return (
@@ -30,4 +30,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

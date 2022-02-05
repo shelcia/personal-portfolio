@@ -1,18 +1,19 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ProjectsContext } from "../../context/ProjectContext";
-import Image from "./Image";
-import TagButton from "../../partials/TagButton";
+import { ProjectsContext } from "../context/ProjectContext";
+import Image from "../components/home/Image";
+import TagButton from "../partials/TagButton";
+import { useParams } from "react-router-dom";
 
-const Project = ({ match }) => {
+const Project = () => {
+  const { id } = useParams();
+
   const projectDetails = useContext(ProjectsContext);
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
-    const filterResults = projectDetails.filter(
-      (project) => project.id === match.params.id
-    );
+    const filterResults = projectDetails.filter((project) => project.id === id);
     setDetails(filterResults);
-  }, [projectDetails, match.params.id]);
+  }, [projectDetails, id]);
 
   return (
     <div className="bg-2 page-slide border-left border-primary">

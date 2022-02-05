@@ -16,7 +16,7 @@ export const experience = [
   },
   {
     name: "Expected Graduation",
-    designation: "CGPA 8.42;  GPA 9.6;",
+    designation: "CGPA 8.5;  GPA 9.6;",
     year: "May 2017 - May 2021",
     desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
     skills: [
@@ -30,8 +30,8 @@ export const experience = [
   },
   {
     name: "NYX Wolves Private Limited",
-    designation: "Jr. Full Stack Developer",
-    year: "November 2020 - May 2021",
+    designation: "Full Stack Developer",
+    year: "Nov 2020 - May 2021",
     desc: "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
     skills: ["ReactJS", "MongoDB", "NodeJs", "Docker", "Keycloak"],
     date: "November 2020",

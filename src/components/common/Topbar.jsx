@@ -21,7 +21,7 @@ const TopBar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul className="navbar-nav ml-auto px-5">
+          <ul className="navbar-nav ms-auto px-5">
             <li className="nav-item">
               <NavLink
                 className="nav-link"
