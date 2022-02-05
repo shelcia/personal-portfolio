@@ -14,41 +14,31 @@ const TopBar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          // data-toggle="collapse"
+          // data-target="#collapsibleNavbar"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="collapsibleNavbar">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav ms-auto px-5">
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                exact
-                to="/"
-              >
+              <NavLink className="nav-link" to="/">
                 Works
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                exact
-                to="/about"
-              >
+              <NavLink className="nav-link" to="/about">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                exact
-                to="/contact"
-              >
+              <NavLink className="nav-link" to="/contact">
                 Resume
               </NavLink>
             </li>

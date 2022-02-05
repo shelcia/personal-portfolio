@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Animation from "./Works2.0";
@@ -8,11 +8,32 @@ const Works = () => {
   const projects = useContext(ProjectsContext);
   const [view, setView] = useState("cards");
 
+  const [designs, setDesigns] = useState([]);
+
+  useEffect(() => {
+    const url =
+      "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.behance.net%2Ffeeds%2Fuser%3Fusername%3Dshelcia";
+
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const results = await response.json();
+        // console.log(results);
+        if (results.status === "ok") {
+          setDesigns(results.items);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <React.Fragment>
       <div className="bg-2 h-80" id="projects">
         <div className="container py-5">
-          <h1 className="subtitle">Works</h1>
+          <h1 className="subtitle">Development</h1>
 
           <div className="d-flex justify-content-center align-items-center my-5">
             <GlowText first="C" second="ard D" third="e" fourth="cks" />
@@ -35,21 +56,63 @@ const Works = () => {
           )}
 
           {view === "classic" && (
-            <div className="card-columns" data-aos="zoom-in">
-              {projects.map((project) => (
-                <Link
-                  className="card project-card border-0 shadow-lg text-light"
+            <div className="row">
+              {projects.map((project, index) => (
+                <div
+                  className="col-md-4 mb-3"
+                  data-aos="zoom-in"
                   key={project.id}
-                  to={`/project/${project.id}`}
                 >
-                  <img className="card-img-top" src={project.image} alt="" />
-                  <div className="card-img-overlay">
-                    <h4 className="card-title">{project.name}</h4>
-                  </div>
-                </Link>
+                  <Link
+                    className="card project-card border-0 shadow-lg text-light"
+                    to={`/project/${project.id}`}
+                  >
+                    <img className="card-img-top" src={project.image} alt="" />
+                    <div className="card-img-overlay">
+                      <h4 className="card-title">{project.name}</h4>
+                    </div>
+                  </Link>
+                </div>
               ))}
             </div>
           )}
+          <h1 className="subtitle mb-5">Design</h1>
+          <div className="row mt-1">
+            {designs.length === 0 && (
+              <p className="text-light">
+                Interesting !! Something broke here (It's the RSS feed). You can
+                reload add check
+              </p>
+            )}
+            {designs &&
+              designs.map((project, index) => (
+                <div className="col-md-4 mb-3" data-aos="zoom-in" key={index}>
+                  <a
+                    className="card project-card border-0 shadow-lg text-light"
+                    href={project.link}
+                    style={{
+                      background: `url('${project?.thumbnail}')`,
+                      height: "200px",
+                      objectFit: "cover",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <div
+                      className="card-img-overlay"
+                      style={{
+                        backgroundColor: "rgb(0,0,0,0.25)",
+                      }}
+                    >
+                      <h4 className="card-title design-heading">
+                        {project.title}
+                      </h4>
+                    </div>
+                  </a>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </React.Fragment>

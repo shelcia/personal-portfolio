@@ -27,7 +27,7 @@ const Intro = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-2 h-80">
+      <header className="bg-2 h-80">
         <div className="container pt-5">
           <div className="row">
             <div className="col-sm-6">
@@ -88,7 +88,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </React.Fragment>
   );
 };

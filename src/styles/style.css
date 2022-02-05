@@ -539,7 +539,7 @@ button > i {
   margin-left: -140px;
 }
 
-.card-columns {
+.row {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: -webkit-filter 200ms ease-in;
@@ -548,24 +548,24 @@ button > i {
   transition: filter 200ms ease-in, -webkit-filter 200ms ease-in;
 }
 
-.card-columns:hover .project-card:not(:hover) {
+.row:hover .project-card:not(:hover) {
   -webkit-filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
           filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
 }
 
-.card-columns .project-card {
+.row .project-card {
   cursor: pointer;
   background-color: #1a1a2e;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border-radius: 0.75rem !important;
+  border-radius: 1rem !important;
   -webkit-transition: -webkit-transform 200ms ease-in;
   transition: -webkit-transform 200ms ease-in;
   transition: transform 200ms ease-in;
   transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
 }
 
-.card-columns .project-card:hover {
+.row .project-card:hover {
   -webkit-transform: scale(1.05) translateZ(0);
           transform: scale(1.05) translateZ(0);
 }
@@ -1885,6 +1885,10 @@ h1.subtitle {
 
 .cd-timeline-content .content-skills li {
   background: #16213e;
+}
+
+.design-heading {
+  text-shadow: 1px 2px #e94560;
 }
 
 @media (max-width: 767px) {

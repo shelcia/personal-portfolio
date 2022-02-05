@@ -30,7 +30,7 @@ $background1: #1a1a2e;
   }
 }
 
-.card-columns {
+.row {
   backface-visibility: hidden;
   transition: filter 200ms ease-in;
   &:hover {
@@ -42,7 +42,7 @@ $background1: #1a1a2e;
     cursor: pointer;
     background-color: $background1;
     backface-visibility: hidden;
-    border-radius: 0.75rem !important;
+    border-radius: 1rem !important;
     transition: transform 200ms ease-in;
     &:hover {
       transform: scale(1.05) translateZ(0);

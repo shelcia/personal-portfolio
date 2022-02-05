@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-1 w-100">
+      <footer className="bg-1 w-100">
         <div className="bg-1 text-center container py-5">
           <div className="d-flex justify-content-center align-items-center">
             {link.map((link, index) => (
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <h6 className="mt-4">Shelcia — Copyright © 2021</h6>
         </div>
-      </div>
+      </footer>
     </React.Fragment>
   );
 };

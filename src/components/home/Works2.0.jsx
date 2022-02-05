@@ -6,7 +6,7 @@ const Animation = () => {
   const projects = useContext(ProjectsContext);
   return (
     <React.Fragment>
-      <div className="card-list">
+      <section className="card-list">
         {projects.map((project) => (
           <Link
             className="card card-deck text-light"
@@ -19,7 +19,7 @@ const Animation = () => {
             </div>
           </Link>
         ))}
-      </div>
+      </section>
     </React.Fragment>
   );
 };

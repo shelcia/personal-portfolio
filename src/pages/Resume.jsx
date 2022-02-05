@@ -1,16 +1,17 @@
 import React from "react";
-import Resume from "../assets/Shelcia_Resume.pdf";
 import Footer from "../components/common/Footer";
 
 const ContactPage = () => {
-  console.log(Resume);
-
   return (
     <React.Fragment>
       <div className="container page-fade">
         <h1 className="subtitle">Resume</h1>
         <div className="text-center mb-5">
-          <a href="/static/media/Shelcia_Resume.f98370c4.pdf" target="blank">
+          <a
+            href="https://drive.google.com/file/d/13yhfFyxmLbvIYSKyNXH18OpfjUHC6-oP/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="button">
               Download PDF <i className="fas fa-download"></i>
             </button>
@@ -19,9 +20,10 @@ const ContactPage = () => {
         </div>
         <div className="text-center mb-5">
           <img
-            src="https://cdn.discordapp.com/attachments/795010536365752320/869646892684959774/Shelcia_Resume_.png"
+            src="https://ik.imagekit.io/shelcia/my_portfolio/resume/Shelcia_Resume_gNtdEpbScZc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1644092553504"
             alt=""
             className="img-fluid"
+            loading="lazy"
           />
         </div>
       </div>

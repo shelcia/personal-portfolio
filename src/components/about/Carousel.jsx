@@ -35,72 +35,63 @@ const Carousel = () => {
   ];
   return (
     <React.Fragment>
-      {/* <h5 className="subtitle">Photography</h5> */}
       <GlowText first="P" second="hoto" third="g" fourth="raphy" />
       <div
         id="photography"
         className="carousel slide mt-5"
         data-ride="carousel"
       >
-        <ol className="carousel-indicators">
-          <li
-            data-target="#photography"
-            data-slide-to="0"
-            className="active"
-          ></li>
-          <li data-target="#photography" data-slide-to="1"></li>
-          <li data-target="#photography" data-slide-to="2"></li>
-          <li data-target="#photography" data-slide-to="3"></li>
-          <li data-target="#photography" data-slide-to="4"></li>
-          <li data-target="#photography" data-slide-to="5"></li>
-          <li data-target="#photography" data-slide-to="6"></li>
-        </ol>
         <div
-          className="carousel-inner"
-          //   style={{ height: "400px", objectFit: "contain" }}
+          id="carouselPhoto"
+          className="carousel slide"
+          data-bs-ride="carousel"
         >
-          {Images.map((img, index) => (
-            <div
-              className={index === 0 ? "carousel-item active" : "carousel-item"}
-              key={index}
-            >
-              <img
-                src={img.image}
-                className="d-block w-100"
-                alt="..."
-                height="400px"
-                style={{ objectFit: "contain" }}
-              />
-              <div className="carousel-caption d-none d-md-block">
-                <p>{img.caption}</p>
+          <div className="carousel-inner">
+            {Images.map((img, index) => (
+              <div
+                className={
+                  index === 0 ? "carousel-item active" : "carousel-item"
+                }
+                key={index}
+              >
+                <img
+                  src={img.image}
+                  className="d-block w-100"
+                  alt="..."
+                  height="400px"
+                  style={{ objectFit: "contain" }}
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <p className="designer-heading">{img.caption}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <button
+            className="carousel-control-prev border border-0"
+            type="button"
+            data-bs-target="#carouselPhoto"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next border border-0"
+            type="button"
+            data-bs-target="#carouselPhoto"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
-        <a
-          className="carousel-control-prev"
-          href="#photography"
-          role="button"
-          data-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a
-          className="carousel-control-next"
-          href="#photography"
-          role="button"
-          data-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="sr-only">Next</span>
-        </a>
       </div>
     </React.Fragment>
   );

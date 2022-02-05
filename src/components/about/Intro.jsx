@@ -1,16 +1,16 @@
 import React from "react";
-import Shelcia from "../../assets/shelcia.gif";
+import Shelcia from "../../assets/shelcia.png";
 
 const Intro = () => {
   return (
     <React.Fragment>
-      <div className="bg-2 h-80">
+      <section className="bg-2 h-80">
         <div className="container">
           <div className="row">
             <div className="col-sm-4 d-flex justify-content-center align-items-center">
               <img
                 src={Shelcia}
-                alt="gif"
+                alt="shelcia's emoji"
                 className="img-fluid"
                 title="Happy Shelcia !!"
               />
@@ -48,7 +48,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </React.Fragment>
   );
 };

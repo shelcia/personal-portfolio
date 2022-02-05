@@ -4,7 +4,7 @@ import { experience } from "../../context/ExperinceContext";
 const Timeline = () => {
   return (
     <>
-      <div id="cd-timeline" className="cd-container mx-auto py-5 w-100">
+      <section id="cd-timeline" className="cd-container mx-auto py-5 w-100">
         {experience.map((exp) => (
           <div className="cd-timeline-block" key={exp.name} data-aos="fade-up">
             <div className="cd-timeline-img cd-picture"></div>
@@ -34,7 +34,7 @@ const Timeline = () => {
             </div>
           </div>
         ))}
-      </div>
+      </section>
     </>
   );
 };

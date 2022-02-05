@@ -14,7 +14,7 @@ const Others = () => {
       try {
         const response = await fetch(url);
         const results = await response.json();
-        console.log(results);
+        // console.log(results);
         setArticles(results.items);
       } catch (error) {
         console.log(error);
@@ -25,7 +25,7 @@ const Others = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-1 h-80">
+      <section className="bg-1 h-80">
         <div className="container py-4" id="skills">
           <h1 className="subtitle mb-5">Others</h1>
           <GlowText first="M" second="edium" third="A" fourth="rticles" />
@@ -70,7 +70,7 @@ const Others = () => {
           </div>
           <Carousel />
         </div>
-      </div>
+      </section>
     </React.Fragment>
   );
 };

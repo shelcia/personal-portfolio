@@ -4,7 +4,7 @@ import { iconscol1, iconscol2, iconscol3 } from "../../context/SkillsContext";
 const Skills = () => {
   return (
     <React.Fragment>
-      <div className="bg-1 h-80">
+      <section className="bg-1 h-80">
         <div className="container py-4" id="skills">
           <h1 className="subtitle mb-5">Skills</h1>
           <div className="row">
@@ -40,7 +40,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </React.Fragment>
   );
 };
