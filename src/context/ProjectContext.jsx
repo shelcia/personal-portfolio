@@ -8,7 +8,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "auv",
       name: "AUV-IIITDM",
-      image: "https://ik.imagekit.io/shelcia/AUV_7Q43x5NZs.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/auv_eLHyBxXD_.png?updatedAt=1627449817894",
       description:
@@ -21,7 +22,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "crm",
       name: "Customer Relations Management",
-      image: "https://ik.imagekit.io/shelcia/CRM_nRi2C4QnF.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/crm_uKw6Q4TSc_B.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170739143",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/crm_9HCSuqfES.png?updatedAt=1627449818757",
       description:
@@ -29,25 +31,27 @@ export const ProjectsProvider = (props) => {
       techstack: ["React", "MongoDB", "NodeJS", "ExpressJs", "Bootstrap"],
       deploy: true,
       deployment: "https://freee-crm.netlify.app/",
-      code: "https://github.com/shelcia/crm-frontend",
+      code: "https://github.com/shelcia/CRM",
     },
     {
       id: "weatherapp",
       name: "Weather App",
-      image: "https://ik.imagekit.io/shelcia/WeatherApp_WXLwHj6aZ.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/weather-app_eqaXO8qfP0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736630",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/weather_MrP_tfgrV_.png?updatedAt=1627452474203",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/weather-app_UBPTt3MeyfH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170459499",
       description:
         "Weather App uses Open Weather API and Rest Countries API to build an interface that allows the users to see current weather conditions in almost every part of the world and contains general details of all countries. ",
       techstack: ["React", "Bootstrap"],
       deploy: true,
-      deployment: "https://react-weather-app-shelcia.netlify.app/",
-      code: "https://github.com/shelcia/countries",
+      deployment: "https://weatherups.netlify.app/",
+      code: "https://github.com/shelcia/Weather-app",
     },
     {
       id: "samgatha",
       name: "Samgatha",
-      image: "https://ik.imagekit.io/shelcia/Samgatha_hle-c2ldu.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/samgatha_fGPvUsO2e.png?updatedAt=1627449846491",
       description:
@@ -60,7 +64,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "chatapp",
       name: "Web Chat App",
-      image: "https://ik.imagekit.io/shelcia/ChatApp_mIL3_FCCk.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/chatapp_T5xny4qw9wL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736150",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/chat_KfOjmNmgm.png?updatedAt=1627449817973",
       description:
@@ -73,9 +78,10 @@ export const ProjectsProvider = (props) => {
     {
       id: "kaagitham",
       name: "Kaagitham",
-      image: "https://ik.imagekit.io/shelcia/DocsClone_vswpwEzXc.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?updatedAt=1627452470163",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1627452470163",
       description:
         "Kaagitham allows users to create drafts and share them seamlessly. The interface also allows sharing code snippets and huge documents with media content with which multiple users can collaboratively work. It also has features to view edit history, auto-saving and a comment section for easy interaction. I am working on adding more features as well.",
       techstack: ["React", "NodeJS", "Socket.io", "Material UI", "Quill.js"],
@@ -86,20 +92,22 @@ export const ProjectsProvider = (props) => {
     {
       id: "socialgram",
       name: "Social Gram",
-      image: "https://ik.imagekit.io/shelcia/Socialgram_0s_m-XvPm.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_wp_ZIzIQGA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737396",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram_UVR7P_wtx.png?updatedAt=1627452473359",
       description:
         "Social gram is a social website that allows users to tweet and react to tweets. It also allows users to comment anonymously. I am working on adding more features as well.",
       techstack: ["React", "MongoDB", "NodeJS", "ExpressJS", "Redux"],
       deploy: true,
-      deployment: "https://fb-clone-frontend.netlify.app/",
-      code: "https://github.com/shelcia/fb-clone",
+      deployment: "https://socialgram.netlify.app/",
+      code: "https://github.com/shelcia/Socialgram",
     },
     {
       id: "bloggram",
       name: "Bloggram",
-      image: "https://ik.imagekit.io/shelcia/Bloggram_cRBiVzVaw.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_9n5h6F9H6Ue.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737102",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/blog_6eAUG2Cdj.png?updatedAt=1627452468749",
       description:
@@ -113,20 +121,22 @@ export const ProjectsProvider = (props) => {
     {
       id: "slidingpuzzle",
       name: "Sliding Puzzle",
-      image: "https://ik.imagekit.io/shelcia/SlidingPuzzle_KRJe6fD7_.jpeg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/sliding-puzzle_KOQ1HfrAF8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737619",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/sliding_Si9rY07OJ8.png?updatedAt=1627452472522",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/sliding-puzzle_HshtnrLlbGa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170346800",
       description:
         "A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along particular routes (usually on a board) to establish an end configuration. This fun game consists of three difficulty levels to test your brain.",
       techstack: ["Vanilla JS", "HTML", "CSS"],
       deploy: true,
-      deployment: "https://shelcia.github.io/sliding-puzzle/",
+      deployment: "https://sliding-puzzle-basic.netlify.app/",
       code: "https://github.com/shelcia/sliding-puzzle",
     },
     {
       id: "noobcodes",
       name: "Noob Codes",
-      image: "https://ik.imagekit.io/shelcia/noobcodes_OJ3l4KljG.jpg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_ujhXc8AU2X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738583",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_DxjG7XbY2.png?updatedAt=1627452470914",
       description:
@@ -151,7 +161,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "irul-theme",
       name: "Irul Theme",
-      image: "https://ik.imagekit.io/shelcia/irul-theme_19g3c0ndc.jpg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/irultheme_lCGSTTLPr.png?updatedAt=1627452469440",
       description:
@@ -165,7 +176,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "dynamicportfolio",
       name: "Dynamic Portfolio Maker",
-      image: "https://ik.imagekit.io/shelcia/dynamic-portfolio_-llE8gQzw.jpg",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic-portfolio_7DkpKM3dTpj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738187",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/portfolio_8XsHydYxh.png?updatedAt=1627452471747",
       description:
