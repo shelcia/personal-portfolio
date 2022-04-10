@@ -1792,6 +1792,11 @@ body {
   width: 100%;
 }
 
+.navbar-brand {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .fab {
   color: #e94560;
   font-size: 2rem;
@@ -1926,6 +1931,10 @@ h1.subtitle {
   }
   .btn-ctn a {
     margin: 0.75rem auto;
+  }
+  .navbar-brand {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

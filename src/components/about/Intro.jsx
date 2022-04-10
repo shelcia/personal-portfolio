@@ -19,19 +19,22 @@ const Intro = () => {
               <h1 className="subtitle">About</h1>
 
               <p className="mt-4">
-                Shelcia is a Full-Stack Developer Engineer at NYX Wolves a
-                startup based in Chennai focusing on Digital Marketing. She's
-                worked for other places, including GUVI Geeks PVT Limited and
-                Solera Health Sciences. She's active in the developer community
-                and loves contributing to Open source projects. Apart from this,
-                she writes articles occasionally and mentors developers in open
-                source competitions. She loves photography and takes up a
-                freelance project apart from her college work. She is currently
-                a final year undergraduate at IIITDM K.
+                I was working as a frontend Developer designing UI and
+                developing it from scratch. Ours is a small team working on a
+                Job Recruitment portal paving the way for easier onboarding.
+                Previously I worked as a Full-Stack Developer Engineer at NYX
+                Wolves, a startup based in Chennai focusing on Digital
+                Marketing. I worked for other places, including GUVI Geeks PVT
+                Limited and Solera Health Sciences. I am active in the developer
+                community and love contributing to Open source projects. Apart
+                from this, I write articles occasionally and mentors developers
+                in open source competitions. I love photography and take up a
+                freelance projects apart from my college work. I graduated from
+                IIITDM K.
               </p>
               <p className="mt-4">
-                Shelcia loves Javascript and React. She has developed both
-                mobile and web applications. She is currently into Go and VueJs.
+                I love Javascript and React and have developed both mobile and
+                web applications. I am currently into Go and VueJs.
               </p>
               {/* <p className="text-muted mt-3">
                 P.S Using first person is cliche !!!

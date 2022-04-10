@@ -107,14 +107,14 @@ export const ProjectsProvider = (props) => {
       id: "bloggram",
       name: "Bloggram",
       image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_9n5h6F9H6Ue.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737102",
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/blog_6eAUG2Cdj.png?updatedAt=1627452468749",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
       description:
         "As part of my hobby projects, I created a blog social website where users can edit, add and delete blogs. It has got features where all blogs are segregated into major categories, like, dislike and add hearts to blog, separate comment section/discussion for users in all blogs and UI will be an eye treat for black and white lovers.",
       techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
       deploy: true,
-      deployment: "https://bloggram.netlify.app/",
+      deployment: "https://bloggram-beta.vercel.app/",
       code: "https://github.com/shelcia/Blog-website",
     },
 
@@ -136,15 +136,15 @@ export const ProjectsProvider = (props) => {
       id: "noobcodes",
       name: "Noob Codes",
       image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_ujhXc8AU2X.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738583",
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_DxjG7XbY2.png?updatedAt=1627452470914",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_xhCF7dQX1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648373850224",
       description:
-        "Noobcodes aims to simplify data structures and algorithms in Python. It will have a video walkthrough and algorithm for all problem statements. It has an inbuilt admin dashboard to manage content.",
-      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+        "Noobcodes aims to simplify data structures and algorithms in Python(Interview Questions).",
+      techstack: ["React", "Docusauras"],
       deploy: true,
-      deployment: "https://noobcodes.netlify.app/",
-      code: "https://github.com/shelcia/noobcodes",
+      deployment: "https://noobcodes-docs.netlify.app/",
+      code: "https://github.com/shelcia/noobcodes-docs",
     },
     // {
     //   id: "edith",

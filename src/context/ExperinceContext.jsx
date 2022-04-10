@@ -2,7 +2,7 @@ export const experience = [
   {
     name: "Front End Developer",
     designation: "Front End Developer",
-    year: "May 2021 - Present",
+    year: "May 2021 - April 2022",
     desc: "Designing Team's product UI and developing it from Scratch",
     skills: [
       "ReactJS",
@@ -15,9 +15,9 @@ export const experience = [
     date: "May 2021",
   },
   {
-    name: "Expected Graduation",
+    name: "Graduation",
     designation: "CGPA 8.5;  GPA 9.6;",
-    year: "May 2017 - May 2021",
+    year: "May 2017 - July 2021",
     desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
     skills: [
       "Human Computer Interface",
@@ -48,7 +48,7 @@ export const experience = [
     name: "Solera Life Scienece",
     designation: "Web Developer Intern",
     year: "May 2020 - Oct 2020",
-    desc: "I am worked as a website developer and designer building a couple of products. One of them is an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
+    desc: "I worked as a website developer and designer building a couple of products. One of them is an E-commerce app for Pharma products and another product is based on building chatbot interface (familiar example DialogueFlow).",
     skills: [
       "ReactJS",
       "NodeJS",
@@ -72,7 +72,7 @@ export const experience = [
     designation: "  Score: 93.8%",
     year: "May 2017",
     desc: "Graduated in PCM with Major in Computer Science",
-    skills: [],
+    skills: ["Data Structure", "My SQL"],
     date: "May 2017",
   },
 ];

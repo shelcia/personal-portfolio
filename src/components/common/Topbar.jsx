@@ -5,7 +5,7 @@ const TopBar = () => {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow px-5">
-        <Link className="navbar-brand px-5" to="/">
+        <Link className="navbar-brand" to="/">
           <h5 className="m-0 p-0" data-text="Shelcia.">
             Shelcia.
           </h5>
