@@ -13,6 +13,7 @@ const Intro = () => {
                 alt="shelcia's emoji"
                 className="img-fluid"
                 title="Happy Shelcia !!"
+                loading="lazy"
               />
             </div>
             <div className="col-sm-8 d-flex justify-content-center flex-column py-4">

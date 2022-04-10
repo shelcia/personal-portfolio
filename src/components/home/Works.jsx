@@ -37,8 +37,9 @@ const Works = () => {
 
           <div className="d-flex justify-content-center align-items-center my-5">
             <GlowText first="C" second="ard D" third="e" fourth="cks" />
-            <label className="heart-switch mx-4">
+            <label className="heart-switch mx-4" htmlFor="toggler">
               <input
+                id="toggler"
                 type="checkbox"
                 onClick={() => setView(view === "cards" ? "classic" : "cards")}
               />
@@ -67,7 +68,12 @@ const Works = () => {
                     className="card project-card border-0 shadow-lg text-light"
                     to={`/project/${project.id}`}
                   >
-                    <img className="card-img-top" src={project.image} alt="" />
+                    <img
+                      className="card-img-top"
+                      src={project.image}
+                      alt=""
+                      loading="lazy"
+                    />
                     <div className="card-img-overlay">
                       <h4 className="card-title">{project.name}</h4>
                     </div>

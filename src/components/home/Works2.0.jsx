@@ -13,7 +13,12 @@ const Animation = () => {
             key={project.id}
             to={`/project/${project.id}`}
           >
-            <img className="card-img-top" src={project.image} alt="" />
+            <img
+              className="card-img-top"
+              src={project.image}
+              alt=""
+              loading="lazy"
+            />
             <div className="card-img-overlay">
               <h4 className="card-title">{project.name}</h4>
             </div>

@@ -32,7 +32,7 @@ const Skills = () => {
               <ul className="icons-list">
                 {iconscol3.map((icon, index) => (
                   <li key={index + 1}>
-                    <img src={icon.img} alt="" />
+                    <img src={icon.img} alt="" loading="lazy" />
                     {icon.name}
                   </li>
                 ))}

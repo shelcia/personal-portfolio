@@ -87,6 +87,7 @@ const Carousel = () => {
                   alt="..."
                   height="400px"
                   style={{ objectFit: "contain" }}
+                  loading="lazy"
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <p className="designer-heading">{img.caption}</p>
