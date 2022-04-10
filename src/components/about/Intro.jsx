@@ -20,17 +20,17 @@ const Intro = () => {
 
               <p className="mt-4">
                 I was working as a frontend Developer designing UI and
-                developing it from scratch. Ours is a small team working on a
-                Job Recruitment portal paving the way for easier onboarding.
-                Previously I worked as a Full-Stack Developer Engineer at NYX
-                Wolves, a startup based in Chennai focusing on Digital
-                Marketing. I worked for other places, including GUVI Geeks PVT
-                Limited and Solera Health Sciences. I am active in the developer
-                community and love contributing to Open source projects. Apart
-                from this, I write articles occasionally and mentors developers
-                in open source competitions. I love photography and take up a
-                freelance projects apart from my college work. I graduated from
-                IIITDM K.
+                developing it from scratch at HIRA. Ours is a small team working
+                on a Job Recruitment portal paving the way for easier
+                onboarding. Previously I worked as a Full-Stack Developer
+                Engineer at NYX Wolves, a startup based in Chennai focusing on
+                Digital Marketing. I worked for other places, including GUVI
+                Geeks PVT Limited and Solera Health Sciences. I am active in the
+                developer community and love contributing to Open source
+                projects. Apart from this, I write articles occasionally and
+                mentors developers in open source competitions. I love
+                photography and take up a freelance projects apart from my
+                college work. I graduated from IIITDM K.
               </p>
               <p className="mt-4">
                 I love Javascript and React and have developed both mobile and
