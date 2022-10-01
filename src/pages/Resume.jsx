@@ -10,7 +10,7 @@ const ContactPage = () => {
           <a
             href="https://drive.google.com/file/d/13yhfFyxmLbvIYSKyNXH18OpfjUHC6-oP/view?usp=sharing"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             <button className="button">
               Download PDF <i className="fas fa-download"></i>
