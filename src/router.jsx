@@ -16,7 +16,7 @@ const ErrorPage = Loadable(lazy(() => import("./pages/404Page")));
 
 const routes = [
   {
-    path: "",
+    path: "/",
     element: <HomePage />,
   },
   {

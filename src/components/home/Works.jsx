@@ -97,7 +97,7 @@ const Works = () => {
                     className="card project-card border-0 shadow-lg text-light"
                     href={project.link}
                     style={{
-                      background: `url('${project?.thumbnail}')`,
+                      background: `url(${project.thumbnail})`,
                       height: "200px",
                       objectFit: "cover",
                       backgroundRepeat: "no-repeat",
