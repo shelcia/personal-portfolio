@@ -1,36 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import { socialMediaIcons } from "../../context/SocialMediaContext";
 import GlowText from "../../partials/GlowText";
 
 const Intro = () => {
-  const [icons] = useState([
-    {
-      classname: "fab fa-github",
-      link: "https://github.com/shelcia",
-      title: "Github",
-    },
-    {
-      classname: "fab fa-linkedin-in",
-      link: "https://www.linkedin.com/in/shelcia/",
-      title: "LinkedIn",
-    },
-    {
-      classname: "fab fa-medium-m",
-      link: "https://medium.com/@shelcia",
-      title: "Medium",
-    },
-    {
-      classname: "fab fa-behance",
-      link: "https://www.behance.net/shelcia",
-      title: "Behance",
-    },
-  ]);
-
   return (
     <React.Fragment>
       <header className="bg-2 h-80">
         <div className="container pt-5">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-md-6">
               <h1 className="popout title">
                 <span>S</span>
                 <span>h</span>
@@ -51,7 +29,7 @@ const Intro = () => {
               </div>
               <div className="w-50">
                 <div className="d-flex justify-content-between">
-                  {icons.map((icon, index) => (
+                  {socialMediaIcons.map((icon, index) => (
                     <a
                       href={icon.link}
                       target="blank"
@@ -66,7 +44,7 @@ const Intro = () => {
             </div>
 
             <div
-              className="col-sm-6 d-flex justify-content-center align-items-center flex-column py-4"
+              className="col-md-6 d-flex justify-content-center align-items-center flex-column py-4"
               data-aos="fade-up"
             >
               <GlowText
