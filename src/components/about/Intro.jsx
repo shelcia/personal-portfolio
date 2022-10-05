@@ -20,6 +20,7 @@ const Intro = () => {
               <h1 className="subtitle">About</h1>
 
               <p className="mt-4">
+                I am currently working as Senior Software Development at NASDAQ.
                 I was working as a frontend Developer designing UI and
                 developing it from scratch at HIRA. Ours is a small team working
                 on a Job Recruitment portal paving the way for easier
