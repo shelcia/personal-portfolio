@@ -1,5 +1,13 @@
 export const experience = [
   {
+    name: "NASDAQ",
+    designation: "Senior Software Developer",
+    year: "April 2022 - Present",
+    desc: "Working and Maintaining new UI development",
+    skills: ["JavaScript", "TWIG", "Drupal"],
+    date: "April 2022",
+  },
+  {
     name: "Front End Developer",
     designation: "Front End Developer",
     year: "May 2021 - April 2022",
