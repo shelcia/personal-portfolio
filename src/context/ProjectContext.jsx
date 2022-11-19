@@ -34,6 +34,20 @@ export const ProjectsProvider = (props) => {
       code: "https://github.com/shelcia/kaagitham",
     },
     {
+      id: "mocker",
+      name: "Mocker",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
+      imageURL:
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/mocker_g1ypry6O-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869830",
+      description:
+        "Mocker can generate mock data with API endpoints, powered by faker.js",
+      techstack: ["React", "NodeJS", "Material UI", "FakerJs"],
+      deploy: true,
+      deployment: "https://mockapi-flax.vercel.app/",
+      code: "https://github.com/shelcia/mocker",
+    },
+    {
       id: "noobcodes",
       name: "Noob Codes",
       image:
@@ -79,9 +93,9 @@ export const ProjectsProvider = (props) => {
       id: "socialgram",
       name: "Social Gram",
       image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_wp_ZIzIQGA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737396",
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
       imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram_UVR7P_wtx.png?updatedAt=1627452473359",
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram1_DKSivHFxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869834",
       description:
         "Social gram is a social website that allows users to tweet and react to tweets. It also allows users to comment anonymously. I am working on adding more features as well.",
       techstack: ["React", "MongoDB", "NodeJS", "ExpressJS", "Redux"],
