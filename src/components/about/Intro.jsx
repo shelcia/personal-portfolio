@@ -20,19 +20,19 @@ const Intro = () => {
               <h1 className="subtitle">About</h1>
 
               <p className="mt-4">
-                I am currently working as Senior Software Development at NASDAQ.
-                I was working as a frontend Developer designing UI and
-                developing it from scratch at HIRA. Ours is a small team working
-                on a Job Recruitment portal paving the way for easier
-                onboarding. Previously I worked as a Full-Stack Developer
-                Engineer at NYX Wolves, a startup based in Chennai focusing on
-                Digital Marketing. I worked for other places, including GUVI
+                I am currently working as a senior software developer at NASDAQ.
+                I was working as a frontend developer at HIRA, designing and
+                developing the user interface from scratch. Ours is a small team
+                working on a job recruitment portal, paving the way for easier
+                onboarding. Previously, I worked as a full-stack developer
+                engineer at NYX Wolves, a startup based in Chennai focusing on
+                digital marketing. I worked for other places, including GUVI
                 Geeks PVT Limited and Solera Health Sciences. I am active in the
-                developer community and love contributing to Open source
+                developer community and love contributing to open-source
                 projects. Apart from this, I write articles occasionally and
-                mentors developers in open source competitions. I love
-                photography and take up a freelance projects apart from my
-                college work. I graduated from IIITDM K.
+                mentor developers in open source competitions. Apart from my
+                work, I enjoy photography and work on freelance projects. I
+                graduated from IIITDM-K.
               </p>
               <p className="mt-4">
                 I love Javascript and React and have developed both mobile and

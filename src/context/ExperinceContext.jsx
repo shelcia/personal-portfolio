@@ -3,8 +3,8 @@ export const experience = [
     name: "NASDAQ",
     designation: "Senior Software Developer",
     year: "April 2022 - Present",
-    desc: "Working and Maintaining new UI development",
-    skills: ["JavaScript", "TWIG", "Drupal"],
+    desc: "Developing new UI components and maintaining nasdaq.com",
+    skills: ["JavaScript", "Drupal", "Content Management Systems"],
     date: "April 2022",
   },
   {
@@ -24,7 +24,7 @@ export const experience = [
   },
   {
     name: "Graduation",
-    designation: "CGPA 8.5;  GPA 9.6;",
+    designation: "CGPA 8.5;",
     year: "May 2017 - July 2021",
     desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
     skills: [
@@ -41,7 +41,7 @@ export const experience = [
     designation: "Full Stack Developer",
     year: "Nov 2020 - May 2021",
     desc: "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
-    skills: ["ReactJS", "MongoDB", "NodeJs", "Docker", "Keycloak"],
+    skills: ["ReactJS", "MongoDB", "NodeJS", "Docker", "Keycloak"],
     date: "November 2020",
   },
   {
@@ -80,7 +80,7 @@ export const experience = [
     designation: "  Score: 93.8%",
     year: "May 2017",
     desc: "Graduated in PCM with Major in Computer Science",
-    skills: ["Data Structure", "My SQL"],
+    skills: ["Data Structures", "My SQL"],
     date: "May 2017",
   },
 ];
