@@ -1,0 +1,56 @@
+$ternarycolor: #0f3460;
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+}
+
+@keyframes page-fade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes title {
+  from {
+    transform: translate3d(0, 0, 0);
+    text-shadow: none;
+  }
+  to {
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em $ternarycolor;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: translateX(-7px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(1400px);
+  }
+  to {
+    transform: translateX(-1px);
+  }
+}
+
+$violet: rgb(255, 39, 255);
+$blue: rgb(0, 255, 255);
+
+@keyframes spin-icons {
+  100% {
+    box-shadow: 0 0 5px #fff, 2px 0 5px $blue, -2px 0 5px $violet,
+      2px 0 5px $blue, -2px 0 5px $violet, 0 0 6px #fff, -1px 0 5px $blue,
+      1px 0 5px $violet;
+  }
+}

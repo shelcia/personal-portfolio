@@ -1,0 +1,23 @@
+//NAVBAR STYLES
+$primarycolor: #e94560;
+
+.nav-link {
+  display: inline-block;
+  color: $primarycolor;
+  text-decoration: none;
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $primarycolor;
+    transition: width 0.3s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+// .navbar-dark .navbar-toggler-icon {
+//   background-image: url("https://cdn.discordapp.com/attachments/795010536365752320/799051983419211846/icon.png") !important;
+// }
+// <i className="fas fa-stream"></i>

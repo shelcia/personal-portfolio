@@ -1,0 +1,51 @@
+$background1: #1a1a2e;
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow-x: scroll;
+  .card-deck {
+    scroll-snap-align: start;
+    box-shadow: -1rem 0 3rem #000;
+    min-width: 350px;
+    min-height: 350px;
+    transition: 0.2s;
+    clear: both;
+    position: relative;
+    cursor: pointer;
+    background-color: $background1;
+    border: none;
+  }
+  .card-deck:focus-within ~ .card-deck,
+  .card-deck:hover ~ .card-deck {
+    transform: translateX(140px);
+  }
+
+  .card-deck:hover {
+    transform: translateY(-1.4rem);
+  }
+
+  .card-deck:not(:first-child) {
+    margin-left: -140px;
+  }
+}
+
+.row {
+  backface-visibility: hidden;
+  transition: filter 200ms ease-in;
+  &:hover {
+    .project-card:not(:hover) {
+      filter: brightness(0.9) saturate(0) contrast(1) blur(1.5px);
+    }
+  }
+  .project-card {
+    cursor: pointer;
+    background-color: $background1;
+    backface-visibility: hidden;
+    border-radius: 1rem !important;
+    transition: transform 200ms ease-in;
+    &:hover {
+      transform: scale(1.05) translateZ(0);
+    }
+  }
+}

@@ -1,0 +1,108 @@
+$primaryfont: "Fira Sans", sans-serif;
+
+.tag-button {
+  --offset: 3px;
+  --border-size: 1px;
+  padding: 0.5em 1em;
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  font-family: $primaryfont;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease;
+
+  &:hover {
+    background: rgba(100, 0, 0, 0.03);
+  }
+
+  &__horizontal,
+  &__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: inherit;
+    }
+  }
+
+  &__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+
+    &::before {
+      top: calc(var(--vertical-offset) - var(--border-size));
+      bottom: calc(var(--vertical-offset) - var(--border-size));
+      left: calc(var(--vertical-offset) * -1);
+      right: calc(var(--vertical-offset) * -1);
+    }
+  }
+
+  &:hover &__horizontal {
+    transform: scaleX(0);
+  }
+
+  &__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+
+    &::before {
+      top: calc(var(--horizontal-offset) * -1);
+      bottom: calc(var(--horizontal-offset) * -1);
+      left: calc(var(--horizontal-offset) - var(--border-size));
+      right: calc(var(--horizontal-offset) - var(--border-size));
+    }
+  }
+
+  &:hover &__vertical {
+    transform: scaleY(0);
+  }
+}
+
+.tag-1,
+.tag-1:hover {
+  color: #e55743;
+}
+.tag-2,
+.tag-2:hover {
+  color: #43e54b;
+}
+.tag-3,
+.tag-3:hover {
+  color: #43cfe5;
+}
+.tag-4,
+.tag-4:hover {
+  color: #ecf939;
+}
+.tag-5,
+.tag-5:hover {
+  color: #f93976;
+}
+.tag-6,
+.tag-6:hover {
+  color: #6108fa;
+}
+.tag-7,
+.tag-7:hover {
+  color: #0830fa;
+}
+.tag-8,
+.tag-8:hover {
+  color: #6dfa08;
+}

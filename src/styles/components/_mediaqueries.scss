@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  .c-glitch {
+    width: 90vw;
+    height: calc(60vh - 200px);
+  }
+
+  .fab {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .sign {
+    font-size: 1.2rem;
+  }
+  .c-glitch {
+    width: 90vw;
+    height: calc(45vh - 200px);
+  }
+  h1.title {
+    font-size: 6rem;
+  }
+  h1.subtitle {
+    font-size: 3rem;
+  }
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .btn-ctn {
+    align-items: center;
+    a {
+      margin: 0.75rem auto;
+    }
+  }
+
+  .navbar-brand {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
