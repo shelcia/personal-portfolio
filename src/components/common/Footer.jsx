@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <h6 className="mt-4">Shelcia — Copyright © 2021</h6>
+          <h6 className="mt-4">Shelcia — Copyright © 2023</h6>
         </div>
       </footer>
     </React.Fragment>

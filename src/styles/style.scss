@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import "./components/variable";
 @import "./components/animations";
 @import "./components/classes";
 @import "./components/timeline";
@@ -17,21 +19,6 @@
 @import "./components/404";
 @import "./components/navbar";
 @import "./components/carousel";
-
-$background1: #1a1a2e;
-$background2: #16213e;
-
-$primarycolor: #e94560;
-$secondarycolor: rgb(249, 248, 248);
-$ternarycolor: #0f3460;
-
-$color1: #ffe6f1;
-$color2: #ff65bd;
-$color3: #e94560;
-$color3: #6b1839;
-
-$primaryfont: "Fira Sans", sans-serif;
-$secondaryfont: "Lobster", cursive;
 
 * {
   scroll-behavior: smooth;
@@ -149,7 +136,7 @@ $blue: rgb(0, 255, 255);
   list-style: none;
   li {
     font-family: $primaryfont;
-    font-style: italic;
+    // font-style: italic;
     padding-bottom: 1rem;
     > i,
     > img {

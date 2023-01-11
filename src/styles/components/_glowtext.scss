@@ -1,4 +1,4 @@
-$primaryfont: "Fira Sans", sans-serif;
+// $primaryfont: "Fira Sans", sans-serif;
 
 $color1: #ffe6f1;
 $color2: #ff65bd;
@@ -8,7 +8,7 @@ $color3: #6b1839;
 .sign {
   letter-spacing: 1.8;
   font-family: $primaryfont;
-  font-style: italic;
+  // font-style: italic;
   font-size: 2em;
   color: $color1;
   text-shadow: 0 0 0.4rem $color1, 0 0 1.3rem $color2,

@@ -23,9 +23,11 @@ const Project = () => {
             <h1 className="subtitle mb-5"> {project.name} </h1>
             <div className="row">
               <div className="col-sm-6 d-flex justify-content-center flex-column">
-                <h4 style={{ fontStyle: "italic" }}>Description</h4>
+                {/* <h4 style={{ fontStyle: "italic" }}>Description</h4> */}
+                <h4>Description</h4>
                 <p className="mt-3">{project.description}</p>
-                <h4 style={{ fontStyle: "italic" }}>Tech Stack</h4>
+                {/* <h4 style={{ fontStyle: "italic" }}>Tech Stack</h4> */}
+                <h4>Tech Stack</h4>
                 <div className="d-flex justify-content-evenly flex-wrap mt-3">
                   {details.length &&
                     project.techstack.map((tech, index) => (
@@ -41,7 +43,7 @@ const Project = () => {
                     >
                       <button className="button">
                         <i className="fas fa-rocket pr-2" />
-                        Deployement
+                        Deployment
                       </button>
                     </a>
                   )}
