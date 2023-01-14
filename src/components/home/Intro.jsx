@@ -32,9 +32,10 @@ const Intro = () => {
                   {socialMediaIcons.map((icon, index) => (
                     <a
                       href={icon.link}
-                      target="blank"
+                      target="_blank"
                       key={index + 1}
                       title={icon.title}
+                      rel="noreferrer"
                     >
                       <i className={icon.classname} />
                     </a>

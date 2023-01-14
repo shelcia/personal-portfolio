@@ -36,7 +36,12 @@ const Footer = () => {
           <div className="d-flex justify-content-center align-items-center">
             {link.map((link, index) => (
               <div key={index + 1} className="px-4">
-                <a href={link.link} target="blank" title={link.title}>
+                <a
+                  href={link.link}
+                  target="_blank"
+                  title={link.title}
+                  rel="noreferrer"
+                >
                   <i className={link.classname} />
                 </a>
               </div>
