@@ -3,33 +3,11 @@ import { Link } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 import Animation from "./Works2.0";
 import GlowText from "../../partials/GlowText";
-// import
 import { designs } from "../../context/DesignContext";
 
 const Works = () => {
   const projects = useContext(ProjectsContext);
   const [view, setView] = useState("cards");
-
-  // const [designs, setDesigns] = useState([]);
-
-  // useEffect(() => {
-  //   const url =
-  //     "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.behance.net%2Ffeeds%2Fuser%3Fusername%3Dshelcia";
-
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(url);
-  //       const results = await response.json();
-  //       // console.log(results);
-  //       if (results.status === "ok") {
-  //         setDesigns(results.items);
-  //       }
-  //     } catch (error) {
-  //       console.log(error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
 
   return (
     <React.Fragment>
@@ -88,8 +66,8 @@ const Works = () => {
           <div className="row mt-1">
             {designs.length === 0 && (
               <p className="text-light">
-                Interesting !! Something broke here (It's the RSS feed). You can
-                reload add check
+                Interesting !! Something broke here (It&apos;s the RSS feed).
+                You can reload add check
               </p>
             )}
             {designs &&
