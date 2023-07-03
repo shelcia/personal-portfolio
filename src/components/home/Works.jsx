@@ -18,6 +18,7 @@ const Works = () => {
           <div className="d-flex justify-content-center align-items-center my-5">
             <GlowText first="C" second="ard D" third="e" fourth="cks" />
             <label className="heart-switch mx-4" htmlFor="toggler">
+              <span className="d-none">Project View Toggler</span>
               <input
                 id="toggler"
                 type="checkbox"
@@ -51,7 +52,7 @@ const Works = () => {
                     <img
                       className="card-img-top"
                       src={project.image}
-                      alt=""
+                      alt={`Thumbnail for ${project.name}`}
                       loading="lazy"
                     />
                     <div className="card-img-overlay">

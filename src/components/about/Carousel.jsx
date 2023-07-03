@@ -84,7 +84,7 @@ const Carousel = () => {
                 <img
                   src={img.image}
                   className="d-block w-100"
-                  alt="..."
+                  alt={`Image - ${img.caption}`}
                   height="400px"
                   style={{ objectFit: "contain" }}
                   loading="lazy"
@@ -103,7 +103,7 @@ const Carousel = () => {
           >
             <span
               className="carousel-control-prev-icon"
-              aria-hidden="true"
+              // aria-hidden="true"
             ></span>
             <span className="visually-hidden">Previous</span>
           </button>
@@ -115,7 +115,7 @@ const Carousel = () => {
           >
             <span
               className="carousel-control-next-icon"
-              aria-hidden="true"
+              // aria-hidden="true"
             ></span>
             <span className="visually-hidden">Next</span>
           </button>

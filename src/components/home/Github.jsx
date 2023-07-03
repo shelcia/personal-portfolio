@@ -19,7 +19,7 @@ const Github = () => {
                   />
                   {index === counts.length - 1 && <span>+</span>}
                   <p>{item.title}</p>
-                  <p className="text-muted">{item.date}</p>
+                  <p style={{ color: "#f7f7f7" }}>{item.date}</p>
                 </div>
               </div>
             ))}

@@ -38,9 +38,6 @@ const Intro = () => {
                 I love Javascript and React and have developed both mobile and
                 web applications. I am currently into Go and VueJs.
               </p>
-              {/* <p className="text-muted mt-3">
-                P.S Using first person is cliche !!!
-              </p> */}
               <div className="mt-3 d-flex justify-content-between flex-wrap">
                 <a href="#skills">
                   <button className="button">My Skills</button>

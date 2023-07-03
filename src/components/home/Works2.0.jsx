@@ -16,7 +16,7 @@ const Animation = () => {
             <img
               className="card-img-top"
               src={project.image}
-              alt=""
+              alt={`Thumbnail for ${project.name}`}
               loading="lazy"
             />
             <div className="card-img-overlay">

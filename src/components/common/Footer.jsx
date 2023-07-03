@@ -24,7 +24,7 @@ const Footer = () => {
     },
     {
       classname: "fab fa-google",
-      link: "mailto:msm17b011@iiitdm.ac.in",
+      link: "mailto:shelciadavidraj@gmail.com",
       title: "Gmail",
     },
   ]);

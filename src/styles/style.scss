@@ -43,6 +43,14 @@ h1,
 .navbar-brand > h5 {
   font-family: $secondaryfont !important;
   color: $primarycolor !important;
+  // text-shadow: -0.04em 0.04em $ternarycolor,
+  //   -0.06em 0.06em rgba(255, 255, 255, 0.8);
+  // text-shadow: -0.06em 0.06em rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand > h5 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-shadow: -0.04em 0.04em $primarycolor;
 }
 
 body {
@@ -170,6 +178,10 @@ $blue: rgb(0, 255, 255);
 
 .design-heading {
   text-shadow: 1px 2px $primarycolor;
+}
+
+.article-link {
+  color: rgb(123, 123, 255);
 }
 
 @import "./components/mediaqueries";

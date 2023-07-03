@@ -37,7 +37,7 @@ const Others = () => {
                     <div className="col-sm-4 d-flex justify-content-center">
                       <img
                         src={article.thumbnail}
-                        alt=""
+                        alt={`Thumbnail for ${article.title}`}
                         className="img-fluid"
                         style={{ maxHeight: "200px", objectFit: "contain" }}
                       />
@@ -55,7 +55,7 @@ const Others = () => {
                       </div>
 
                       <div className="d-flex mt-4 justify-content-between">
-                        <a href={article.link} className="mb-0">
+                        <a href={article.link} className="mb-0 article-link">
                           Article Link
                         </a>
                         <p className="mb-0">
