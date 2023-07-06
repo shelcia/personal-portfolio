@@ -1,5 +1,3 @@
-// $primaryfont: "Fira Sans", sans-serif;
-
 // $primarycolor: #e94560;
 // $secondarycolor: rgb(249, 248, 248);
 // $ternarycolor: #0f3460;
@@ -156,34 +154,40 @@
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
-  color: rgba(255, 255, 255, 0.9);
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.cd-timeline-content p,
-.cd-timeline-content .cd-date {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-.cd-timeline-content .cd-date {
-  display: inline-block;
-}
-.cd-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
-}
 
-.cd-timeline-content::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 100%;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid #333c42;
+.cd-timeline-content {
+  h2 {
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  p,
+  .cd-date {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+
+  p {
+    margin: 1em 0;
+    line-height: 1.6;
+  }
+
+  .cd-date {
+    display: inline-block;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #333c42;
+  }
 }
 
 @media only screen and (min-width: 768px) {

@@ -16,8 +16,9 @@ const Github = () => {
                     end={item.end}
                     duration={item.duration}
                     delay={item.delay}
+                    enableScrollSpy
                   />
-                  {index === counts.length - 1 && <span>+</span>}
+                  {item.plus && <span>+</span>}
                   <p>{item.title}</p>
                   <p style={{ color: "#f7f7f7" }}>{item.date}</p>
                 </div>

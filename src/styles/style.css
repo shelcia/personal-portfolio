@@ -232,23 +232,19 @@ small {
   margin-top: 0;
   margin-bottom: 5px;
 }
-
 .cd-timeline-content p,
 .cd-timeline-content .cd-date {
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   font-size: 0.8125rem;
 }
-
-.cd-timeline-content .cd-date {
-  display: inline-block;
-}
-
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
 }
-
+.cd-timeline-content .cd-date {
+  display: inline-block;
+}
 .cd-timeline-content::before {
   content: "";
   position: absolute;
