@@ -39,7 +39,7 @@ const Works = () => {
 
           {view === "classic" && (
             <div className="row">
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <div
                   className="col-md-4 mb-3"
                   data-aos="zoom-in"

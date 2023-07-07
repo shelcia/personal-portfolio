@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import LoadingPage from "./pages/LoadingPage";
 
+// eslint-disable-next-line react/display-name
 const Loadable = (Component) => (props) =>
   (
     <Suspense fallback={<LoadingPage />}>
@@ -24,7 +25,7 @@ const routes = [
     element: <AboutPage />,
   },
   {
-    path: "contact",
+    path: "resume",
     element: <ContactPage />,
   },
   {

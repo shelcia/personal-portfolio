@@ -7,6 +7,19 @@
   .fab {
     font-size: 1.6rem;
   }
+
+  // .collapse:not(.show) {
+  //   height: 0;
+  //   display: block;
+  // }
+
+  // .collapse {
+  //   height: 0;
+  //   transition: all 0.5s ease-in;
+  //   &.show {
+  //     height: auto;
+  //   }
+  // }
 }
 
 @media (max-width: 430px) {

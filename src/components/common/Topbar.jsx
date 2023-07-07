@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const TopBar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-md bg-dark navbar-dark shadow px-5">
@@ -15,33 +18,52 @@ const TopBar = () => {
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
+          data-bs-target="#topmenu"
+          aria-controls="topmenu"
+          aria-expanded={toggleMenu ? "true" : "false"}
           aria-label="Toggle navigation"
-          // data-toggle="collapse"
-          // data-target="#collapsibleNavbar"
+          onClick={() => setToggleMenu(!toggleMenu)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div
+          className={
+            toggleMenu
+              ? `collapse navbar-collapse show`
+              : `collapse navbar-collapse`
+          }
+          id="topmenu"
+          // style={{ transition: "all 0.5s ease-in" }}
+        >
           <ul className="navbar-nav ms-auto px-5">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <NavLink
+                className="nav-link"
+                to="/"
+                onClick={() => setToggleMenu(false)}
+              >
                 Works
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink
+                className="nav-link"
+                to="/about"
+                onClick={() => setToggleMenu(false)}
+              >
                 About
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to="/resume"
+                onClick={() => setToggleMenu(false)}
+              >
                 Resume
               </NavLink>
-            </li> */}
+            </li>
           </ul>
         </div>
       </nav>

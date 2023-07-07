@@ -9,7 +9,7 @@ const Github = () => {
         <div className="container pt-5">
           <h1 className="subtitle">Github Numbers</h1>
           <div className="row mt-5" data-aos="fade-up">
-            {counts.map((item, index) => (
+            {counts.map((item) => (
               <div className="col-md-4 py-4" key={item.end}>
                 <div className="github-card shadow bg-2 p-5 rounded-lg text-center">
                   <CountUp
