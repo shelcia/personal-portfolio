@@ -5,7 +5,7 @@ I don't use this portfolio anymore.
 
 ## Deployment
 
-https://shelcia-portfolio-old-3.netlify.app/
+[https://shelcia-portfolio-v3.netlify.app/](https://shelcia-portfolio-v3.netlify.app/)
 
 
 ### To Use this repo for development 
