@@ -1,8 +1,16 @@
 export const experience = [
   {
+    name: "University of Wisconsin-Madison",
+    designation: "MDI School",
+    year: "August 2023 - Present",
+    desc: "Master of Science in Design and Innovation",
+    skills: ["User Experience", "User Design", "Frontend Development"],
+    date: "August 2023",
+  },
+  {
     name: "NASDAQ",
     designation: "Senior Software Developer",
-    year: "April 2022 - Present",
+    year: "April 2022 - August 2023",
     // desc: "Developing new UI components and maintaining nasdaq.com",
     desc: "I am working on building new UI components and API integrations for nasdaq.com. I optimize and maintain the codebase for the updated pages. I am also involved in building payment interfaces for monetized articles. I have participated in multiple hackathons within the organization and was greatly lauded for representing the Bangalore branch at global level.",
     skills: ["JavaScript", "Drupal", "Content Management Systems"],
