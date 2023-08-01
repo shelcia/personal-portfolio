@@ -2,6 +2,8 @@ import React from "react";
 import { useRoutes } from "react-router-dom";
 import TopBar from "./components/common/Topbar";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./styles/style.css";
 import routes from "./router";
 import { ProjectsProvider } from "./context/ProjectContext";

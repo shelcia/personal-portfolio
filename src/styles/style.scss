@@ -184,4 +184,25 @@ $blue: rgb(0, 255, 255);
   color: rgb(123, 123, 255);
 }
 
+button.slick-arrow {
+  height: fit-content !important;
+  padding: 1rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    top: 10px !important;
+    left: 10px !important;
+  }
+
+  &.slick-prev:before {
+    content: url("../assets/chevron-left.svg") !important;
+  }
+
+  &.slick-next:before {
+    content: url("../assets/chevron-right.svg") !important;
+  }
+}
+
 @import "./components/mediaqueries";

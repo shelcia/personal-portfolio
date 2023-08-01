@@ -1270,6 +1270,25 @@ h1.subtitle {
   color: rgb(123, 123, 255);
 }
 
+button.slick-arrow {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  padding: 1rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+button.slick-arrow::before {
+  top: 10px !important;
+  left: 10px !important;
+}
+button.slick-arrow.slick-prev:before {
+  content: url("../assets/chevron-left.svg") !important;
+}
+button.slick-arrow.slick-next:before {
+  content: url("../assets/chevron-right.svg") !important;
+}
+
 @media (max-width: 767px) {
   .c-glitch {
     width: 90vw;
