@@ -70,7 +70,7 @@ h1.subtitle {
 }
 
 small {
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .cd-container::after {
@@ -326,7 +326,7 @@ button {
   text-transform: uppercase;
   border: none;
   margin: 1px;
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   position: relative;
   outline: none;
 }
@@ -807,6 +807,39 @@ button > i {
     transform: translate3d(0, 0, 0);
   }
 }
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.img-column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.img-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .img-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .img-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .tag-button {
   --offset: 3px;
   --border-size: 1px;
@@ -816,7 +849,7 @@ button > i {
   text-transform: uppercase;
   letter-spacing: 0.25em;
   outline: none;
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-right: 15px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -913,7 +946,7 @@ button > i {
 
 .sign {
   letter-spacing: 1.8;
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2em;
   color: #ffe6f1;
   text-shadow: 0 0 0.4rem #ffe6f1, 0 0 1.3rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #6b1839, 0 0.5rem 3rem #6b1839;
@@ -1127,7 +1160,7 @@ p,
 a,
 h4,
 h5 {
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h6 {
@@ -1232,7 +1265,7 @@ h1.subtitle {
   list-style: none;
 }
 .icons-list li {
-  font-family: "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Figtree", "Satoshi", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-bottom: 1rem;
 }
 .icons-list li > i,
@@ -1268,25 +1301,6 @@ h1.subtitle {
 
 .article-link {
   color: rgb(123, 123, 255);
-}
-
-button.slick-arrow {
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-  padding: 1rem;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-button.slick-arrow::before {
-  top: 10px !important;
-  left: 10px !important;
-}
-button.slick-arrow.slick-prev:before {
-  content: url("../assets/chevron-left.svg") !important;
-}
-button.slick-arrow.slick-next:before {
-  content: url("../assets/chevron-right.svg") !important;
 }
 
 @media (max-width: 767px) {

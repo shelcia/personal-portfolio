@@ -45,14 +45,14 @@ const Intro = () => {
             </div>
 
             <div
-              className="col-md-6 d-flex justify-content-center align-items-center flex-column py-4"
+              className="col-md-6 d-flex justify-content-center align-items-left flex-column py-4"
               data-aos="fade-up"
             >
               <GlowText
                 first="F"
                 second="ull Stack Developer "
                 third="a"
-                fourth="nd Designer, based in Chennai"
+                fourth="nd Designer"
               />
               <p className="mt-5">
                 I love developing stuff with MERN stack. I work on open source
