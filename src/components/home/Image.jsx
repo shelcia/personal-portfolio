@@ -3,7 +3,8 @@ import React from "react";
 const Image = ({ image }) => {
   return (
     <React.Fragment>
-      <section
+      <img src={image} alt="project-img" width="100%" height="auto" />
+      {/* <section
         className="c-glitch"
         style={{ backgroundImage: `url(${image})` }}
       >
@@ -27,7 +28,7 @@ const Image = ({ image }) => {
           className="c-glitch__img"
           style={{ backgroundImage: `url(${image})` }}
         ></div>
-      </section>
+      </section> */}
     </React.Fragment>
   );
 };
