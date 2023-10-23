@@ -10,6 +10,21 @@ export const designs = {
   },
   items: [
     {
+      title: "Midterm Portfolio",
+      pubDate: "2023-10-23 04:26:57",
+      link: "https://www.behance.net/gallery/182876447/Midterm-Portfolio",
+      guid: "https://www.behance.net/gallery/182876447/Midterm-Portfolio",
+      author: "",
+      thumbnail:
+        "https://mir-s3-cdn-cf.behance.net/projects/404/a82283182876447.Y3JvcCwyMjkzLDE3OTMsMCww.png",
+      description:
+        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/a82283182876447.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
+      content:
+        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/a82283182876447.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
+      enclosure: {},
+      categories: [],
+    },
+    {
       title: "HIRA - Marketting Site",
       pubDate: "2022-09-01 21:59:03",
       link: "https://www.behance.net/gallery/151745449/HIRA-Marketting-Site",
