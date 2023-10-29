@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/figtree": "^5.0.18",
+    "@fontsource/cormorant-garamond": "^5.0.8",
+    "@mui/material": "^5.14.15",
     "aos": "^2.3.4",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-countup": "^6.4.0",
     "react-dom": "^18.2.0",

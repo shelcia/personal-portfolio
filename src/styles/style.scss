@@ -1,187 +1,142 @@
-@import url("./external/bootstrap.min.css");
-@import url("./external/material-icon.css");
-
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-@import "./components/variable";
-@import "./components/animations";
-@import "./components/classes";
-@import "./components/timeline";
-@import "./components/button";
-@import "./components/cards";
-@import "./components/scrollbar";
-@import "./components/toggle";
-@import "./components/imageproject";
-@import "./components/imggallery";
-@import "./components/tagbutton";
-@import "./components/glowtext";
-@import "./components/404";
-@import "./components/navbar";
-@import "./components/carousel";
-
-* {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Regular.ttf")
+    format("truetype");
 }
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Light.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-LightItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Medium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-MediumItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-SemiBoldItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-BoldItalic.ttf")
+    format("truetype");
+}
+
+$font-serif: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
+$font-sans-serif: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular",
+  "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
 body {
-  overflow-x: hidden;
+  font-family: $font-sans-serif;
 }
 
-p,
-a,
-h4,
-h5 {
-  font-family: $primaryfont;
-}
-h6 {
-  font-family: $secondaryfont;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+.text-serif {
+  font-family: $font-serif;
 }
 
-h1,
-.navbar-brand > h5 {
-  font-family: $secondaryfont !important;
-  color: $primarycolor !important;
-  // text-shadow: -0.04em 0.04em $ternarycolor,
-  //   -0.06em 0.06em rgba(255, 255, 255, 0.8);
-  // text-shadow: -0.06em 0.06em rgba(255, 255, 255, 0.8);
-}
-
-.navbar-brand > h5 {
-  color: rgba(255, 255, 255, 0.8) !important;
-  text-shadow: -0.04em 0.04em $primarycolor;
-}
-
-body {
-  color: $secondarycolor;
-  background-color: $background2;
-}
-
-.page-fade {
-  animation: page-fade 0.4s;
-}
-
-.navbar-dark {
-  background-color: $background2 !important;
-}
-
-.nav-link {
-  display: inline-block;
-  // color: $primary;
-  text-decoration: none;
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1.7px;
-    background: $primarycolor;
-    transition: width 0.3s;
-    &:hover::after {
-      width: 100%;
-    }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 
-.navbar-brand {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.home-body {
+  // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 59.35%);
+  background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 70%);
+  background-size: 200% 200%; /* Adjust the size as needed */
+  animation: gradientAnimation 5s linear infinite alternate; /* Adjust the animation duration as needed */
+  background-repeat: no-repeat;
 }
 
-.fab {
-  color: $primarycolor;
-  font-size: 2rem;
-  cursor: pointer;
-  &:hover {
-    border-radius: 50ex;
-    box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
-    animation: pulse 1s;
-  }
-}
-hr.title-hr {
-  border-top: 0.3rem solid $primarycolor;
-}
-.github-card {
-  // width: 250px;
-  height: 250px;
-  span {
-    color: $primarycolor;
-    font-size: 3rem;
-    font-family: $secondaryfont !important;
-  }
-}
-
-h1.title {
-  span {
-    animation: title 0.5s 0.5s 1 forwards ease-in;
-    color: $primarycolor;
-  }
-}
-
-h1.subtitle {
-  text-shadow: -0.04em 0.04em $ternarycolor,
-    -0.06em 0.06em rgba(255, 255, 255, 0.8);
-}
-
-.is-gapless {
-  display: none;
-}
-
-.page-slide {
-  animation: slideIn 0.5s ease-in;
-  transform-origin: top;
-}
-
-.border-primary {
-  border-color: $primarycolor !important;
-  border-width: 2px;
-}
-
-$violet: rgb(255, 39, 255);
-$blue: rgb(0, 255, 255);
-
-.icons-list {
-  list-style: none;
-  li {
-    font-family: $primaryfont;
-    // font-style: italic;
-    padding-bottom: 1rem;
-    > i,
-    > img {
-      background-color: black;
-      border-radius: 50ex;
-      position: relative;
-      box-shadow: 0 0 5px #fff, 2px 0 5px $violet, -2px 0 5px $blue,
-        2px 0 5px $violet, -2px 0 5px $blue, 0 0 6px #fff, -1px 0 5px $violet,
-        1px 0 5px $blue;
-      animation: spin-icons 4s linear infinite alternate;
-    }
-  }
-  li > i {
-    padding: 0.5rem;
-    margin-right: 1rem;
-  }
-  li > img {
-    height: 30px;
-    width: auto;
-    margin-right: 1rem;
-    padding: 0.5rem;
-  }
-}
-
-.cd-timeline-content .timeline-content-info {
-  background: $background1;
-}
-.cd-timeline-content .content-skills li {
-  background: $background2;
-}
-
-.design-heading {
-  text-shadow: 1px 2px $primarycolor;
+.section-title {
+  font-size: 4rem;
+  font-family: $font-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .article-link {
-  color: rgb(123, 123, 255);
+  transition: all 0.3s ease-in-out;
+  .article-arrow {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover .article-arrow {
+    display: block;
+  }
 }
 
-@import "./components/mediaqueries";
+// .article-link {
+//   text-decoration: none; /* Remove default link underline */
+//   position: relative; /* Create a positioning context for ::after */
+// }
+
+// .article-link::after {
+//   content: ">"; /* Arrow character */
+//   position: absolute;
+//   top: 50%;
+//   right: 0px; /* Adjust the position of the arrow */
+//   transform: translateY(-50%);
+//   opacity: 0; /* Initially hidden */
+//   transition: opacity 0.3s ease; /* Add a transition for a smooth appearance */
+// }
+
+// .article-link:hover::after {
+//   opacity: 1; /* Show the arrow on hover */
+// }
+
+// .article-link:hover .arrow {
+//   opacity: 1;
+//   margin-left: 5px; /* Adjust the margin to push "Read More" to the left */
+// }
