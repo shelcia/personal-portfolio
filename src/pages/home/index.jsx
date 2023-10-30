@@ -4,6 +4,7 @@ import SelectedWorks from "./components/SelectedWorks";
 import SocialIcons from "../common/SocialIcons";
 import Arrow from "../../assets/icons/toprightarrow.svg";
 import Scroller from "../../assets/images/scroller.png";
+import { Link } from "react-router-dom";
 // import LocomotiveScroll from "locomotive-scroll";
 
 const HomePage = () => {
@@ -53,16 +54,18 @@ const HomePage = () => {
         <Box sx={{ textAlign: "center" }}>
           <SocialIcons />
         </Box>
-        <Button
-          sx={{
-            fontSize: "1.75rem",
-            fontWeight: 600,
-            textDecoration: "underline",
-          }}
-        >
-          Hire Me
-          <img src={Arrow} alt="arrow" width={34} height={34} />
-        </Button>
+        <Link to="/contact">
+          <Button
+            sx={{
+              fontSize: "1.75rem",
+              fontWeight: 600,
+              textDecoration: "underline",
+            }}
+          >
+            Hire Me
+            <img src={Arrow} alt="arrow" width={34} height={34} />
+          </Button>
+        </Link>
       </Box>
 
       <SelectedWorks />
