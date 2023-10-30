@@ -1,23 +1,27 @@
+import { Box } from "@mui/material";
 import React from "react";
+import { Dna } from "react-loader-spinner";
 
 const Loading = () => {
   return (
-    <section
-      style={{ height: "100vh", width: "100%" }}
-      className="d-flex justify-content-center align-items-center"
+    <Box
+      sx={{
+        height: "100vh",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <h1 className="popout title">
-        <span>L</span>
-        <span>o</span>
-        <span>a</span>
-        <span>d</span>
-        <span>i</span>
-        <span>n</span>
-        <span>g</span>
-        <span>.</span>
-        <span>.</span>
-      </h1>
-    </section>
+      <Dna
+        visible={true}
+        height="100"
+        width="100"
+        ariaLabel="dna-loading"
+        wrapperStyle={{}}
+        wrapperClass="dna-wrapper"
+      />
+    </Box>
   );
 };
 

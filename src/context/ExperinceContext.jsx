@@ -3,7 +3,7 @@ export const experience = [
     name: "University of Wisconsin-Madison",
     designation: "Master of Science in Design and Innovation (User Experience)",
     year: "August 2023 - Present",
-    desc: "MDI School",
+    desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/)",
     skills: [
       "User Experience",
       "Human Computer Interaction",
@@ -96,12 +96,12 @@ export const experience = [
     skills: ["IOT", "Robotics", "HTML", "CSS"],
     date: "May 2019",
   },
-  {
-    name: "Maharishi Vidya Mandir",
-    designation: "Graduted High School",
-    year: "May 2017",
-    desc: "Score: 93.8% - Graduated in PCM with Major in Computer Science",
-    skills: ["Data Structures", "My SQL"],
-    date: "May 2017",
-  },
+  // {
+  //   name: "Maharishi Vidya Mandir",
+  //   designation: "Graduted High School",
+  //   year: "May 2017",
+  //   desc: "Score: 93.8% - Graduated in PCM with Major in Computer Science",
+  //   skills: ["Data Structures", "My SQL"],
+  //   date: "May 2017",
+  // },
 ];

@@ -28,7 +28,24 @@
 }
 
 .accordian-title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+  @media screen and (max-width: 520px) {
+    font-size: 1.25rem;
+  }
+}
+
+.accordian-desc,
+.about-desc {
+  font-weight: 500;
+  font-size: 1.25rem;
+  @media screen and (max-width: 520px) {
+    font-size: 1rem;
+  }
+}
+
+.accordian-date {
+  font-family: $font-serif;
+  font-weight: 800;
 }
 
 .section-title {

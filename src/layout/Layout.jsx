@@ -1,13 +1,13 @@
 import { Box, CssBaseline, Divider, Toolbar } from "@mui/material";
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Topbar from "./components/Topbar";
 import WorkWithMeBanner from "../pages/common/WorkWithMeBanner";
 
 const Layout = () => {
-  //   const location = useLocation();
-  //   const currentRouteName = location.pathname;
+  const location = useLocation();
+  const currentRouteName = location.pathname;
 
   return (
     <>
@@ -22,7 +22,7 @@ const Layout = () => {
           <Toolbar />
           <Outlet />
         </Box>
-        <WorkWithMeBanner />
+        {currentRouteName !== "/contact" && <WorkWithMeBanner />}
         <Divider />
         <Footer />
       </Box>

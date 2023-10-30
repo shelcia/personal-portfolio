@@ -140,6 +140,23 @@ const baseOptions = {
         root: {
           backgroundColor: "transparent",
           boxShadow: "none",
+
+          "&::after": {
+            position: "absolute",
+            left: 0,
+            bottpm: "-1px",
+            right: 0,
+            height: "1px",
+            content: "''",
+            opacity: 1,
+            backgroundColor: "#17181a",
+            transition:
+              "opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+          },
+
+          "&::before": {
+            height: 0,
+          },
         },
       },
     },

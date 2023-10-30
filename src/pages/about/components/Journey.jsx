@@ -5,6 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMore from "../../../assets/icons/expandmore.svg";
 import { experience } from "../../../context/ExperinceContext";
+import { Box, Chip, Stack } from "@mui/material";
 
 const Journey = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -43,7 +44,17 @@ const Journey = () => {
             </Typography> */}
           </AccordionSummary>
           <AccordionDetails>
-            <Typography sx={{ fontWeight: 500 }}>{item.desc}</Typography>
+            <Box
+              sx={{ my: 2, display: "flex", justifyContent: "space-between" }}
+            >
+              <Stack direction="row" spacing={1}>
+                {item.skills.map((skill) => (
+                  <Chip key={skill} label={skill} />
+                ))}
+              </Stack>
+              <Typography className="accordian-date">{item.date}</Typography>
+            </Box>
+            <Typography className="accordian-desc">{item.desc}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}
