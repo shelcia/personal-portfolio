@@ -1,0 +1,42 @@
+.name-title {
+  font-family: $font-serif-2;
+  font-size: 4.5rem;
+  font-weight: 400;
+
+  @media screen and (max-width: 520px) {
+    font-size: 3rem;
+  }
+}
+
+.name-desc {
+  font-size: 2rem;
+  @media screen and (max-width: 520px) {
+    font-size: 1rem;
+  }
+}
+
+.featured-project-title {
+  font-family: $font-serif;
+  font-size: 2.75rem;
+  font-weight: 200;
+}
+
+.featured-project-desc {
+  color: #494949;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.accordian-title {
+  font-size: 2.5rem;
+}
+
+.section-title {
+  font-size: 3.375rem;
+  font-family: $font-serif;
+  font-weight: 800;
+
+  @media screen and (max-width: 520px) {
+    font-size: 2.25rem;
+  }
+}

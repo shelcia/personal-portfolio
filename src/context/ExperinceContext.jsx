@@ -1,9 +1,9 @@
 export const experience = [
   {
     name: "University of Wisconsin-Madison",
-    designation: "MDI School",
+    designation: "Master of Science in Design and Innovation (User Experience)",
     year: "August 2023 - Present",
-    desc: "Master of Science in Design and Innovation",
+    desc: "MDI School",
     skills: [
       "User Experience",
       "Human Computer Interaction",
@@ -15,7 +15,6 @@ export const experience = [
     name: "NASDAQ",
     designation: "Senior Software Developer",
     year: "April 2022 - August 2023",
-    // desc: "Developing new UI components and maintaining nasdaq.com",
     desc: "I am currently engaged in developing new UI components and integrating APIs for nasdaq.com. My responsibilities encompass codebase optimization and maintenance for the revised pages. Additionally, I am actively engaged in constructing payment interfaces for monetized articles. I have also participated in numerous hackathons within the organization, where I earned recognition for my contributions. Notably, I was commended for representing the Bangalore branch at a global level.",
     skills: ["JavaScript", "Drupal", "Content Management Systems"],
     date: "April 2022",
@@ -25,7 +24,6 @@ export const experience = [
     designation: "Front End Developer",
     year: "May 2021 - April 2022",
     desc: "I served as a Front-End Developer, responsible for both UI design and its ground-up development. I was part of a small team dedicated to creating a Job Recruitment portal aimed at streamlining the onboarding process. Notably, I successfully optimized the performance of the company website, increasing its efficiency from 50% to 93%. Furthermore, I designed and developed an assessment tool with proctoring capabilities, along with a comprehensive dashboard to facilitate these functions, all while maintaining the user interface.",
-    // desc: "Designing Team's product UI and developing it from Scratch",
     skills: [
       "ReactJS",
       "Bootstrap",
@@ -37,10 +35,16 @@ export const experience = [
     date: "May 2021",
   },
   {
-    name: "B. Tech Graduation",
-    designation: "GPA 8.5",
+    // name: "B. Tech Graduation",
+    // designation: "GPA 8.5",
+    // year: "May 2017 - July 2021",
+    // desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
+
+    name: "Indian Institute of Information Technology Design and Manufacturing, Chennai",
     year: "May 2017 - July 2021",
-    desc: "Bachelor of Technology at Indian Institute of Information Technology Design and Manufacturing, Chennai",
+    designation: "Bachelor of Technology",
+    desc: "GPA 8.5/10",
+
     skills: [
       "Human Computer Interface",
       "Database Management System",
@@ -69,7 +73,7 @@ export const experience = [
     date: "October 2020",
   },
   {
-    name: "Solera Life Scienece",
+    name: "Solera Life Science",
     designation: "Web Developer Intern",
     year: "May 2020 - Oct 2020",
     desc: "I worked as a website developer and designer, creating products using Adobe XD. I was involved in two projects: the first project focused on developing an E-commerce app for pharmaceutical products, while the second project centered around building a chatbot interface with implemented NLP. This implementation aimed to reduce company costs associated with customer handling.",
@@ -93,10 +97,10 @@ export const experience = [
     date: "May 2019",
   },
   {
-    name: "Graduted High School",
-    designation: "  Score: 93.8%",
+    name: "Maharishi Vidya Mandir",
+    designation: "Graduted High School",
     year: "May 2017",
-    desc: "Graduated in PCM with Major in Computer Science",
+    desc: "Score: 93.8% - Graduated in PCM with Major in Computer Science",
     skills: ["Data Structures", "My SQL"],
     date: "May 2017",
   },

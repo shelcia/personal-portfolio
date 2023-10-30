@@ -20,7 +20,8 @@ export const secondary = {
   // outline or border
   400: "#94A4C4",
   // text muted
-  500: "#1d2438",
+  //   500: "#1d2438",
+  500: "#17181a",
 
   // main text
   // main: "#1d2438",

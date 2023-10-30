@@ -1,81 +1,68 @@
+@import url("./external/locomotive.css");
+
+// Migra font styles
 @font-face {
-  font-family: "Cormorant Garamond";
+  font-family: "Migra";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/migra/Migra-Extralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Migra";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../assets/fonts/migra/MigraItalic-ExtralightItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Migra";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/migra/Migra-Extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Migra";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../assets/fonts/migra/MigraItalic-ExtraboldItalic.ttf")
+    format("truetype");
+}
+
+// brown sugar font
+
+@font-face {
+  font-family: "Brown Sugar";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Regular.ttf")
-    format("truetype");
+  src: url("../assets/fonts/brown-sugar/brown-sugar.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Light.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: italic;
-  font-weight: 300;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-LightItalic.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Medium.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-MediumItalic.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: italic;
-  font-weight: 600;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-SemiBoldItalic.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-Bold.ttf")
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../assets/fonts/cormorant-garamond/CormorantGaramond-BoldItalic.ttf")
-    format("truetype");
-}
-
-$font-serif: "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
+$font-serif: "Migra", "Cormorant Garamond", Georgia, "Times New Roman", Times,
+  serif;
 $font-sans-serif: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular",
   "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
+$font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
+  "Times New Roman", Times, serif;
+
+@import "./components/typography";
+
 body {
   font-family: $font-sans-serif;
+  color: #17181a;
+
+  background-image: url("../assets/images/bg.png");
+  // background-color: #fff;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  animation: gradientAnimation 2s linear infinite alternate;
 }
 
 .text-serif {
@@ -91,20 +78,28 @@ body {
   }
 }
 
-.home-body {
-  // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 59.35%);
-  background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 70%);
-  background-size: 200% 200%; /* Adjust the size as needed */
-  animation: gradientAnimation 5s linear infinite alternate; /* Adjust the animation duration as needed */
-  background-repeat: no-repeat;
+// .home-body {
+
+//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 59.35%);
+//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 70%);
+//   // background-size: 200% 200%; /* Adjust the size as needed */
+//   // animation: gradientAnimation 5s linear infinite alternate; /* Adjust the animation duration as needed */
+//   // background-repeat: no-repeat;
+// }
+
+.social-icons {
+  border-radius: 3rem;
+  background: linear-gradient(180deg, #fff 0%, rgba(218, 218, 218, 0) 100%);
+  box-shadow: 20px 20px 60px 0px #cecece, -20px -20px 60px 0px #fff;
 }
 
-.section-title {
-  font-size: 4rem;
-  font-family: $font-serif;
-  font-weight: 700;
-  font-style: italic;
-}
+// .featured-project-card {
+//   transition: transform 0.2s; /* Add a smooth transition */
+
+//   &:hover {
+//     transform: translateZ(-10px); /* Move the card slightly backward on hover */
+//   }
+// }
 
 .article-link {
   transition: all 0.3s ease-in-out;
@@ -114,6 +109,17 @@ body {
   }
   &:hover .article-arrow {
     display: block;
+  }
+}
+.topbar-link {
+  button {
+    font-weight: 400 !important;
+  }
+
+  &.active {
+    button {
+      font-weight: 700 !important;
+    }
   }
 }
 

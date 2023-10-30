@@ -1,91 +1,78 @@
 import React from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
-// import Github from "../../assets/icons/github.svg";
-// import LinkedIn from "../../assets/icons/linkedin.svg";
-// import Behance from "../../assets/icons/behance.svg";
-// import Medium from "../../assets/icons/medium.svg";
 import SelectedWorks from "./components/SelectedWorks";
+import SocialIcons from "../common/SocialIcons";
+import Arrow from "../../assets/icons/toprightarrow.svg";
+import Scroller from "../../assets/images/scroller.png";
+// import LocomotiveScroll from "locomotive-scroll";
 
 const HomePage = () => {
-  //   const icons = [
-  //     {
-  //       icon: Github,
-  //       link: "https://github.com/shelcia",
-  //       alt: "github",
-  //     },
-  //     {
-  //       icon: LinkedIn,
-  //       link: "https://github.com/shelcia",
-  //       alt: "linkedin",
-  //     },
-  //     {
-  //       icon: Behance,
-  //       link: "https://github.com/shelcia",
-  //       alt: "behance",
-  //     },
-  //     {
-  //       icon: Medium,
-  //       link: "https://github.com/shelcia",
-  //       alt: "medium",
-  //     },
-  //   ];
+  const scrollRef = React.createRef();
+
+  //   useEffect(() => {
+  //     // eslint-disable-next-line no-unused-vars
+  //     const scroll = new LocomotiveScroll({
+  //       el: scrollRef.current,
+  //       smooth: true,
+  //     });
+  //   }, [scroll]);
 
   return (
-    <Container>
+    <Container sx={{ position: "relative" }} ref={scrollRef}>
       <Typography
-        className="text-serif"
-        sx={{
-          fontSize: "10rem",
-          fontWeight: "bold",
-          fontStyle: "italic",
-          lineHeight: 1.3,
-        }}
+        className="name-title"
+        data-scroll
+        data-scroll-speed="4"
+        data-scroll-position="top"
+        data-scroll-direction="horizontal"
       >
-        Shelcia David
+        Shelcia David 🦄
       </Typography>
 
       <Typography
-        // className="text-serif"
-        sx={{
-          fontSize: "3rem",
-          fontWeight: "bold",
-          color: "#fff",
-        }}
+        sx={{ mt: 4 }}
+        className="name-desc"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-position="top"
+        data-scroll-direction="horizontal"
       >
-        Full Stack Developer and Designer living in US
+        Confident and results-driven Full Stack developer and designer.
+        Contributed to <b>NASDAQ</b> and startups like HIRA, NYX Wolves, Solera,
+        and Guvi. Pursuing a Master&apos;s in <i>Design and Innovation</i> at{" "}
+        <b>UW Madison</b>.
       </Typography>
-
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          alignItems: "center",
           mt: 3,
-          width: "100%",
         }}
       >
-        {/* {icons.map((icon) => (
-          <Tooltip key={icon.alt} title={icon.alt}>
-            <Link href={icon.link}>
-              <IconButton>
-                <img src={icon.icon} alt={icon.alt} height={20} width={20} />
-              </IconButton>
-            </Link>
-          </Tooltip>
-        ))} */}
-
+        <Box sx={{ textAlign: "center" }}>
+          <SocialIcons />
+        </Box>
         <Button
-          variant="contained"
-          color="secondary"
           sx={{
-            boxShadow: "inset -2px -5px 0 0 rgba(0,0,0,.25)",
-            borderRadius: "0.75rem",
-            padding: "14px 18px",
+            fontSize: "1.75rem",
+            fontWeight: 600,
+            textDecoration: "underline",
           }}
         >
-          Check out my Work
+          Hire Me
+          <img src={Arrow} alt="arrow" width={34} height={34} />
         </Button>
       </Box>
+
       <SelectedWorks />
+      <img
+        src={Scroller}
+        alt="scroller"
+        style={{ position: "absolute", top: 24, right: -15 }}
+        height={300}
+        width={30}
+      />
     </Container>
   );
 };

@@ -53,7 +53,7 @@ const Writing = () => {
             <Typography
               component={"h2"}
               className="text-serif"
-              sx={{ fontSize: "2rem", fontStyle: "italic" }}
+              sx={{ fontSize: "2rem" }}
             >
               {article.title}
             </Typography>
