@@ -57,12 +57,25 @@
 
 .featured-project-desc {
   color: #494949;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.project-title {
+  font-family: "Migra", "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.project-desc {
+  color: #494949;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .accordian-title {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 520px) {
   .accordian-title {
@@ -98,17 +111,30 @@
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #17181a;
-  background-image: url("../assets/images/bg.png");
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  animation: gradientAnimation 2s linear infinite alternate;
+  background: url("../assets/images/bg.png");
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire contain
+
+// background: url("../assets/images/bg.png");
+// background-size: cover;
+// background-repeat: no-repeat;
+
+// position: relative;
+// width: 100vw;
+// height: 100%;
+
+/* Add a light overlay using pseudo-element ::before */
 }
 
 .text-serif {

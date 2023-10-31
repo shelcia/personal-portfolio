@@ -12,8 +12,8 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import { customTheme } from "./theme";
-import { Cursor } from "react-creative-cursor";
-import "react-creative-cursor/dist/styles.css";
+// import { Cursor } from "react-creative-cursor";
+// import "react-creative-cursor/dist/styles.css";
 
 // AOS.init();
 
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <Cursor isGelly={true} cursorBackgrounColor={"rgba(0,0,0,0.7)"} />
+      {/* <Cursor isGelly={true} cursorBackgrounColor={"rgba(0,0,0,0.7)"} /> */}
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={appTheme}>
           <CssBaseline />

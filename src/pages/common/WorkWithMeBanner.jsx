@@ -21,7 +21,7 @@ const WorkWithMeBanner = () => {
           sx={{
             color: "#FFF",
             fontFamily: "'Migra', serif",
-            fontSize: "3.75rem",
+            fontSize: { md: "3.75rem", xs: "2.5rem" },
             fontWeight: 800,
           }}
         >
@@ -42,7 +42,7 @@ const WorkWithMeBanner = () => {
           </Button>
         </Link>
       </Box>
-      <Box sx={{ width: 240 }}>
+      <Box sx={{ width: 240, display: { md: "block", xs: "none" } }}>
         <img
           src={ShelciaMemoji}
           alt="shelcia"

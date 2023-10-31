@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/figtree": "^5.0.18",
     "@fontsource/cormorant-garamond": "^5.0.8",
+    "@mui/lab": "^5.0.0-alpha.151",
     "@mui/material": "^5.14.15",
     "aos": "^2.3.4",
     "gsap": "^3.12.2",

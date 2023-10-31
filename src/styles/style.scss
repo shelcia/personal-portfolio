@@ -50,19 +50,62 @@ $font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
 
 @import "./components/typography";
 
+// body {
+//   font-family: $font-sans-serif;
+//   color: #17181a;
+
+//   // background: url("../assets/images/bg.png"), lightgray 10%;
+//   // background: url("../assets/images/bg.png"),
+//   //   rgb(240, 240, 240) 50% / cover no-repeat;
+
+//   background: url("../assets/images/bg.png") 50% / cover no-repeat,
+//     rgba(255, 255, 255, 0.246);
+
+//   // mix-blend-mode: difference;
+//   // background-color: #fff;
+//   // height: 100vh;
+//   width: 100%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: relative;
+//   animation: gradientAnimation 2s linear infinite alternate;
+// }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: $font-sans-serif;
   color: #17181a;
+  background: url("../assets/images/bg.png");
+  background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire contain
 
-  background-image: url("../assets/images/bg.png");
-  // background-color: #fff;
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  animation: gradientAnimation 2s linear infinite alternate;
+  // background: url("../assets/images/bg.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+  // position: relative;
+  // width: 100vw;
+  // height: 100%;
+
+  /* Add a light overlay using pseudo-element ::before */
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value as needed */
+  // }
 }
 
 .text-serif {

@@ -7,8 +7,6 @@ import {
   IconButton,
   List,
   ListItem,
-  ListItemButton,
-  ListItemText,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -56,9 +54,15 @@ const Topbar = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.name} />
-            </ListItemButton>
+            <NavLink
+              key={item.name}
+              to={item.link}
+              data-cursor-text={item.name}
+              className="topbar-link"
+              style={{ width: "100%" }}
+            >
+              <Button sx={{ width: "100%" }}>{item.name}</Button>
+            </NavLink>
           </ListItem>
         ))}
       </List>
@@ -107,13 +111,6 @@ const Topbar = () => {
                 data-cursor-text={item.name}
                 data-cursor-size="80px"
                 className="topbar-link"
-                // style={({ isActive, isPending, isTransitioning }) => {
-                //   return {
-                //     fontWeight: isActive ? 800 : "",
-                //     color: isPending ? "red" : "black",
-                //     viewTransitionName: isTransitioning ? "slide" : "",
-                //   };
-                // }}
               >
                 <Button>{item.name}</Button>
               </NavLink>

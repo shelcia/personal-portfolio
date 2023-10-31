@@ -10,6 +10,7 @@ export const experience = [
       "Frontend Development",
     ],
     date: "August 2023",
+    timeline: "Aug'23 - Aug'24",
   },
   {
     name: "NASDAQ",
@@ -18,6 +19,7 @@ export const experience = [
     desc: "I am currently engaged in developing new UI components and integrating APIs for nasdaq.com. My responsibilities encompass codebase optimization and maintenance for the revised pages. Additionally, I am actively engaged in constructing payment interfaces for monetized articles. I have also participated in numerous hackathons within the organization, where I earned recognition for my contributions. Notably, I was commended for representing the Bangalore branch at a global level.",
     skills: ["JavaScript", "Drupal", "Content Management Systems"],
     date: "April 2022",
+    timeline: "Apr'22 - Aug'23",
   },
   {
     name: "Hire All Infotech",
@@ -33,6 +35,7 @@ export const experience = [
       "Figma",
     ],
     date: "May 2021",
+    timeline: "May'21 - Apr'22",
   },
   {
     // name: "B. Tech Graduation",
@@ -53,6 +56,7 @@ export const experience = [
       "Engineering Entrepreneurship",
     ],
     date: "May 2021",
+    timeline: "Jul'17 - Jul'21",
   },
   {
     name: "NYX Wolves Private Limited",
@@ -62,6 +66,7 @@ export const experience = [
     // desc: "Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.",
     skills: ["ReactJS", "MongoDB", "NodeJS", "Docker", "Keycloak"],
     date: "November 2020",
+    timeline: "Nov'20 - May'21",
   },
   {
     name: "Guvi Geeks Private Limited",
@@ -71,6 +76,7 @@ export const experience = [
     // desc: "Part of 5 members taking care of the new version of Edu Tutor web app; Implementing new design;",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery"],
     date: "October 2020",
+    timeline: "Oct'20 - Dec'21",
   },
   {
     name: "Solera Life Science",
@@ -87,6 +93,7 @@ export const experience = [
       "Dialogueflow",
     ],
     date: "May 2020",
+    timeline: "May'20 - Oct'20",
   },
   {
     name: "NUS Computing",
@@ -95,6 +102,7 @@ export const experience = [
     desc: "I participated in an academic internship in Singapore where I gained valuable experience in networking architecture and focused on building security for IoT systems. During my time there, I completed two projects. The first project involved creating an IoT-based disaster management system under the guidance of Professor Tan Wee Kek. The second project centered around visualizing data on the admin dashboard and was conducted under the guidance of Mr. Shanthanu Pandey from Hewlett Packard.",
     skills: ["IOT", "Robotics", "HTML", "CSS"],
     date: "May 2019",
+    timeline: "May'19 - Jun'19",
   },
   // {
   //   name: "Maharishi Vidya Mandir",
