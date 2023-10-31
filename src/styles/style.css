@@ -50,22 +50,19 @@
 }
 
 .featured-project-title {
-  font-family: "Migra", "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
   font-size: 2.75rem;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .featured-project-desc {
   color: #494949;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .project-title {
-  font-family: "Migra", "Cormorant Garamond", Georgia, "Times New Roman", Times, serif;
   font-size: 1.5rem;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 600;
 }
 
 .project-desc {
@@ -76,10 +73,12 @@
 
 .accordian-title {
   font-size: 2rem;
+  font-weight: 800;
 }
 @media screen and (max-width: 520px) {
   .accordian-title {
     font-size: 1.25rem;
+    word-wrap: break-word;
   }
 }
 

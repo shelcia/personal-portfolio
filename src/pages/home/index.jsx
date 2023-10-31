@@ -3,8 +3,9 @@ import { Box, Button, Container, Typography } from "@mui/material";
 import SelectedWorks from "./components/SelectedWorks";
 import SocialIcons from "../common/SocialIcons";
 import Arrow from "../../assets/icons/toprightarrow.svg";
-import Scroller from "../../assets/images/scroller.png";
+// import Scroller from "../../assets/images/scroller.png";
 import { Link } from "react-router-dom";
+import Scroller from "../common/Scroller";
 // import LocomotiveScroll from "locomotive-scroll";
 
 const HomePage = () => {
@@ -69,13 +70,14 @@ const HomePage = () => {
       </Box>
 
       <SelectedWorks />
-      <img
+      <Scroller />
+      {/* <img
         src={Scroller}
         alt="scroller"
         style={{ position: "absolute", top: 24, right: -15 }}
         height={300}
         width={30}
-      />
+      /> */}
     </Container>
   );
 };

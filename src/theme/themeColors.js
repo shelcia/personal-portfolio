@@ -36,7 +36,8 @@ export const error = {
   main: "#FD396D",
 };
 export const success = {
-  main: "#2CC5BD",
+  // main: "#2CC5BD",
+  main: "#2cc56e",
 };
 export const warning = {
   main: "#FFE91F",

@@ -14,7 +14,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "../../assets/icons/hamburger-menu.svg";
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 const navItems = [
   {
     name: "Works",

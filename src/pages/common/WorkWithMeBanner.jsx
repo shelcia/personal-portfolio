@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import ShelciaMemoji from "../../assets/images/shelcia-memoji.png";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ const WorkWithMeBanner = () => {
         mt: 10,
       }}
     >
-      <Box>
+      <Container>
         <Typography
           sx={{
             color: "#FFF",
@@ -41,7 +41,7 @@ const WorkWithMeBanner = () => {
             Connect with Me
           </Button>
         </Link>
-      </Box>
+      </Container>
       <Box sx={{ width: 240, display: { md: "block", xs: "none" } }}>
         <img
           src={ShelciaMemoji}

@@ -52,6 +52,14 @@ const baseOptions = {
             boxShadow: "none",
           },
         },
+        containedSuccess: {
+          color: secondary.main,
+          backgroundColor: secondary[500],
+          borderRadius: 8,
+          "&:hover": {
+            backgroundColor: "#000",
+          },
+        },
       },
     },
     MuiCssBaseline: {
@@ -375,26 +383,26 @@ const themesOptions = {
           },
         },
       },
-      MuiChip: {
-        styleOverrides: {
-          root: {
-            backgroundColor: secondary[500],
-            color: secondary.main,
+      // MuiChip: {
+      //   styleOverrides: {
+      //     root: {
+      //       backgroundColor: secondary[500],
+      //       color: secondary.main,
 
-            // "&:Mui-Outlined": {
-            //   backgroundColor: secondary.main,
-            // },
-          },
-          outlinedSecondary: {
-            backgroundColor: "rgba(0,0,0,0)",
-            color: secondary[500],
-            border: "none",
-          },
-          //   "&.MuiOutlined": {
-          //     backgroundColor: secondary.main,
-          //   },
-        },
-      },
+      //       // "&:Mui-Outlined": {
+      //       //   backgroundColor: secondary.main,
+      //       // },
+      //     },
+      //     outlinedSecondary: {
+      //       backgroundColor: "rgba(0,0,0,0)",
+      //       color: secondary[500],
+      //       border: "none",
+      //     },
+      //     //   "&.MuiOutlined": {
+      //     //     backgroundColor: secondary.main,
+      //     //   },
+      //   },
+      // },
       MuiDivider: {
         styleOverrides: {
           root: {
@@ -435,18 +443,18 @@ const themesOptions = {
           },
         },
       },
-      MuiChip: {
-        styleOverrides: {
-          root: {
-            color: secondary[500],
-            backgroundColor: secondary.main,
-            // backgroundColor: secondary[500],
-            // color: secondary.main,
-            // backgroundColor: primary.dark,
-            // color: secondary.main,
-          },
-        },
-      },
+      // MuiChip: {
+      //   styleOverrides: {
+      //     root: {
+      //       color: secondary[500],
+      //       backgroundColor: secondary.main,
+      //       // backgroundColor: secondary[500],
+      //       // color: secondary.main,
+      //       // backgroundColor: primary.dark,
+      //       // color: secondary.main,
+      //     },
+      //   },
+      // },
       MuiTableCell: {
         styleOverrides: {
           root: {
