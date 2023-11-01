@@ -10,7 +10,7 @@ import {
   Skeleton,
   Typography,
 } from "@mui/material";
-import TopRightArrow from "../../assets/icons/toprightarrow.svg";
+import TopRightArrow from "../../assets/icons/toprightarrow-medium.svg";
 
 const Writing = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,8 +65,11 @@ const Writing = () => {
               >
                 <Typography
                   component={"h2"}
-                  className="text-serif"
-                  sx={{ fontSize: { xs: "1.5rem", md: "2rem" } }}
+                  // className="text-serif"
+                  sx={{
+                    fontSize: { xs: "1.5rem", md: "2rem" },
+                    fontWeight: 600,
+                  }}
                 >
                   {article.title}
                 </Typography>

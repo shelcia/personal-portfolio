@@ -9,10 +9,10 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
-const Journey = () => {
+const Journey = ({ journeyToRef }) => {
   return (
     <>
-      <Container sx={{ pl: 0, overflowX: "hidden" }}>
+      <Container sx={{ pl: 0, overflowX: "hidden" }} ref={journeyToRef}>
         <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
           Journey
         </Typography>

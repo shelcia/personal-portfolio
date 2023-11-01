@@ -46,7 +46,7 @@ export const experience = [
     name: "Indian Institute of Information Technology Design and Manufacturing, Chennai",
     year: "May 2017 - July 2021",
     designation: "Bachelor of Technology",
-    desc: "GPA 8.5/10",
+    desc: "Pursued Smart Manufacturing Engineering as a Women in Tech Organizer at IIITDM Kancheepuram, where I also held the roles of Robotics Club Secretary and Sponsorship Secretary. I maintained a GPA of 8.5/10.",
 
     skills: [
       "Human Computer Interface",

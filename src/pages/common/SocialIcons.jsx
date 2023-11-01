@@ -2,31 +2,31 @@ import React from "react";
 import { IconButton, Link, Tooltip } from "@mui/material";
 import Github from "../../assets/icons/github.svg";
 import LinkedIn from "../../assets/icons/linkedin.svg";
-// import Behance from "../../assets/icons/behance.svg";
-// import Medium from "../../assets/icons/medium.svg";
+import Behance from "../../assets/icons/behance.svg";
+import Medium from "../../assets/icons/medium.svg";
 
 const SocialIcons = () => {
   const icons = [
     {
       icon: Github,
       link: "https://github.com/shelcia",
-      alt: "github",
+      alt: "Check out my works on github",
     },
     {
       icon: LinkedIn,
       link: "https://github.com/shelcia",
-      alt: "linkedin",
+      alt: "Connect with me on linkedin",
     },
-    //   {
-    //     icon: Behance,
-    //     link: "https://github.com/shelcia",
-    //     alt: "behance",
-    //   },
-    //   {
-    //     icon: Medium,
-    //     link: "https://github.com/shelcia",
-    //     alt: "medium",
-    //   },
+    {
+      icon: Behance,
+      link: "https://github.com/shelcia",
+      alt: "Check out my works on behance",
+    },
+    {
+      icon: Medium,
+      link: "https://github.com/shelcia",
+      alt: "Follow my work on medium",
+    },
   ];
 
   return (

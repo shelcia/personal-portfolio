@@ -8,7 +8,9 @@ const Footer = () => {
       component="footer"
       sx={{ display: "flex", p: 4, justifyContent: "space-between" }}
     >
-      <Typography>Developed & Designed by Shelcia.</Typography>
+      <Typography sx={{ fontWeight: 500 }}>
+        Developed & Designed by Shelcia.
+      </Typography>
       <Box>
         <SocialIcons />
       </Box>

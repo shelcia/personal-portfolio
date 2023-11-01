@@ -1,11 +1,21 @@
+import React, { useRef } from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import React from "react";
 import Shelcia from "../../assets/images/me.png";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
 
 const AboutMe = () => {
+  const journeyToRef = useRef(null);
+  const skillsToRef = useRef(null);
+
+  const scrollToElement = (scrollToRef) => {
+    if (scrollToRef.current) {
+      // Step 3: Use the scrollIntoView method to scroll to the element
+      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Container sx={{ position: "relative" }}>
@@ -39,19 +49,28 @@ const AboutMe = () => {
           </Grid>
         </Grid>
         <Box sx={{ mt: 4 }}>
-          <Button variant="contained" color="success" sx={{ mr: 2 }}>
-            My skills
+          <Button
+            variant="contained"
+            color="success"
+            sx={{ mr: 2 }}
+            onClick={() => scrollToElement(skillsToRef)}
+          >
+            My Skills
           </Button>
-          <Button variant="contained" color="success">
+          <Button
+            variant="contained"
+            color="success"
+            onClick={() => scrollToElement(journeyToRef)}
+          >
             My Experience
           </Button>
         </Box>
         <Scroller />
       </Container>
 
-      <Journey />
+      <Journey journeyToRef={journeyToRef} />
 
-      <Skills />
+      <Skills skillsToRef={skillsToRef} />
     </>
   );
 };

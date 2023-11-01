@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 
-const Skills = () => {
+const Skills = ({ skillsToRef }) => {
   const skills1 = [
     "React",
     "Javascript",
@@ -26,7 +26,7 @@ const Skills = () => {
     "Tailwind",
   ];
   return (
-    <Container>
+    <Container ref={skillsToRef}>
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
         Skills
       </Typography>
