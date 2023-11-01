@@ -29,7 +29,7 @@ const Works = () => {
                   position: "relative",
                   backgroundColor: "transparent",
                   boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: "28.92px",
+                  borderRadius: { xs: "8px", md: "28.92px" },
                   transform: "perspective(400px)",
                   transition: ".2s ease",
                 }}
@@ -81,7 +81,7 @@ const Works = () => {
                   position: "relative",
                   backgroundColor: "transparent",
                   boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: "28.92px",
+                  borderRadius: { xs: "8px", md: "28.92px" },
                   transform: "perspective(400px)",
                   transition: ".2s ease",
                 }}

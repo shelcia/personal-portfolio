@@ -43,13 +43,16 @@ const Topbar = () => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography
-        variant="h6"
-        sx={{ my: 2, fontStyle: "italic" }}
-        className="text-serif"
-      >
-        Shelcia.
-      </Typography>
+      <Link to="/">
+        <Typography
+          variant="h6"
+          sx={{ my: 2, fontStyle: "italic" }}
+          className="text-serif"
+        >
+          Shelcia.
+        </Typography>
+      </Link>
+
       <Divider />
       <List>
         {navItems.map((item) => (

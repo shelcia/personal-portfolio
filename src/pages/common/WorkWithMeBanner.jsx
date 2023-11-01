@@ -11,9 +11,9 @@ const WorkWithMeBanner = () => {
         display: "flex",
         justifyContent: "space-between",
         py: 4,
-        px: 6,
+        px: { xs: 2, md: 6 },
         position: "relative",
-        mt: 10,
+        mt: { md: 10, xs: 1 },
       }}
     >
       <Container>
@@ -31,9 +31,7 @@ const WorkWithMeBanner = () => {
           <Button
             sx={{
               borderRadius: "0.5rem",
-              // background: "#F0F0F0",
               boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-              // padding: "1.25rem 3.75rem",
             }}
             color="secondary"
             variant="contained"

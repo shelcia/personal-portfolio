@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, Link, Tooltip } from "@mui/material";
+import { IconButton, Link, Tooltip, useMediaQuery } from "@mui/material";
 import Github from "../../assets/icons/github.svg";
 import LinkedIn from "../../assets/icons/linkedin.svg";
 import Behance from "../../assets/icons/behance.svg";
@@ -29,13 +29,22 @@ const SocialIcons = () => {
     },
   ];
 
+  const matches = useMediaQuery("(min-width:900px)");
+
   return (
     <>
       {icons.map((icon) => (
         <Tooltip key={icon.alt} title={icon.alt}>
           <Link href={icon.link}>
-            <IconButton sx={{ p: "0.75rem", ml: 2 }} className="social-icons">
-              <img src={icon.icon} alt={icon.alt} height={24} width={24} />
+            <IconButton
+              sx={{ p: "0.75rem", ml: { xs: 0.5, md: 2 } }}
+              className="social-icons"
+            >
+              {matches ? (
+                <img src={icon.icon} alt={icon.alt} height={24} width={24} />
+              ) : (
+                <img src={icon.icon} alt={icon.alt} height={16} width={16} />
+              )}
             </IconButton>
           </Link>
         </Tooltip>

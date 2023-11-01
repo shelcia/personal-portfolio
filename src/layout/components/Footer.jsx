@@ -6,7 +6,13 @@ const Footer = () => {
   return (
     <Box
       component="footer"
-      sx={{ display: "flex", p: 4, justifyContent: "space-between" }}
+      sx={{
+        display: "flex",
+        p: 4,
+        justifyContent: "space-between",
+        gap: 2,
+        flexDirection: { xs: "column", md: "row" },
+      }}
     >
       <Typography sx={{ fontWeight: 500 }}>
         Developed & Designed by Shelcia.

@@ -1,21 +1,33 @@
+import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import ErrImg from "../assets/images/404.svg";
 
 const ErrorPage = () => {
   return (
     <React.Fragment>
-      <div className="container text-center">
-        <h1 data-shadow="404" className="error">
-          404
-        </h1>
-        <br />
-
-        <p data-shadow="Page not found!" className="error">
-          Page not found!
-        </p>
-        <p>Either I screwed up</p>
-        <p>OR</p>
-        <p>You tried kinky links</p>
-      </div>
+      <Container>
+        <Grid container>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{ display: { xs: "none", md: "block" } }}
+          >
+            <img src={ErrImg} width={"100%"} height={"auto"} />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography component={"h1"} variant="h1" className="text-serif">
+              404
+            </Typography>
+            <Typography component={"h2"} variant="h2" className="text-serif">
+              Page not found!
+            </Typography>
+            <Typography sx={{ mt: 3, fontWeight: 600 }}>
+              Either I screwed up OR You tried kinky links
+            </Typography>
+          </Grid>
+        </Grid>
+      </Container>
     </React.Fragment>
   );
 };

@@ -90,7 +90,7 @@ const SelectedWorks = () => {
                   position: "relative",
                   backgroundColor: "transparent",
                   boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: "28.92px",
+                  borderRadius: { xs: "16px", md: "28.92px" },
                   transform: "perspective(400px)",
                   //   transition: "all, 0.2s ease-in",
                   transition: ".2s ease",
