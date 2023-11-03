@@ -47,7 +47,7 @@ export const FeaturedProjectsProvider = (props) => {
       code: "https://github.com/shelcia/mocker",
     },
     {
-      id: "dynamic portfolio",
+      id: "dynamic-portfolio",
       name: "Dynamic Portfolio",
       image: DynamicPortfolioMockup,
       desc: "Build websites by filling up forms",

@@ -129,9 +129,11 @@ const SelectedWorks = () => {
                   </Typography>
                 </Box>
                 <Box>
-                  <IconButton sx={{ border: "1.5px solid #000" }}>
-                    <img src={Arrow} alt="Arrow" width={34} height={34} />
-                  </IconButton>
+                  <Link to={`/works/${project.id}`}>
+                    <IconButton sx={{ border: "1.5px solid #000" }}>
+                      <img src={Arrow} alt="Arrow" width={34} height={34} />
+                    </IconButton>
+                  </Link>
                 </Box>
               </Box>
             </Box>

@@ -7,7 +7,7 @@ const WorkWithMeBanner = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#17181A",
+        background: "linear-gradient(180deg, #17181A 0%, #363636 100%)",
         display: "flex",
         justifyContent: "space-between",
         py: 4,

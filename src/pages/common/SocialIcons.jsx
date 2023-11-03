@@ -35,7 +35,7 @@ const SocialIcons = () => {
     <>
       {icons.map((icon) => (
         <Tooltip key={icon.alt} title={icon.alt}>
-          <Link href={icon.link}>
+          <Link href={icon.link} target="_blank">
             <IconButton
               sx={{ p: "0.75rem", ml: { xs: 0.5, md: 2 } }}
               className="social-icons"

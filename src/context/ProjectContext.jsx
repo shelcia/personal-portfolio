@@ -6,7 +6,7 @@ export const ProjectsContext = createContext();
 export const ProjectsProvider = (props) => {
   const [projects] = useState([
     {
-      id: "dynamicportfolio",
+      id: "dynamic-portfolio",
       name: "Dynamic Portfolio Maker",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",

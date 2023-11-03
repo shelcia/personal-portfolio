@@ -6,11 +6,13 @@ import {
   Container,
   Grid,
   IconButton,
+  Link as MuiLink,
   Typography,
 } from "@mui/material";
 import Arrow from "../../assets/icons/toprightarrow.svg";
 import { FeaturedProjectsContext } from "../../context/FeaturedProjectsContext";
 import { designs } from "../../context/DesignContext";
+import { Link } from "react-router-dom";
 
 const Works = () => {
   const projects = useContext(FeaturedProjectsContext);
@@ -59,9 +61,11 @@ const Works = () => {
                   </Typography>
                 </Box>
                 <Box>
-                  <IconButton sx={{ border: "1.25px solid #000" }}>
-                    <img src={Arrow} alt="Arrow" width={20} height={20} />
-                  </IconButton>
+                  <Link to={`/works/${project.id}`}>
+                    <IconButton sx={{ border: "1.25px solid #000" }}>
+                      <img src={Arrow} alt="Arrow" width={20} height={20} />
+                    </IconButton>
+                  </Link>
                 </Box>
               </Box>
             </Box>
@@ -94,6 +98,31 @@ const Works = () => {
                   alt="project"
                 />
               </Card>
+
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  mt: 2,
+                }}
+              >
+                <Box>
+                  <Typography className="project-title">
+                    {design.title}
+                  </Typography>
+                  {/* <Typography className="project-desc">
+                    {design.description}
+                  </Typography> */}
+                </Box>
+                <Box>
+                  <MuiLink href={design.link} target="_blank">
+                    <IconButton sx={{ border: "1.25px solid #000" }}>
+                      <img src={Arrow} alt="Arrow" width={20} height={20} />
+                    </IconButton>
+                  </MuiLink>
+                </Box>
+              </Box>
             </Box>
           </Grid>
         ))}
