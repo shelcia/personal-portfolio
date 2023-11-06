@@ -1,10 +1,10 @@
 import React from "react";
 import { useState, createContext } from "react";
 // import MockerMockup from "../assets/images/mockups/mocker-mockup.png";
-import MockerMockup from "../assets/images/mockups/mocker.png";
-import SocialgramMockup from "../assets/images/mockups/socialgram.png";
-import BloggramMockup from "../assets/images/mockups/bloggram.png";
-import DynamicPortfolioMockup from "../assets/images/mockups/dynamicportfolio.png";
+import MockerMockup from "../assets/images/mockups/mocker.webp";
+import SocialgramMockup from "../assets/images/mockups/socialgram.webp";
+import BloggramMockup from "../assets/images/mockups/bloggram.webp";
+import DynamicPortfolioMockup from "../assets/images/mockups/dynamicportfolio.webp";
 
 export const FeaturedProjectsContext = createContext();
 
