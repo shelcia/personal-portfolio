@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
-import ErrImg from "../../assets/images/404.svg";
+import ErrImg from "../../assets/images/images/404.svg";
 
 const ErrorPage = () => {
   return (
