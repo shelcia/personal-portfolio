@@ -4,6 +4,7 @@ import Shelcia from "../../assets/images/me.png";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
+import Photography from "./components/Photography";
 
 const AboutMe = () => {
   const journeyToRef = useRef(null);
@@ -71,6 +72,8 @@ const AboutMe = () => {
       <Journey journeyToRef={journeyToRef} />
 
       <Skills skillsToRef={skillsToRef} />
+
+      <Photography />
     </>
   );
 };

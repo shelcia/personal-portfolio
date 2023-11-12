@@ -48,7 +48,9 @@ $font-sans-serif: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular",
 $font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
   "Times New Roman", Times, serif;
 
+@import "./components/imggallery";
 @import "./components/typography";
+// @import "./components/cssbutton";
 
 // body {
 //   font-family: $font-sans-serif;

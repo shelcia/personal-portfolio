@@ -1,7 +1,7 @@
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import GlowText from "../../partials/GlowText";
 
-const Carousel = () => {
+const Photography = () => {
   const Images = [
     {
       id: "col1",
@@ -96,30 +96,22 @@ const Carousel = () => {
     },
   ];
 
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
-
   return (
-    <React.Fragment>
-      <GlowText first="P" second="hoto" third="g" fourth="raphy" />
-      <div id="photography" className="slide mt-5">
-        <div className="img-row">
-          {Images.map((col) => (
-            <div className="img-column" key={col.id}>
-              {col.images.map((img) => (
-                <img src={img.image} alt={img.caption} key={img.caption} />
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-    </React.Fragment>
+    <Container>
+      <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
+        Amateur Photography
+      </Typography>
+      <Box className="img-row">
+        {Images.map((col) => (
+          <Box className="img-column" key={col.id}>
+            {col.images.map((img) => (
+              <img src={img.image} alt={img.caption} key={img.caption} />
+            ))}
+          </Box>
+        ))}
+      </Box>
+    </Container>
   );
 };
 
-export default Carousel;
+export default Photography;

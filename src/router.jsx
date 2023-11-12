@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import LoadingPage from "./pages/LoadingPage";
+import LoadingPage from "./pages/others/LoadingPage";
 import Layout from "./layout/Layout";
 
 // eslint-disable-next-line react/display-name
@@ -16,7 +16,7 @@ const WorkPage = Loadable(lazy(() => import("./pages/work/index")));
 const AboutPage = Loadable(lazy(() => import("./pages/about/index")));
 const WritingPage = Loadable(lazy(() => import("./pages/writing/index")));
 const ContactPage = Loadable(lazy(() => import("./pages/contact/index")));
-const ErrorPage = Loadable(lazy(() => import("./pages/404Page")));
+const ErrorPage = Loadable(lazy(() => import("./pages/others/404Page")));
 
 // const ProjectPage = Loadable(lazy(() => import("./pages/ProjectPage")));
 // const AboutPage = Loadable(lazy(() => import("./pages/AboutPage")));

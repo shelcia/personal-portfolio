@@ -82,61 +82,61 @@ const SelectedWorks = () => {
       <Grid container spacing={4} sx={{ mt: 3 }}>
         {projects.map((project) => (
           <Grid item xs={12} md={6} key={project.id}>
-            <Box>
-              <Card
-                // ref={cardRef}
-                sx={{
-                  maxWidth: "100%",
-                  position: "relative",
-                  backgroundColor: "transparent",
-                  boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: { xs: "16px", md: "28.92px" },
-                  transform: "perspective(400px)",
-                  //   transition: "all, 0.2s ease-in",
-                  transition: ".2s ease",
+            <Link to={`/works/${project.id}`}>
+              <Box>
+                <Card
+                  // ref={cardRef}
+                  sx={{
+                    maxWidth: "100%",
+                    position: "relative",
+                    backgroundColor: "transparent",
+                    boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
+                    borderRadius: { xs: "16px", md: "28.92px" },
+                    transform: "perspective(400px)",
+                    //   transition: "all, 0.2s ease-in",
+                    transition: ".2s ease",
 
-                  //   "&:hover": {
-                  //     transform: "rotate(50deg, 50deg)",
-                  //   },
-                  //   transformStyle: "preserve-3d", // Enable 3D transforms
-                  //   transformOrigin: "center", // Set the pivot point to the center
-                }}
-                // onMouseEnter={handleHover}
-                // onMouseLeave={handleHoverExit}
-                className="featured-project-card"
-              >
-                <CardMedia
-                  component="img"
-                  height="100%"
-                  image={project.image}
-                  alt="project"
-                />
-              </Card>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  mt: 2,
-                }}
-              >
-                <Box>
-                  <Typography className="featured-project-title">
-                    {project.name}
-                  </Typography>
-                  <Typography className="featured-project-desc">
-                    {project.desc}
-                  </Typography>
-                </Box>
-                <Box>
-                  <Link to={`/works/${project.id}`}>
+                    //   "&:hover": {
+                    //     transform: "rotate(50deg, 50deg)",
+                    //   },
+                    //   transformStyle: "preserve-3d", // Enable 3D transforms
+                    //   transformOrigin: "center", // Set the pivot point to the center
+                  }}
+                  // onMouseEnter={handleHover}
+                  // onMouseLeave={handleHoverExit}
+                  className="featured-project-card"
+                >
+                  <CardMedia
+                    component="img"
+                    height="100%"
+                    image={project.image}
+                    alt="project"
+                  />
+                </Card>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    mt: 2,
+                  }}
+                >
+                  <Box>
+                    <Typography className="featured-project-title">
+                      {project.name}
+                    </Typography>
+                    <Typography className="featured-project-desc">
+                      {project.desc}
+                    </Typography>
+                  </Box>
+                  <Box>
                     <IconButton sx={{ border: "1.5px solid #000" }}>
                       <img src={Arrow} alt="Arrow" width={34} height={34} />
                     </IconButton>
-                  </Link>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            </Link>
           </Grid>
         ))}
       </Grid>

@@ -65,7 +65,6 @@ const HomePage = () => {
           </Button>
         </Link>
       </Box>
-
       <SelectedWorks />
       <Scroller />
     </Container>
