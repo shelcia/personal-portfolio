@@ -88,7 +88,7 @@ const Contact = () => {
   };
 
   return (
-    <Box>
+    <Box data-aos="fade-up">
       <Snackbar
         open={open}
         autoHideDuration={4000}
@@ -114,7 +114,7 @@ const Contact = () => {
 
       <Card sx={{ width: { xs: "100%", md: 500 }, mx: "auto" }}>
         <CardContent sx={{ p: 4 }}>
-          <Typography component={"h2"} className="section-title">
+          <Typography component={"h1"} className="section-title">
             Connect !
           </Typography>
           <Typography>

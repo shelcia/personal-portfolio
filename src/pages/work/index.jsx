@@ -26,9 +26,8 @@ const Work = () => {
     <>
       <Box
         sx={{
-          //   background: "linear-gradient(180deg, #625FFF 0%, #FF6CF0 100%)",
           background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-          height: "12rem",
+          height: { xs: "6rem", md: "12rem" },
           textAlign: "center",
           mb: 4,
           mx: -3,
@@ -39,14 +38,14 @@ const Work = () => {
           className="text-serif"
           sx={{
             color: "rgba(255, 255, 255, 0.20)",
-            fontSize: "12rem",
+            fontSize: { xs: "6rem", md: "12rem" },
             fontWeight: 800,
           }}
         >
           {details.name}
         </Typography>
       </Box>
-      <Container>
+      <Container data-aos="fade-up">
         <Typography
           sx={{ fontSize: "1.25rem", fontWeight: 500, lineHeight: "160%" }}
         >

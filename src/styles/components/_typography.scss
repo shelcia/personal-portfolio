@@ -19,6 +19,10 @@
   // font-family: $font-serif;
   font-size: 2.75rem;
   font-weight: 600;
+
+  @media screen and (max-width: 520px) {
+    font-size: 1.5rem;
+  }
 }
 
 .featured-project-desc {
@@ -32,6 +36,11 @@
   font-size: 1.5rem;
   font-weight: 600;
   // font-style: italic;
+
+  @media screen and (max-width: 520px) {
+    font-size: 1.25rem;
+    margin-right: 0.25rem;
+  }
 }
 
 .project-desc {

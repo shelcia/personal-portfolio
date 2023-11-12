@@ -76,14 +76,18 @@ const SelectedWorks = () => {
 
   return (
     <>
-      <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
+      <Typography
+        component={"h2"}
+        className="section-title"
+        sx={{ mt: { xs: 2, md: 10 } }}
+      >
         Selected Works
       </Typography>
-      <Grid container spacing={4} sx={{ mt: 3 }}>
+      <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {projects.map((project) => (
           <Grid item xs={12} md={6} key={project.id}>
             <Link to={`/works/${project.id}`}>
-              <Box>
+              <Box data-aos="flip-up">
                 <Card
                   // ref={cardRef}
                   sx={{

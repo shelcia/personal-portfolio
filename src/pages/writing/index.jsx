@@ -36,7 +36,7 @@ const Writing = () => {
   }, []);
   return (
     <>
-      <Container sx={{ overflowX: "hidden" }}>
+      <Container sx={{ overflowX: "hidden" }} data-aos="fade-up">
         <Typography component={"h1"} className="section-title">
           On Medium
         </Typography>

@@ -3,7 +3,10 @@ import { TextField } from "@mui/material";
 
 export const CustomTextField = styled(TextField)({
   "& label.Mui-focused": {
-    color: "#A0AAB4",
+    color: "#1d2438",
+  },
+  "& label": {
+    color: "#1d2438",
   },
   "& .MuiInput-underline:after": {
     borderBottomColor: "#B2BAC2",

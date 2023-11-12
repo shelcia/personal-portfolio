@@ -1,6 +1,17 @@
 import React from "react";
 import { useState, createContext } from "react";
 
+import MockerMockup from "../assets/images/mockups/mocker.webp";
+import SocialgramMockup from "../assets/images/mockups/socialgram.webp";
+import BloggramMockup from "../assets/images/mockups/bloggram.webp";
+import DynamicPortfolioMockup from "../assets/images/mockups/dynamicportfolio.webp";
+import NoobcodesMockup from "../assets/images/mockups/noobcodes.webp";
+import KaagithamMockup from "../assets/images/mockups/kaagitham.webp";
+import SamgathaMockup from "../assets/images/mockups/samgatha.webp";
+import IrulthemeMockup from "../assets/images/mockups/irul them.webp";
+import AUVMockup from "../assets/images/mockups/auv.webp";
+import WeatherMockup from "../assets/images/mockups/weather.webp";
+
 export const ProjectsContext = createContext();
 
 export const ProjectsProvider = (props) => {
@@ -8,22 +19,24 @@ export const ProjectsProvider = (props) => {
     {
       id: "dynamic-portfolio",
       name: "Dynamic Portfolio Maker",
+      mockup: DynamicPortfolioMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
       imageURL:
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/dynamic-portfolio-demo_0mw4NjwRu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985852086",
       description:
         "Dynamic Portfolio is a website building tool that allows users to create a website by filling out forms under five minutes. Instead of having to write code or use specialized software, users can use pre-built templates and input their own content using an intuitive user interface. This can make it faster and easier for people with limited technical experience to create a website. We currently have three templates.",
-      // description:
-      //   "Dynamic Portfolio Maker aims to create a dynamic portfolio website based on the prebuilt theme in under five minutes. The website will also have hosting capabilities. Users don't require any expertise in coding to create their portfolios. As of now we support two templates.",
       techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
       deploy: true,
       deployment: "https://dynamic--portfolio.vercel.app/",
       code: "https://github.com/shelcia/dynamic-portflio",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "kaagitham",
       name: "Kaagitham",
+      mockup: KaagithamMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
       imageURL:
@@ -34,10 +47,13 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://kaagitham.vercel.app/",
       code: "https://github.com/shelcia/kaagitham",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "mocker",
       name: "Mocker",
+      mockup: MockerMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
       imageURL:
@@ -51,10 +67,13 @@ export const ProjectsProvider = (props) => {
       // deployment: "https://mockapi-flax.vercel.app/",
       deployment: "https://mocker-gen.netlify.app/",
       code: "https://github.com/shelcia/mocker",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "noobcodes",
       name: "Noob Codes",
+      mockup: NoobcodesMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
       imageURL:
@@ -67,40 +86,43 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://noobcodes-docs.netlify.app/",
       code: "https://github.com/shelcia/noobcodes-docs",
+      forks: 19,
+      stars: 12,
     },
-    {
-      id: "crm",
-      name: "Customer Relations Management",
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/easy-crm_aHBqFTQZ5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985950850",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/easy-crm-demo_VvQCj-ocY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985835427",
-      description:
-        "CRM is an open-source project focusing on the management of leads and service requests. Customer Relationship Management is one of many approaches that allow a company to manage and analyse its interactions with its past, current and potential customers. It depends on three roles that exist in any company and their interaction with one another. Currently under development",
-      techstack: ["React", "MongoDB", "NodeJS", "ExpressJs", "Bootstrap"],
-      deploy: true,
-      deployment: "https://freee-crm.netlify.app/",
-      code: "https://github.com/shelcia/CRM",
-    },
-    {
-      id: "chatapp",
-      name: "Web Chat App",
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/chatapp_T5xny4qw9wL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736150",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/chat_KfOjmNmgm.png?updatedAt=1627449817973",
-      // description:
-      //   "Chat-app brings most of the chat features without any signup requirements. It got features to create multiple chat rooms with plenty of users with emoji enabled input pop up. Chat-app is also secure as we don't store your messages.",
-      description:
-        "Chat-app is a chat application that allows users to participate in multiple chat rooms without any signup requirements. The app includes features such as the ability to create multiple chat rooms, support for a large number of users in each room, and the ability to use emojis in chat messages. One of the notable feature is that, it is secure as it doesn't store the messages on any servers, which means the chat logs would be lost if the user logs out the chat-app, all the messages would be stored in the device, where chat-app is running.",
-      techstack: ["React", "NodeJS", "Socket.io", "Bootstrap"],
-      deploy: true,
-      deployment: "https://freee-chatapp.netlify.app/",
-      code: "https://github.com/shelcia/chat-app-frontend",
-    },
+    // {
+    //   id: "crm",
+    //   name: "Customer Relations Management",
+    //   image:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/easy-crm_aHBqFTQZ5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985950850",
+    //   imageURL:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/easy-crm-demo_VvQCj-ocY.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985835427",
+    //   description:
+    //     "CRM is an open-source project focusing on the management of leads and service requests. Customer Relationship Management is one of many approaches that allow a company to manage and analyse its interactions with its past, current and potential customers. It depends on three roles that exist in any company and their interaction with one another. Currently under development",
+    //   techstack: ["React", "MongoDB", "NodeJS", "ExpressJs", "Bootstrap"],
+    //   deploy: true,
+    //   deployment: "https://freee-crm.netlify.app/",
+    //   code: "https://github.com/shelcia/CRM",
+    // },
+    // {
+    //   id: "chatapp",
+    //   name: "Web Chat App",
+    //   image:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/chatapp_T5xny4qw9wL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736150",
+    //   imageURL:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/chat_KfOjmNmgm.png?updatedAt=1627449817973",
+    //   // description:
+    //   //   "Chat-app brings most of the chat features without any signup requirements. It got features to create multiple chat rooms with plenty of users with emoji enabled input pop up. Chat-app is also secure as we don't store your messages.",
+    //   description:
+    //     "Chat-app is a chat application that allows users to participate in multiple chat rooms without any signup requirements. The app includes features such as the ability to create multiple chat rooms, support for a large number of users in each room, and the ability to use emojis in chat messages. One of the notable feature is that, it is secure as it doesn't store the messages on any servers, which means the chat logs would be lost if the user logs out the chat-app, all the messages would be stored in the device, where chat-app is running.",
+    //   techstack: ["React", "NodeJS", "Socket.io", "Bootstrap"],
+    //   deploy: true,
+    //   deployment: "https://freee-chatapp.netlify.app/",
+    //   code: "https://github.com/shelcia/chat-app-frontend",
+    // },
     {
       id: "socialgram",
       name: "Social Gram",
+      mockup: SocialgramMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
       imageURL:
@@ -120,10 +142,13 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://social--gram.vercel.app/",
       code: "https://github.com/shelcia/Socialgram",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "bloggram",
       name: "Bloggram",
+      mockup: BloggramMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
       imageURL:
@@ -135,10 +160,13 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://bloggram-beta.vercel.app/",
       code: "https://github.com/shelcia/Blog-website",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "weatherapp",
       name: "Weather App",
+      mockup: WeatherMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/weather-app_eqaXO8qfP0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736630",
       imageURL:
@@ -150,10 +178,13 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://weatherups.netlify.app/",
       code: "https://github.com/shelcia/Weather-app",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "irul-theme",
       name: "Irul Theme",
+      mockup: IrulthemeMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
       imageURL:
@@ -166,10 +197,13 @@ export const ProjectsProvider = (props) => {
       deployment:
         "https://marketplace.visualstudio.com/items?itemName=shelcia.irul-theme",
       code: "https://github.com/shelcia/irul-theme",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "auv",
       name: "AUV-IIITDM",
+      mockup: AUVMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
       imageURL:
@@ -180,10 +214,13 @@ export const ProjectsProvider = (props) => {
       deploy: true,
       deployment: "https://auviiitdm.github.io/",
       code: "https://github.com/shelcia/auv",
+      forks: 19,
+      stars: 12,
     },
     {
       id: "samgatha",
       name: "Samgatha",
+      mockup: SamgathaMockup,
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
       imageURL:
@@ -194,21 +231,23 @@ export const ProjectsProvider = (props) => {
       techstack: ["Bootstrap", "MongoDB", "NodeJS"],
       deployment: "http://samgatha2020.herokuapp.com/",
       code: "https://github.com/shelcia/Samgatha-2020",
+      forks: 19,
+      stars: 12,
     },
-    {
-      id: "slidingpuzzle",
-      name: "Sliding Puzzle",
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/sliding-puzzle_KOQ1HfrAF8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737619",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/sliding-puzzle_HshtnrLlbGa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170346800",
-      description:
-        "A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along particular routes (usually on a board) to establish an end configuration. This fun game consists of three difficulty levels to test your brain.",
-      techstack: ["Vanilla JS", "HTML", "CSS"],
-      deploy: true,
-      deployment: "https://sliding-puzzle-basic.netlify.app/",
-      code: "https://github.com/shelcia/sliding-puzzle",
-    },
+    // {
+    //   id: "slidingpuzzle",
+    //   name: "Sliding Puzzle",
+    //   image:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/sliding-puzzle_KOQ1HfrAF8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170737619",
+    //   imageURL:
+    //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/sliding-puzzle_HshtnrLlbGa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170346800",
+    //   description:
+    //     "A sliding puzzle, sliding block puzzle, or sliding tile puzzle is a combination puzzle that challenges a player to slide (frequently flat) pieces along particular routes (usually on a board) to establish an end configuration. This fun game consists of three difficulty levels to test your brain.",
+    //   techstack: ["Vanilla JS", "HTML", "CSS"],
+    //   deploy: true,
+    //   deployment: "https://sliding-puzzle-basic.netlify.app/",
+    //   code: "https://github.com/shelcia/sliding-puzzle",
+    // },
   ]);
 
   return (

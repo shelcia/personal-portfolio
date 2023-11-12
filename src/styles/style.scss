@@ -53,9 +53,14 @@ $font-sans-serif: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular",
 $font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
   "Times New Roman", Times, serif;
 
+@import "./components/animations";
 @import "./components/imggallery";
 @import "./components/typography";
 // @import "./components/cssbutton";
+
+body {
+  overflow-x: hidden;
+}
 
 // body {
 //   font-family: $font-sans-serif;
@@ -90,7 +95,7 @@ body {
 body {
   font-family: $font-sans-serif;
   color: #17181a;
-  background: url("../assets/images/bg.png");
+  background: url("../assets/images/images/bg.webp");
   background-position: center; /* Center the image */
   // background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire contain

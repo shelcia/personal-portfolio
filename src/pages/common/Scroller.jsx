@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollerImg from "../../assets/images/scroller.png";
+import ScrollerImg from "../../assets/images/images/scroller.webp";
 
 const Scroller = () => {
   return (

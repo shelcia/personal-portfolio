@@ -54,35 +54,11 @@ const routes = [
         element: <ContactPage />,
       },
       {
-        path: "/works/:id",
-        element: <ContactPage />,
-      },
-      {
         path: "*",
         element: <ErrorPage />,
       },
     ],
   },
-  // {
-  //   path: "/",
-  //   element: <HomePage />,
-  // },
-  // {
-  //   path: "about",
-  //   element: <AboutPage />,
-  // },
-  // {
-  //   path: "resume",
-  //   element: <ContactPage />,
-  // },
-  // {
-  //   path: "project/:id",
-  //   element: <ProjectPage />,
-  // },
-  // {
-  //   path: "*",
-  //   element: <ErrorPage />,
-  // },
 ];
 
 export default routes;

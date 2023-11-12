@@ -10,20 +10,21 @@ import {
   Typography,
 } from "@mui/material";
 import Arrow from "../../assets/icons/toprightarrow.svg";
-import { FeaturedProjectsContext } from "../../context/FeaturedProjectsContext";
+// import { FeaturedProjectsContext } from "../../context/FeaturedProjectsContext";
 import { designs } from "../../context/DesignContext";
 import { Link } from "react-router-dom";
+import { ProjectsContext } from "../../context/ProjectContext";
 
 const Works = () => {
-  const projects = useContext(FeaturedProjectsContext);
+  const projects = useContext(ProjectsContext);
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <Typography component={"h1"} className="section-title">
         Development Works
       </Typography>
-      <Grid container spacing={4} sx={{ mt: 3 }}>
+      <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {projects.map((project) => (
-          <Grid item xs={6} sm={4} md={3} key={project.id}>
+          <Grid item xs={12} sm={4} md={3} key={project.id}>
             <Box>
               <Card
                 sx={{
@@ -40,7 +41,7 @@ const Works = () => {
                 <CardMedia
                   component="img"
                   height="100%"
-                  image={project.image}
+                  image={project.mockup}
                   alt="project"
                 />
               </Card>
@@ -75,9 +76,9 @@ const Works = () => {
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
         Design Works
       </Typography>
-      <Grid container spacing={4} sx={{ mt: 3 }}>
+      <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {designs.items.map((design, idx) => (
-          <Grid item xs={6} sm={4} md={3} key={idx}>
+          <Grid item xs={12} sm={4} md={3} key={idx}>
             <Box>
               <Card
                 sx={{

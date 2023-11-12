@@ -34,6 +34,34 @@
   src: url("../assets/fonts/brown-sugar/brown-sugar.ttf") format("truetype");
   font-display: swap;
 }
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+}
+@keyframes page-fade {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: translateX(-7px);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(1400px);
+  }
+  to {
+    transform: translateX(-1px);
+  }
+}
 .img-row {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +119,11 @@
   font-size: 2.75rem;
   font-weight: 600;
 }
+@media screen and (max-width: 520px) {
+  .featured-project-title {
+    font-size: 1.5rem;
+  }
+}
 
 .featured-project-desc {
   color: #494949;
@@ -101,6 +134,12 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: 600;
+}
+@media screen and (max-width: 520px) {
+  .project-title {
+    font-size: 1.25rem;
+    margin-right: 0.25rem;
+  }
 }
 
 .project-desc {
@@ -148,6 +187,10 @@
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 html,
 body {
   margin: 0;
@@ -159,7 +202,7 @@ body {
 body {
   font-family: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #17181a;
-  background: url("../assets/images/bg.png");
+  background: url("../assets/images/images/bg.webp");
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire contain
 

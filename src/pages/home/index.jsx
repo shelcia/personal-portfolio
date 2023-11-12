@@ -14,7 +14,7 @@ import Scroller from "../common/Scroller";
 
 const HomePage = () => {
   return (
-    <Container sx={{ position: "relative" }}>
+    <Container sx={{ position: "relative" }} data-aos="fade-up">
       <Typography
         className="name-title"
         // data-scroll

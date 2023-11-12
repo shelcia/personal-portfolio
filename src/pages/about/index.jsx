@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Shelcia from "../../assets/images/me.png";
+import Shelcia from "../../assets/images/images/me.webp";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
@@ -19,7 +19,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <Container sx={{ position: "relative" }}>
+      <Container sx={{ position: "relative" }} data-aos="fade-up">
         <Typography component={"h2"} className="section-title" sx={{ mt: 5 }}>
           About Me
         </Typography>
