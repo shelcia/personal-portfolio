@@ -1,7 +1,7 @@
 export const experience = [
   {
-    name: "University of Wisconsin-Madison",
-    designation: "Master of Science in Design and Innovation (User Experience)",
+    name: "iSchool - University of Wisconsin-Madison",
+    designation: "Master of Science in Information",
     year: "August 2023 - Present",
     desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/)",
     skills: [

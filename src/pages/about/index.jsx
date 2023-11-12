@@ -45,7 +45,7 @@ const AboutMe = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
-            <img src={Shelcia} alt="Shelcia" width={"auto"} height={"200px"} />
+            <img src={Shelcia} alt="Shelcia" width={"100%"} height={"auto"} />
           </Grid>
         </Grid>
         <Box sx={{ mt: 4 }}>
@@ -53,16 +53,16 @@ const AboutMe = () => {
             variant="contained"
             color="success"
             sx={{ mr: 2 }}
-            onClick={() => scrollToElement(skillsToRef)}
+            onClick={() => scrollToElement(journeyToRef)}
           >
-            My Skills
+            My Experience
           </Button>
           <Button
             variant="contained"
             color="success"
-            onClick={() => scrollToElement(journeyToRef)}
+            onClick={() => scrollToElement(skillsToRef)}
           >
-            My Experience
+            My Skills
           </Button>
         </Box>
         <Scroller />

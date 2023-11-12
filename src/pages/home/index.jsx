@@ -1,31 +1,26 @@
 import React from "react";
-import { Box, Button, Container, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  // Link as MuiLink,
+  Typography,
+} from "@mui/material";
 import SelectedWorks from "./components/SelectedWorks";
 import SocialIcons from "../common/SocialIcons";
 import Arrow from "../../assets/icons/toprightarrow.svg";
 import { Link } from "react-router-dom";
 import Scroller from "../common/Scroller";
-// import LocomotiveScroll from "locomotive-scroll";
 
 const HomePage = () => {
-  const scrollRef = React.createRef();
-
-  //   useEffect(() => {
-  //     // eslint-disable-next-line no-unused-vars
-  //     const scroll = new LocomotiveScroll({
-  //       el: scrollRef.current,
-  //       smooth: true,
-  //     });
-  //   }, [scroll]);
-
   return (
-    <Container sx={{ position: "relative" }} ref={scrollRef}>
+    <Container sx={{ position: "relative" }}>
       <Typography
         className="name-title"
-        data-scroll
-        data-scroll-speed="4"
-        data-scroll-position="top"
-        data-scroll-direction="horizontal"
+        // data-scroll
+        // data-scroll-speed="4"
+        // data-scroll-position="top"
+        // data-scroll-direction="horizontal"
       >
         Shelcia David 🦄
       </Typography>
@@ -33,15 +28,15 @@ const HomePage = () => {
       <Typography
         sx={{ mt: 4 }}
         className="name-desc"
-        data-scroll
-        data-scroll-speed="2"
-        data-scroll-position="top"
-        data-scroll-direction="horizontal"
+        // data-scroll
+        // data-scroll-speed="2"
+        // data-scroll-position="top"
+        // data-scroll-direction="horizontal"
       >
         Confident and results-driven Full Stack developer and designer.
         Contributed to <b>NASDAQ</b> and startups like HIRA, NYX Wolves, Solera,
-        and Guvi. Pursuing a Master&apos;s in <i>Design and Innovation</i> at{" "}
-        <b>UW Madison</b>.
+        and Guvi. Pursuing a Master&apos;s in <i>Information</i> at{" "}
+        <b>University of Wisconsin - Madison</b>.
       </Typography>
       <Box
         sx={{

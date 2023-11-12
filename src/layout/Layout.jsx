@@ -4,10 +4,25 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Topbar from "./components/Topbar";
 import WorkWithMeBanner from "../pages/common/WorkWithMeBanner";
+// import LocomotiveScroll from "locomotive-scroll";
 
 const Layout = () => {
   const location = useLocation();
   const currentRouteName = location.pathname;
+
+  // const scrollRef = React.createRef();
+
+  // React.useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: scrollRef.current.children[0],
+  //     smooth: true,
+  //   });
+
+  //   return () => {
+  //     // Clean up Locomotive Scroll instance
+  //     scroll.destroy();
+  //   };
+  // }, []);
 
   return (
     <>
@@ -15,6 +30,7 @@ const Layout = () => {
         // sx={{ display: "flex" }}
         // className={currentRouteName === "/" ? "home-body" : "body"}
         minHeight={"100%"}
+        // ref={scrollRef}
       >
         <CssBaseline />
         <Topbar />
