@@ -152,6 +152,8 @@ const SelectedWorks = () => {
               src={ChevronRight}
               alt="chevron-right"
               style={{ marginLeft: 5 }}
+              height={"20px"}
+              width={"20px"}
             />
           </Button>
         </Link>

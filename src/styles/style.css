@@ -10,24 +10,28 @@
   font-style: italic;
   font-weight: 200;
   src: url("../assets/fonts/migra/MigraItalic-ExtralightItalic.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Migra";
   font-style: normal;
   font-weight: 800;
   src: url("../assets/fonts/migra/Migra-Extrabold.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Migra";
   font-style: italic;
   font-weight: 800;
   src: url("../assets/fonts/migra/MigraItalic-ExtraboldItalic.ttf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Brown Sugar";
   font-style: normal;
   font-weight: 400;
   src: url("../assets/fonts/brown-sugar/brown-sugar.ttf") format("truetype");
+  font-display: swap;
 }
 .img-row {
   display: flex;
