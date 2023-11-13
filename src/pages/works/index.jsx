@@ -25,51 +25,51 @@ const Works = () => {
       <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {projects.map((project) => (
           <Grid item xs={12} sm={4} md={3} key={project.id}>
-            <Box>
-              <Card
-                sx={{
-                  maxWidth: "100%",
-                  position: "relative",
-                  backgroundColor: "transparent",
-                  boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: { xs: "8px", md: "28.92px" },
-                  transform: "perspective(400px)",
-                  transition: ".2s ease",
-                }}
-                className="featured-project-card"
-              >
-                <CardMedia
-                  component="img"
-                  height="100%"
-                  image={project.mockup}
-                  alt="project"
-                />
-              </Card>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  mt: 2,
-                }}
-              >
-                <Box>
-                  <Typography className="project-title">
-                    {project.name}
-                  </Typography>
-                  <Typography className="project-desc">
-                    {project.desc}
-                  </Typography>
-                </Box>
-                <Box>
-                  <Link to={`/works/${project.id}`}>
+            <Link to={`/works/${project.id}`}>
+              <Box>
+                <Card
+                  sx={{
+                    maxWidth: "100%",
+                    position: "relative",
+                    backgroundColor: "transparent",
+                    boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
+                    borderRadius: { xs: "8px", md: "28.92px" },
+                    transform: "perspective(400px)",
+                    transition: ".2s ease",
+                  }}
+                  className="featured-project-card"
+                >
+                  <CardMedia
+                    component="img"
+                    height="100%"
+                    image={project.mockup}
+                    alt="project"
+                  />
+                </Card>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    mt: 2,
+                  }}
+                >
+                  <Box>
+                    <Typography className="project-title">
+                      {project.name}
+                    </Typography>
+                    <Typography className="project-desc">
+                      {project.desc}
+                    </Typography>
+                  </Box>
+                  <Box>
                     <IconButton sx={{ border: "1.25px solid #000" }}>
                       <img src={Arrow} alt="Arrow" width={20} height={20} />
                     </IconButton>
-                  </Link>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            </Link>
           </Grid>
         ))}
       </Grid>
@@ -79,52 +79,58 @@ const Works = () => {
       <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {designs.items.map((design, idx) => (
           <Grid item xs={12} sm={4} md={3} key={idx}>
-            <Box>
-              <Card
-                sx={{
-                  maxWidth: "100%",
-                  position: "relative",
-                  backgroundColor: "transparent",
-                  boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                  borderRadius: { xs: "8px", md: "28.92px" },
-                  transform: "perspective(400px)",
-                  transition: ".2s ease",
-                }}
-                className="featured-project-card"
-              >
-                <CardMedia
-                  component="img"
-                  height="100%"
-                  image={design.thumbnail}
-                  alt="project"
-                />
-              </Card>
+            <MuiLink
+              href={design.link}
+              target="_blank"
+              sx={{ textDecoration: "none" }}
+            >
+              <Box>
+                <Card
+                  sx={{
+                    maxWidth: "100%",
+                    position: "relative",
+                    backgroundColor: "transparent",
+                    boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
+                    borderRadius: { xs: "8px", md: "28.92px" },
+                    transform: "perspective(400px)",
+                    transition: ".2s ease",
+                  }}
+                  className="featured-project-card"
+                >
+                  <CardMedia
+                    component="img"
+                    height="100%"
+                    image={design.thumbnail}
+                    alt="project"
+                  />
+                </Card>
 
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  mt: 2,
-                }}
-              >
-                <Box>
-                  <Typography className="project-title">
-                    {design.title}
-                  </Typography>
-                  {/* <Typography className="project-desc">
-                    {design.description}
-                  </Typography> */}
-                </Box>
-                <Box>
-                  <MuiLink href={design.link} target="_blank">
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    mt: 2,
+                  }}
+                >
+                  <Box>
+                    <Typography
+                      className="project-title"
+                      sx={{
+                        color: "#17181a",
+                      }}
+                    >
+                      {design.title}
+                    </Typography>
+                  </Box>
+                  <Box>
                     <IconButton sx={{ border: "1.25px solid #000" }}>
                       <img src={Arrow} alt="Arrow" width={20} height={20} />
                     </IconButton>
-                  </MuiLink>
+                  </Box>
                 </Box>
               </Box>
-            </Box>
+            </MuiLink>
           </Grid>
         ))}
       </Grid>

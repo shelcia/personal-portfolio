@@ -36,9 +36,9 @@ const AboutMe = () => {
               HIRA, NYX Wolves, Solera, and Guvi, I&apos;ve honed my
               problem-solving skills. I&apos;m committed to open-source
               contributions and hold a Bachelor&apos;s degree from IIIT Chennai.
-              Currently, I&apos;m pursuing a Master&apos;s in Design and
-              Innovation at UW Madison. I welcome collaboration and feedback to
-              deliver excellent results.
+              Currently, I&apos;m pursuing a Master&apos;s in Information at UW
+              Madison. I welcome collaboration and feedback to deliver excellent
+              results.
               <br />
               <br />
               Let&apos;s connect and explore opportunities to collaborate or

@@ -109,6 +109,7 @@ const Writing = () => {
                       target="_blank"
                       className="article-link"
                       sx={{ mt: { xs: 2 } }}
+                      data-cursor-text={"Read more on Medium"}
                     >
                       <Button
                         color="secondary"

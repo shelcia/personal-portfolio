@@ -10,7 +10,7 @@ export const experience = [
       "Frontend Development",
     ],
     date: "August 2023",
-    timeline: "Aug'23 - Aug'24",
+    timeline: "Aug'23 - Dec'24",
   },
   {
     name: "NASDAQ",

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   AppBar,
   Box,
@@ -10,7 +11,6 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import MenuIcon from "../../assets/icons/hamburger-menu.svg";
 
