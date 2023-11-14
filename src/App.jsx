@@ -13,8 +13,8 @@ import {
 } from "@mui/material";
 import { customTheme } from "./theme";
 import CustomScrollToTop from "./pages/common/CustomScrollToTop";
-// import { Cursor } from "react-creative-cursor";
-// import "react-creative-cursor/dist/styles.css";
+import { Cursor } from "react-creative-cursor";
+import "react-creative-cursor/dist/styles.css";
 
 AOS.init();
 
@@ -28,11 +28,11 @@ const App = () => {
 
   return (
     <React.Fragment>
-      {/* <Cursor
+      <Cursor
         isGelly={true}
         cursorBackgrounColor={"rgba(0,0,0,0.7)"}
         animationDuration={1.1}
-      /> */}
+      />
       <CustomScrollToTop />
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={appTheme}>

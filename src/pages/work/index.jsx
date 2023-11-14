@@ -74,7 +74,7 @@ const Work = () => {
           </Grid>
         </Box>
         <Box sx={{ mt: 4, textAlign: "center" }}>
-          <img src={details.imageURL} alt="" width={"50%"} />
+          <img src={details.imageURL} alt="" width={"100%"} />
         </Box>
       </Container>
     </>
