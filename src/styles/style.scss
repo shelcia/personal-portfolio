@@ -1,187 +1,203 @@
-@import url("./external/bootstrap.min.css");
-@import url("./external/material-icon.css");
+@import url("./external/locomotive.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
-@import "./components/variable";
-@import "./components/animations";
-@import "./components/classes";
-@import "./components/timeline";
-@import "./components/button";
-@import "./components/cards";
-@import "./components/scrollbar";
-@import "./components/toggle";
-@import "./components/imageproject";
-@import "./components/imggallery";
-@import "./components/tagbutton";
-@import "./components/glowtext";
-@import "./components/404";
-@import "./components/navbar";
-@import "./components/carousel";
-
-* {
-  scroll-behavior: smooth;
+// Migra font styles
+@font-face {
+  font-family: "Migra";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/migra/Migra-Extralight.ttf") format("truetype");
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Migra";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../assets/fonts/migra/MigraItalic-ExtralightItalic.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Migra";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/migra/Migra-Extrabold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Migra";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../assets/fonts/migra/MigraItalic-ExtraboldItalic.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+// brown sugar font
+
+@font-face {
+  font-family: "Brown Sugar";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/brown-sugar/brown-sugar.ttf") format("truetype");
+  font-display: swap;
+}
+
+$font-serif: "Migra", "Cormorant Garamond", Georgia, "Times New Roman", Times,
+  serif;
+$font-sans-serif: "Figtree Variable", "Lucida Sans", "Lucida Sans Regular",
+  "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+$font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
+  "Times New Roman", Times, serif;
+
+@import "./components/animations";
+@import "./components/imggallery";
+@import "./components/typography";
+// @import "./components/cssbutton";
+
 body {
   overflow-x: hidden;
 }
 
-p,
-a,
-h4,
-h5 {
-  font-family: $primaryfont;
-}
-h6 {
-  font-family: $secondaryfont;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-}
+// body {
+//   font-family: $font-sans-serif;
+//   color: #17181a;
 
-h1,
-.navbar-brand > h5 {
-  font-family: $secondaryfont !important;
-  color: $primarycolor !important;
-  // text-shadow: -0.04em 0.04em $ternarycolor,
-  //   -0.06em 0.06em rgba(255, 255, 255, 0.8);
-  // text-shadow: -0.06em 0.06em rgba(255, 255, 255, 0.8);
-}
+//   // background: url("../assets/images/bg.png"), lightgray 10%;
+//   // background: url("../assets/images/bg.png"),
+//   //   rgb(240, 240, 240) 50% / cover no-repeat;
 
-.navbar-brand > h5 {
-  color: rgba(255, 255, 255, 0.8) !important;
-  text-shadow: -0.04em 0.04em $primarycolor;
+//   background: url("../assets/images/bg.png") 50% / cover no-repeat,
+//     rgba(255, 255, 255, 0.246);
+
+//   // mix-blend-mode: difference;
+//   // background-color: #fff;
+//   // height: 100vh;
+//   width: 100%;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   position: relative;
+//   animation: gradientAnimation 2s linear infinite alternate;
+// }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  color: $secondarycolor;
-  background-color: $background2;
+  font-family: $font-sans-serif;
+  color: #17181a;
+  background: url("../assets/images/images/bg.webp");
+  background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire contain
+
+  // background: url("../assets/images/bg.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+  // position: relative;
+  // width: 100vw;
+  // height: 100%;
+
+  /* Add a light overlay using pseudo-element ::before */
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value as needed */
+  // }
 }
 
-.page-fade {
-  animation: page-fade 0.4s;
+.text-serif {
+  font-family: $font-serif;
 }
 
-.navbar-dark {
-  background-color: $background2 !important;
-}
-
-.nav-link {
-  display: inline-block;
-  // color: $primary;
-  text-decoration: none;
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1.7px;
-    background: $primarycolor;
-    transition: width 0.3s;
-    &:hover::after {
-      width: 100%;
-    }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 
-.navbar-brand {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+// .home-body {
+
+//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 59.35%);
+//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 70%);
+//   // background-size: 200% 200%; /* Adjust the size as needed */
+//   // animation: gradientAnimation 5s linear infinite alternate; /* Adjust the animation duration as needed */
+//   // background-repeat: no-repeat;
+// }
+
+.social-icons {
+  border-radius: 3rem;
+  background: linear-gradient(180deg, #fff 0%, rgba(218, 218, 218, 0) 100%);
+  box-shadow: 20px 20px 60px 0px #cecece, -20px -20px 60px 0px #fff;
 }
 
-.fab {
-  color: $primarycolor;
-  font-size: 2rem;
-  cursor: pointer;
-  &:hover {
-    border-radius: 50ex;
-    box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
-    animation: pulse 1s;
-  }
-}
-hr.title-hr {
-  border-top: 0.3rem solid $primarycolor;
-}
-.github-card {
-  // width: 250px;
-  height: 250px;
-  span {
-    color: $primarycolor;
-    font-size: 3rem;
-    font-family: $secondaryfont !important;
-  }
-}
+// .featured-project-card {
+//   transition: transform 0.2s; /* Add a smooth transition */
 
-h1.title {
-  span {
-    animation: title 0.5s 0.5s 1 forwards ease-in;
-    color: $primarycolor;
-  }
-}
-
-h1.subtitle {
-  text-shadow: -0.04em 0.04em $ternarycolor,
-    -0.06em 0.06em rgba(255, 255, 255, 0.8);
-}
-
-.is-gapless {
-  display: none;
-}
-
-.page-slide {
-  animation: slideIn 0.5s ease-in;
-  transform-origin: top;
-}
-
-.border-primary {
-  border-color: $primarycolor !important;
-  border-width: 2px;
-}
-
-$violet: rgb(255, 39, 255);
-$blue: rgb(0, 255, 255);
-
-.icons-list {
-  list-style: none;
-  li {
-    font-family: $primaryfont;
-    // font-style: italic;
-    padding-bottom: 1rem;
-    > i,
-    > img {
-      background-color: black;
-      border-radius: 50ex;
-      position: relative;
-      box-shadow: 0 0 5px #fff, 2px 0 5px $violet, -2px 0 5px $blue,
-        2px 0 5px $violet, -2px 0 5px $blue, 0 0 6px #fff, -1px 0 5px $violet,
-        1px 0 5px $blue;
-      animation: spin-icons 4s linear infinite alternate;
-    }
-  }
-  li > i {
-    padding: 0.5rem;
-    margin-right: 1rem;
-  }
-  li > img {
-    height: 30px;
-    width: auto;
-    margin-right: 1rem;
-    padding: 0.5rem;
-  }
-}
-
-.cd-timeline-content .timeline-content-info {
-  background: $background1;
-}
-.cd-timeline-content .content-skills li {
-  background: $background2;
-}
-
-.design-heading {
-  text-shadow: 1px 2px $primarycolor;
-}
+//   &:hover {
+//     transform: translateZ(-10px); /* Move the card slightly backward on hover */
+//   }
+// }
 
 .article-link {
-  color: rgb(123, 123, 255);
+  transition: all 0.3s ease-in-out;
+  .article-arrow {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover .article-arrow {
+    display: block;
+  }
+}
+.topbar-link {
+  button {
+    font-weight: 400 !important;
+  }
+
+  &.active {
+    button {
+      font-weight: 700 !important;
+    }
+  }
 }
 
-@import "./components/mediaqueries";
+// .article-link {
+//   text-decoration: none; /* Remove default link underline */
+//   position: relative; /* Create a positioning context for ::after */
+// }
+
+// .article-link::after {
+//   content: ">"; /* Arrow character */
+//   position: absolute;
+//   top: 50%;
+//   right: 0px; /* Adjust the position of the arrow */
+//   transform: translateY(-50%);
+//   opacity: 0; /* Initially hidden */
+//   transition: opacity 0.3s ease; /* Add a transition for a smooth appearance */
+// }
+
+// .article-link:hover::after {
+//   opacity: 1; /* Show the arrow on hover */
+// }
+
+// .article-link:hover .arrow {
+//   opacity: 1;
+//   margin-left: 5px; /* Adjust the margin to push "Read More" to the left */
+// }

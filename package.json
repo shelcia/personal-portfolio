@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource-variable/figtree": "^5.0.18",
+    "@mui/lab": "^5.0.0-alpha.151",
+    "@mui/material": "^5.14.17",
     "aos": "^2.3.4",
     "react": "^18.2.0",
-    "react-countup": "^6.4.0",
+    "react-confetti": "^6.1.0",
+    "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.3"
+    "react-loader-spinner": "^5.4.5",
+    "react-router-dom": "^6.18.0"
   },
   "scripts": {
     "dev": "vite",
@@ -34,9 +41,9 @@
     ]
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.1",
-    "eslint": "^8.44.0",
-    "eslint-plugin-react": "^7.32.2",
-    "vite": "^4.3.9"
+    "@vitejs/plugin-react": "^4.1.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "vite": "^4.5.0"
   }
 }
