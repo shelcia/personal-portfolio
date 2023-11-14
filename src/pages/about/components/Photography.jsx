@@ -99,7 +99,7 @@ const Photography = () => {
   return (
     <Container>
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
-        Amateur Photography
+        Photography
       </Typography>
       <Box className="img-row">
         {Images.map((col) => (

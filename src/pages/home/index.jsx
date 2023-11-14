@@ -11,6 +11,7 @@ import SocialIcons from "../common/SocialIcons";
 import Arrow from "../../assets/icons/toprightarrow.svg";
 import { Link } from "react-router-dom";
 import Scroller from "../common/Scroller";
+import Unicorn from "../../assets/images/images/unicorn.webp";
 
 const HomePage = () => {
   return (
@@ -22,7 +23,8 @@ const HomePage = () => {
         // data-scroll-position="top"
         // data-scroll-direction="horizontal"
       >
-        Shelcia David 🦄
+        Shelcia David{" "}
+        <img src={Unicorn} alt="unicorn emoji" width={48} height={48} />
       </Typography>
 
       <Typography

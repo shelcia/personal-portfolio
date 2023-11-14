@@ -31,7 +31,7 @@ const App = () => {
       <Cursor
         isGelly={true}
         cursorBackgrounColor={"rgba(0,0,0,0.7)"}
-        animationDuration={1.1}
+        animationDuration={1.4}
       />
       <CustomScrollToTop />
       <StyledEngineProvider injectFirst>
