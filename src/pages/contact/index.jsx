@@ -12,12 +12,14 @@ import {
 } from "@mui/material";
 import { CustomTextField } from "../../components/common/CustomTextfield";
 import { LoadingButton } from "@mui/lab";
+import CustomConfetti from "../../components/common/CustomConfetti";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [alert, setAlert] = useState({
     message: "Received Message. Will get back to You !",
     severity: "success",
+    showConfetti: false,
   });
   const [inputs, setInputs] = useState({
     name: "",
@@ -62,6 +64,7 @@ const Contact = () => {
       setAlert({
         message: "Received Message. Will get back to You !",
         severity: "success",
+        showConfetti: true,
       });
 
       setOpen(true);
@@ -85,6 +88,30 @@ const Contact = () => {
       return;
     }
     setOpen(false);
+  };
+
+  const hideConfetti = () => {
+    setAlert((prevAlert) => ({
+      ...prevAlert,
+      showConfetti: false,
+    }));
+  };
+
+  React.useEffect(() => {
+    if (alert.showConfetti) {
+      const confettiTimeout = setTimeout(hideConfetti, 7000);
+      return () => {
+        clearTimeout(confettiTimeout);
+      };
+    }
+  }, [alert.showConfetti]);
+
+  const buttonStyle = {
+    border: "2px solid transparent", // Set an initial transparent border
+    transition: "border-color 0.3s", // Add a transition for smooth hover effect
+    "&:hover": {
+      borderColor: "linear-gradient(to right, #FFC107, #FF5722)",
+    },
   };
 
   return (
@@ -113,6 +140,7 @@ const Contact = () => {
       </Snackbar>
 
       <Card sx={{ width: { xs: "100%", md: 500 }, mx: "auto" }}>
+        {alert.showConfetti && <CustomConfetti numberOfPieces={500} />}
         <CardContent sx={{ p: 4 }}>
           <Typography component={"h1"} className="section-title">
             Connect !
@@ -178,7 +206,7 @@ const Contact = () => {
             <Button
               variant="contained"
               color="secondary"
-              sx={{ mx: "auto" }}
+              sx={{ mx: "auto", ...buttonStyle }}
               onClick={sendMessage}
             >
               Send Message

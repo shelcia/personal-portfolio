@@ -52,6 +52,11 @@ const baseOptions = {
             boxShadow: "none",
           },
         },
+        containedSecondary: {
+          "&:hover": {
+            borderColor: "linear-gradient(to right, #FFC107, #FF5722)",
+          },
+        },
         containedSuccess: {
           color: secondary.main,
           backgroundColor: secondary[500],

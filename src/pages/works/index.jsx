@@ -22,10 +22,18 @@ const Works = () => {
       <Typography component={"h1"} className="section-title">
         Development Works
       </Typography>
-      <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
-        {projects.map((project) => (
+      <Grid
+        container
+        spacing={4}
+        sx={{ mt: { xs: 0, md: 3 } }}
+        data-aos="fade-up"
+      >
+        {projects.map((project, idx) => (
           <Grid item xs={12} sm={4} md={3} key={project.id}>
-            <Link to={`/works/${project.id}`}>
+            <Link
+              to={`/works/${project.id}`}
+              data-aos={idx % 2 === 0 ? "fade-up-right" : "fade-up-left"}
+            >
               <Box>
                 <Card
                   sx={{
@@ -76,7 +84,12 @@ const Works = () => {
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
         Design Works
       </Typography>
-      <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
+      <Grid
+        container
+        spacing={4}
+        sx={{ mt: { xs: 0, md: 3 } }}
+        data-aos="fade-up"
+      >
         {designs.items.map((design, idx) => (
           <Grid item xs={12} sm={4} md={3} key={idx}>
             <MuiLink
@@ -134,9 +147,6 @@ const Works = () => {
           </Grid>
         ))}
       </Grid>
-      {/* <Typography component={"h2"} className="section-title">
-        Photography
-      </Typography> */}
     </Container>
   );
 };
