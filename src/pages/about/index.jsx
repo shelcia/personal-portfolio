@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import React, { Suspense, lazy, useRef } from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Shelcia from "../../assets/images/images/me.webp";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
-import Photography from "./components/Photography";
 
 const AboutMe = () => {
   const journeyToRef = useRef(null);
@@ -16,6 +15,22 @@ const AboutMe = () => {
       scrollToRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  // eslint-disable-next-line react/display-name
+  const Loadable = (Component) => (props) =>
+    (
+      <Suspense
+        fallback={
+          <>
+            <Typography>Loading...</Typography>
+          </>
+        }
+      >
+        <Component {...props} />
+      </Suspense>
+    );
+
+  const Photography = Loadable(lazy(() => import("./components/Photography")));
 
   return (
     <>

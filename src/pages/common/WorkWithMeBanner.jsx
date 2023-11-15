@@ -46,6 +46,7 @@ const WorkWithMeBanner = () => {
           alt="shelcia"
           style={{ position: "absolute", right: 60, top: -60 }}
           height={240}
+          width={240}
         />
       </Box>
     </Box>
