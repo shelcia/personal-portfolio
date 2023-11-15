@@ -16,7 +16,7 @@ export const experience = [
     name: "NASDAQ",
     designation: "Senior Software Developer",
     year: "April 2022 - August 2023",
-    desc: "I am currently engaged in developing new UI components and integrating APIs for nasdaq.com. My responsibilities encompass codebase optimization and maintenance for the revised pages. Additionally, I am actively engaged in constructing payment interfaces for monetized articles. I have also participated in numerous hackathons within the organization, where I earned recognition for my contributions. Notably, I was commended for representing the Bangalore branch at a global level.",
+    desc: "Engaged in developing new UI components and integrating APIs for nasdaq.com. My responsibilities encompass codebase optimization and maintenance for the revised pages. Additionally, I was actively engaged in constructing payment interfaces for monetized articles. I have also participated in numerous hackathons within the organization, where I earned recognition for my contributions. Notably, I was commended for representing the Bangalore branch at a global level.",
     skills: ["JavaScript", "Drupal", "Content Management Systems"],
     date: "April 2022",
     timeline: "Apr'22 - Aug'23",
