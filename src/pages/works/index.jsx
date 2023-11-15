@@ -52,6 +52,7 @@ const Works = () => {
                     height="100%"
                     image={project.mockup}
                     alt="project"
+                    loading="lazy"
                   />
                 </Card>
                 <Box
@@ -115,6 +116,7 @@ const Works = () => {
                     height="100%"
                     image={design.thumbnail}
                     alt="project"
+                    loading="lazy"
                   />
                 </Card>
 
