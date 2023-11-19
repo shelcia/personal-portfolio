@@ -115,6 +115,7 @@ const SelectedWorks = () => {
                     height="100%"
                     image={project.image}
                     alt="project"
+                    loading="lazy"
                   />
                 </Card>
                 <Box

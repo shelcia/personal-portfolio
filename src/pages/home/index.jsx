@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import {
   Box,
   Button,
@@ -6,14 +6,19 @@ import {
   // Link as MuiLink,
   Typography,
 } from "@mui/material";
-import SelectedWorks from "./components/SelectedWorks";
+// import SelectedWorks from "./components/SelectedWorks";
 import SocialIcons from "../common/SocialIcons";
 import Arrow from "../../assets/icons/toprightarrow.svg";
 import { Link } from "react-router-dom";
 import Scroller from "../common/Scroller";
 import Unicorn from "../../assets/images/images/unicorn.webp";
+import { CustomLoadable } from "../common/CustomPartLoader";
 
 const HomePage = () => {
+  const SelectedWorks = CustomLoadable(
+    lazy(() => import("./components/SelectedWorks"))
+  );
+
   return (
     <Container sx={{ position: "relative" }} data-aos="fade-up">
       <Typography
