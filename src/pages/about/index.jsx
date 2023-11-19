@@ -1,9 +1,10 @@
-import React, { Suspense, lazy, useRef } from "react";
+import React, { lazy, useRef } from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Shelcia from "../../assets/images/images/me.webp";
+import Shelcia from "../../assets/images/images/me.svg";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
+import { CustomLoadable } from "../common/CustomPartLoader";
 
 const AboutMe = () => {
   const journeyToRef = useRef(null);
@@ -16,21 +17,9 @@ const AboutMe = () => {
     }
   };
 
-  // eslint-disable-next-line react/display-name
-  const Loadable = (Component) => (props) =>
-    (
-      <Suspense
-        fallback={
-          <>
-            <Typography>Loading...</Typography>
-          </>
-        }
-      >
-        <Component {...props} />
-      </Suspense>
-    );
-
-  const Photography = Loadable(lazy(() => import("./components/Photography")));
+  const Photography = CustomLoadable(
+    lazy(() => import("./components/Photography"))
+  );
 
   return (
     <>
