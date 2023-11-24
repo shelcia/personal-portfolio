@@ -227,9 +227,9 @@ export const ProjectsProvider = (props) => {
         "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/samgatha_fGPvUsO2e.png?updatedAt=1627449846491",
       description:
         "I was part of the web development team (consisting of two members) who built the website for the college fest of IIITDM. We used Bootstrap for the frontend and NodeJS for the backend. The design focused on the theme DREAM. We used Nodejs to fetch event data from the database.",
-      deploy: false,
+      deploy: true,
       techstack: ["Bootstrap", "MongoDB", "NodeJS"],
-      deployment: "http://samgatha2020.herokuapp.com/",
+      deployment: "https://samgatha-2020.glitch.me/",
       code: "https://github.com/shelcia/Samgatha-2020",
       forks: 19,
       stars: 12,

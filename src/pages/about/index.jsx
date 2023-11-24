@@ -1,6 +1,6 @@
 import React, { lazy, useRef } from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Shelcia from "../../assets/images/images/me.svg";
+import Shelcia from "../../assets/images/images/me.webp";
 import Journey from "./components/Journey";
 import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
@@ -66,6 +66,7 @@ const AboutMe = () => {
             variant="contained"
             color="success"
             onClick={() => scrollToElement(skillsToRef)}
+            sx={{ mt: { xs: 2, md: 0 } }}
           >
             My Skills
           </Button>
