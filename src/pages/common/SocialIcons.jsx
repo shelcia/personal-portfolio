@@ -14,17 +14,17 @@ const SocialIcons = () => {
     },
     {
       icon: LinkedIn,
-      link: "https://github.com/shelcia",
+      link: "https://www.linkedin.com/in/shelcia/",
       alt: "Connect with me on linkedin",
     },
     {
       icon: Behance,
-      link: "https://github.com/shelcia",
+      link: "https://www.behance.net/shelcia",
       alt: "Check out my works on behance",
     },
     {
       icon: Medium,
-      link: "https://github.com/shelcia",
+      link: "https://medium.com/@shelcia",
       alt: "Follow my work on medium",
     },
   ];
