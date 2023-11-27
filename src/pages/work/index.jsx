@@ -56,7 +56,7 @@ const Work = () => {
           <Grid container spacing={2}>
             <WorkWidget title="Tech Stack">
               {details?.techstack?.map((tech) => (
-                <Chip key={tech} label={tech} sx={{ mr: 1 }} />
+                <Chip key={tech} label={tech} sx={{ mr: 1, mt: 0.5 }} />
               ))}
             </WorkWidget>
             <WorkWidget title="Github">
@@ -85,13 +85,14 @@ export default Work;
 
 const WorkWidget = ({ title, children }) => {
   return (
-    <Grid item xs={12} md={4}>
+    <Grid item xs={12} md={4} sx={{ flex: 1 }}>
       <Box
         sx={{
           borderRadius: "0.75rem",
           border: "1px dashed #E8E8E8",
           backgroundColor: "#fff",
           padding: 1,
+          height: "100%",
         }}
       >
         <Typography sx={{ fontWeight: 700 }}>{title}</Typography>

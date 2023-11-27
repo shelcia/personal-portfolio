@@ -14,7 +14,8 @@
     "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.4.5",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "scripts": {
     "dev": "vite",

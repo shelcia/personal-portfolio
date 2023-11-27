@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import {
   Box,
   Button,
@@ -12,12 +12,14 @@ import { FeaturedProjectsContext } from "../../../context/FeaturedProjectsContex
 import Arrow from "../../../assets/icons/toprightarrow.svg";
 import ChevronRight from "../../../assets/icons/chevron-right.svg";
 import { Link } from "react-router-dom";
+import VanillaTilt from "vanilla-tilt";
 // import gsap from "gsap";
 // import GitStars from "../../../assets/icons/git-star.svg";
 // import GitForks from "../../../assets/icons/git-fork.svg";
 
 const SelectedWorks = () => {
   const projects = useContext(FeaturedProjectsContext);
+
   //   const ANGLE = 40;
   //   const cardRef = React.useRef(null);
 
@@ -86,62 +88,12 @@ const SelectedWorks = () => {
       <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
         {projects.map((project) => (
           <Grid item xs={12} md={6} key={project.id}>
-            <Link to={`/works/${project.id}`}>
-              <Box data-aos="flip-up">
-                <Card
-                  // ref={cardRef}
-                  sx={{
-                    maxWidth: "100%",
-                    position: "relative",
-                    backgroundColor: "transparent",
-                    boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-                    borderRadius: { xs: "16px", md: "28.92px" },
-                    transform: "perspective(400px)",
-                    //   transition: "all, 0.2s ease-in",
-                    transition: ".2s ease",
-
-                    //   "&:hover": {
-                    //     transform: "rotate(50deg, 50deg)",
-                    //   },
-                    //   transformStyle: "preserve-3d", // Enable 3D transforms
-                    //   transformOrigin: "center", // Set the pivot point to the center
-                  }}
-                  // onMouseEnter={handleHover}
-                  // onMouseLeave={handleHoverExit}
-                  className="featured-project-card"
-                >
-                  <CardMedia
-                    component="img"
-                    height="100%"
-                    image={project.image}
-                    alt="project"
-                    loading="lazy"
-                  />
-                </Card>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    mt: 2,
-                  }}
-                >
-                  <Box>
-                    <Typography className="featured-project-title">
-                      {project.name}
-                    </Typography>
-                    <Typography className="featured-project-desc">
-                      {project.desc}
-                    </Typography>
-                  </Box>
-                  <Box>
-                    <IconButton sx={{ border: "1.5px solid #000" }}>
-                      <img src={Arrow} alt="Arrow" width={34} height={34} />
-                    </IconButton>
-                  </Box>
-                </Box>
-              </Box>
-            </Link>
+            <ProjectCard
+              id={project.id}
+              image={project.image}
+              name={project.name}
+              desc={project.desc}
+            />
           </Grid>
         ))}
       </Grid>
@@ -168,3 +120,76 @@ const SelectedWorks = () => {
 };
 
 export default SelectedWorks;
+
+const ProjectCard = ({ id, image, name, desc }) => {
+  const tiltRef = useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tiltRef.current, {
+      max: 5,
+      speed: 500,
+      glare: true,
+      "max-glare": 0.5,
+    });
+
+    return () => {
+      // Cleanup Tilt.js when the component unmounts
+      tiltRef?.current?.vanillaTilt?.destroy();
+    };
+  }, []);
+
+  return (
+    <Link to={`/works/${id}`}>
+      <Box data-aos="flip-up" ref={tiltRef}>
+        <Card
+          // ref={cardRef}
+          sx={{
+            maxWidth: "100%",
+            position: "relative",
+            backgroundColor: "transparent",
+            boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
+            borderRadius: { xs: "16px", md: "28.92px" },
+            transform: "perspective(400px)",
+            //   transition: "all, 0.2s ease-in",
+            transition: ".2s ease",
+
+            //   "&:hover": {
+            //     transform: "rotate(50deg, 50deg)",
+            //   },
+            //   transformStyle: "preserve-3d", // Enable 3D transforms
+            //   transformOrigin: "center", // Set the pivot point to the center
+          }}
+          // onMouseEnter={handleHover}
+          // onMouseLeave={handleHoverExit}
+          className="featured-project-card"
+        >
+          <CardMedia
+            component="img"
+            height="100%"
+            image={image}
+            alt="project"
+            loading="lazy"
+          />
+        </Card>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mt: 2,
+          }}
+        >
+          <Box>
+            <Typography className="featured-project-title">{name}</Typography>
+            <Typography className="featured-project-desc">{desc}</Typography>
+          </Box>
+          <Box>
+            <IconButton sx={{ border: "1.5px solid #000" }}>
+              <img src={Arrow} alt="Arrow" width={34} height={34} />
+            </IconButton>
+          </Box>
+        </Box>
+      </Box>
+    </Link>
+  );
+};

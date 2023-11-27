@@ -1,57 +1,58 @@
 import React from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { skills1, skills2 } from "../../../context/SkillsContext";
 
 const Skills = ({ skillsToRef }) => {
-  const skills1 = [
-    "React",
-    "Javascript",
-    "React Native",
-    "Typescript",
-    "NodeJs",
-    "NextJs",
-    "Python",
-    "Vue",
-    "GoLang",
-    "SASS",
-  ];
-  const skills2 = [
-    "Figma",
-    "AdobeXD",
-    "ExpressJs",
-    "MUI",
-    "Bootstrap",
-    "GIT",
-    "Docker",
-    "MongoDB",
-    "Tailwind",
-  ];
   return (
     <Container ref={skillsToRef}>
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
         Skills
       </Typography>
       <Grid container>
-        <Grid item xs={12} md={6}>
-          <ul>
-            {skills1.map((skill) => (
-              <li key={skill} style={{ fontWeight: 600 }}>
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <ul>
-            {skills2.map((skill) => (
-              <li key={skill} style={{ fontWeight: 600 }}>
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </Grid>
+        <SkillSection skills={skills1} />
+        <SkillSection skills={skills2} />
       </Grid>
     </Container>
   );
 };
 
 export default Skills;
+
+const SkillSection = ({ skills }) => {
+  return (
+    <Grid item xs={12} md={6}>
+      <ul style={{ listStyle: "none" }}>
+        {skills.map((skill) => (
+          <li
+            key={skill.name}
+            style={{
+              fontWeight: 600,
+              display: "flex",
+              gap: 5,
+              alignItems: "center",
+              marginBottom: 5,
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "30px",
+                height: "30px",
+                borderRadius: "50ex",
+                background: "#ffffff",
+                boxShadow: "20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff",
+              }}
+            >
+              <img src={skill.img} width="20px" height="20px" />
+            </Box>{" "}
+            <Typography sx={{ display: "inline-block" }}>
+              {skill.name}
+            </Typography>
+          </li>
+        ))}
+      </ul>
+    </Grid>
+  );
+};
