@@ -13,7 +13,12 @@ const Journey = ({ journeyToRef }) => {
   return (
     <>
       <Container sx={{ pl: 0, overflowX: "hidden" }} ref={journeyToRef}>
-        <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
+        <Typography
+          component={"h2"}
+          className="section-title"
+          sx={{ mt: 10 }}
+          data-aos="fade-up"
+        >
           Journey
         </Typography>
         <Timeline
@@ -26,7 +31,11 @@ const Journey = ({ journeyToRef }) => {
           // position="alternate-reverse"
         >
           {experience.map((item, idx) => (
-            <TimelineItem key={idx}>
+            <TimelineItem
+              key={idx}
+              data-aos="fade-up"
+              // data-aos-delay={10 * idx}
+            >
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />

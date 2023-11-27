@@ -1,52 +1,108 @@
-export const iconscol1 = [
-  { icon: "devicon-python-plain colored", name: "Python" },
-  { icon: "devicon-javascript-plain colored", name: "Javascript" },
-  { icon: "devicon-typescript-plain colored", name: "Typescript" },
-  { icon: "devicon-react-original colored", name: "React" },
-  { icon: "devicon-docker-plain colored", name: "Docker" },
-  { icon: "devicon-redux-original colored", name: "Redux" },
-  { icon: "devicon-react-original", name: "React Native" },
-  { icon: "devicon-nodejs-plain colored", name: "NodeJs" },
-  { icon: "devicon-express-original-wordmark", name: "Express" },
-  { icon: "devicon-html5-plain colored", name: "HTML 5" },
-  { icon: "devicon-css3-plain colored", name: "CSS3" },
-  { icon: "devicon-sass-original colored", name: "SASS" },
-];
+import React from "../assets/skill-icons/react.webp";
+import Javascript from "../assets/skill-icons/js.webp";
+import ReactNative from "../assets/skill-icons/react-native.webp";
+import Typescript from "../assets/skill-icons/typescript.webp";
+import NodeJs from "../assets/skill-icons/nodejs.webp";
+import NextJs from "../assets/skill-icons/nextjs.webp";
+import Python from "../assets/skill-icons/python.webp";
+import Vue from "../assets/skill-icons/vue.webp";
+import GoLang from "../assets/skill-icons/golang.webp";
+import SASS from "../assets/skill-icons/sass.webp";
 
-export const iconscol2 = [
-  { icon: "devicon-amazonwebservices-original colored", name: "AWS" },
-  { icon: "devicon-heroku-plain colored", name: "Heroku" },
-  { icon: "devicon-mongodb-plain-wordmark colored", name: "MongoDB" },
-  { icon: "devicon-mysql-plain-wordmark colored", name: "MY SQL" },
-  { icon: "devicon-github-original", name: "Github" },
-  { icon: "devicon-bootstrap-plain colored", name: "Bootstrap" },
-  { icon: "devicon-materialui-plain colored", name: "Material UI" },
-  { icon: "devicon-npm-original-wordmark colored", name: "NPM" },
-  { icon: "devicon-yarn-plain colored", name: "Yarn" },
-  { icon: "devicon-visualstudio-plain colored", name: "Visual Studio" },
-  { icon: "devicon-pycharm-plain colored", name: "PyCharm" },
-  { icon: "devicon-photoshop-plain colored", name: "Photoshop" },
-];
+import Figma from "../assets/skill-icons/figma.webp";
+import AdobeXD from "../assets/skill-icons/adobeXD.webp";
+import ExpressJs from "../assets/skill-icons/express.webp";
+import MUI from "../assets/skill-icons/mui.webp";
+import Bootstrap from "../assets/skill-icons/bootstrap.webp";
+import GIT from "../assets/skill-icons/git.webp";
+import Docker from "../assets/skill-icons/docker.webp";
+import MongoDB from "../assets/skill-icons/mongodb.webp";
+import Tailwind from "../assets/skill-icons/tailwind.webp";
 
-export const iconscol3 = [
+export const skills1 = [
   {
-    img: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+    name: "React",
+    img: React,
+  },
+  {
+    name: "Javascript",
+    img: Javascript,
+  },
+  {
+    name: "React Native",
+    img: ReactNative,
+  },
+  {
+    name: "Typescript",
+    img: Typescript,
+  },
+  {
+    name: "NodeJs",
+    img: NodeJs,
+  },
+  {
+    name: "NextJs",
+    img: NextJs,
+  },
+  {
+    name: "Python",
+    img: Python,
+  },
+  {
+    name: "Vue",
+    img: Vue,
+  },
+  {
+    name: "GoLang",
+    img: GoLang,
+  },
+  {
+    name: "SASS",
+    img: SASS,
+  },
+];
+export const skills2 = [
+  {
     name: "Figma",
+    img: Figma,
+  },
+
+  {
+    name: "AdobeXD",
+    img: AdobeXD,
+  },
+
+  {
+    name: "ExpressJs",
+    img: ExpressJs,
   },
   {
-    img: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg",
-    name: "Arduino",
+    name: "MUI",
+    img: MUI,
   },
+
   {
-    img: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
-    name: "GCP",
+    name: "Bootstrap",
+    img: Bootstrap,
   },
+
   {
-    img: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    name: "Postman",
+    name: "GIT",
+    img: GIT,
   },
+
   {
-    img: "https://cdn.worldvectorlogo.com/logos/adobe-xd.svg",
-    name: "Adobe XD",
+    name: "Docker",
+    img: Docker,
+  },
+
+  {
+    name: "MongoDB",
+    img: MongoDB,
+  },
+
+  {
+    name: "Tailwind",
+    img: Tailwind,
   },
 ];

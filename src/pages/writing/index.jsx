@@ -48,7 +48,7 @@ const Writing = () => {
           </>
         ) : (
           <List>
-            {articles.map((article) => (
+            {articles.map((article, idx) => (
               <ListItem
                 key={article.title}
                 as={Box}
@@ -59,6 +59,8 @@ const Writing = () => {
                   gap: 2,
                   px: { xs: 0 },
                 }}
+                data-aos="fade-up"
+                data-aos-delay={10 * idx}
               >
                 <Box sx={{ display: { xs: "none", md: "block" } }}>
                   <img
