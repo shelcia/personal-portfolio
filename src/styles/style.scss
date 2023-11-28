@@ -1,5 +1,3 @@
-@import url("./external/locomotive.css");
-
 // Migra font styles
 @font-face {
   font-family: "Migra";
@@ -56,33 +54,10 @@ $font-serif-2: "Brown Sugar", "Migra", "Cormorant Garamond", Georgia,
 @import "./components/animations";
 @import "./components/imggallery";
 @import "./components/typography";
-// @import "./components/cssbutton";
 
 body {
   overflow-x: hidden;
 }
-
-// body {
-//   font-family: $font-sans-serif;
-//   color: #17181a;
-
-//   // background: url("../assets/images/bg.png"), lightgray 10%;
-//   // background: url("../assets/images/bg.png"),
-//   //   rgb(240, 240, 240) 50% / cover no-repeat;
-
-//   background: url("../assets/images/bg.png") 50% / cover no-repeat,
-//     rgba(255, 255, 255, 0.246);
-
-//   // mix-blend-mode: difference;
-//   // background-color: #fff;
-//   // height: 100vh;
-//   width: 100%;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   position: relative;
-//   animation: gradientAnimation 2s linear infinite alternate;
-// }
 
 html,
 body {
@@ -96,28 +71,8 @@ body {
   font-family: $font-sans-serif;
   color: #17181a;
   background: url("../assets/images/images/bg.webp");
-  background-position: center; /* Center the image */
-  // background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire contain
-
-  // background: url("../assets/images/bg.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-
-  // position: relative;
-  // width: 100vw;
-  // height: 100%;
-
-  /* Add a light overlay using pseudo-element ::before */
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: rgba(255, 255, 255, 0.7); /* Adjust the alpha value as needed */
-  // }
+  background-position: center;
+  background-size: cover;
 }
 
 .text-serif {
@@ -133,28 +88,15 @@ body {
   }
 }
 
-// .home-body {
-
-//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 59.35%);
-//   // background: linear-gradient(61deg, #92e2f1 0%, #ffaea7 70%);
-//   // background-size: 200% 200%; /* Adjust the size as needed */
-//   // animation: gradientAnimation 5s linear infinite alternate; /* Adjust the animation duration as needed */
-//   // background-repeat: no-repeat;
-// }
+a {
+  color: #626262;
+}
 
 .social-icons {
   border-radius: 3rem;
   background: linear-gradient(180deg, #fff 0%, rgba(218, 218, 218, 0) 100%);
   box-shadow: 20px 20px 60px 0px #cecece, -20px -20px 60px 0px #fff;
 }
-
-// .featured-project-card {
-//   transition: transform 0.2s; /* Add a smooth transition */
-
-//   &:hover {
-//     transform: translateZ(-10px); /* Move the card slightly backward on hover */
-//   }
-// }
 
 .article-link {
   transition: all 0.3s ease-in-out;

@@ -18,11 +18,6 @@ const WritingPage = Loadable(lazy(() => import("./pages/writing/index")));
 const ContactPage = Loadable(lazy(() => import("./pages/contact/index")));
 const ErrorPage = Loadable(lazy(() => import("./pages/others/404Page")));
 
-// const ProjectPage = Loadable(lazy(() => import("./pages/ProjectPage")));
-// const AboutPage = Loadable(lazy(() => import("./pages/AboutPage")));
-// const ContactPage = Loadable(lazy(() => import("./pages/Resume")));
-// const ErrorPage = Loadable(lazy(() => import("./pages/404Page")));
-
 const routes = [
   {
     path: "/",

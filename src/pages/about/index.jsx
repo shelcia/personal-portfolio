@@ -53,7 +53,7 @@ const AboutMe = () => {
             <img src={Shelcia} alt="Shelcia" width={"100%"} height={"auto"} />
           </Grid>
         </Grid>
-        <Box sx={{ mt: 4 }}>
+        <Box sx={{ mt: 4, display: "flex", gap: 1 }}>
           <Button
             variant="contained"
             color="success"
@@ -66,7 +66,7 @@ const AboutMe = () => {
             variant="contained"
             color="success"
             onClick={() => scrollToElement(skillsToRef)}
-            sx={{ mt: { xs: 2, md: 0 } }}
+            // sx={{ mt: { xs: 2, md: 0 } }}
           >
             My Skills
           </Button>

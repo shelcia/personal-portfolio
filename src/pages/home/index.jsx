@@ -29,7 +29,7 @@ const HomePage = () => {
         // data-scroll-direction="horizontal"
       >
         Shelcia David{" "}
-        <img src={Unicorn} alt="unicorn emoji" width={48} height={48} />
+        <img src={Unicorn} alt="unicorn emoji" width={"48px"} height={"48px"} />
       </Typography>
 
       <Typography
