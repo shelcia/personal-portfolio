@@ -105,7 +105,14 @@ const Photography = () => {
         {Images.map((col) => (
           <Box className="img-column" key={col.id}>
             {col.images.map((img) => (
-              <img src={img.image} alt={img.caption} key={img.caption} />
+              <img
+                data-cursor-text={img.caption}
+                data-cursor-size="200px"
+                src={img.image}
+                alt={img.caption}
+                key={img.caption}
+                loading="lazy"
+              />
             ))}
           </Box>
         ))}

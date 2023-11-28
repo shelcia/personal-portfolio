@@ -6,6 +6,7 @@ import {
   CardMedia,
   Grid,
   IconButton,
+  useMediaQuery,
   Typography,
 } from "@mui/material";
 import { FeaturedProjectsContext } from "../../../context/FeaturedProjectsContext";
@@ -13,69 +14,9 @@ import Arrow from "../../../assets/icons/toprightarrow.svg";
 import ChevronRight from "../../../assets/icons/chevron-right.svg";
 import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
-// import gsap from "gsap";
-// import GitStars from "../../../assets/icons/git-star.svg";
-// import GitForks from "../../../assets/icons/git-fork.svg";
 
 const SelectedWorks = () => {
   const projects = useContext(FeaturedProjectsContext);
-
-  //   const ANGLE = 40;
-  //   const cardRef = React.useRef(null);
-
-  //   const handleHover = () => {
-  //     const card = cardRef.current;
-  //     gsap.to(card, {
-  //       rotateX: -ANGLE,
-  //       rotateY: ANGLE,
-  //       transformOrigin: "center",
-  //       boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.1)",
-  //       duration: 0.2,
-  //     });
-  //   };
-
-  //   const handleHoverExit = () => {
-  //     const card = cardRef.current;
-  //     gsap.to(card, {
-  //       rotateX: 0,
-  //       rotateY: 0,
-  //       transformOrigin: "center",
-  //       boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-  //       duration: 0.2,
-  //     });
-  //   };
-
-  //   const ANGLE = 40;
-
-  //   const handleHover = (event) => {
-  //     const card = event.currentTarget;
-  //     // console.log(card);
-  //     let w = card.clientWidth;
-  //     let h = card.clientHeight;
-  //     let y = ((w * 0.5) / w) * ANGLE;
-  //     let x = ((1 - h * 0.5) / h) * ANGLE;
-
-  //     console.log({ y, x });
-
-  //     gsap.to(card, {
-  //       rotateX: `${x}deg`,
-  //       rotateY: `${y}deg`,
-  //       boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.1)",
-  //       duration: 0.2, // Animation duration
-  //     });
-  //   };
-
-  //   const handleHoverExit = (event) => {
-  //     const card = event.currentTarget;
-  //     gsap.to(card, {
-  //       rotateX: 0,
-  //       rotateY: 0,
-  //       rotateZ: 0,
-  //       boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-  //       duration: 0.2, // Animation duration
-  //     });
-  //   };
-
   return (
     <>
       <Typography
@@ -111,6 +52,7 @@ const SelectedWorks = () => {
               style={{ marginLeft: 5 }}
               height={"20px"}
               width={"20px"}
+              loading="lazy"
             />
           </Button>
         </Link>
@@ -138,11 +80,12 @@ const ProjectCard = ({ id, image, name, desc }) => {
     };
   }, []);
 
+  const matches = useMediaQuery("(min-width:600px)");
+
   return (
     <Link to={`/works/${id}`}>
       <Box data-aos="flip-up" ref={tiltRef}>
         <Card
-          // ref={cardRef}
           sx={{
             maxWidth: "100%",
             position: "relative",
@@ -150,17 +93,8 @@ const ProjectCard = ({ id, image, name, desc }) => {
             boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
             borderRadius: { xs: "16px", md: "28.92px" },
             transform: "perspective(400px)",
-            //   transition: "all, 0.2s ease-in",
             transition: ".2s ease",
-
-            //   "&:hover": {
-            //     transform: "rotate(50deg, 50deg)",
-            //   },
-            //   transformStyle: "preserve-3d", // Enable 3D transforms
-            //   transformOrigin: "center", // Set the pivot point to the center
           }}
-          // onMouseEnter={handleHover}
-          // onMouseLeave={handleHoverExit}
           className="featured-project-card"
         >
           <CardMedia
@@ -168,7 +102,7 @@ const ProjectCard = ({ id, image, name, desc }) => {
             height="100%"
             image={image}
             alt="project"
-            loading="lazy"
+            loading={matches && id === "mocker" ? "eager" : "lazy"}
           />
         </Card>
         <Box
@@ -185,7 +119,13 @@ const ProjectCard = ({ id, image, name, desc }) => {
           </Box>
           <Box>
             <IconButton sx={{ border: "1.5px solid #000" }}>
-              <img src={Arrow} alt="Arrow" width={34} height={34} />
+              <img
+                src={Arrow}
+                alt="Arrow"
+                width={34}
+                height={34}
+                loading="lazy"
+              />
             </IconButton>
           </Box>
         </Box>

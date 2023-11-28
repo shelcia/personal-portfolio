@@ -62,7 +62,7 @@ const baseOptions = {
           backgroundColor: secondary[500],
           borderRadius: 8,
           "&:hover": {
-            backgroundColor: "#000",
+            backgroundColor: "#626262",
           },
         },
       },
