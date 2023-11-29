@@ -1,59 +1,15 @@
 import React from "react";
 import { useState, createContext } from "react";
 
-import MockerMockup from "../assets/images/mockups/mocker.webp";
-import SocialgramMockup from "../assets/images/mockups/socialgram.webp";
-import BloggramMockup from "../assets/images/mockups/bloggram.webp";
-import DynamicPortfolioMockup from "../assets/images/mockups/dynamicportfolio.webp";
-import NoobcodesMockup from "../assets/images/mockups/noobcodes.webp";
-import KaagithamMockup from "../assets/images/mockups/kaagitham.webp";
-import SamgathaMockup from "../assets/images/mockups/samgatha.webp";
-import IrulthemeMockup from "../assets/images/mockups/irul them.webp";
-import AUVMockup from "../assets/images/mockups/auv.webp";
-import WeatherMockup from "../assets/images/mockups/weather.webp";
-
 export const ProjectsContext = createContext();
 
 export const ProjectsProvider = (props) => {
   const [projects] = useState([
     {
-      id: "dynamic-portfolio",
-      name: "Dynamic Portfolio Maker",
-      mockup: DynamicPortfolioMockup,
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/dynamic-portfolio-demo_0mw4NjwRu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985852086",
-      description:
-        "Dynamic Portfolio is a website building tool that allows users to create a website by filling out forms under five minutes. Instead of having to write code or use specialized software, users can use pre-built templates and input their own content using an intuitive user interface. This can make it faster and easier for people with limited technical experience to create a website. We currently have three templates.",
-      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
-      deploy: true,
-      deployment: "https://dynamic--portfolio.vercel.app/",
-      code: "https://github.com/shelcia/dynamic-portflio",
-      forks: 19,
-      stars: 12,
-    },
-    {
-      id: "kaagitham",
-      name: "Kaagitham",
-      mockup: KaagithamMockup,
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1627452470163",
-      description:
-        "Kaagitham allows users to create drafts and share them seamlessly. The interface also allows sharing code snippets and huge documents with media content with which multiple users can collaboratively work. It also has features to view edit history, auto-saving and a comment section for easy interaction. I am working on adding more features as well. Currently under construction",
-      techstack: ["React", "NodeJS", "Socket.io", "Material UI", "Sun-Editor"],
-      deploy: true,
-      deployment: "https://kaagitham.vercel.app/",
-      code: "https://github.com/shelcia/kaagitham",
-      forks: 19,
-      stars: 12,
-    },
-    {
       id: "mocker",
       name: "Mocker",
-      mockup: MockerMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/mocker_FhIiA_GE6v.webp?updatedAt=1701194092672",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
       imageURL:
@@ -71,9 +27,93 @@ export const ProjectsProvider = (props) => {
       stars: 12,
     },
     {
+      id: "socialgram",
+      name: "Social Gram",
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/socialgram_l5y_mG4U0.webp?updatedAt=1701194091026",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
+      imageURL:
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram1_DKSivHFxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869834",
+      // description:
+      //   "Social gram is a social website that allows users to tweet and react to tweets. It also allows users to comment anonymously. I am working on adding more features as well.",
+      description:
+        "Social Gram is a social media website that allows users to create and share content, similar to other popular platforms such as Twitter and Facebook. Users will be able to create posts, and share them with others. The platform also allows for users to react and engage with other user's content, such as by liking, commenting, or sharing. It is a social website with all basic features where users can share and react to the post with text and media. I am working on adding more features as well.",
+      techstack: [
+        "React",
+        "Material UI",
+        "MongoDB",
+        "NodeJS",
+        "ExpressJS",
+        "Redux",
+      ],
+      deploy: true,
+      deployment: "https://social--gram.vercel.app/",
+      code: "https://github.com/shelcia/Socialgram",
+      forks: 19,
+      stars: 12,
+    },
+    {
+      id: "bloggram",
+      name: "Bloggram",
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/bloggram_A0EkXwGxa.webp?updatedAt=1701194090975",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
+      imageURL:
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
+      description:
+        "I have created a dynamic and interactive blog website as a hobby project. The feature of allowing users to edit, add, and react to blogs is a great way to make the platform more engaging and encourage user participation. Additionally, having separate comment sections or discussions for users across all blogs will also help foster a community and make it easier for users to engage with each other's ideas. The choice of a minimalistic UI will give the website clean and uncluttered appearance and also focuses on user experience. This type of blog website will be a great way for users to share their thoughts and ideas, as well as learn from others, it will be a great addition to the collection of personal projects.",
+      // "As part of my hobby projects, I created a blog website where users can edit, add, react and delete blogs. It has got features where all blogs are segregated into major categories, like, dislike and add hearts to blog, separate comment section/discussion for users in all blogs and UI will be an eye treat for black and white lovers.",
+      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+      deploy: true,
+      deployment: "https://bloggram-beta.vercel.app/",
+      code: "https://github.com/shelcia/Blog-website",
+      forks: 19,
+      stars: 12,
+    },
+    {
+      id: "dynamic-portfolio",
+      name: "Dynamic Portfolio Maker",
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/dynamicportfolio_H4yzvMebha.webp?updatedAt=1701194090908",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
+      imageURL:
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/dynamic-portfolio-demo_0mw4NjwRu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985852086",
+      description:
+        "Dynamic Portfolio is a website building tool that allows users to create a website by filling out forms under five minutes. Instead of having to write code or use specialized software, users can use pre-built templates and input their own content using an intuitive user interface. This can make it faster and easier for people with limited technical experience to create a website. We currently have three templates.",
+      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+      deploy: true,
+      deployment: "https://dynamic--portfolio.vercel.app/",
+      code: "https://github.com/shelcia/dynamic-portflio",
+      forks: 19,
+      stars: 12,
+    },
+    {
+      id: "kaagitham",
+      name: "Kaagitham",
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/kaagitham_h-mVtO9Y2.webp?updatedAt=1701194091006",
+      image:
+        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
+      imageURL:
+        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1627452470163",
+      description:
+        "Kaagitham allows users to create drafts and share them seamlessly. The interface also allows sharing code snippets and huge documents with media content with which multiple users can collaboratively work. It also has features to view edit history, auto-saving and a comment section for easy interaction. I am working on adding more features as well. Currently under construction",
+      techstack: ["React", "NodeJS", "Socket.io", "Material UI", "Sun-Editor"],
+      deploy: true,
+      deployment: "https://kaagitham.vercel.app/",
+      code: "https://github.com/shelcia/kaagitham",
+      forks: 19,
+      stars: 12,
+    },
+
+    {
       id: "noobcodes",
       name: "Noob Codes",
-      mockup: NoobcodesMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/noobcodes_GUzi7Ol86.webp?updatedAt=1701194091120",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
       imageURL:
@@ -119,54 +159,12 @@ export const ProjectsProvider = (props) => {
     //   deployment: "https://freee-chatapp.netlify.app/",
     //   code: "https://github.com/shelcia/chat-app-frontend",
     // },
-    {
-      id: "socialgram",
-      name: "Social Gram",
-      mockup: SocialgramMockup,
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram1_DKSivHFxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869834",
-      // description:
-      //   "Social gram is a social website that allows users to tweet and react to tweets. It also allows users to comment anonymously. I am working on adding more features as well.",
-      description:
-        "Social Gram is a social media website that allows users to create and share content, similar to other popular platforms such as Twitter and Facebook. Users will be able to create posts, and share them with others. The platform also allows for users to react and engage with other user's content, such as by liking, commenting, or sharing. It is a social website with all basic features where users can share and react to the post with text and media. I am working on adding more features as well.",
-      techstack: [
-        "React",
-        "Material UI",
-        "MongoDB",
-        "NodeJS",
-        "ExpressJS",
-        "Redux",
-      ],
-      deploy: true,
-      deployment: "https://social--gram.vercel.app/",
-      code: "https://github.com/shelcia/Socialgram",
-      forks: 19,
-      stars: 12,
-    },
-    {
-      id: "bloggram",
-      name: "Bloggram",
-      mockup: BloggramMockup,
-      image:
-        "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
-      imageURL:
-        "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
-      description:
-        "I have created a dynamic and interactive blog website as a hobby project. The feature of allowing users to edit, add, and react to blogs is a great way to make the platform more engaging and encourage user participation. Additionally, having separate comment sections or discussions for users across all blogs will also help foster a community and make it easier for users to engage with each other's ideas. The choice of a minimalistic UI will give the website clean and uncluttered appearance and also focuses on user experience. This type of blog website will be a great way for users to share their thoughts and ideas, as well as learn from others, it will be a great addition to the collection of personal projects.",
-      // "As part of my hobby projects, I created a blog website where users can edit, add, react and delete blogs. It has got features where all blogs are segregated into major categories, like, dislike and add hearts to blog, separate comment section/discussion for users in all blogs and UI will be an eye treat for black and white lovers.",
-      techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
-      deploy: true,
-      deployment: "https://bloggram-beta.vercel.app/",
-      code: "https://github.com/shelcia/Blog-website",
-      forks: 19,
-      stars: 12,
-    },
+
     {
       id: "weatherapp",
       name: "Weather App",
-      mockup: WeatherMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/weather_Jy_CBLz9H.webp?updatedAt=1701194091055",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/weather-app_eqaXO8qfP0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736630",
       imageURL:
@@ -184,7 +182,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "irul-theme",
       name: "Irul Theme",
-      mockup: IrulthemeMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/irul%20them_BytIqcI6Xn.webp?updatedAt=1701194091194",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
       imageURL:
@@ -203,7 +202,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "auv",
       name: "AUV-IIITDM",
-      mockup: AUVMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/auv_fo-YcluJN.webp?updatedAt=1701194091672",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
       imageURL:
@@ -220,7 +220,8 @@ export const ProjectsProvider = (props) => {
     {
       id: "samgatha",
       name: "Samgatha",
-      mockup: SamgathaMockup,
+      mockup:
+        "https://ik.imagekit.io/shelcia/my_portfolio/mockup/samgatha_GdRi0Rz8z.webp?updatedAt=1701194091300",
       image:
         "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
       imageURL:
