@@ -22,7 +22,11 @@ const Writing = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+          headers: {
+            "Accept-Encoding": "gzip",
+          },
+        });
         const results = await response.json();
         // console.log(results);
         setArticles(results.items);

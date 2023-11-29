@@ -9,14 +9,16 @@ import {
   useMediaQuery,
   Typography,
 } from "@mui/material";
-import { FeaturedProjectsContext } from "../../../context/FeaturedProjectsContext";
 import Arrow from "../../../assets/icons/toprightarrow.svg";
 import ChevronRight from "../../../assets/icons/chevron-right.svg";
 import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
+import { ProjectsContext } from "../../../context/ProjectContext";
 
 const SelectedWorks = () => {
-  const projects = useContext(FeaturedProjectsContext);
+  const projects = useContext(ProjectsContext);
+
+  console.log(projects);
   return (
     <>
       <Typography
@@ -27,11 +29,12 @@ const SelectedWorks = () => {
         Selected Works
       </Typography>
       <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
-        {projects.map((project) => (
+        {/* eslint-disable-next-line no-unsafe-optional-chaining */}
+        {[...projects?.slice(0, 4)]?.map((project) => (
           <Grid item xs={12} md={6} key={project.id}>
             <ProjectCard
               id={project.id}
-              image={project.image}
+              mockup={project.mockup}
               name={project.name}
               desc={project.desc}
             />
@@ -63,7 +66,7 @@ const SelectedWorks = () => {
 
 export default SelectedWorks;
 
-const ProjectCard = ({ id, image, name, desc }) => {
+const ProjectCard = ({ id, mockup, name, desc }) => {
   const tiltRef = useRef(null);
 
   useEffect(() => {
@@ -100,7 +103,7 @@ const ProjectCard = ({ id, image, name, desc }) => {
           <CardMedia
             component="img"
             height="100%"
-            image={image}
+            image={mockup}
             alt="project"
             loading={matches && id === "mocker" ? "eager" : "lazy"}
           />
