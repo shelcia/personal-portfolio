@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import ErrImg from "../../assets/images/images/404.svg";
 
-const ErrorPage = () => {
+const ErrorPage: React.FC = () => {
   return (
     <React.Fragment>
       <Container>

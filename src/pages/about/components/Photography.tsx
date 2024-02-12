@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 
-const Photography = () => {
+const Photography: React.FC = () => {
   const Images = [
     {
       id: "col1",

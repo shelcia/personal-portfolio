@@ -5,7 +5,7 @@ import LinkedIn from "../../assets/icons/linkedin.svg";
 import Behance from "../../assets/icons/behance.svg";
 import Medium from "../../assets/icons/medium.svg";
 
-const SocialIcons = () => {
+const SocialIcons: React.FC = () => {
   const icons = [
     {
       icon: Github,

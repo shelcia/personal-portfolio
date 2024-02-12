@@ -2,7 +2,16 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { skills1, skills2 } from "../../../context/SkillsContext";
 
-const Skills = ({ skillsToRef }) => {
+type Skill = {
+  name: string;
+  img: string;
+};
+
+type SkillsProps = {
+  skillsToRef: React.RefObject<HTMLDivElement>;
+};
+
+const Skills: React.FC<SkillsProps> = ({ skillsToRef }) => {
   return (
     <Container ref={skillsToRef}>
       <Typography component={"h2"} className="section-title" sx={{ mt: 10 }}>
@@ -18,11 +27,15 @@ const Skills = ({ skillsToRef }) => {
 
 export default Skills;
 
-const SkillSection = ({ skills }) => {
+type SkillSectionProps = {
+  skills: Skill[];
+};
+
+const SkillSection: React.FC<SkillSectionProps> = ({ skills }) => {
   return (
     <Grid item xs={12} md={6}>
       <ul style={{ listStyle: "none" }}>
-        {skills.map((skill) => (
+        {skills.map((skill: Skill) => (
           <li
             key={skill.name}
             style={{
@@ -45,7 +58,12 @@ const SkillSection = ({ skills }) => {
                 boxShadow: "20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff",
               }}
             >
-              <img src={skill.img} width="20px" height="20px" />
+              <img
+                src={skill.img}
+                alt={skill.name}
+                width="20px"
+                height="20px"
+              />
             </Box>{" "}
             <Typography sx={{ display: "inline-block" }}>
               {skill.name}
