@@ -1,15 +1,21 @@
 import { Typography } from "@mui/material";
-import React, { Suspense } from "react";
-// eslint-disable-next-line react/display-name
-export const CustomLoadable = (Component) => (props) =>
-  (
-    <Suspense
-      fallback={
-        <>
-          <Typography>Loading...</Typography>
-        </>
-      }
-    >
-      <Component {...props} />
-    </Suspense>
-  );
+import { Suspense, ComponentType } from "react";
+
+interface Props {
+  [key: string]: any;
+}
+
+export const CustomLoadable =
+  <P extends Props>(Component: ComponentType<P>) =>
+  (props: P) =>
+    (
+      <Suspense
+        fallback={
+          <>
+            <Typography>Loading...</Typography>
+          </>
+        }
+      >
+        <Component {...props} />
+      </Suspense>
+    );

@@ -14,7 +14,7 @@ import Scroller from "../common/Scroller";
 import Unicorn from "../../assets/images/images/unicorn.webp";
 import { CustomLoadable } from "../common/CustomPartLoader";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   const SelectedWorks = CustomLoadable(
     lazy(() => import("./components/SelectedWorks"))
   );

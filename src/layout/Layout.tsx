@@ -1,12 +1,12 @@
-import { Box, CssBaseline, Divider, Toolbar } from "@mui/material";
 import React from "react";
+import { Box, CssBaseline, Divider, Toolbar } from "@mui/material";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Topbar from "./components/Topbar";
 import WorkWithMeBanner from "../pages/common/WorkWithMeBanner";
 // import LocomotiveScroll from "locomotive-scroll";
 
-const Layout = () => {
+const Layout: React.FC = () => {
   const location = useLocation();
   const currentRouteName = location.pathname;
 
