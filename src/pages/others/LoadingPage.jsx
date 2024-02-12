@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { Dna } from "react-loader-spinner";
+import { DNA } from "react-loader-spinner";
 
 const Loading = () => {
   return (
@@ -13,7 +13,7 @@ const Loading = () => {
         alignItems: "center",
       }}
     >
-      <Dna
+      <DNA
         visible={true}
         height="100"
         width="100"
