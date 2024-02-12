@@ -63,8 +63,8 @@ const DevCard: React.FC<DevCardProps> = ({ project, idx }) => {
   const tiltRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (tiltRef.current) {
-      VanillaTilt.init(tiltRef.current, {
+    if (tiltRef?.current) {
+      VanillaTilt.init(tiltRef?.current, {
         max: 10,
         speed: 500,
         glare: true,

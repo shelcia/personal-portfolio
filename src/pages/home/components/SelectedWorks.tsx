@@ -97,7 +97,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
       return () => {
         // Cleanup Tilt.js when the component unmounts
-        (tiltRef.current as any).current?.vanillaTilt?.destroy();
+        (tiltRef.current as any)?.current?.vanillaTilt?.destroy();
       };
     }
   }, []);
