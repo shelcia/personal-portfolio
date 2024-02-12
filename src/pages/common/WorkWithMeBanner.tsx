@@ -3,7 +3,7 @@ import { Box, Button, Container, Typography } from "@mui/material";
 import ShelciaMemoji from "../../assets/images/images/shelcia-memoji.webp";
 import { Link } from "react-router-dom";
 
-const WorkWithMeBanner = () => {
+const WorkWithMeBanner: React.FC = () => {
   return (
     <Box
       sx={{

@@ -6,11 +6,11 @@ import Scroller from "../common/Scroller";
 import Skills from "./components/Skills";
 import { CustomLoadable } from "../common/CustomPartLoader";
 
-const AboutMe = () => {
-  const journeyToRef = useRef(null);
-  const skillsToRef = useRef(null);
+const AboutMe: React.FC = () => {
+  const journeyToRef = useRef<HTMLDivElement>(null);
+  const skillsToRef = useRef<HTMLDivElement>(null);
 
-  const scrollToElement = (scrollToRef) => {
+  const scrollToElement = (scrollToRef: React.RefObject<HTMLDivElement>) => {
     if (scrollToRef.current) {
       // Step 3: Use the scrollIntoView method to scroll to the element
       scrollToRef.current.scrollIntoView({ behavior: "smooth" });

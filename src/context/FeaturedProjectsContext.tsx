@@ -1,15 +1,23 @@
-import React from "react";
-import { useState, createContext } from "react";
-// import MockerMockup from "../assets/images/mockups/mocker-mockup.png";
+import React, { useState, createContext } from "react";
 import MockerMockup from "../assets/images/mockups/mocker.webp";
 import SocialgramMockup from "../assets/images/mockups/socialgram.webp";
 import BloggramMockup from "../assets/images/mockups/bloggram.webp";
 import DynamicPortfolioMockup from "../assets/images/mockups/dynamicportfolio.webp";
+import { Project } from "../types";
 
-export const FeaturedProjectsContext = createContext();
+type FeaturedProjectsContextType = Project[];
 
-export const FeaturedProjectsProvider = (props) => {
-  const [projects] = useState([
+export const FeaturedProjectsContext =
+  createContext<FeaturedProjectsContextType>([]);
+
+type FeaturedProjectsProviderProps = {
+  children: React.ReactNode;
+};
+
+export const FeaturedProjectsProvider: React.FC<
+  FeaturedProjectsProviderProps
+> = (props) => {
+  const [projects] = useState<Project[]>([
     {
       id: "mocker",
       name: "Mocker",

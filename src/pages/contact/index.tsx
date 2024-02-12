@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Alert,
   Box,
@@ -14,9 +14,15 @@ import { CustomTextField } from "../../components/common/CustomTextfield";
 import { LoadingButton } from "@mui/lab";
 import CustomConfetti from "../../components/common/CustomConfetti";
 
-const Contact = () => {
+interface AlertState {
+  message: string;
+  severity: "error" | "success" | "info" | "warning";
+  showConfetti: boolean;
+}
+
+const Contact: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [alert, setAlert] = useState({
+  const [alert, setAlert] = useState<AlertState>({
     message: "Received Message. Will get back to You !",
     severity: "success",
     showConfetti: false,
@@ -27,7 +33,7 @@ const Contact = () => {
     message: "",
   });
 
-  const handleInputs = (e) => {
+  const handleInputs = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setInputs({ ...inputs, [name]: value });
   };
@@ -39,6 +45,7 @@ const Contact = () => {
         setAlert({
           message: "Please fill in all the fields",
           severity: "error",
+          showConfetti: false,
         });
         setOpen(true);
         return;
@@ -74,6 +81,7 @@ const Contact = () => {
       setAlert({
         message: "Sending Message failed! Try again later",
         severity: "error",
+        showConfetti: false,
       });
       setOpen(true);
       setIsLoading(false);
@@ -81,9 +89,13 @@ const Contact = () => {
   };
 
   // for toasts
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
-  const handleClose = (event, reason) => {
+  const handleClose = (
+    event: React.SyntheticEvent | React.MouseEvent,
+    reason?: string
+  ) => {
+    console.log(event.target);
     if (reason === "clickaway") {
       return;
     }
@@ -97,7 +109,7 @@ const Contact = () => {
     }));
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (alert.showConfetti) {
       const confettiTimeout = setTimeout(hideConfetti, 7000);
       return () => {
@@ -107,8 +119,8 @@ const Contact = () => {
   }, [alert.showConfetti]);
 
   const buttonStyle = {
-    border: "2px solid transparent", // Set an initial transparent border
-    transition: "border-color 0.3s", // Add a transition for smooth hover effect
+    border: "2px solid transparent",
+    transition: "border-color 0.3s",
     "&:hover": {
       borderColor: "linear-gradient(to right, #FFC107, #FF5722)",
     },
@@ -119,7 +131,7 @@ const Contact = () => {
       <Snackbar
         open={open}
         autoHideDuration={4000}
-        onClose={handleClose}
+        // onClose={handleClose}
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
         action={
           <>
@@ -129,7 +141,7 @@ const Contact = () => {
               sx={{ p: 0.5 }}
               onClick={handleClose}
             >
-              {/* <CloseIcon /> */}X
+              X
             </IconButton>
           </>
         }
@@ -150,7 +162,7 @@ const Contact = () => {
             form
           </Typography>
           <Box
-            component={"form"}
+            component="form"
             sx={{ display: "flex", flexDirection: "column", gap: 3, mt: 3 }}
           >
             <CustomTextField
@@ -195,7 +207,7 @@ const Contact = () => {
               sx={{
                 mx: "auto",
                 backgroundColor: "rgb(255,255,255) !important",
-                "&: loadingIndicator": {
+                "&:loadingIndicator": {
                   color: "rgba(0, 0, 0, 0.5) !important",
                 },
               }}

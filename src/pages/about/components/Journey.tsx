@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import { experience } from "../../../context/ExperinceContext";
 import { Box, Chip, Container } from "@mui/material";
@@ -9,7 +9,19 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
-const Journey = ({ journeyToRef }) => {
+type Experience = {
+  designation: string;
+  name: string;
+  timeline: string;
+  skills: string[];
+  desc: string;
+};
+
+type JourneyProps = {
+  journeyToRef: React.RefObject<HTMLDivElement>;
+};
+
+const Journey: React.FC<JourneyProps> = ({ journeyToRef }) => {
   return (
     <>
       <Container sx={{ pl: 0, overflowX: "hidden" }} ref={journeyToRef}>
@@ -30,12 +42,8 @@ const Journey = ({ journeyToRef }) => {
           }}
           // position="alternate-reverse"
         >
-          {experience.map((item, idx) => (
-            <TimelineItem
-              key={idx}
-              data-aos="fade-up"
-              // data-aos-delay={10 * idx}
-            >
+          {experience.map((item: Experience, idx: number) => (
+            <TimelineItem key={idx} data-aos="fade-up">
               <TimelineSeparator>
                 <TimelineDot />
                 <TimelineConnector />
@@ -54,7 +62,7 @@ const Journey = ({ journeyToRef }) => {
                 <Box
                   sx={{ display: "flex", gap: 0.5, flexFlow: "wrap", mb: 2 }}
                 >
-                  {item.skills.map((skill) => (
+                  {item.skills.map((skill: string) => (
                     <Chip
                       key={skill}
                       label={skill}

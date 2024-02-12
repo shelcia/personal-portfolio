@@ -1,8 +1,8 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
 import SocialIcons from "../../pages/common/SocialIcons";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <Box
       component="footer"

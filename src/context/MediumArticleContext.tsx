@@ -1,4 +1,6 @@
-export const articles = [
+import { MediumArticle } from "../types";
+
+export const articles: MediumArticle[] = [
   {
     title: "Quick SASS tutorial with VS Code",
     pubDate: "2024-02-07 14:17:23",
@@ -8,6 +10,7 @@ export const articles = [
     content:
       "Today, we’re diving into the exciting world of SASS with a quick and interactive tutorial using Visual Studio Code.If you’ve ever felt overwhelmed by writing hundreds of lines in CSS, SASS might just be the solution you’re looking for.",
     categories: ["coding", "style", "sass", "vscode", "css"],
+    published: null,
   },
   {
     title: "The Process of Developing Personas",
@@ -24,6 +27,7 @@ export const articles = [
       "user-research",
       "user-experience-design",
     ],
+    published: null,
   },
   {
     title:
@@ -41,6 +45,7 @@ export const articles = [
       "javascript",
       "optimization",
     ],
+    published: null,
   },
   {
     title: "Conducting Interviews — UX",
@@ -58,6 +63,7 @@ export const articles = [
       "user-research",
       "user-testing",
     ],
+    published: null,
   },
   {
     title: "Journey Mapping",

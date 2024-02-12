@@ -6,8 +6,8 @@ import {
   CardMedia,
   Grid,
   IconButton,
-  useMediaQuery,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import Arrow from "../../../assets/icons/toprightarrow.svg";
 import ChevronRight from "../../../assets/icons/chevron-right.svg";
@@ -15,10 +15,16 @@ import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 import { ProjectsContext } from "../../../context/ProjectContext";
 
-const SelectedWorks = () => {
+interface Project {
+  id: string;
+  mockup?: string | undefined;
+  name: string;
+  desc?: string | undefined;
+}
+
+const SelectedWorks: React.FC = () => {
   const projects = useContext(ProjectsContext);
 
-  console.log(projects);
   return (
     <>
       <Typography
@@ -29,8 +35,7 @@ const SelectedWorks = () => {
         Selected Works
       </Typography>
       <Grid container spacing={4} sx={{ mt: { xs: 0, md: 3 } }}>
-        {/* eslint-disable-next-line no-unsafe-optional-chaining */}
-        {[...projects?.slice(0, 4)]?.map((project) => (
+        {[...projects?.slice(0, 4)]?.map((project: Project) => (
           <Grid item xs={12} md={6} key={project.id}>
             <ProjectCard
               id={project.id}
@@ -66,21 +71,35 @@ const SelectedWorks = () => {
 
 export default SelectedWorks;
 
-const ProjectCard = ({ id, mockup, name, desc }) => {
-  const tiltRef = useRef(null);
+interface ProjectCardProps {
+  id: string;
+  mockup?: string;
+  name: string;
+  desc?: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  id,
+  mockup,
+  name,
+  desc,
+}) => {
+  const tiltRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    VanillaTilt.init(tiltRef.current, {
-      max: 5,
-      speed: 500,
-      glare: true,
-      "max-glare": 0.5,
-    });
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        max: 5,
+        speed: 500,
+        glare: true,
+        "max-glare": 0.5,
+      });
 
-    return () => {
-      // Cleanup Tilt.js when the component unmounts
-      tiltRef?.current?.vanillaTilt?.destroy();
-    };
+      return () => {
+        // Cleanup Tilt.js when the component unmounts
+        (tiltRef.current as any).current?.vanillaTilt?.destroy();
+      };
+    }
   }, []);
 
   const matches = useMediaQuery("(min-width:600px)");

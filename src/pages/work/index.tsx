@@ -3,11 +3,21 @@ import { Box, Chip, Container, Grid, Link, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectContext";
 
-const Work = () => {
-  const { id } = useParams();
+interface Details {
+  name: string;
+  description: string;
+  techstack: string[];
+  deploy: boolean;
+  deployment: string | undefined;
+  code: string;
+  imageURL: string | undefined;
+}
+
+const Work: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
 
   const projectDetails = useContext(ProjectsContext);
-  const [details, setDetails] = useState({
+  const [details, setDetails] = useState<Details>({
     name: "",
     description: "",
     techstack: [],
@@ -19,7 +29,26 @@ const Work = () => {
 
   useEffect(() => {
     const filterResults = projectDetails.filter((project) => project.id === id);
-    setDetails(filterResults[0]);
+    if (filterResults.length > 0) {
+      const {
+        name,
+        description = "",
+        techstack,
+        deploy,
+        deployment,
+        code,
+        imageURL,
+      } = filterResults[0];
+      setDetails({
+        name,
+        description: description || "",
+        techstack,
+        deploy,
+        deployment,
+        code,
+        imageURL,
+      });
+    }
   }, [projectDetails, id]);
 
   return (
@@ -83,7 +112,12 @@ const Work = () => {
 
 export default Work;
 
-const WorkWidget = ({ title, children }) => {
+interface WorkWidgetProps {
+  title: string;
+  children: React.ReactNode;
+}
+
+const WorkWidget: React.FC<WorkWidgetProps> = ({ title, children }) => {
   return (
     <Grid item xs={12} md={4} sx={{ flex: 1 }}>
       <Box

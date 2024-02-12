@@ -1,10 +1,16 @@
-import React from "react";
-import { useState, createContext } from "react";
+import React, { useState, createContext } from "react";
+import { Project } from "../types";
 
-export const ProjectsContext = createContext();
+type ProjectsContextType = Project[];
 
-export const ProjectsProvider = (props) => {
-  const [projects] = useState([
+export const ProjectsContext = createContext<ProjectsContextType>([]);
+
+type ProjectsProviderProps = {
+  children: React.ReactNode;
+};
+
+export const ProjectsProvider: React.FC<ProjectsProviderProps> = (props) => {
+  const [projects] = useState<Project[]>([
     {
       id: "mocker",
       name: "Mocker",

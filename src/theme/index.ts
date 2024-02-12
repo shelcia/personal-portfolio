@@ -487,7 +487,14 @@ const themesOptions = {
     },
   },
 };
-export const customTheme = (config) => {
+
+interface ThemeConfig {
+  theme: string;
+  direction: "ltr" | "rtl";
+  responsiveFontSizes?: boolean;
+}
+
+export const customTheme = (config: ThemeConfig) => {
   let themeOption = themesOptions[config.theme];
 
   if (!themeOption) {

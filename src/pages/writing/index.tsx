@@ -12,31 +12,12 @@ import {
 } from "@mui/material";
 import TopRightArrow from "../../assets/icons/toprightarrow-medium.svg";
 import { articles } from "../../context/MediumArticleContext";
+import { MediumArticle } from "../../types";
+import { convertSlugToTitle, formatDate } from "../../utils";
 
-const Writing = () => {
-  const [isLoading] = useState(false);
-  // useEffect(() => {
-  //   const url =
-  //     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@shelcia";
+const Writing: React.FC = () => {
+  const [isLoading] = useState<boolean>(false);
 
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(url, {
-  //         headers: {
-  //           "Accept-Encoding": "gzip",
-  //         },
-  //       });
-  //       const results = await response.json();
-  //       // console.log(results);
-  //       setArticles(results.items);
-  //       setIsLoading(false);
-  //     } catch (error) {
-  //       console.log(error);
-  //       setIsLoading(false);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
   return (
     <>
       <Container sx={{ overflowX: "hidden" }} data-aos="fade-up">
@@ -51,10 +32,10 @@ const Writing = () => {
           </>
         ) : (
           <List>
-            {articles.map((article, idx) => (
+            {articles.map((article: MediumArticle, idx: number) => (
               <ListItem
                 key={article.title}
-                as={Box}
+                // as={Box}
                 sx={{
                   borderBottom: "1px solid #000",
                   pt: 4,
@@ -119,7 +100,7 @@ const Writing = () => {
                     }}
                   >
                     <Box sx={{ display: "flex", gap: 1, flexFlow: "wrap" }}>
-                      {article.categories.map((category) => (
+                      {article.categories.map((category: string) => (
                         <Chip
                           key={category}
                           label={convertSlugToTitle(category)}
@@ -160,27 +141,3 @@ const Writing = () => {
 };
 
 export default Writing;
-
-function formatDate(inputDate) {
-  const options = { year: "numeric", month: "short", day: "numeric" };
-  const formattedDate = new Date(inputDate).toLocaleDateString(
-    "en-US",
-    options
-  );
-  return formattedDate;
-}
-
-function convertSlugToTitle(slug) {
-  // Split the slug into words
-  const words = slug.split("-");
-
-  // Capitalize the first letter of each word
-  const capitalizedWords = words.map(
-    (word) => word.charAt(0).toUpperCase() + word.slice(1)
-  );
-
-  // Join the words to form the title
-  const title = capitalizedWords.join(" ");
-
-  return title;
-}

@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollerImg from "../../assets/images/images/scroller.webp";
 
-const Scroller = () => {
+const Scroller: React.FC = () => {
   return (
     <>
       <img
