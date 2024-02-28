@@ -1,4 +1,6 @@
-export const designs = {
+import { Design } from "../types";
+
+export const designs: Design = {
   status: "ok",
   feed: {
     url: "https://www.behance.net/feeds/user?username=shelcia",
