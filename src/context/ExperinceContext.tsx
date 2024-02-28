@@ -1,13 +1,33 @@
 export const experience = [
   {
     name: "iSchool - University of Wisconsin-Madison",
+    designation: "Full Stack Developer",
+    year: "November 2023 - Present",
+    desc: "Spearheading the development and design of a UI interface for a platform highlighting the social impacts of diverse demographics on climate change using Typescript, NodeJs and R Shiny.",
+    skills: [
+      "R shiny",
+      "Typescript",
+      "NodeJs",
+      "Human Computer Interaction",
+      "Full Stack Development",
+    ],
+    date: "November 2023",
+    timeline: "Nov'23 - Current",
+  },
+  {
+    name: "University of Wisconsin-Madison",
     designation: "Master of Science in Information",
     year: "August 2023 - Present",
-    desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/)",
+    desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/). UX Club President.",
     skills: [
+      "Databse Design",
+      "Data Analytics",
+      "R",
+      "Python",
+      "MySQL",
+      "MongoDB",
       "User Experience",
       "Human Computer Interaction",
-      "Frontend Development",
     ],
     date: "August 2023",
     timeline: "Aug'23 - Dec'24",
@@ -46,7 +66,7 @@ export const experience = [
     name: "Indian Institute of Information Technology Design and Manufacturing, Chennai",
     year: "May 2017 - July 2021",
     designation: "Bachelor of Technology",
-    desc: "Pursued Smart Manufacturing Engineering as a Women in Tech Organizer at IIITDM Kancheepuram, where I also held the roles of Robotics Club Secretary and Sponsorship Secretary. I maintained a GPA of 8.5/10.",
+    desc: "Pursued Smart Manufacturing Engineering as a Women in Tech Organizer at IIITDM Kancheepuram, where I also held the roles of Robotics Club Secretary and Sponsorship Secretary.",
 
     skills: [
       "Human Computer Interface",

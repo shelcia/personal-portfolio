@@ -2,6 +2,40 @@ import { MediumArticle } from "../types";
 
 export const articles: MediumArticle[] = [
   {
+    title: "Surveys — Non Response Bias",
+    pubDate: "2024-02-21 13:42:02",
+    link: "https://shelcia.medium.com/surveys-non-response-bias-39d4ac69a13e?source=rss-dd838a6f81c8------2",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fill:224:224/1*Ok8DZYhB_jBIw33NrIovdg.png",
+    content:
+      "Understanding Non Response Bias while conducting UX research surveys. This is a part of my class Assignment at UW Madison.",
+    categories: [
+      "user-stories",
+      "user-experience",
+      "user-research",
+      "surveys",
+      "user-experience-design",
+    ],
+    published: null,
+  },
+  {
+    title: "Apartment Hunting — UX Study",
+    pubDate: "2024-02-17 14:41:26",
+    link: "https://bootcamp.uxdesign.cc/apartment-hunting-ux-study-39096379b30b?source=rss-dd838a6f81c8------2",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fill:224:224/1*Co5PTAzNStO_8Zxdmn8Jdw.png",
+    content:
+      "Apartment Hunting — UX Study.A Qualitative and Quantitative UX Research. This is a part of my class Assignment at UW Madison.Role:UX researcher Members: Chris, Alex, Shelcia. Tools:FigJam, Figma, Google Docs, Qualtrics and Tableau. Project timeline: Overall: 10 weeks",
+    categories: [
+      "user-interface",
+      "user-research",
+      "study",
+      "user-experience-design",
+      "user-experience",
+    ],
+    published: "Bootcamp",
+  },
+  {
     title: "Quick SASS tutorial with VS Code",
     pubDate: "2024-02-07 14:17:23",
     link: "https://shelcia.medium.com/quick-sass-tutorial-with-vs-code-1724dccf1f0d?source=rss-dd838a6f81c8------2",
