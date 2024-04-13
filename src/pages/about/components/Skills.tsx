@@ -58,6 +58,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skills }) => {
                 boxShadow: "20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff",
               }}
             >
+              {/* {skill.img} */}
               <img
                 src={skill.img}
                 alt={skill.name}

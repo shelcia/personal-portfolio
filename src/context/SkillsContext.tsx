@@ -18,27 +18,41 @@ import GIT from "../assets/skill-icons/git.webp";
 import Docker from "../assets/skill-icons/docker.webp";
 import MongoDB from "../assets/skill-icons/mongodb.webp";
 import Tailwind from "../assets/skill-icons/tailwind.webp";
+// import {
+//   JSIcon,
+//   NodeIcon,
+//   ReactIcon,
+//   ReactNativeIcon,
+//   TSIcon,
+// } from "../assets";
+
+import ReactIcon from "../assets/skills-icons/react.svg";
+import TSIcon from "../assets/skills-icons/ts.svg";
+import JSIcon from "../assets/skills-icons/js.svg";
+import ReactNativeIcon from "../assets/skills-icons/react-native.svg";
+import NodeIcon from "../assets/skills-icons/node.svg";
 
 export const skills1 = [
   {
     name: "React",
-    img: React,
-  },
-  {
-    name: "Javascript",
-    img: Javascript,
-  },
-  {
-    name: "React Native",
-    img: ReactNative,
+    img: ReactIcon,
   },
   {
     name: "Typescript",
-    img: Typescript,
+    img: TSIcon,
   },
   {
+    name: "Javascript",
+    img: JSIcon,
+  },
+  {
+    name: "React Native",
+    img: ReactNativeIcon,
+  },
+
+  {
     name: "NodeJs",
-    img: NodeJs,
+    img: NodeIcon,
   },
   {
     name: "NextJs",
