@@ -9,13 +9,8 @@ import { DM_Sans } from "next/font/google";
 import "../../app/globals.css";
 import localFont from "next/font/local";
 import Topbar from "@/components/common/Topbar";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { MovingBorderGradComp } from "@/components/ui/moving-border";
-import GridBackground from "@/components/ui/grid-bg";
 import DotBackground from "@/components/ui/dot-bg";
-// import Topbar from "@/components/common/Topbar";
-
-// const inter = Inter({ subsets: ["latin"] });
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 
 const dmsans = DM_Sans({ subsets: ["latin"] });
 export const calSans = localFont({
@@ -32,6 +27,17 @@ const ContactForm = () => {
     e.preventDefault();
     console.log("Form submitted");
   };
+
+  const words = [
+    {
+      text: "Connect",
+    },
+    {
+      text: "!",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
+
   return (
     <>
       <Topbar />
@@ -42,11 +48,15 @@ const ContactForm = () => {
           <div
             className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30 `}
           >
-            <h2
+            <TypewriterEffect
+              words={words}
+              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calSans.className}`}
+            />
+            {/* <h2
               className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calSans.className}`}
             >
               Connect !
-            </h2>
+            </h2> */}
             <p
               className={`text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300 `}
             >
