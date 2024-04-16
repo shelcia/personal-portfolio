@@ -3,14 +3,8 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import { AnimatePresence } from "framer-motion";
-// import Topbar from "@/components/common/Topbar";
-
-// const inter = Inter({ subsets: ["latin"] });
-
-const dmsans = DM_Sans({ subsets: ["latin"] });
-export const calSans = localFont({
-  src: "../assets/cal-sans/CalSans-SemiBold.woff2",
-});
+import { dmsans } from "@/utils/fonts";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Shelcia Portfolio",

@@ -9,6 +9,7 @@ import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calSans } from "@/utils/fonts";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import Footer from "@/components/common/Footer";
 
 const Home = () => {
   return (
@@ -54,6 +55,7 @@ const Home = () => {
           />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

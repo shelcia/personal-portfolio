@@ -51,3 +51,13 @@ export interface DesignItem {
   enclosure: object;
   categories: string[];
 }
+
+export interface ExperienceItem {
+  name: string;
+  designation: string;
+  year: string;
+  desc: string;
+  skills: string[];
+  date: string;
+  timeline: string;
+}

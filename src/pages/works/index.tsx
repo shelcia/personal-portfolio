@@ -7,6 +7,7 @@ import "../../app/globals.css";
 import { calSans, dmsans } from "@/utils/fonts";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { projects } from "@/context/ProjectContext";
+import Footer from "@/components/common/Footer";
 
 const Works = () => {
   return (
@@ -55,6 +56,7 @@ const Works = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

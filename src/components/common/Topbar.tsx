@@ -8,6 +8,7 @@ import {
   MoonIcon,
   SunIcon,
 } from "@radix-ui/react-icons";
+import "../../app/globals.css";
 
 const Topbar = () => {
   const [darkMode, setDarkMode] = useState(true);

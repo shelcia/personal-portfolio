@@ -2,53 +2,65 @@ import React from "react";
 import "../../app/globals.css";
 
 import Topbar from "@/components/common/Topbar";
-import { SparklesCore } from "@/components/ui/sparkles";
 import ArticleCard from "../components/Article";
-import { dmsans } from "@/utils/fonts";
-import { calSans } from "../contact";
+import { dmsans, calSans } from "@/utils/fonts";
+import { Boxes } from "@/components/ui/background-boxes";
+import { cn } from "@/lib/utils";
+import { articles } from "@/context/MediumContext";
+import Footer from "@/components/common/Footer";
+import ArticleSection from "../components/ArticleSection";
+import Link from "next/link";
 
 const Devlogs = () => {
   return (
     <>
       <Topbar />
-      <main className="dark:bg-black bg-white mt-24">
-        <div className="h-[10rem] w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <main className="dark:bg-black bg-white my-24">
+        <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
+          <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+          <Boxes />
           <h1
-            className={`md:text-6xl text-3xl lg:text-6xl font-bold text-center dark:text-white relative z-20 ${calSans.className}`}
+            className={cn(
+              "md:text-5xl text-3xl text-white relative z-20",
+              calSans.className
+            )}
           >
-            Devlogs
+            Devlogs{" "}
           </h1>
-          <div className="w-[20rem] h-40 relative">
-            {/* Gradients */}
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-            {/* Core component */}
-            <SparklesCore
-              background="transparent"
-              minSize={0.4}
-              maxSize={1}
-              particleDensity={1200}
-              className="w-full h-full"
-              particleColor="#000"
-            />
-
-            {/* Radial Gradient to prevent sharp edges */}
-            {/* <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div> */}
-          </div>
-        </div>
-        <div className="px-24">
-          <div
-            className={`grid grid-cols-1 lg:grid-cols-4 gap-2 ${dmsans.className}`}
+          <p
+            className={cn(
+              "text-center mt-2 text-neutral-300 relative z-20",
+              dmsans.className
+            )}
           >
-            {/* <ArticleCard />
-            <ArticleCard />
-            <ArticleCard /> */}
-          </div>
+            Check out my tech articles on
+            <Link
+              href="https://shelcia.medium.com/"
+              target="_blank"
+              className="ms-1 hover:underline"
+            >
+              Medium!
+            </Link>
+          </p>
+        </div>
+        <div className="px-24 mt-4">
+          {/* <div
+            className={`grid grid-cols-1 lg:grid-cols-4 gap-4 ${dmsans.className}`}
+          > */}
+          <ArticleSection items={articles} />
+          {/* {articles.map((article) => (
+              <ArticleCard
+                key={article.pubDate}
+                title={article.title}
+                description={article.content}
+                image={article.thumbnail}
+                link={article.link}
+              />
+            ))} */}
+          {/* </div> */}
         </div>
       </main>
+      <Footer />
     </>
   );
 };

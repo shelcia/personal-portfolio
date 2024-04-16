@@ -5,17 +5,14 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
 
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "../../app/globals.css";
 import localFont from "next/font/local";
 import Topbar from "@/components/common/Topbar";
 import DotBackground from "@/components/ui/dot-bg";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-
-const dmsans = DM_Sans({ subsets: ["latin"] });
-export const calSans = localFont({
-  src: "../../assets/cal-sans/CalSans-SemiBold.woff2",
-});
+import Footer from "@/components/common/Footer";
+import { calSans, dmsans } from "@/utils/fonts";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export const metadata: Metadata = {
   title: "Contact Form",
@@ -103,7 +100,9 @@ const ContactForm = () => {
             </form>
           </div>
         </DotBackground>
+        <BackgroundBeams />
       </main>
+      <Footer />
     </>
   );
 };
