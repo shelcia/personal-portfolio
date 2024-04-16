@@ -13,7 +13,7 @@ import FigmaIcon from "@/assets/skills-icons/FigmaIcon";
 import XDIcon from "@/assets/skills-icons/XDIcon";
 import ExpressIcon from "@/assets/skills-icons/ExpressIcon";
 import MUIIcon from "@/assets/skills-icons/MUIIcon";
-import BootstrapIcon from "@/assets/skills-icons/bootstrapIcon";
+import BootstrapIcon from "@/assets/skills-icons/BootstrapIcon";
 import GITIcon from "@/assets/skills-icons/GITIcon";
 import MongoDBIcon from "@/assets/skills-icons/MongoDBIcon";
 import TailwindIcon from "@/assets/skills-icons/TailwindIcon";
