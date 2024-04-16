@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 export interface Project {
   id: string;
@@ -60,4 +61,9 @@ export interface ExperienceItem {
   skills: string[];
   date: string;
   timeline: string;
+}
+
+export interface SkillItem {
+  name: string;
+  img: ReactNode;
 }
