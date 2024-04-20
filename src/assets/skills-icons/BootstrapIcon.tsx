@@ -1,67 +1,13 @@
 import React from "react";
 
+// <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+
 const BootstrapIcon = () => (
-  <svg viewBox="0 0 128 128">
-    <defs>
-      <linearGradient
-        id="a"
-        x1="76.079"
-        x2="523.48"
-        y1="10.798"
-        y2="365.95"
-        gradientTransform="translate(1.11 14.613) scale(.24566)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset="0" stop-color="#9013fe"></stop>
-        <stop offset="1" stop-color="#6610f2"></stop>
-      </linearGradient>
-      <linearGradient
-        id="b"
-        x1="193.51"
-        x2="293.51"
-        y1="109.74"
-        y2="278.87"
-        gradientTransform="translate(0 52)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset="0" stop-color="#fff"></stop>
-        <stop offset="1" stop-color="#f1e5fc"></stop>
-      </linearGradient>
-      <filter
-        id="c"
-        width="197"
-        height="249"
-        x="161.9"
-        y="135.46"
-        color-interpolation-filters="sRGB"
-        filterUnits="userSpaceOnUse"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix
-          in="SourceAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        ></feColorMatrix>
-        <feOffset dy="4"></feOffset>
-        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
-        <feBlend
-          in="SourceGraphic"
-          in2="effect1_dropShadow"
-          result="shape"
-        ></feBlend>
-      </filter>
-    </defs>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
     <path
-      fill="url(#a)"
-      d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099-.228 6.546.068 15.026 2.202 21.94 2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883-2.134 6.914-2.43 15.394-2.202 21.94.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098.228-6.546-.068-15.026-2.203-21.94-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883 2.135-6.914 2.43-15.394 2.203-21.94z"
-    ></path>
-    <path
-      fill="url(#b)"
-      d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355 0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219 0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279 0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49 0 23.459-16.484 35.941-47.605 35.941z"
-      filter="url(#c)"
-      transform="translate(1.494 2.203) scale(.24566)"
-    ></path>
+      fill="#7a1ff1"
+      d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z"
+    />
   </svg>
 );
 

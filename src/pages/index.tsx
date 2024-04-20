@@ -42,6 +42,7 @@ const Home = () => {
                     link={project.deployment}
                     key={project.id}
                     desc={project.desc}
+                    name={project.id}
                   />
                 ))}
             </div>

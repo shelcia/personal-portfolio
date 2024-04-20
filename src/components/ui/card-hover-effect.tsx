@@ -59,6 +59,7 @@ export const HoverEffect = ({
             link={item.deployment}
             key={item.id}
             desc={item.desc}
+            name={item.id}
           />
           {/* <Card>
             <CardTitle>{item.name}</CardTitle>

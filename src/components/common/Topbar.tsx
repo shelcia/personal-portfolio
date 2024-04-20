@@ -9,6 +9,8 @@ import {
   SunIcon,
 } from "@radix-ui/react-icons";
 import "../../app/globals.css";
+import { cn } from "@/utils/cn";
+import { dmsans } from "@/utils/fonts";
 
 const Topbar = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -44,11 +46,14 @@ const Topbar = () => {
     //   } px-4 md:px-6`}
     // >
     <header
-      className={`
+      className={cn(
+        `
   bg-transparent absolute  top-0 z-30 w-full
       rounded-lg px-6 py-8 ring-1 ${
         darkMode ? "ring-slate-900/5" : "ring-gray-300/5"
-      } `}
+      } `,
+        dmsans.className
+      )}
       //   className={`flex h-16 items-center gap-4 border-b bg-${
       //     theme === "light" ? "background" : "dark-bg"
       //   } px-4 md:px-6`}
@@ -81,7 +86,7 @@ const Topbar = () => {
         <SheetContent side="left">
           <nav className="grid gap-6 text-lg font-medium">
             <Link
-              href="#"
+              href="/"
               className="flex items-center gap-2 text-lg font-semibold"
             >
               <span className="sr-only">Shelcia.</span>

@@ -11,6 +11,7 @@ interface ProjectCardProps {
   image: string | StaticImageData;
   link: string | undefined;
   desc: string | undefined;
+  name: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -18,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   image = "",
   link = "",
   desc = "",
+  name = "",
 }) => {
   return (
     <CardContainer
@@ -56,13 +58,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             Try now →
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            View Project
-          </CardItem>
+          <Link href={`works/${name}`}>
+            <CardItem
+              translateZ={20}
+              as="button"
+              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            >
+              View Project
+            </CardItem>
+          </Link>
         </div>
       </CardBody>
     </CardContainer>

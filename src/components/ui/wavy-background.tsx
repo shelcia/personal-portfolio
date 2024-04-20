@@ -9,7 +9,8 @@ export const WavyBackground = ({
   containerClassName,
   colors,
   waveWidth,
-  backgroundFill = "bg-zinc-50",
+  // backgroundFill = "bg-zinc-50",
+  backgroundFill = "bg-white",
   blur = 10,
   speed = "fast",
   waveOpacity = 0.5,
@@ -50,7 +51,8 @@ export const WavyBackground = ({
     canvas = canvasRef.current;
     ctx = canvas.getContext("2d");
     w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
+    // h = ctx.canvas.height = window.innerHeight;
+    h = ctx.canvas.height = 200;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
     window.onresize = function () {
@@ -113,7 +115,8 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col items-center justify-center",
+        "h-[300px] flex flex-col items-center justify-center",
+        // "h-screen flex flex-col items-center justify-center",
         containerClassName
       )}
     >

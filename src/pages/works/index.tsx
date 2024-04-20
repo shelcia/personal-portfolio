@@ -8,6 +8,8 @@ import { calSans, dmsans } from "@/utils/fonts";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { projects } from "@/context/ProjectContext";
 import Footer from "@/components/common/Footer";
+import ProjectCard from "../components/ProjectCard";
+import { cn } from "@/utils/cn";
 
 const Works = () => {
   return (
@@ -18,8 +20,25 @@ const Works = () => {
           <h1 className={`${calSans.className} mt-8 mb-4 text-4xl md:text-6xl`}>
             Development
           </h1>
-          <div className={`mx-auto ${dmsans.className}`}>
-            <HoverEffect items={projects} />
+          {/* <div className={`mx-auto ${dmsans.className}`}> */}
+          <div
+            className={cn(
+              "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-4",
+              dmsans.className
+            )}
+          >
+            {projects.map((item) => (
+              <ProjectCard
+                title={item.name}
+                image={item.image}
+                link={item.deployment}
+                key={item.id}
+                desc={item.desc}
+                name={item.id}
+              />
+            ))}
+
+            {/* <HoverEffect items={projects} /> */}
           </div>
           <h1 className={`${calSans.className} mt-8 mb-8 text-4xl md:text-6xl`}>
             Design

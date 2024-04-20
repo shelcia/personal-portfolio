@@ -2,7 +2,6 @@ import React from "react";
 import "../../app/globals.css";
 
 import Topbar from "@/components/common/Topbar";
-import ArticleCard from "../components/Article";
 import { dmsans, calSans } from "@/utils/fonts";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/lib/utils";
@@ -21,7 +20,7 @@ const Devlogs = () => {
           <Boxes />
           <h1
             className={cn(
-              "md:text-5xl text-3xl text-white relative z-20",
+              "md:text-6xl text-3xl text-white relative z-20",
               calSans.className
             )}
           >
@@ -44,20 +43,7 @@ const Devlogs = () => {
           </p>
         </div>
         <div className="px-24 mt-4">
-          {/* <div
-            className={`grid grid-cols-1 lg:grid-cols-4 gap-4 ${dmsans.className}`}
-          > */}
           <ArticleSection items={articles} />
-          {/* {articles.map((article) => (
-              <ArticleCard
-                key={article.pubDate}
-                title={article.title}
-                description={article.content}
-                image={article.thumbnail}
-                link={article.link}
-              />
-            ))} */}
-          {/* </div> */}
         </div>
       </main>
       <Footer />
