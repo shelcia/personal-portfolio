@@ -52,7 +52,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
               Just code in Vanilla Javascript
             </p> */}
               <div className="flex gap-1 flex-wrap w-full justify-center mt-4">
-                {project.techstack.map((tech) => (
+                {project?.techstack?.map?.((tech) => (
                   <span
                     className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400"
                     key={tech}
