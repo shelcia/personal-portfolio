@@ -67,14 +67,14 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
                 Github
               </h3>
               <Link
-                href={project.code}
+                href={project?.code}
                 className="font-medium text-blue-600 dark:text-blue-500 hover:underline flex"
               >
                 Link
                 <ExternalIcon />
               </Link>
 
-              {project.deployment && (
+              {project?.deployment && (
                 <>
                   <h3 className={cn("sm:text-base text-sm", calSans.className)}>
                     Deployment
