@@ -66,13 +66,15 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
               <h3 className={cn("sm:text-base text-sm", calSans.className)}>
                 Github
               </h3>
-              <Link
-                href={project?.code}
-                className="font-medium text-blue-600 dark:text-blue-500 hover:underline flex"
-              >
-                Link
-                <ExternalIcon />
-              </Link>
+              {project?.code && (
+                <Link
+                  href={project?.code}
+                  className="font-medium text-blue-600 dark:text-blue-500 hover:underline flex"
+                >
+                  Link
+                  <ExternalIcon />
+                </Link>
+              )}
 
               {project?.deployment && (
                 <>
@@ -80,7 +82,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
                     Deployment
                   </h3>
                   <Link
-                    href={project.deployment}
+                    href={project?.deployment}
                     className="font-medium text-blue-600 dark:text-blue-500 hover:underline flex"
                   >
                     Link
