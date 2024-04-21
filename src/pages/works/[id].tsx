@@ -56,9 +56,9 @@ const ProjectPage = () => {
         <div
           className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30`}
         >
-          <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center z-40">
-            <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-            <Boxes />
+          <div className="h-48 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center z-40">
+            <div className="absolute inset-0 w-full h-full bg-white z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+            <Boxes className="border-slate-200" />
             <TypewriterEffect
               words={words}
               className={`font-bold text-3xl text-white dark:text-neutral-200 relative z-20 ${calsans.className}`}
@@ -85,41 +85,6 @@ const ProjectPage = () => {
         </div>
         {/* </DotBackground> */}
         <BackgroundBeams />
-        {/* <div className="max-w-4xl mx-auto rounded-md h-[20rem] overflow-hidden">
-          <HeroHighlight>
-            <motion.h1
-              initial={{
-                opacity: 0,
-                y: 20,
-              }}
-              animate={{
-                opacity: 1,
-                y: [20, -5, 0],
-              }}
-              transition={{
-                duration: 0.5,
-                ease: [0.4, 0.0, 0.2, 1],
-              }}
-              className={cn(
-                "text-black text-2xl md:text-6xl font-bold text-center",
-                calsans.className
-              )}
-            >
-              <Highlight className="text-black dark:text-white">
-                {proj?.name}
-              </Highlight>
-            </motion.h1>
-          </HeroHighlight>
-        </div>
-        <div
-          className={cn(
-            "max-w-4xl font-semibold mx-auto my-8",
-            calsans.className
-          )}
-        >
-          {proj?.description}
-        </div>
-        {proj && <ProjectInfoCards project={proj} />} */}
       </main>
       <Footer />
     </>
