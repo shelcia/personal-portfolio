@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { Project } from "@/types";
-import { calSans } from "@/utils/fonts";
+import { calsans } from "@/utils/fonts";
 import { StarIcon } from "@radix-ui/react-icons";
 import ExternalIcon from "@/assets/icons/ExternalIcon";
 import Link from "next/link";
@@ -45,7 +45,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
               variants={first}
               className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
             >
-              <h3 className={cn("sm:text-base text-sm", calSans.className)}>
+              <h3 className={cn("sm:text-base text-sm", calsans.className)}>
                 Tech Stack
               </h3>
               {/* <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
@@ -63,7 +63,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
               </div>
             </motion.div>
             <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
-              <h3 className={cn("sm:text-base text-sm", calSans.className)}>
+              <h3 className={cn("sm:text-base text-sm", calsans.className)}>
                 Github
               </h3>
               {project?.code && (
@@ -78,7 +78,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
 
               {project?.deployment && (
                 <>
-                  <h3 className={cn("sm:text-base text-sm", calSans.className)}>
+                  <h3 className={cn("sm:text-base text-sm", calsans.className)}>
                     Deployment
                   </h3>
                   <Link
@@ -95,7 +95,7 @@ const ProjectInfoCards = ({ project }: { project: Project }) => {
               variants={second}
               className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
             >
-              <h3 className={cn("sm:text-base text-sm", calSans.className)}>
+              <h3 className={cn("sm:text-base text-sm", calsans.className)}>
                 On Github
               </h3>
 

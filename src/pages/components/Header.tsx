@@ -2,7 +2,7 @@
 import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 // import { IconBrandBehance, IconBrandMedium } from "@tabler/icons-react";
 import Link from "next/link";
@@ -14,6 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ShimmerButton } from "@/components/common/CustomButtons";
+import Topbar from "@/components/common/Topbar";
 
 const Header = () => {
   const icons = [
@@ -42,6 +43,7 @@ const Header = () => {
   ];
   return (
     <AuroraBackground>
+      <Topbar />
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +55,7 @@ const Header = () => {
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <div
-          className={`text-3xl md:text-7xl font-bold dark:text-white text-center ${calSans.className}`}
+          className={`text-3xl md:text-7xl font-bold dark:text-white text-center ${calsans.className}`}
         >
           Shelcia David
         </div>
@@ -109,7 +111,7 @@ const IconButton: React.FC<IconButtonProps> = ({
           </a>
         </TooltipTrigger>
         <TooltipContent>
-          <p className={calSans.className}>{alt}</p>
+          <p className={calsans.className}>{alt}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

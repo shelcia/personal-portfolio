@@ -1,12 +1,12 @@
 import React from "react";
 import { skills } from "@/context/SkillsContext";
 import { cn } from "@/utils/cn";
-import { calSans } from "@/utils/fonts";
+import { calsans } from "@/utils/fonts";
 
 const Skills = () => {
   return (
     <>
-      <h1 className={cn("text-5xl text-bold mb-8", calSans.className)}>
+      <h1 className={cn("text-5xl text-bold mb-8", calsans.className)}>
         Skills
       </h1>
       <div className="flex gap-2 flex-wrap w-full">

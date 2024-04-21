@@ -11,7 +11,7 @@ import Topbar from "@/components/common/Topbar";
 import DotBackground from "@/components/ui/dot-bg";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Footer from "@/components/common/Footer";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export const metadata: Metadata = {
@@ -43,14 +43,14 @@ const ContactForm = () => {
         {/* <GridBackground /> */}
         <DotBackground>
           <div
-            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30 `}
+            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} z-30 `}
           >
             <TypewriterEffect
               words={words}
-              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calSans.className}`}
+              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calsans.className}`}
             />
             {/* <h2
-              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calSans.className}`}
+              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calsans.className}`}
             >
               Connect !
             </h2> */}

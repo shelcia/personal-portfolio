@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Footer from "@/components/common/Footer";
 import Topbar from "@/components/common/Topbar";
-import { WavyBackground } from "@/components/ui/wavy-background";
 import { useRouter } from "next/router";
 import { projects } from "@/context/ProjectContext";
 import { Project } from "@/types";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { cn } from "@/utils/cn";
-import { Vortex } from "@/components/ui/vortex";
 import ProjectInfoCards from "../components/ProjectInfoCards";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { motion } from "framer-motion";
-import DotBackground from "@/components/ui/dot-bg";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import { Boxes } from "@/components/ui/background-boxes";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -55,19 +51,32 @@ const ProjectPage = () => {
   return (
     <>
       <Topbar />
-      <main className={cn("mt-32 md:mt-24 px-24 relative", dmsans.className)}>
+      <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
         {/* <DotBackground> */}
         <div
-          className={`max-w-4xl mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30 `}
+          className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30`}
         >
-          <TypewriterEffect
-            words={words}
-            className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calSans.className}`}
-          />
+          <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center z-40">
+            <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+            <Boxes />
+            <TypewriterEffect
+              words={words}
+              className={`font-bold text-3xl text-white dark:text-neutral-200 relative z-20 ${calsans.className}`}
+            />
+            {/* <h1
+              className={cn(
+                "md:text-6xl text-3xl text-white relative z-20",
+                calsans.className
+              )}
+            >
+              Devlogs{" "}
+            </h1> */}
+          </div>
+
           <div
             className={cn(
               "max-w-4xl font-semibold mx-auto my-8",
-              calSans.className
+              calsans.className
             )}
           >
             {proj?.description}
@@ -93,7 +102,7 @@ const ProjectPage = () => {
               }}
               className={cn(
                 "text-black text-2xl md:text-6xl font-bold text-center",
-                calSans.className
+                calsans.className
               )}
             >
               <Highlight className="text-black dark:text-white">
@@ -105,7 +114,7 @@ const ProjectPage = () => {
         <div
           className={cn(
             "max-w-4xl font-semibold mx-auto my-8",
-            calSans.className
+            calsans.className
           )}
         >
           {proj?.description}

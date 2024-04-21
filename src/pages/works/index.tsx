@@ -4,7 +4,7 @@ import { designs } from "@/context/DesignContext";
 import { DesignItem } from "@/types";
 import { PinContainer } from "@/components/ui/3d-pin";
 import "../../app/globals.css";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { projects } from "@/context/ProjectContext";
 import Footer from "@/components/common/Footer";
@@ -15,9 +15,9 @@ const Works = () => {
   return (
     <>
       <Topbar />
-      <main className="mt-32 md:mt-24 px-24 relative bg-grid-black/[0.05]">
+      <main className="mt-0 mb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
         <div className="relative z-10">
-          <h1 className={`${calSans.className} mt-8 mb-4 text-4xl md:text-6xl`}>
+          <h1 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
             Development
           </h1>
           {/* <div className={`mx-auto ${dmsans.className}`}> */}
@@ -40,7 +40,7 @@ const Works = () => {
 
             {/* <HoverEffect items={projects} /> */}
           </div>
-          <h1 className={`${calSans.className} mt-8 mb-8 text-4xl md:text-6xl`}>
+          <h1 className={`${calsans.className} mt-8 mb-8 text-4xl md:text-6xl`}>
             Design
           </h1>
           <div className="relative z-20">

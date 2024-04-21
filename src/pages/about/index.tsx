@@ -5,7 +5,7 @@ import Footer from "@/components/common/Footer";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import { cn } from "@/utils/cn";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { ShimmerButton } from "@/components/common/CustomButtons";
@@ -14,8 +14,8 @@ const AboutPage = () => {
   return (
     <>
       <Topbar />
-      <main className="mt-24 px-4 sm:px-24 mb-8">
-        <h1 className={cn("text-5xl text-bold mb-0", calSans.className)}>
+      <main className="px-4 sm:px-24 mb-8">
+        <h1 className={cn("text-5xl text-bold mb-0", calsans.className)}>
           Who is Shelcia?
         </h1>
         <HeroHighlight>

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import { calSans } from "@/utils/fonts";
+import { calsans } from "@/utils/fonts";
 // import { TracingBeam } from "../ui/tracing-beam";
 
 const Timeline = () => {
@@ -17,7 +17,7 @@ const Timeline = () => {
               {item.badge}
             </h2>
 
-            <p className={twMerge(calSans.className, "text-xl mb-4")}>
+            <p className={twMerge(calsans.className, "text-xl mb-4")}>
               {item.title}
             </p>
 

@@ -6,7 +6,7 @@ import "../app/globals.css";
 import ProjectCard from "./components/ProjectCard";
 import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
-import { calSans } from "@/utils/fonts";
+import { calsans } from "@/utils/fonts";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Footer from "@/components/common/Footer";
@@ -14,7 +14,7 @@ import Footer from "@/components/common/Footer";
 const Home = () => {
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <main suppressHydrationWarning={true}>
         <Header />
         {/* <div
@@ -22,13 +22,10 @@ const Home = () => {
         // bg-grid-black/[0.05] 
         relative overflow-hidden"
         > */}
-        <div
-          className="w-full rounded-md bg-zinc-50 antialiased 
-        relative overflow-hidden"
-        >
+        <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden">
           <div className="p-4 max-w-7xl mx-auto relative z-10">
             <h1
-              className={`text-4xl md:text-7xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calSans.className}`}
+              className={`text-4xl md:text-7xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
             >
               Featured Projects
             </h1>

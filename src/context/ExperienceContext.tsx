@@ -20,7 +20,8 @@ export const experience: ExperienceItem[] = [
     name: "University of Wisconsin-Madison",
     designation: "Master of Science in Information",
     year: "August 2023 - Present",
-    desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/). UX Club President.",
+    // desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/). UX Club President.",
+    desc: "Learning and Exploring. UW Makeathon Winner | UX Club President.",
     skills: [
       "Databse Design",
       "Data Analytics",

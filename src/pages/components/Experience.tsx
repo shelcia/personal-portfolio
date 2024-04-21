@@ -1,12 +1,12 @@
 import { experience } from "@/context/ExperienceContext";
 import { cn } from "@/utils/cn";
-import { calSans, dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import React from "react";
 
 const Experience = () => {
   return (
     <>
-      <h1 className={cn("text-5xl text-bold mb-8", calSans.className)}>
+      <h1 className={cn("text-5xl text-bold mb-8", calsans.className)}>
         Experience
       </h1>
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
@@ -19,7 +19,7 @@ const Experience = () => {
             <h3
               className={cn(
                 "flex items-center mb-1 text-lg font-semibold text-zinc-800 dark:text-white",
-                calSans.className
+                calsans.className
               )}
             >
               {itm.designation}-{itm.name}{" "}
@@ -40,7 +40,7 @@ const Experience = () => {
             >
               {itm.desc}
             </p>
-            <div>
+            <div className="flex flex-wrap gap-1">
               {itm.skills.map((skill) => (
                 <Badge key={skill} title={skill} />
               ))}
