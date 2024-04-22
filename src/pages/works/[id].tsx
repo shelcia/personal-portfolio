@@ -10,6 +10,7 @@ import ProjectInfoCards from "../components/ProjectInfoCards";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Boxes } from "@/components/ui/background-boxes";
+import ProjectImages from "../components/ProjectImages";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -51,7 +52,6 @@ const ProjectPage = () => {
     <>
       <Topbar />
       <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
-        {/* <DotBackground> */}
         <div
           className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-4 z-30`}
         >
@@ -62,14 +62,6 @@ const ProjectPage = () => {
               words={words}
               className={`font-bold text-3xl text-white dark:text-neutral-200 relative z-20 ${calsans.className}`}
             />
-            {/* <h1
-              className={cn(
-                "md:text-6xl text-3xl text-white relative z-20",
-                calsans.className
-              )}
-            >
-              Devlogs{" "}
-            </h1> */}
           </div>
 
           <div
@@ -81,9 +73,11 @@ const ProjectPage = () => {
             {proj?.description}
           </div>
           {proj && <ProjectInfoCards project={proj} />}
+          <div>
+            <ProjectImages />
+          </div>
         </div>
-        {/* </DotBackground> */}
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
       </main>
       <Footer />
     </>

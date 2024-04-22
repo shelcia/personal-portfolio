@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import localFont from "next/font/local";
 import { AnimatePresence } from "framer-motion";
 import { dmsans } from "@/utils/fonts";
 // import { GoogleAnalytics } from "@next/third-parties/google";

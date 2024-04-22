@@ -4,7 +4,8 @@ import { ReactNode } from "react";
 export interface Project {
   id: string;
   name: string;
-  mockup?: string;
+  mockup?: string | StaticImageData;
+  images?: StaticImageData[];
   image: string | StaticImageData;
   imageURL?: string;
   desc?: string;

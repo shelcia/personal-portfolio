@@ -60,7 +60,7 @@ const Header = () => {
           Shelcia David
         </div>
         <div
-          className={`font-extralight text-base md:text-3xl dark:text-neutral-200 py-4 px-10 text-center ${dmsans.className}`}
+          className={`font-extralight text-base md:text-3xl dark:text-neutral-200 py-4 px-4 md:px-10 text-center ${dmsans.className}`}
         >
           Confident and results-driven Full Stack developer and designer.
           Contributed to NASDAQ and startups like HIRA, NYX Wolves, Solera, and

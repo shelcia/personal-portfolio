@@ -5,7 +5,6 @@ import { DesignItem } from "@/types";
 import { PinContainer } from "@/components/ui/3d-pin";
 import "../../app/globals.css";
 import { calsans, dmsans } from "@/utils/fonts";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { projects } from "@/context/ProjectContext";
 import Footer from "@/components/common/Footer";
 import ProjectCard from "../components/ProjectCard";
@@ -30,7 +29,7 @@ const Works = () => {
             {projects.map((item) => (
               <ProjectCard
                 title={item.name}
-                image={item.image}
+                image={item.mockup}
                 link={item.deployment}
                 key={item.id}
                 desc={item.desc}

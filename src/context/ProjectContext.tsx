@@ -1,11 +1,26 @@
 import { Project } from "@/types";
+import Mocker1 from "../assets/images/mocker/1-1.webp";
+import Mocker2 from "../assets/images/mocker/2.webp";
+import Mocker3 from "../assets/images/mocker/3.webp";
+import Mocker4 from "../assets/images/mocker/4.webp";
+import Mocker5 from "../assets/images/mocker/5.webp";
+
+import Socialgram from "../assets/images/socialgram/2-1.webp";
+import Bloggram from "../assets/images/bloggram/1.webp";
+import DP from "../assets/images/dynamic-portfolio/2.webp";
+import NC from "../assets/images/noobcodes/1.webp";
+import Samgatha from "../assets/images/samgatha/1.webp";
+import AUV from "../assets/images/auv/1.webp";
+import Tradluxe from "../assets/images/tradluxe/1.webp";
+import IT from "../assets/images/irul-theme/1.webp";
 
 export const projects: Project[] = [
   {
     id: "mocker",
     name: "Mocker",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/mocker_FhIiA_GE6v.webp?updatedAt=1701194092672",
+    mockup: Mocker1,
+    images: [Mocker1, Mocker2, Mocker3, Mocker4, Mocker5],
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/mocker_FhIiA_GE6v.webp?updatedAt=1701194092672",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
     imageURL:
@@ -25,8 +40,8 @@ export const projects: Project[] = [
   {
     id: "socialgram",
     name: "Social Gram",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/socialgram_l5y_mG4U0.webp?updatedAt=1701194091026",
+    mockup: Socialgram,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/socialgram_l5y_mG4U0.webp?updatedAt=1701194091026",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
     imageURL:
@@ -52,8 +67,8 @@ export const projects: Project[] = [
   {
     id: "bloggram",
     name: "Bloggram",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/bloggram_A0EkXwGxa.webp?updatedAt=1701194090975",
+    mockup: Bloggram,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/bloggram_A0EkXwGxa.webp?updatedAt=1701194090975",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
     imageURL:
@@ -71,8 +86,8 @@ export const projects: Project[] = [
   {
     id: "dynamic-portfolio",
     name: "Dynamic Portfolio Maker",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/dynamicportfolio_H4yzvMebha.webp?updatedAt=1701194090908",
+    mockup: DP,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/dynamicportfolio_H4yzvMebha.webp?updatedAt=1701194090908",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
     imageURL:
@@ -86,30 +101,30 @@ export const projects: Project[] = [
     forks: 19,
     stars: 12,
   },
-  {
-    id: "kaagitham",
-    name: "Kaagitham",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/kaagitham_h-mVtO9Y2.webp?updatedAt=1701194091006",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
-    imageURL:
-      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1627452470163",
-    description:
-      "Kaagitham allows users to create drafts and share them seamlessly. The interface also allows sharing code snippets and huge documents with media content with which multiple users can collaboratively work. It also has features to view edit history, auto-saving and a comment section for easy interaction. I am working on adding more features as well. Currently under construction",
-    techstack: ["React", "NodeJS", "Socket.io", "Material UI", "Sun-Editor"],
-    deploy: true,
-    deployment: "https://kaagitham.vercel.app/",
-    code: "https://github.com/shelcia/kaagitham",
-    forks: 19,
-    stars: 12,
-  },
+  // {
+  //   id: "kaagitham",
+  //   name: "Kaagitham",
+  //   mockup:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/mockup/kaagitham_h-mVtO9Y2.webp?updatedAt=1701194091006",
+  //   image:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/google-docs_DJlIfQL0um.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735255",
+  //   imageURL:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/kaagitham_-rBC168wpp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1627452470163",
+  //   description:
+  //     "Kaagitham allows users to create drafts and share them seamlessly. The interface also allows sharing code snippets and huge documents with media content with which multiple users can collaboratively work. It also has features to view edit history, auto-saving and a comment section for easy interaction. I am working on adding more features as well. Currently under construction",
+  //   techstack: ["React", "NodeJS", "Socket.io", "Material UI", "Sun-Editor"],
+  //   deploy: true,
+  //   deployment: "https://kaagitham.vercel.app/",
+  //   code: "https://github.com/shelcia/kaagitham",
+  //   forks: 19,
+  //   stars: 12,
+  // },
 
   {
     id: "noobcodes",
     name: "Noob Codes",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/noobcodes_GUzi7Ol86.webp?updatedAt=1701194091120",
+    mockup: NC,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/noobcodes_GUzi7Ol86.webp?updatedAt=1701194091120",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
     imageURL:
@@ -156,30 +171,30 @@ export const projects: Project[] = [
   //   code: "https://github.com/shelcia/chat-app-frontend",
   // },
 
-  {
-    id: "weatherapp",
-    name: "Weather App",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/weather_Jy_CBLz9H.webp?updatedAt=1701194091055",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/weather-app_eqaXO8qfP0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736630",
-    imageURL:
-      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/weather-app_UBPTt3MeyfH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170459499",
-    description:
-      "This weather app provides users with detailed information about the current weather conditions in various locations around the world. The app probably uses data from two different APIs: the OpenWeather API, which provides weather-related information such as temperature, precipitation, and wind speed; and the Rest Countries API, which provides general information about countries such as population, land area, and capital. By combining these two APIs, the app is able to give users a comprehensive view of the current weather conditions and general information of the specific location they are interested in. The weather app has a simple interface, easy to use, and can be accessed in many parts of the world. It can be useful for travelers, outdoor enthusiasts, or anyone else interested in keeping track of the weather.",
-    // "Weather App uses Open Weather API and Rest Countries API to build an interface that allows the users to see current weather conditions in almost every part of the world and contains general details of all countries. ",
-    techstack: ["React", "Bootstrap"],
-    deploy: true,
-    deployment: "https://weatherups.netlify.app/",
-    code: "https://github.com/shelcia/Weather-app",
-    forks: 19,
-    stars: 12,
-  },
+  // {
+  //   id: "weatherapp",
+  //   name: "Weather App",
+  //   mockup:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/mockup/weather_Jy_CBLz9H.webp?updatedAt=1701194091055",
+  //   image:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/weather-app_eqaXO8qfP0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170736630",
+  //   imageURL:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/weather-app_UBPTt3MeyfH.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170459499",
+  //   description:
+  //     "This weather app provides users with detailed information about the current weather conditions in various locations around the world. The app probably uses data from two different APIs: the OpenWeather API, which provides weather-related information such as temperature, precipitation, and wind speed; and the Rest Countries API, which provides general information about countries such as population, land area, and capital. By combining these two APIs, the app is able to give users a comprehensive view of the current weather conditions and general information of the specific location they are interested in. The weather app has a simple interface, easy to use, and can be accessed in many parts of the world. It can be useful for travelers, outdoor enthusiasts, or anyone else interested in keeping track of the weather.",
+  //   // "Weather App uses Open Weather API and Rest Countries API to build an interface that allows the users to see current weather conditions in almost every part of the world and contains general details of all countries. ",
+  //   techstack: ["React", "Bootstrap"],
+  //   deploy: true,
+  //   deployment: "https://weatherups.netlify.app/",
+  //   code: "https://github.com/shelcia/Weather-app",
+  //   forks: 19,
+  //   stars: 12,
+  // },
   {
     id: "irul-theme",
     name: "Irul Theme",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/irul%20them_BytIqcI6Xn.webp?updatedAt=1701194091194",
+    mockup: IT,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/irul%20them_BytIqcI6Xn.webp?updatedAt=1701194091194",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
     imageURL:
@@ -196,28 +211,10 @@ export const projects: Project[] = [
     stars: 12,
   },
   {
-    id: "auv",
-    name: "AUV-IIITDM",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/auv_fo-YcluJN.webp?updatedAt=1701194091672",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
-    imageURL:
-      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/auv_eLHyBxXD_.png?updatedAt=1627449817894",
-    description:
-      "I got commissioned to build a website for IIITDM Kancheepuram's AUV Society. AUV society consists of an interdisciplinary team of undergraduate engineers working to construct an autonomous underwater vehicle for various underwater robotics competitions. I was the sole developer and designer until completion. I had to showcase their achievements, accolades, blogs and lure more sponsors. Furthermore, I have created an API to send form responses through the mail.",
-    techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],
-    deploy: true,
-    deployment: "https://auviiitdm.github.io/",
-    code: "https://github.com/shelcia/auv",
-    forks: 19,
-    stars: 12,
-  },
-  {
     id: "samgatha",
     name: "Samgatha",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/samgatha_GdRi0Rz8z.webp?updatedAt=1701194091300",
+    mockup: Samgatha,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/samgatha_GdRi0Rz8z.webp?updatedAt=1701194091300",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
     imageURL:
@@ -228,6 +225,24 @@ export const projects: Project[] = [
     techstack: ["Bootstrap", "MongoDB", "NodeJS"],
     deployment: "https://samgatha-2020.glitch.me/",
     code: "https://github.com/shelcia/Samgatha-2020",
+    forks: 19,
+    stars: 12,
+  },
+  {
+    id: "auv",
+    name: "AUV-IIITDM",
+    mockup: AUV,
+    // "https://ik.imagekit.io/shelcia/my_portfolio/mockup/auv_fo-YcluJN.webp?updatedAt=1701194091672",
+    image:
+      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/auv_eLHyBxXD_.png?updatedAt=1627449817894",
+    description:
+      "I got commissioned to build a website for IIITDM Kancheepuram's AUV Society. AUV society consists of an interdisciplinary team of undergraduate engineers working to construct an autonomous underwater vehicle for various underwater robotics competitions. I was the sole developer and designer until completion. I had to showcase their achievements, accolades, blogs and lure more sponsors. Furthermore, I have created an API to send form responses through the mail.",
+    techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],
+    deploy: true,
+    deployment: "https://auviiitdm.github.io/",
+    code: "https://github.com/shelcia/auv",
     forks: 19,
     stars: 12,
   },

@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { HeartFilledIcon } from "@radix-ui/react-icons";
+import { cn } from "@/utils/cn";
+import { dmsans } from "@/utils/fonts";
 
 const links = [
   { href: "https://github.com/shelcia", label: "Github" },
@@ -11,7 +13,9 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className={`bg-zinc-50 rounded-lg dark:bg-gray-800`}>
+    <footer
+      className={cn(`bg-zinc-50 rounded-lg dark:bg-gray-800`, dmsans.className)}
+    >
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex gap-1 flex-wrap items-center">
           <span>© 2024 Shelcia. Built with love </span>

@@ -3,7 +3,7 @@ import React from "react";
 import Topbar from "@/components/common/Topbar";
 import Header from "./components/Header";
 import "../app/globals.css";
-import ProjectCard from "./components/ProjectCard";
+import { FeaturedProjectCard } from "./components/ProjectCard";
 import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
@@ -33,7 +33,7 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
               {featuredProjects &&
                 featuredProjects.map((project: Project) => (
-                  <ProjectCard
+                  <FeaturedProjectCard
                     title={project.name}
                     image={project.image}
                     link={project.deployment}

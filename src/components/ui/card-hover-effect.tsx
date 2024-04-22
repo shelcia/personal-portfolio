@@ -1,8 +1,7 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 import ProjectCard from "@/pages/components/ProjectCard";
 import { Project } from "@/types";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
