@@ -22,7 +22,7 @@ const Home = () => {
         // bg-grid-black/[0.05] 
         relative overflow-hidden"
         > */}
-        <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden">
+        <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden pt-16">
           <div className="p-4 max-w-7xl mx-auto relative z-10">
             <h1
               className={`text-4xl md:text-7xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
