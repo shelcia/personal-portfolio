@@ -5,7 +5,7 @@ export interface Project {
   id: string;
   name: string;
   mockup?: string | StaticImageData;
-  images?: StaticImageData[];
+  images?: ImageItm[];
   image: string | StaticImageData;
   imageURL?: string;
   desc?: string;
@@ -69,4 +69,16 @@ export interface SkillItem {
   img: ReactNode;
   bgClass: string;
   colorClass: string;
+}
+
+export interface ImageItm {
+  id: number;
+  content: JSX.Element | React.ReactNode | string;
+  className: string;
+  thumbnail: string | StaticImageData;
+}
+
+export interface ImgContentProps {
+  title?: string;
+  description?: string;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "../../app/globals.css";
 
 import Topbar from "@/components/common/Topbar";
-import { dmsans, calsans } from "@/utils/fonts";
+import { calsans } from "@/utils/fonts";
 import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/utils/cn";
 import { articles } from "@/context/MediumContext";
@@ -10,6 +10,7 @@ import Footer from "@/components/common/Footer";
 import ArticleSection from "../components/ArticleSection";
 import Link from "next/link";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
 
 const Devlogs = () => {
   return (
@@ -43,9 +44,19 @@ const Devlogs = () => {
             </Link>
           </p>
         </div>
-        <div className="md:px-24 px-4 mt-4">
-          <ArticleSection items={articles} />
-        </div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+            duration: 0.3,
+            ease: "easeInOut",
+          }}
+        >
+          <div className="md:px-24 px-4 mt-4">
+            <ArticleSection items={articles} />
+          </div>
+        </motion.div>
       </main>
       <Footer />
     </>

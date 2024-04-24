@@ -11,6 +11,7 @@ import ProjectCard from "../components/ProjectCard";
 import { cn } from "@/utils/cn";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Works = () => {
   return (
@@ -21,24 +22,33 @@ const Works = () => {
           <h1 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
             Development
           </h1>
-          {/* <div className={`mx-auto ${dmsans.className}`}> */}
-          <div
-            className={cn(
-              "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-4",
-              dmsans.className
-            )}
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
           >
-            {projects.map((item) => (
-              <ProjectCard
-                title={item.name}
-                image={item.mockup}
-                link={item.deployment}
-                key={item.id}
-                desc={item.desc}
-                name={item.id}
-              />
-            ))}
-          </div>
+            <div
+              className={cn(
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-4",
+                dmsans.className
+              )}
+            >
+              {projects.map((item) => (
+                <ProjectCard
+                  title={item.name}
+                  image={item.mockup}
+                  link={item.deployment}
+                  key={item.id}
+                  desc={item.desc}
+                  name={item.id}
+                />
+              ))}
+            </div>
+          </motion.div>
           <div className="w-full flex justify-end">
             <Link
               href="https://github.com/shelcia?tab=repositories"

@@ -1,18 +1,25 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { cn } from "@/utils/cn";
-
 import type { Metadata } from "next";
 import "../../app/globals.css";
-import localFont from "next/font/local";
+
+import { cn } from "@/utils/cn";
 import Topbar from "@/components/common/Topbar";
 import DotBackground from "@/components/ui/dot-bg";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Footer from "@/components/common/Footer";
 import { calsans, dmsans } from "@/utils/fonts";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import CustomConfetti from "@/components/common/CustomConfetti";
+import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
+
+interface AlertState {
+  message: string;
+  severity: "error" | "success" | "info" | "warning";
+  showConfetti: boolean;
+}
 
 export const metadata: Metadata = {
   title: "Contact Form",
@@ -20,11 +27,6 @@ export const metadata: Metadata = {
 };
 
 const ContactForm = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
-
   const words = [
     {
       text: "Connect",
@@ -35,12 +37,126 @@ const ContactForm = () => {
     },
   ];
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [alert, setAlert] = useState<AlertState>({
+    message: "Received Message. Will get back to You !",
+    severity: "success",
+    showConfetti: false,
+  });
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputs = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setInputs({ ...inputs, [name]: value });
+  };
+
+  const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+    try {
+      if (inputs.name === "" || inputs.email === "" || inputs.message === "") {
+        setAlert({
+          message: "Please fill in all the fields",
+          severity: "error",
+          showConfetti: false,
+        });
+        setOpen(true);
+        return;
+      }
+
+      const body = {
+        fields: {
+          name: inputs.name,
+          email: inputs.email,
+          message: inputs.message,
+        },
+      };
+
+      console.log(process.env.VITE_AIRTABLE_API_KEY);
+
+      await fetch("https://api.airtable.com/v0/appTbgDq2M8MBUNrR/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.VITE_AIRTABLE_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body), // Convert the body to a JSON string
+      });
+
+      setAlert({
+        message: "Received Message. Will get back to You !",
+        severity: "success",
+        showConfetti: true,
+      });
+
+      setOpen(true);
+      setIsLoading(false);
+    } catch (err) {
+      console.log(err);
+      setAlert({
+        message: "Sending Message failed! Try again later",
+        severity: "error",
+        showConfetti: false,
+      });
+      setOpen(true);
+      setIsLoading(false);
+    }
+  };
+
+  // for toasts
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (
+    event: React.SyntheticEvent | React.MouseEvent,
+    reason?: string
+  ) => {
+    // console.log(event.target);
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  const hideConfetti = () => {
+    setAlert((prevAlert) => ({
+      ...prevAlert,
+      showConfetti: false,
+    }));
+  };
+
+  useEffect(() => {
+    if (alert.showConfetti) {
+      const confettiTimeout = setTimeout(hideConfetti, 9000);
+      return () => {
+        clearTimeout(confettiTimeout);
+      };
+    }
+  }, [alert.showConfetti]);
+
+  useEffect(() => {
+    if (open) {
+      const alertTimeout = setTimeout(handleClose, 5000);
+      return () => {
+        clearTimeout(alertTimeout);
+      };
+    }
+  }, [open]);
+
   return (
     <>
       <Topbar />
+      {open &&
+        (alert.severity === "success" ? (
+          <SuccessToast message={alert.message} onClose={handleClose} />
+        ) : (
+          <DangerToast message={alert.message} onClose={handleClose} />
+        ))}
+      {alert.showConfetti && <CustomConfetti numberOfPieces={800} />}
       <main className="relative">
-        {/* <BackgroundBeams /> */}
-        {/* <GridBackground /> */}
         <DotBackground>
           <div
             className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} z-30 `}
@@ -49,11 +165,6 @@ const ContactForm = () => {
               words={words}
               className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calsans.className}`}
             />
-            {/* <h2
-              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calsans.className}`}
-            >
-              Connect !
-            </h2> */}
             <p
               className={`text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300 `}
             >
@@ -61,23 +172,27 @@ const ContactForm = () => {
               the form
             </p>
 
-            <form className="my-8 z-30" onSubmit={handleSubmit}>
-              <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-                <LabelInputContainer>
-                  <Label htmlFor="firstname">First name</Label>
-                  <Input id="firstname" placeholder="Shelcia" type="text" />
-                </LabelInputContainer>
-                <LabelInputContainer>
-                  <Label htmlFor="lastname">Last name</Label>
-                  <Input id="lastname" placeholder="David" type="text" />
-                </LabelInputContainer>
-              </div>
+            <form className="my-8 z-30" onSubmit={sendMessage}>
+              <LabelInputContainer className="mb-4">
+                <Label htmlFor="name">Name*</Label>
+                <Input
+                  id="name"
+                  placeholder="Shelcia David"
+                  value={inputs.name}
+                  name="name"
+                  onChange={handleInputs}
+                />
+              </LabelInputContainer>
+
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email Address*</Label>
                 <Input
                   id="email"
                   placeholder="shelcia@example.com"
                   type="email"
+                  value={inputs.email}
+                  name="email"
+                  onChange={handleInputs}
                 />
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
@@ -86,6 +201,9 @@ const ContactForm = () => {
                   id="message"
                   placeholder="I got a MERN CRM project"
                   type="text"
+                  value={inputs.message}
+                  name="message"
+                  onChange={handleInputs}
                 />
               </LabelInputContainer>
               <button

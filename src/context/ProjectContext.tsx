@@ -5,21 +5,71 @@ import Mocker3 from "../assets/images/mocker/3.webp";
 import Mocker4 from "../assets/images/mocker/4.webp";
 import Mocker5 from "../assets/images/mocker/5.webp";
 
-import Socialgram from "../assets/images/socialgram/2-1.webp";
-import Bloggram from "../assets/images/bloggram/1.webp";
-import DP from "../assets/images/dynamic-portfolio/2.webp";
-import NC from "../assets/images/noobcodes/1.webp";
-import Samgatha from "../assets/images/samgatha/1.webp";
-import AUV from "../assets/images/auv/1.webp";
-import Tradluxe from "../assets/images/tradluxe/1.webp";
-import IT from "../assets/images/irul-theme/1.webp";
+import Bloggram1 from "../assets/images/bloggram/1.webp";
+import Bloggram2 from "../assets/images/bloggram/2.webp";
+import Bloggram3 from "../assets/images/bloggram/3.webp";
+import Bloggram4 from "../assets/images/bloggram/4.webp";
+
+import DP1 from "../assets/images/dynamic-portfolio/2.webp";
+import DP2 from "../assets/images/dynamic-portfolio/1.webp";
+import DP3 from "../assets/images/dynamic-portfolio/3.webp";
+import DP4 from "../assets/images/dynamic-portfolio/4.webp";
+
+import Socialgram1 from "../assets/images/socialgram/2-1.webp";
+import Socialgram2 from "../assets/images/socialgram/1.webp";
+import Socialgram3 from "../assets/images/socialgram/3.webp";
+
+import NC1 from "../assets/images/noobcodes/1.webp";
+import NC2 from "../assets/images/noobcodes/2.webp";
+import NC3 from "../assets/images/noobcodes/3.webp";
+
+import Samgatha1 from "../assets/images/samgatha/1.webp";
+import Samgatha2 from "../assets/images/samgatha/2.webp";
+import Samgatha3 from "../assets/images/samgatha/3.webp";
+
+// import AUV from "../assets/images/auv/1.webp";
+import Tradluxe1 from "../assets/images/tradluxe/1.webp";
+import Tradluxe2 from "../assets/images/tradluxe/2.webp";
+import Tradluxe3 from "../assets/images/tradluxe/3.webp";
+
+import IT1 from "../assets/images/irul-theme/1.webp";
+import IT2 from "../assets/images/irul-theme/2.webp";
+
+import { ContentTitle } from "@/pages/components/ProjectImages";
 
 export const projects: Project[] = [
   {
     id: "mocker",
     name: "Mocker",
     mockup: Mocker1,
-    images: [Mocker1, Mocker2, Mocker3, Mocker4, Mocker5],
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Generated JSON data" />,
+        className: "col-span-6",
+        thumbnail: Mocker1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Generated Endpoints" />,
+        className: "col-span-6",
+        thumbnail: Mocker2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Authentication Page" />,
+        className: "col-span-6",
+        thumbnail: Mocker3,
+      },
+      {
+        id: 4,
+        content: (
+          <ContentTitle title="Editing the scheme for generation of data" />
+        ),
+        className: "col-span-6",
+        thumbnail: Mocker4,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
     imageURL:
@@ -37,7 +87,33 @@ export const projects: Project[] = [
   {
     id: "bloggram",
     name: "Bloggram",
-    mockup: Bloggram,
+    mockup: Bloggram1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Home Page" />,
+        className: "col-span-6",
+        thumbnail: Bloggram1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Article Page in Dark Mode" />,
+        className: "col-span-6",
+        thumbnail: Bloggram2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Author's Page" />,
+        className: "col-span-6",
+        thumbnail: Bloggram3,
+      },
+      {
+        id: 4,
+        content: <ContentTitle title="User's Dashboard" />,
+        className: "col-span-6",
+        thumbnail: Bloggram4,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
     imageURL:
@@ -54,7 +130,33 @@ export const projects: Project[] = [
   {
     id: "dynamic-portfolio",
     name: "Dynamic Portfolio Maker",
-    mockup: DP,
+    mockup: DP1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Editing Portfolio Content" />,
+        className: "col-span-6",
+        thumbnail: DP1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Home Page" />,
+        className: "col-span-6",
+        thumbnail: DP2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Authentication Page" />,
+        className: "col-span-6",
+        thumbnail: DP3,
+      },
+      {
+        id: 4,
+        content: <ContentTitle title="Portfolio Template 1" />,
+        className: "col-span-6",
+        thumbnail: DP4,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
     imageURL:
@@ -72,7 +174,27 @@ export const projects: Project[] = [
   {
     id: "noobcodes",
     name: "Noob Codes",
-    mockup: NC,
+    mockup: NC1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Coding Problem's Page" />,
+        className: "col-span-6",
+        thumbnail: NC1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Search Implemented with Algolia" />,
+        className: "col-span-6",
+        thumbnail: NC2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Home Page" />,
+        className: "col-span-6",
+        thumbnail: NC3,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
     imageURL:
@@ -89,7 +211,27 @@ export const projects: Project[] = [
   {
     id: "socialgram",
     name: "Social Gram",
-    mockup: Socialgram,
+    mockup: Socialgram1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Share Posts" />,
+        className: "col-span-6",
+        thumbnail: Socialgram1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="User's Feed" />,
+        className: "col-span-6",
+        thumbnail: Socialgram2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Home Page/Authentication Page" />,
+        className: "col-span-6",
+        thumbnail: Socialgram3,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
     imageURL:
@@ -113,7 +255,21 @@ export const projects: Project[] = [
   {
     id: "irul-theme",
     name: "Irul Theme",
-    mockup: IT,
+    mockup: IT1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Neelam Variant" />,
+        className: "col-span-6",
+        thumbnail: IT1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Default variant" />,
+        className: "col-span-6",
+        thumbnail: IT2,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
     imageURL:
@@ -131,7 +287,27 @@ export const projects: Project[] = [
   {
     id: "samgatha",
     name: "Samgatha",
-    mockup: Samgatha,
+    mockup: Samgatha1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Landing Page" />,
+        className: "col-span-6",
+        thumbnail: Samgatha1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Event's Page" />,
+        className: "col-span-6",
+        thumbnail: Samgatha2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Team's Page" />,
+        className: "col-span-6",
+        thumbnail: Samgatha3,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
     imageURL:
@@ -146,19 +322,39 @@ export const projects: Project[] = [
     stars: 0,
   },
   {
-    id: "auv",
-    name: "AUV-IIITDM",
-    mockup: Tradluxe,
+    id: "tradluxe",
+    name: "Tradluxe",
+    mockup: Tradluxe1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Landing Page" />,
+        className: "col-span-6",
+        thumbnail: Tradluxe1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Product's Page" />,
+        className: "col-span-6",
+        thumbnail: Tradluxe2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Brand's Page" />,
+        className: "col-span-6",
+        thumbnail: Tradluxe3,
+      },
+    ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
     imageURL:
       "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/auv_eLHyBxXD_.png?updatedAt=1627449817894",
     description:
-      "I got commissioned to build a website for IIITDM Kancheepuram's AUV Society. AUV society consists of an interdisciplinary team of undergraduate engineers working to construct an autonomous underwater vehicle for various underwater robotics competitions. I was the sole developer and designer until completion. I had to showcase their achievements, accolades, blogs and lure more sponsors. Furthermore, I have created an API to send form responses through the mail.",
+      "I got commissioned to build a website for Singapor based E Commerce Company called Tradluxe. I was the sole developer until completion. I had to showcase their products, blogs and lure more customer. Furthermore, I have created an API to send form responses through the mail.",
     techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],
     deploy: true,
-    deployment: "https://auviiitdm.github.io/",
-    code: "https://github.com/shelcia/auv",
+    deployment: "https://www.tradluxe.com/",
+    code: "",
     forks: 0,
     stars: 0,
   },

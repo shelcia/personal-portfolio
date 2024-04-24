@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 import { calsans, dmsans } from "@/utils/fonts";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-// import { IconBrandBehance, IconBrandMedium } from "@tabler/icons-react";
 import Link from "next/link";
 
 import {
@@ -30,17 +29,8 @@ const Header = () => {
       link: "https://www.linkedin.com/in/shelcia/",
       alt: "Connect with me on linkedin",
     },
-    // {
-    //   Icon: IconBrandBehance,
-    //   link: "https://www.behance.net/shelcia",
-    //   alt: "Check out my works on behance",
-    // },
-    // {
-    //   Icon: IconBrandMedium,
-    //   link: "https://medium.com/@shelcia",
-    //   alt: "Follow my work on medium",
-    // },
   ];
+
   return (
     <AuroraBackground>
       <Topbar />
@@ -77,7 +67,7 @@ const Header = () => {
           ))}
         </div>
         <Link href="/contact">
-          <ShimmerButton title="Hire Me" />
+          <ShimmerButton title="Connect with me" />
         </Link>
       </motion.div>
     </AuroraBackground>
