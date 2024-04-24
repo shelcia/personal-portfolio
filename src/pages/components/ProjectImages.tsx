@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 import { cn } from "@/utils/cn";
 import { calsans, dmsans } from "@/utils/fonts";
