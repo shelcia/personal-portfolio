@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../app/globals.css";
 import Topbar from "@/components/common/Topbar";
 import Footer from "@/components/common/Footer";
@@ -11,11 +11,31 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 
 const AboutPage = () => {
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
+
+  const scrollToExperience = () => {
+    if (experienceRef?.current) {
+      experienceRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToSkills = () => {
+    if (skillsRef?.current) {
+      skillsRef?.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Topbar />
-      <main className="px-4 sm:px-24 mb-8">
-        <h1 className={cn("text-5xl text-bold mb-0", calsans.className)}>
+      <main className="px-4 sm:px-24 mb-8 md:pt-8 pt-4">
+        <h1
+          className={cn(
+            "md:text-5xl text-3xl text-bold mb-0",
+            calsans.className
+          )}
+        >
           Who is Shelcia?
         </h1>
         <HeroHighlight>
@@ -33,7 +53,7 @@ const AboutPage = () => {
               ease: [0.4, 0.0, 0.2, 1],
             }}
             className={cn(
-              "text-xl px-0 md:text-2xl font- text-slate-800 dark:text-gray-400 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
+              "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 dark:text-gray-400 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
               dmsans.className
             )}
           >
@@ -65,13 +85,16 @@ const AboutPage = () => {
           </motion.h1>
         </HeroHighlight>
         <div className="flex gap-2 wrap">
-          <ShimmerButton title="My Experience" />
-          <ShimmerButton title="My Skills" />
+          <ShimmerButton
+            title="My Experience"
+            onclick={() => scrollToExperience()}
+          />
+          <ShimmerButton title="My Skills" onclick={() => scrollToSkills()} />
         </div>
-        <div className="my-12">
+        <div className="my-12" ref={experienceRef}>
           <Experience />
         </div>
-        <div>
+        <div ref={skillsRef}>
           <Skills />
         </div>
       </main>

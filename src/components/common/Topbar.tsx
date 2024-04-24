@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { HamburgerMenuIcon, MixIcon } from "@radix-ui/react-icons";
 import "../../app/globals.css";
 import { cn } from "@/utils/cn";
-import { dmsans } from "@/utils/fonts";
+import { calsans, dmsans } from "@/utils/fonts";
 import { usePathname } from "next/navigation";
 
 const Topbar = () => {
@@ -40,7 +40,7 @@ const Topbar = () => {
   return (
     <header
       className={cn(
-        "bg-transparent w-full rounded-lg px-6 py-6 sticky z-40",
+        "bg-transparent w-full rounded-lg md:px-6 md:py-6 py-3 sticky z-40",
         dmsans.className
       )}
     >
@@ -50,7 +50,7 @@ const Topbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <MixIcon className="h-6 w-6" />
+            <MixIcon className="h-6 w-6 stroke-2" />
             <span className="sr-only">Shelcia</span>
           </Link>
           <Sheet>
@@ -90,7 +90,8 @@ const Topbar = () => {
                       "block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500",
                       pathname === nav.link
                         ? "text-blue-500"
-                        : "text-muted-foreground"
+                        : "text-muted-foreground",
+                      calsans.className
                     )}
                     aria-current="page"
                   >

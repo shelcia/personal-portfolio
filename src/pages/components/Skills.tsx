@@ -6,7 +6,9 @@ import { calsans } from "@/utils/fonts";
 const Skills = () => {
   return (
     <>
-      <h1 className={cn("text-5xl text-bold mb-8", calsans.className)}>
+      <h1
+        className={cn("md:text-5xl text-3xl text-bold mb-8", calsans.className)}
+      >
         Skills
       </h1>
       <div className="flex gap-2 flex-wrap w-full">

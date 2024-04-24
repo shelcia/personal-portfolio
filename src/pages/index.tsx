@@ -1,13 +1,11 @@
 // pages/index.js
 import React from "react";
-import Topbar from "@/components/common/Topbar";
 import Header from "./components/Header";
 import "../app/globals.css";
 import { FeaturedProjectCard } from "./components/ProjectCard";
 import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
-import { WavyBackground } from "@/components/ui/wavy-background";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Footer from "@/components/common/Footer";
 
@@ -30,7 +28,7 @@ const Home = () => {
               Featured Projects
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:mt-16 mt-4">
               {featuredProjects &&
                 featuredProjects.map((project: Project) => (
                   <FeaturedProjectCard
@@ -45,13 +43,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-zinc-50 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-zinc-50 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
             speed="slow"
           />
-        </div>
+        </div> */}
       </main>
       <Footer />
     </>

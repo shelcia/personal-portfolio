@@ -9,12 +9,14 @@ import { projects } from "@/context/ProjectContext";
 import Footer from "@/components/common/Footer";
 import ProjectCard from "../components/ProjectCard";
 import { cn } from "@/utils/cn";
+import { ShimmerButton } from "@/components/common/CustomButtons";
+import Link from "next/link";
 
 const Works = () => {
   return (
     <>
       <Topbar />
-      <main className="mt-0 mb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
+      <main className="mt-0 pb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
         <div className="relative z-10">
           <h1 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
             Development
@@ -36,15 +38,21 @@ const Works = () => {
                 name={item.id}
               />
             ))}
-
-            {/* <HoverEffect items={projects} /> */}
+          </div>
+          <div className="w-full flex justify-end">
+            <Link
+              href="https://github.com/shelcia?tab=repositories"
+              target="_blank"
+            >
+              <ShimmerButton title="View More on Github" />
+            </Link>
           </div>
           <h1 className={`${calsans.className} mt-8 mb-8 text-4xl md:text-6xl`}>
             Design
           </h1>
           <div className="relative z-20">
             <div
-              className={`grid grid-cols-1 lg:grid-cols-4 gap-2 ${dmsans.className}`}
+              className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ${dmsans.className}`}
             >
               {designs.items.map((design: DesignItem) => (
                 <PinContainer
@@ -53,12 +61,9 @@ const Works = () => {
                   href={design.link}
                 >
                   <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full h-[20rem] bg-white">
-                    <h3 className="max-w-xs !m-0 font-bold  text-base dark:text-slate-100 text-black">
+                    <h3 className="!m-0 font-bold text-xl dark:text-slate-100 text-black">
                       {design.title}
                     </h3>
-                    {/* <div className="text-base !m-0 !p-0 font-normal">
-                  <span className="text-slate-500 ">{design.description}</span>
-                </div> */}
                     <div
                       className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
                       style={{
@@ -70,6 +75,14 @@ const Works = () => {
                   </div>
                 </PinContainer>
               ))}
+            </div>
+            <div className="w-full flex justify-end mt-8">
+              <Link
+                href="https://github.com/shelcia?tab=repositories"
+                target="_blank"
+              >
+                <ShimmerButton title="View More on Behance" />
+              </Link>
             </div>
           </div>
         </div>

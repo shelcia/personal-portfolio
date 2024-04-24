@@ -4,11 +4,12 @@ import "../../app/globals.css";
 import Topbar from "@/components/common/Topbar";
 import { dmsans, calsans } from "@/utils/fonts";
 import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 import { articles } from "@/context/MediumContext";
 import Footer from "@/components/common/Footer";
 import ArticleSection from "../components/ArticleSection";
 import Link from "next/link";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 const Devlogs = () => {
   return (
@@ -29,16 +30,16 @@ const Devlogs = () => {
           <p
             className={cn(
               "text-center mt-2 text-neutral-300 relative z-20",
-              dmsans.className
+              calsans.className
             )}
           >
             Check out my tech articles on
             <Link
               href="https://shelcia.medium.com/"
               target="_blank"
-              className="ms-1 hover:underline"
+              className="ms-1 hover:underline inline-flex items-center gap-1"
             >
-              Medium!
+              Medium! <ExternalLinkIcon />
             </Link>
           </p>
         </div>

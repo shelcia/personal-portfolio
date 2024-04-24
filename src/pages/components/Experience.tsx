@@ -6,7 +6,9 @@ import React from "react";
 const Experience = () => {
   return (
     <>
-      <h1 className={cn("text-5xl text-bold mb-8", calsans.className)}>
+      <h1
+        className={cn("md:text-5xl text-3xl text-bold mb-8", calsans.className)}
+      >
         Experience
       </h1>
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
@@ -26,7 +28,7 @@ const Experience = () => {
             </h3>
             <time
               className={cn(
-                "block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500",
+                "block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500",
                 dmsans.className
               )}
             >
@@ -66,52 +68,7 @@ const Icon = () => (
   </svg>
 );
 
-const ExperienceIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-    <rect width="256" height="256" fill="none" />
-    <line
-      x1="112"
-      y1="112"
-      x2="144"
-      y2="112"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="12"
-    />
-    <rect
-      x="32"
-      y="64"
-      width="192"
-      height="144"
-      rx="8"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="12"
-    />
-    <path
-      d="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="12"
-    />
-    <path
-      d="M224,118.31A191.09,191.09,0,0,1,128,144a191.14,191.14,0,0,1-96-25.68"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="12"
-    />
-  </svg>
-);
-
-const Badge = ({ title }: { title: string }) => (
+export const Badge = ({ title }: { title: string }) => (
   <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
     {title}
   </span>
