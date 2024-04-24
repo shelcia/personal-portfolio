@@ -1,86 +1,106 @@
-import React, { lazy, useRef } from "react";
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Shelcia from "../../assets/images/images/me.webp";
-import Journey from "./components/Journey";
-import Scroller from "../common/Scroller";
-import Skills from "./components/Skills";
-import { CustomLoadable } from "../common/CustomPartLoader";
+import React, { useRef } from "react";
+import "../../app/globals.css";
+import Topbar from "@/components/common/Topbar";
+import Footer from "@/components/common/Footer";
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import { cn } from "@/utils/cn";
+import { calsans, dmsans } from "@/utils/fonts";
+import { motion } from "framer-motion";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
+import { ShimmerButton } from "@/components/common/CustomButtons";
 
-const AboutMe: React.FC = () => {
-  const journeyToRef = useRef<HTMLDivElement>(null);
-  const skillsToRef = useRef<HTMLDivElement>(null);
+const AboutPage = () => {
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
 
-  const scrollToElement = (scrollToRef: React.RefObject<HTMLDivElement>) => {
-    if (scrollToRef.current) {
-      // Step 3: Use the scrollIntoView method to scroll to the element
-      scrollToRef.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToExperience = () => {
+    if (experienceRef?.current) {
+      experienceRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const Photography = CustomLoadable(
-    lazy(() => import("./components/Photography"))
-  );
+  const scrollToSkills = () => {
+    if (skillsRef?.current) {
+      skillsRef?.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
-      <Container sx={{ position: "relative" }} data-aos="fade-up">
-        <Typography component={"h2"} className="section-title" sx={{ mt: 5 }}>
-          About Me
-        </Typography>
-        <Grid container>
-          <Grid item xs={12} md={8}>
-            <Typography className="about-desc">
-              I am a confident and results-driven individual who thrives in
-              problem-solving. With a strong focus on JavaScript, React and a
-              passion for the MERN stack, I excel at tackling challenges
-              head-on.
-              <br />
-              <br />
-              With over three years of experience at companies like NASDAQ,
-              HIRA, NYX Wolves, Solera, and Guvi, I&apos;ve honed my
-              problem-solving skills. I&apos;m committed to open-source
-              contributions and hold a Bachelor&apos;s degree from IIIT Chennai.
-              Currently, I&apos;m pursuing a Master&apos;s in Information at UW
-              Madison. I welcome collaboration and feedback to deliver excellent
-              results.
-              <br />
-              <br />
-              Let&apos;s connect and explore opportunities to collaborate or
-              discuss how my skills can benefit your projects.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
-            <img src={Shelcia} alt="Shelcia" width={"100%"} height={"auto"} />
-          </Grid>
-        </Grid>
-        <Box sx={{ mt: 4, display: "flex", gap: 1 }}>
-          <Button
-            variant="contained"
-            color="success"
-            sx={{ mr: 2 }}
-            onClick={() => scrollToElement(journeyToRef)}
+      <Topbar />
+      <main className="px-4 sm:px-24 mb-8 md:pt-8 pt-4">
+        <h1
+          className={cn(
+            "md:text-5xl text-3xl text-bold mb-0",
+            calsans.className
+          )}
+        >
+          Who is Shelcia?
+        </h1>
+        <HeroHighlight>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 20,
+            }}
+            animate={{
+              opacity: 1,
+              y: [20, -5, 0],
+            }}
+            transition={{
+              duration: 0.5,
+              ease: [0.4, 0.0, 0.2, 1],
+            }}
+            className={cn(
+              "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 dark:text-gray-400 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
+              dmsans.className
+            )}
           >
-            My Experience
-          </Button>
-          <Button
-            variant="contained"
-            color="success"
-            onClick={() => scrollToElement(skillsToRef)}
-            // sx={{ mt: { xs: 2, md: 0 } }}
-          >
-            My Skills
-          </Button>
-        </Box>
-        <Scroller />
-      </Container>
-
-      <Journey journeyToRef={journeyToRef} />
-
-      <Skills skillsToRef={skillsToRef} />
-
-      <Photography />
+            I am a
+            <Highlight className="text-black dark:text-white">
+              confident and results-driven individual
+            </Highlight>
+            who thrives in problem-solving. With a strong focus on JavaScript,
+            React and a passion for the MERN stack, I excel at tackling
+            challenges head-on.
+            <br />
+            With over
+            <Highlight className="text-black dark:text-white">
+              three years of experience
+            </Highlight>
+            at companies like
+            <Highlight className="text-black dark:text-white">
+              NASDAQ, HIRA, NYX Wolves, Solera, and Guvi,
+            </Highlight>
+            I&apos;ve honed my problem-solving skills. I&apos;m committed to
+            open-source contributions and hold a Bachelor&apos;s degree from
+            IIIT Chennai. Currently, I&apos;m pursuing a Master&apos;s in
+            Computer Information Sciences at UW Madison. I welcome collaboration
+            and feedback to deliver excellent results.
+            <br />
+            <br />
+            Let&apos;s connect and explore opportunities to collaborate or
+            discuss how my skills can benefit your projects.
+          </motion.h1>
+        </HeroHighlight>
+        <div className="flex gap-2 wrap">
+          <ShimmerButton
+            title="My Experience"
+            onclick={() => scrollToExperience()}
+          />
+          <ShimmerButton title="My Skills" onclick={() => scrollToSkills()} />
+        </div>
+        <div className="my-12" ref={experienceRef}>
+          <Experience />
+        </div>
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+      </main>
+      <Footer />
     </>
   );
 };
 
-export default AboutMe;
+export default AboutPage;

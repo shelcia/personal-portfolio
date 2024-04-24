@@ -1,214 +1,105 @@
-import React, { useContext, useEffect, useRef } from "react";
-import {
-  Box,
-  Card,
-  CardMedia,
-  Container,
-  Grid,
-  IconButton,
-  Link as MuiLink,
-  Typography,
-} from "@mui/material";
-import Arrow from "../../assets/icons/toprightarrow.svg";
-import { ProjectsContext } from "../../context/ProjectContext";
-import VanillaTilt from "vanilla-tilt";
-import { Link } from "react-router-dom";
-import { DesignItem, Project } from "../../types";
-import { designs } from "../../context/DesignContext";
+import React from "react";
+import Topbar from "@/components/common/Topbar";
+import { designs } from "@/context/DesignContext";
+import { DesignItem } from "@/types";
+import { PinContainer } from "@/components/ui/3d-pin";
+import "../../app/globals.css";
+import { calsans, dmsans } from "@/utils/fonts";
+import { projects } from "@/context/ProjectContext";
+import Footer from "@/components/common/Footer";
+import ProjectCard from "../components/ProjectCard";
+import { cn } from "@/utils/cn";
+import { ShimmerButton } from "@/components/common/CustomButtons";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-const Works: React.FC = () => {
-  const projects: Project[] = useContext(ProjectsContext);
-
+const Works = () => {
   return (
-    <Container data-aos="fade-up">
-      <Typography component={"h1"} className="section-title">
-        Development Works
-      </Typography>
-      <Grid
-        container
-        spacing={4}
-        sx={{ mt: { xs: 0, md: 3 } }}
-        data-aos="fade-up"
-      >
-        {projects.map((project, idx) => (
-          <DevCard key={project.id} project={project} idx={idx} />
-        ))}
-      </Grid>
-      <Typography
-        component={"h2"}
-        className="section-title"
-        sx={{ mt: 10 }}
-        data-aos="fade-up"
-      >
-        Design Works
-      </Typography>
-      <Grid
-        container
-        spacing={4}
-        sx={{ mt: { xs: 0, md: 3 } }}
-        data-aos="fade-up"
-      >
-        {designs.items.map((project, idx) => (
-          <DesignCard key={project.guid} project={project} idx={idx} />
-        ))}
-        {/* Render design works */}
-      </Grid>
-    </Container>
+    <>
+      <Topbar />
+      <main className="mt-0 pb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
+        <div className="relative z-10">
+          <h1 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
+            Development
+          </h1>
+          <motion.div
+            initial={{ opacity: 0.0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+              duration: 0.3,
+              ease: "easeInOut",
+            }}
+          >
+            <div
+              className={cn(
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-4",
+                dmsans.className
+              )}
+            >
+              {projects.map((item) => (
+                <ProjectCard
+                  title={item.name}
+                  image={item.mockup}
+                  link={item.deployment}
+                  key={item.id}
+                  desc={item.desc}
+                  name={item.id}
+                />
+              ))}
+            </div>
+          </motion.div>
+          <div className="w-full flex justify-end">
+            <Link
+              href="https://github.com/shelcia?tab=repositories"
+              target="_blank"
+            >
+              <ShimmerButton title="View More on Github" />
+            </Link>
+          </div>
+          <h1 className={`${calsans.className} mt-8 mb-8 text-4xl md:text-6xl`}>
+            Design
+          </h1>
+          <div className="relative z-20">
+            <div
+              className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ${dmsans.className}`}
+            >
+              {designs.items.map((design: DesignItem) => (
+                <PinContainer
+                  key={design.guid}
+                  title={`View ${design.title} on Behance`}
+                  href={design.link}
+                >
+                  <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full h-[20rem] bg-white">
+                    <h3 className="!m-0 font-bold text-xl dark:text-slate-100 text-black">
+                      {design.title}
+                    </h3>
+                    <div
+                      className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
+                      style={{
+                        backgroundImage: `url(${design.thumbnail})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                      }}
+                    />
+                  </div>
+                </PinContainer>
+              ))}
+            </div>
+            <div className="w-full flex justify-end mt-8">
+              <Link
+                href="https://github.com/shelcia?tab=repositories"
+                target="_blank"
+              >
+                <ShimmerButton title="View More on Behance" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 
 export default Works;
-
-interface DevCardProps {
-  project: Project;
-  idx: number;
-}
-
-const DevCard: React.FC<DevCardProps> = ({ project, idx }) => {
-  const tiltRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (tiltRef?.current) {
-      VanillaTilt.init(tiltRef?.current, {
-        max: 10,
-        speed: 500,
-        glare: true,
-        "max-glare": 0.5,
-      });
-    }
-
-    return () => {
-      if (tiltRef.current) {
-        (tiltRef.current as any)?.vanillaTilt?.destroy();
-      }
-    };
-  }, []);
-
-  return (
-    <Grid item xs={12} sm={4} md={3} key={project.id} ref={tiltRef}>
-      <Link
-        to={`/works/${project.id}`}
-        data-aos={idx % 2 === 0 ? "fade-up-right" : "fade-up-left"}
-      >
-        <Box>
-          <Card
-            sx={{
-              maxWidth: "100%",
-              position: "relative",
-              backgroundColor: "transparent",
-              boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-              borderRadius: { xs: "8px", md: "28.92px" },
-              transform: "perspective(400px)",
-              transition: ".2s ease",
-            }}
-            className="featured-project-card"
-          >
-            <CardMedia
-              component="img"
-              height="100%"
-              image={project.mockup}
-              alt="project"
-              loading="lazy"
-            />
-          </Card>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              mt: 2,
-            }}
-          >
-            <Box>
-              <Typography className="project-title">{project.name}</Typography>
-              <Typography className="project-desc">{project.desc}</Typography>
-            </Box>
-            <Box>
-              <IconButton sx={{ border: "1.25px solid #000" }}>
-                <img src={Arrow} alt="Arrow" width={20} height={20} />
-              </IconButton>
-            </Box>
-          </Box>
-        </Box>
-      </Link>
-    </Grid>
-  );
-};
-
-interface DesignCardProps {
-  project: DesignItem;
-  idx: number;
-}
-
-const DesignCard: React.FC<DesignCardProps> = ({ project, idx }) => {
-  const tiltRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (tiltRef?.current) {
-      VanillaTilt.init(tiltRef?.current, {
-        max: 10,
-        speed: 500,
-        glare: true,
-        "max-glare": 0.5,
-      });
-    }
-
-    return () => {
-      if (tiltRef.current) {
-        (tiltRef.current as any)?.vanillaTilt?.destroy();
-      }
-    };
-  }, []);
-
-  return (
-    <Grid item xs={12} sm={4} md={3} key={project.guid} ref={tiltRef}>
-      <MuiLink
-        href={project.link}
-        target="_blank"
-        data-aos={idx % 2 === 0 ? "fade-up-right" : "fade-up-left"}
-        sx={{ color: "#000", textDecoration: "none" }}
-      >
-        <Box>
-          <Card
-            sx={{
-              maxWidth: "100%",
-              position: "relative",
-              backgroundColor: "transparent",
-              boxShadow: "20px 20px 60px 0px rgba(0, 0, 0, 0.05)",
-              borderRadius: { xs: "8px", md: "28.92px" },
-              transform: "perspective(400px)",
-              transition: ".2s ease",
-            }}
-            className="featured-project-card"
-          >
-            <CardMedia
-              component="img"
-              height="100%"
-              image={project.thumbnail}
-              alt="project"
-              loading="lazy"
-            />
-          </Card>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              mt: 2,
-            }}
-          >
-            <Box>
-              <Typography className="project-title">{project.title}</Typography>
-              {/* <Typography className="project-desc">{project.}</Typography> */}
-            </Box>
-            <Box>
-              <IconButton sx={{ border: "1.25px solid #000" }}>
-                <img src={Arrow} alt="Arrow" width={20} height={20} />
-              </IconButton>
-            </Box>
-          </Box>
-        </Box>
-      </MuiLink>
-    </Grid>
-  );
-};

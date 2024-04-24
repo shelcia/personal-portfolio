@@ -1,108 +1,144 @@
-import React from "../assets/skill-icons/react.webp";
-import Javascript from "../assets/skill-icons/js.webp";
-import ReactNative from "../assets/skill-icons/react-native.webp";
-import Typescript from "../assets/skill-icons/typescript.webp";
-import NodeJs from "../assets/skill-icons/nodejs.webp";
-import NextJs from "../assets/skill-icons/nextjs.webp";
-import Python from "../assets/skill-icons/python.webp";
-import Vue from "../assets/skill-icons/vue.webp";
-import GoLang from "../assets/skill-icons/golang.webp";
-import SASS from "../assets/skill-icons/sass.webp";
+import { SkillItem } from "@/types";
+import ReactIcon from "@/assets/skills-icons/ReactIcon";
+import JSIcon from "@/assets/skills-icons/JSIcon";
+import ReactNativeIcon from "@/assets/skills-icons/ReactNativeIcon";
+import TSIcon from "@/assets/skills-icons/TSIcon";
+import NodeIcon from "@/assets/skills-icons/NodeIcon";
+import NextIcon from "@/assets/skills-icons/NextIcon";
+import PythonIcon from "@/assets/skills-icons/PythonIcon";
+import VueIcon from "@/assets/skills-icons/VueIcon";
+import GoIcon from "@/assets/skills-icons/GoIcon";
+import SASSIcon from "@/assets/skills-icons/SASSIcon";
+import FigmaIcon from "@/assets/skills-icons/FigmaIcon";
+import XDIcon from "@/assets/skills-icons/XDIcon";
+import ExpressIcon from "@/assets/skills-icons/ExpressIcon";
+import MUIIcon from "@/assets/skills-icons/MUIIcon";
+import BootstrapIcon from "@/assets/skills-icons/BootstrapIcon";
+import GITIcon from "@/assets/skills-icons/GITIcon";
+import MongoDBIcon from "@/assets/skills-icons/MongoDBIcon";
+import TailwindIcon from "@/assets/skills-icons/TailwindIcon";
+import DockerIcon from "@/assets/skills-icons/DockerIcon";
 
-import Figma from "../assets/skill-icons/figma.webp";
-import AdobeXD from "../assets/skill-icons/adobeXD.webp";
-import ExpressJs from "../assets/skill-icons/express.webp";
-import MUI from "../assets/skill-icons/mui.webp";
-import Bootstrap from "../assets/skill-icons/bootstrap.webp";
-import GIT from "../assets/skill-icons/git.webp";
-import Docker from "../assets/skill-icons/docker.webp";
-import MongoDB from "../assets/skill-icons/mongodb.webp";
-import Tailwind from "../assets/skill-icons/tailwind.webp";
-
-export const skills1 = [
+export const skills: SkillItem[] = [
   {
     name: "React",
-    img: React,
+    img: <ReactIcon />,
+    bgClass: "rgb(207 250 254)",
+    colorClass: "rgb(14 116 144)",
   },
   {
     name: "Javascript",
-    img: Javascript,
+    img: <JSIcon />,
+    bgClass: "rgb(254 249 195)",
+    colorClass: "rgb(202 138 4)",
   },
   {
     name: "React Native",
-    img: ReactNative,
+    img: <ReactNativeIcon />,
+    bgClass: "rgb(207 250 254)",
+    colorClass: "rgb(14 116 144)",
   },
   {
     name: "Typescript",
-    img: Typescript,
+    img: <TSIcon />,
+    bgClass: "rgb(186 230 253)",
+    colorClass: "rgb(2 132 199)",
   },
   {
     name: "NodeJs",
-    img: NodeJs,
+    img: <NodeIcon />,
+    bgClass: "rgb(217 249 157)",
+    colorClass: "rgb(77 124 15)",
   },
   {
     name: "NextJs",
-    img: NextJs,
+    img: <NextIcon />,
+    bgClass: "rgb(229 231 235)",
+    colorClass: "rgb(31 41 55)",
   },
   {
     name: "Python",
-    img: Python,
+    img: <PythonIcon />,
+    bgClass: "rgb(254 249 195)",
+    colorClass: "rgb(202 138 4)",
   },
   {
     name: "Vue",
-    img: Vue,
+    img: <VueIcon />,
+    bgClass: "rgb(220 252 231)",
+    colorClass: "rgb(22 163 74)",
   },
   {
     name: "GoLang",
-    img: GoLang,
+    img: <GoIcon />,
+    bgClass: "rgb(224 242 254)",
+    colorClass: "rgb(2 132 199)",
   },
   {
     name: "SASS",
-    img: SASS,
+    img: <SASSIcon />,
+    bgClass: "rgb(251 207 232)",
+    colorClass: "rgb(219 39 119)",
   },
-];
-export const skills2 = [
   {
     name: "Figma",
-    img: Figma,
+    img: <FigmaIcon />,
+    bgClass: "rgb(255 228 230)",
+    colorClass: "rgb(225 29 72)",
   },
 
   {
     name: "AdobeXD",
-    img: AdobeXD,
+    img: <XDIcon />,
+    bgClass: "rgb(251 207 232)",
+    colorClass: "rgb(219 39 119)",
   },
 
   {
     name: "ExpressJs",
-    img: ExpressJs,
+    img: <ExpressIcon />,
+    bgClass: "rgb(229 231 235)",
+    colorClass: "rgb(31 41 55)",
   },
   {
     name: "MUI",
-    img: MUI,
+    img: <MUIIcon />,
+    bgClass: "rgb(224 242 254)",
+    colorClass: "rgb(2 132 199)",
   },
 
   {
     name: "Bootstrap",
-    img: Bootstrap,
+    img: <BootstrapIcon />,
+    bgClass: "rgb(243 232 255)",
+    colorClass: "rgb(126 34 206)",
   },
 
   {
     name: "GIT",
-    img: GIT,
+    img: <GITIcon />,
+    bgClass: "rgb(254 226 226)",
+    colorClass: "rgb(220 38 38)",
   },
 
   {
     name: "Docker",
-    img: Docker,
+    img: <DockerIcon />,
+    bgClass: "rgb(219 234 254)",
+    colorClass: "rgb(29 78 216)",
   },
 
   {
     name: "MongoDB",
-    img: MongoDB,
+    img: <MongoDBIcon />,
+    bgClass: "rgb(220 252 231)",
+    colorClass: "rgb(21 128 61)",
   },
 
   {
     name: "Tailwind",
-    img: Tailwind,
+    img: <TailwindIcon />,
+    bgClass: "rgb(207 250 254)",
+    colorClass: "rgb(14 116 144)",
   },
 ];

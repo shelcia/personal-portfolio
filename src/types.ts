@@ -1,8 +1,12 @@
+import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
+
 export interface Project {
   id: string;
   name: string;
-  mockup?: string;
-  image: string;
+  mockup?: string | StaticImageData;
+  images?: ImageItm[];
+  image: string | StaticImageData;
   imageURL?: string;
   desc?: string;
   description?: string;
@@ -48,4 +52,33 @@ export interface DesignItem {
   content: string;
   enclosure: object;
   categories: string[];
+}
+
+export interface ExperienceItem {
+  name: string;
+  designation: string;
+  year: string;
+  desc: string;
+  skills: string[];
+  date: string;
+  timeline: string;
+}
+
+export interface SkillItem {
+  name: string;
+  img: ReactNode;
+  bgClass: string;
+  colorClass: string;
+}
+
+export interface ImageItm {
+  id: number;
+  content: JSX.Element | React.ReactNode | string;
+  className: string;
+  thumbnail: string | StaticImageData;
+}
+
+export interface ImgContentProps {
+  title?: string;
+  description?: string;
 }
