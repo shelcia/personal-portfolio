@@ -55,10 +55,30 @@ const ProjectPage = () => {
           >
             <ArrowLeftIcon /> Go back
           </button>
-          <TextRevealCard
-            text={proj?.name}
-            revealText={proj?.name}
-          ></TextRevealCard>
+          <span className="hidden md:block">
+            <TextRevealCard
+              text={proj?.name}
+              revealText={proj?.name}
+            ></TextRevealCard>
+          </span>
+
+          <span className="md:hidden block">
+            <div
+              className={cn(
+                "bg-[#1d1c20] w-full rounded-lg p-4 relative overflow-hidden",
+                calsans.className
+              )}
+            >
+              <p
+                style={{
+                  textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
+                }}
+                className="text-3xl py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-center"
+              >
+                {proj?.name}
+              </p>
+            </div>
+          </span>
 
           {/* <div className="h-48 relative w-full overflow-hidden bg-white flex flex-col items-center justify-center z-40">
             <div className="absolute inset-0 w-full h-full bg-white z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />

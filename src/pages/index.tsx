@@ -22,9 +22,9 @@ const Home = () => {
         <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden pt-16">
           <div className="p-4 max-w-7xl mx-auto relative z-10">
             <h1
-              className={`text-4xl md:text-7xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
+              className={`text-3xl md:text-6xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
             >
-              Featured Projects
+              Featured Works
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:mt-16 mt-4">
