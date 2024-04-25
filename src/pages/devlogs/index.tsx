@@ -11,6 +11,7 @@ import ArticleSection from "../components/ArticleSection";
 import Link from "next/link";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
+import { ShimmerButton } from "@/components/common/CustomButtons";
 
 const Devlogs = () => {
   return (
@@ -54,7 +55,20 @@ const Devlogs = () => {
           }}
         >
           <div className="md:px-24 px-4 mt-4">
+            <h3
+              className={cn(
+                "text:xl md:text-3xl font-bold text-black dark:text-white my-4",
+                calsans.className
+              )}
+            >
+              Selected Articles
+            </h3>
             <ArticleSection items={articles} />
+            <div className="mt-4 w-full text-end">
+              <Link href="https://shelcia.medium.com/" target="_blank">
+                <ShimmerButton title="Read More on Medium" />
+              </Link>
+            </div>
           </div>
         </motion.div>
       </main>

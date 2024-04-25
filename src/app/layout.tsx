@@ -17,7 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Topbar /> */}
       <AnimatePresence mode="wait" initial={false}>
         <GoogleAnalytics gaId="G-CCSE78VCSN" />
         <body className={dmsans.className}>{children}</body>

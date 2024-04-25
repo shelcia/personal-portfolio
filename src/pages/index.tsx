@@ -1,13 +1,12 @@
 // pages/index.js
 import React from "react";
 import Header from "./components/Header";
-import "../app/globals.css";
 import { FeaturedProjectCard } from "./components/ProjectCard";
 import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Footer from "@/components/common/Footer";
+import "../app/globals.css";
 
 const Home = () => {
   return (
