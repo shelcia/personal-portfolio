@@ -12,10 +12,11 @@ import Link from "next/link";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { ShimmerButton } from "@/components/common/CustomButtons";
+import RootLayout from "@/app/layout";
 
 const Devlogs = () => {
   return (
-    <>
+    <RootLayout>
       <Topbar />
       <main className="dark:bg-black bg-white mb-24">
         <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
@@ -75,7 +76,7 @@ const Devlogs = () => {
         </motion.div>
       </main>
       <Footer />
-    </>
+    </RootLayout>
   );
 };
 
