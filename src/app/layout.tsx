@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AnimatePresence } from "framer-motion";
 import { dmsans } from "@/utils/fonts";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -21,13 +20,13 @@ export default function RootLayout({
       <head>
         <title>Shelcia David&apos; Portfolio</title>
       </head>
-      <AnimatePresence mode="wait" initial={false}>
-        <GoogleAnalytics gaId="G-CCSE78VCSN" />
-        <body className={dmsans.className}>
-          {children}
-          <SpeedInsights />
-        </body>
-      </AnimatePresence>
+      {/* <AnimatePresence mode="wait" initial={false}> */}
+      <GoogleAnalytics gaId="G-CCSE78VCSN" />
+      <body className={dmsans.className}>
+        {children}
+        <SpeedInsights />
+      </body>
+      {/* </AnimatePresence> */}
     </html>
   );
 }
