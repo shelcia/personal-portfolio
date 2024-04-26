@@ -31,9 +31,11 @@ import Samgatha3 from "../assets/images/samgatha/3.webp";
 import Tradluxe1 from "../assets/images/tradluxe/1.webp";
 import Tradluxe2 from "../assets/images/tradluxe/2.webp";
 import Tradluxe3 from "../assets/images/tradluxe/3.webp";
+import Tradluxe4 from "../assets/images/tradluxe/4.webp";
 
 import IT1 from "../assets/images/irul-theme/1.webp";
 import IT2 from "../assets/images/irul-theme/2.webp";
+import IT3 from "../assets/images/irul-theme/3.webp";
 
 import { ContentTitle } from "@/pages/components/ProjectImages";
 
@@ -269,6 +271,12 @@ export const projects: Project[] = [
         className: "col-span-6",
         thumbnail: IT2,
       },
+      {
+        id: 3,
+        content: <ContentTitle title="Default variant" />,
+        className: "col-span-6",
+        thumbnail: IT3,
+      },
     ],
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
@@ -343,6 +351,12 @@ export const projects: Project[] = [
         content: <ContentTitle title="Brand's Page" />,
         className: "col-span-6",
         thumbnail: Tradluxe3,
+      },
+      {
+        id: 4,
+        content: <ContentTitle title="About Page" />,
+        className: "col-span-6",
+        thumbnail: Tradluxe4,
       },
     ],
     image:
