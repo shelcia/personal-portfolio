@@ -40,12 +40,12 @@ const Topbar = () => {
   return (
     <header
       className={cn(
-        "bg-transparent w-full rounded-lg md:px-6 md:py-6 py-3 sticky z-40",
+        "bg-transparent w-full rounded-lg px-4 sm:px-24 md:py-6 py-3 sticky z-40",
         dmsans.className
       )}
     >
       <nav className="bg-transparent border-gray-200">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-0">
+        <div className="flex flex-wrap items-center justify-between mx-auto py-0">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"

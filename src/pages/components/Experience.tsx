@@ -32,7 +32,7 @@ const Experience = () => {
                 dmsans.className
               )}
             >
-              {itm.date}
+              {itm.year}
             </time>
             <p
               className={cn(

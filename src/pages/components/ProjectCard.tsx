@@ -48,9 +48,9 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
         </CardItem>
         <Link href={`works/${name}`}>
           <CardItem
-            translateZ="100"
-            rotateX={20}
-            rotateZ={-10}
+            translateZ="300"
+            // rotateX={20}
+            rotateZ={-2}
             className="w-full mt-4"
           >
             <Image
@@ -120,9 +120,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </CardItem>
         <Link href={`works/${name}`}>
           <CardItem
-            translateZ="100"
-            rotateX={20}
-            rotateZ={-5}
+            translateZ="300"
+            // rotateX={20}
+            rotateZ={-2}
             className="w-full mt-4"
           >
             <Image
