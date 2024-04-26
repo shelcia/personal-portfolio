@@ -12,6 +12,7 @@ import { Badge } from "../components/Experience";
 import Link from "next/link";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
+import RootLayout from "@/app/layout";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -42,7 +43,7 @@ const ProjectPage = () => {
   }, [router.query.id]);
 
   return (
-    <>
+    <RootLayout>
       <Topbar />
       <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
         <div
@@ -127,7 +128,7 @@ const ProjectPage = () => {
         </div>
       </main>
       <Footer />
-    </>
+    </RootLayout>
   );
 };
 

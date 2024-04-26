@@ -7,10 +7,11 @@ import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
 import Footer from "@/components/common/Footer";
 import "../app/globals.css";
+import RootLayout from "@/app/layout";
 
 const Home = () => {
   return (
-    <>
+    <RootLayout>
       {/* <Topbar /> */}
       <main suppressHydrationWarning={true}>
         <Header />
@@ -51,7 +52,7 @@ const Home = () => {
         </div> */}
       </main>
       <Footer />
-    </>
+    </RootLayout>
   );
 };
 

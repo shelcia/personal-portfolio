@@ -14,6 +14,7 @@ import { calsans, dmsans } from "@/utils/fonts";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import CustomConfetti from "@/components/common/CustomConfetti";
 import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
+import RootLayout from "@/app/layout";
 
 interface AlertState {
   message: string;
@@ -147,7 +148,7 @@ const ContactForm = () => {
   }, [open]);
 
   return (
-    <>
+    <RootLayout>
       <Topbar />
       {open &&
         (alert.severity === "success" ? (
@@ -221,7 +222,7 @@ const ContactForm = () => {
         <BackgroundBeams />
       </main>
       <Footer />
-    </>
+    </RootLayout>
   );
 };
 
