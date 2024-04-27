@@ -16,10 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
+    <>
+      {/* <html lang="en"> */}
+      {/* <head>
         <title>Shelcia David&apos; Portfolio</title>
-      </head>
+      </head> */}
       {/* <AnimatePresence mode="wait" initial={false}> */}
       <GoogleAnalytics gaId="G-CCSE78VCSN" />
       <body className={dmsans.className}>
@@ -27,6 +28,7 @@ export default function RootLayout({
         <SpeedInsights />
       </body>
       {/* </AnimatePresence> */}
-    </html>
+      {/* </html> */}
+    </>
   );
 }

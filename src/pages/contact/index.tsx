@@ -15,6 +15,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import CustomConfetti from "@/components/common/CustomConfetti";
 import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
 import RootLayout from "@/app/layout";
+import Head from "next/head";
 
 interface AlertState {
   message: string;
@@ -148,7 +149,11 @@ const ContactForm = () => {
   }, [open]);
 
   return (
-    <RootLayout>
+    <>
+      <Head>
+        <title>Contact | Shelcia David</title>
+        <meta name="description" content="Contact me through the form" />
+      </Head>
       <Topbar />
       {open &&
         (alert.severity === "success" ? (
@@ -222,7 +227,7 @@ const ContactForm = () => {
         <BackgroundBeams />
       </main>
       <Footer />
-    </RootLayout>
+    </>
   );
 };
 

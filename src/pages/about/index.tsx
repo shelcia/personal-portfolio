@@ -9,6 +9,7 @@ import { calsans, dmsans } from "@/utils/fonts";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { ShimmerButton } from "@/components/common/CustomButtons";
+import Head from "next/head";
 
 const AboutPage = () => {
   const experienceRef = useRef<HTMLDivElement>(null);
@@ -28,6 +29,13 @@ const AboutPage = () => {
 
   return (
     <>
+      <Head>
+        <title>About | Shelcia David</title>
+        <meta
+          name="description"
+          content="About Shelcia David | Experience | Skills"
+        />
+      </Head>
       <Topbar />
       <main className="px-4 sm:px-24 mb-8 md:pt-8 pt-4">
         <h1

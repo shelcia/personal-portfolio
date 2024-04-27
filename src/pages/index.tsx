@@ -8,11 +8,24 @@ import { calsans } from "@/utils/fonts";
 import Footer from "@/components/common/Footer";
 import "../app/globals.css";
 import RootLayout from "@/app/layout";
+import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const Home = () => {
   return (
-    <RootLayout>
-      {/* <Topbar /> */}
+    <>
+      <Head>
+        <GoogleAnalytics gaId="G-CCSE78VCSN" />
+        <title>Shelcia David&apos;s Portfolio</title>
+        <meta
+          name="description"
+          content="Confident and results-driven Full Stack developer and designer.
+          Contributed to NASDAQ and startups like HIRA, NYX Wolves, Solera, and
+          Guvi. Pursuing a Master's in Information at the University of
+          Wisconsin - Madison. Explore my portfolio for innovative solutions and
+          designs"
+        />
+      </Head>
       <main suppressHydrationWarning={true}>
         <Header />
         {/* <div
@@ -52,7 +65,7 @@ const Home = () => {
         </div> */}
       </main>
       <Footer />
-    </RootLayout>
+    </>
   );
 };
 
