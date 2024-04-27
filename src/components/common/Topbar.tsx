@@ -44,7 +44,7 @@ const Topbar = () => {
         dmsans.className
       )}
     >
-      <nav className="bg-transparent border-gray-200">
+      <nav className="bg-transparent">
         <div className="flex flex-wrap items-center justify-between mx-auto py-0">
           <Link
             href="/"
