@@ -16,6 +16,7 @@ import CustomConfetti from "@/components/common/CustomConfetti";
 import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
+import { formatDate } from "@/utils/data";
 
 interface AlertState {
   message: string;
@@ -75,15 +76,16 @@ const ContactForm = () => {
           name: inputs.name,
           email: inputs.email,
           message: inputs.message,
+          date: formatDate(),
         },
       };
 
-      console.log(process.env.VITE_AIRTABLE_API_KEY);
+      console.log(process.env.AIRTABLE_API_KEY);
 
       await fetch("https://api.airtable.com/v0/appTbgDq2M8MBUNrR/emails", {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${process.env.VITE_AIRTABLE_API_KEY}`,
+          Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify(body), // Convert the body to a JSON string
@@ -165,7 +167,7 @@ const ContactForm = () => {
       <main className="relative">
         <DotBackground>
           <div
-            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} z-30 `}
+            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} z-30`}
           >
             <TypewriterEffect
               words={words}

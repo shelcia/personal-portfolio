@@ -10,6 +10,7 @@ import "../app/globals.css";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
+// import Testimonial from "./components/Testimonial";
 
 const Home = () => {
   return (
@@ -55,6 +56,14 @@ const Home = () => {
                 ))}
             </div>
           </div>
+          {/* <div className="p-4 max-w-7xl mx-auto relative z-10">
+            <h1
+              className={`text-3xl md:text-6xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mt-6 mb-16 ${calsans.className}`}
+            >
+              What People say ?
+            </h1>
+            <Testimonial />
+          </div> */}
         </div>
         {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-zinc-50 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
