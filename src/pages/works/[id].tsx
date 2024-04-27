@@ -13,6 +13,7 @@ import Link from "next/link";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import RootLayout from "@/app/layout";
+import Head from "next/head";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -43,7 +44,15 @@ const ProjectPage = () => {
   }, [router.query.id]);
 
   return (
-    <RootLayout>
+    <>
+      <Head>
+        <title>{proj?.name}</title>
+        <meta name="description" content={`${proj?.desc}`} />
+      </Head>
+      {/* <Head>
+        <title>{proj?.name}</title>
+        <meta name="description">{proj?.desc}</meta>
+      </Head> */}
       <Topbar />
       <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
         <div
@@ -128,7 +137,7 @@ const ProjectPage = () => {
         </div>
       </main>
       <Footer />
-    </RootLayout>
+    </>
   );
 };
 

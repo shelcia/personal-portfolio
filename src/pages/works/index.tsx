@@ -13,10 +13,18 @@ import { ShimmerButton } from "@/components/common/CustomButtons";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import RootLayout from "@/app/layout";
+import Head from "next/head";
 
 const Works = () => {
   return (
-    <RootLayout>
+    <>
+      <Head>
+        <title>Shelcia David | Works</title>
+        <meta
+          name="description"
+          content="All my development and design works"
+        />
+      </Head>
       <Topbar />
       <main className="mt-0 pb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
         <div className="relative z-10">
@@ -99,7 +107,7 @@ const Works = () => {
         </div>
       </main>
       <Footer />
-    </RootLayout>
+    </>
   );
 };
 

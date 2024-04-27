@@ -59,6 +59,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
               width="750"
               className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
               alt="thumbnail"
+              // priority={true}
               priority={name === "mocker"}
             />
           </CardItem>
