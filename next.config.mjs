@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "dist",
+  output: "standalone",
   images: {
     domains: [
       "images.unsplash.com",
@@ -11,6 +11,10 @@ const nextConfig = {
   },
   env: {
     AIRTABLE_API_KEY: process.env.AIRTABLE_API_KEY,
+  },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
   },
 };
 
