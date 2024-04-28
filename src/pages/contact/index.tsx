@@ -156,6 +156,11 @@ const ContactForm = () => {
       <Head>
         <title>Contact | Shelcia David</title>
         <meta name="description" content="Contact me through the form" />
+        <meta property="og:image" content="/social-graph-image.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://www.shelcia-dev.me/" />
+        <meta property="og:type" content="website" />
       </Head>
       <Topbar />
       {open &&
