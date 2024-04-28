@@ -35,6 +35,11 @@ const AboutPage = () => {
           name="description"
           content="About Shelcia David | Experience | Skills"
         />
+        <meta property="og:image" content="/social-graph-image.webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://www.shelcia-dev.me/" />
+        <meta property="og:type" content="website" />
       </Head>
       <Topbar />
       <main className="px-4 sm:px-24 mb-8 md:pt-8 pt-4">
