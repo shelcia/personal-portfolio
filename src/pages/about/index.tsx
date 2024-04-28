@@ -65,7 +65,43 @@ const AboutPage = () => {
               dmsans.className
             )}
           >
-            I am a
+            Welcome to my corner of the digital world!. With a strong foundation
+            in JavaScript and React, coupled with my enthusiasm for the MERN
+            stack, I thrive in dynamic environments where innovation meets
+            practicality.
+            <br />
+            <br />
+            Over the past
+            <Highlight className="text-black dark:text-white">
+              three years
+            </Highlight>
+            , I&apos;ve had the privilege of contributing my skills to esteemed
+            companies like
+            <Highlight className="text-black dark:text-white">
+              NASDAQ, HIRA, NYX Wolves, Solera, and Guvi,
+            </Highlight>
+            . I am committed to the ethos of open-source collaboration and
+            continuous learning, recognizing them as pillars of growth in our
+            ever-evolving industry.
+            <br />
+            <br />
+            Holding a
+            <Highlight className="text-black dark:text-white">
+              Bachelor&apos;s degree from IIIT Chennai
+            </Highlight>
+            and currently pursuing a
+            <Highlight className="text-black dark:text-white">
+              Master&apos;s in Information at University of Wisconsin-Madison
+            </Highlight>
+            , I am dedicated to expanding my knowledge and expertise.
+            <br />
+            <br />
+            Whether you&apos;re looking to embark on a new project or seeking
+            innovative solutions for existing ones, I&apos;m eager to connect
+            and explore how my skills can contribute to your success. Let&apos;s
+            start a conversation and discover how we can create something
+            remarkable together.
+            {/* I am a
             <Highlight className="text-black dark:text-white">
               confident and results-driven individual
             </Highlight>
@@ -89,7 +125,7 @@ const AboutPage = () => {
             <br />
             <br />
             Let&apos;s connect and explore opportunities to collaborate or
-            discuss how my skills can benefit your projects.
+            discuss how my skills can benefit your projects. */}
           </motion.h1>
         </HeroHighlight>
         <div className="flex gap-2 wrap">

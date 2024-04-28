@@ -17,6 +17,7 @@ import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { formatDate } from "@/utils/data";
+import Link from "next/link";
 
 interface AlertState {
   message: string;
@@ -177,7 +178,14 @@ const ContactForm = () => {
               className={`text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300 `}
             >
               Interested in working with me? Submit your project inquiry using
-              the form
+              the form. Additionally you can look into my resume
+              <Link
+                href="https://drive.google.com/file/d/1iasR1hd3AZUObecra-vajTD7YgjQp19j/view?usp=sharing"
+                target="_blank"
+                className="ml-1 inline text-blue-500 hover:underline"
+              >
+                here
+              </Link>
             </p>
 
             <form className="my-8 z-30" onSubmit={sendMessage}>

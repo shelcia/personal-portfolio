@@ -113,6 +113,23 @@ const ProjectPage = () => {
           >
             {proj?.description}
           </div>
+          {proj?.id === "irul-theme" && (
+            <div className="mb-4 flex gap-2 flex-wrap">
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                {proj?.forks} Downloads
+              </kbd>
+            </div>
+          )}
+          {proj?.forks !== 0 && proj?.id !== "irul-theme" && (
+            <div className="mb-4 flex gap-2 flex-wrap">
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                {proj?.forks} Forks
+              </kbd>
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+                {proj?.stars} Stars
+              </kbd>
+            </div>
+          )}
 
           <div className="flex flex-wrap gap-2">
             {proj?.deployment && (

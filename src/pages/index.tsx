@@ -20,9 +20,9 @@ const Home = () => {
         <title>Shelcia David&apos;s Portfolio</title>
         <meta
           name="description"
-          content="Confident and results-driven Full Stack developer and designer.
+          content="Experienced Full Stack developer and designer.
           Contributed to NASDAQ and startups like HIRA, NYX Wolves, Solera, and
-          Guvi. Pursuing a Master's in Information at the University of
+          Guvi. Pursuing Master's in Information at the University of
           Wisconsin - Madison. Explore my portfolio for innovative solutions and
           designs"
         />

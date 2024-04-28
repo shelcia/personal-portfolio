@@ -37,8 +37,8 @@ export const featuredProjects: Project[] = [
     deploy: true,
     forks: 19,
     stars: 12,
-    deployment: "https://mocker-gen.netlify.app/",
-    code: "https://github.com/shelcia/mocker",
+    deployment: "https://bloggram-beta.vercel.app/",
+    code: "https://github.com/shelcia/Blog-website",
   },
   {
     id: "dynamic-portfolio",
@@ -49,7 +49,7 @@ export const featuredProjects: Project[] = [
     deploy: true,
     forks: 19,
     stars: 12,
-    deployment: "https://mocker-gen.netlify.app/",
-    code: "https://github.com/shelcia/mocker",
+    deployment: "https://dynamic--portfolio.vercel.app/",
+    code: "https://github.com/shelcia/dynamic-portflio",
   },
 ];
