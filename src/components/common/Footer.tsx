@@ -32,6 +32,7 @@ const Footer = () => {
                     ? "hover:underline"
                     : "hover:underline me-4 md:me-6"
                 }
+                target="_blank"
               >
                 {link.label}
               </Link>

@@ -61,7 +61,7 @@ export const projects: Project[] = [
         id: 3,
         content: <ContentTitle title="Authentication Page" />,
         className: "col-span-6",
-        thumbnail: Mocker3,
+        thumbnail: Mocker5,
       },
       {
         id: 4,
@@ -72,6 +72,7 @@ export const projects: Project[] = [
         thumbnail: Mocker4,
       },
     ],
+    desc: "Generate mockup data for testing and prototyping",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
     imageURL:
@@ -116,6 +117,7 @@ export const projects: Project[] = [
         thumbnail: Bloggram4,
       },
     ],
+    desc: "Write, Read and Share Blogs",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
     imageURL:
@@ -159,6 +161,7 @@ export const projects: Project[] = [
         thumbnail: DP4,
       },
     ],
+    desc: "Build websites by filling up forms",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
     imageURL:
@@ -197,6 +200,7 @@ export const projects: Project[] = [
         thumbnail: NC3,
       },
     ],
+    desc: "Simplify Python DS&A learning",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
     imageURL:
@@ -234,6 +238,7 @@ export const projects: Project[] = [
         thumbnail: Socialgram3,
       },
     ],
+    desc: "Share, engage with posts.",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
     imageURL:
@@ -278,6 +283,7 @@ export const projects: Project[] = [
         thumbnail: IT3,
       },
     ],
+    desc: "Dark, minimalist theme for VS Code",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
     imageURL:
@@ -316,6 +322,7 @@ export const projects: Project[] = [
         thumbnail: Samgatha3,
       },
     ],
+    desc: "IIITDM College Fest Website 2019-20",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
     imageURL:
@@ -359,6 +366,7 @@ export const projects: Project[] = [
         thumbnail: Tradluxe4,
       },
     ],
+    desc: "Tradluxe E-commerce website based in Singapore",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
     imageURL:

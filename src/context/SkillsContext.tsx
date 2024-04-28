@@ -18,6 +18,9 @@ import GITIcon from "@/assets/skills-icons/GITIcon";
 import MongoDBIcon from "@/assets/skills-icons/MongoDBIcon";
 import TailwindIcon from "@/assets/skills-icons/TailwindIcon";
 import DockerIcon from "@/assets/skills-icons/DockerIcon";
+import SQLIcon from "@/assets/skills-icons/SQLIcon";
+import VSIcon from "@/assets/skills-icons/VSIcon";
+import ViteIcon from "@/assets/skills-icons/ViteIcon";
 
 export const skills: SkillItem[] = [
   {
@@ -140,5 +143,26 @@ export const skills: SkillItem[] = [
     img: <TailwindIcon />,
     bgClass: "rgb(207 250 254)",
     colorClass: "rgb(14 116 144)",
+  },
+
+  {
+    name: "MySQL",
+    img: <SQLIcon />,
+    bgClass: "rgb(224 242 254)",
+    colorClass: "rgb(2 132 199)",
+  },
+
+  {
+    name: "VS Code",
+    img: <VSIcon />,
+    bgClass: "rgb(186 230 253)",
+    colorClass: "rgb(2 132 199)",
+  },
+
+  {
+    name: "Vite",
+    img: <ViteIcon />,
+    bgClass: "rgb(221 214 254)",
+    colorClass: "rgb(109 40 217)",
   },
 ];

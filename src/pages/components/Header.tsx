@@ -53,7 +53,7 @@ const Header = () => {
           className={`font-light text-base max-w-7xl md:text-3xl dark:text-neutral-200 py-4 px-4 md:px-10 text-center ${dmsans.className}`}
         >
           Experienced Full Stack developer and designer. Contributed to NASDAQ
-          and startups like HIRA, NYX Wolves, Solera, and Guvi. Pursuing a
+          and startups like HIRA, NYX Wolves, Solera, and Guvi. Pursuing
           Master&apos;s in Information at University of Wisconsin - Madison.
         </div>
         <div className="gap-2 flex">
