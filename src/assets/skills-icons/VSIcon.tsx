@@ -114,7 +114,7 @@ const VSIcon = () => (
         gradientUnits="userSpaceOnUse"
       >
         <stop stopColor="#fff"></stop>
-        <stop offset="1" stopColor="#fff" stop-opacity="0"></stop>
+        <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
       </linearGradient>
     </defs>
   </svg>
