@@ -59,7 +59,8 @@ export const projects: Project[] = [
       },
       {
         id: 3,
-        content: <ContentTitle title="Authentication Page" />,
+        // content: <ContentTitle title="Authentication Page" />,
+        content: <ContentTitle title="Documentation Page" />,
         className: "col-span-6",
         thumbnail: Mocker5,
       },

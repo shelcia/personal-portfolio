@@ -18,5 +18,6 @@ export const formatDate = () => {
     .toString()
     .padStart(2, "0")}:${currentDate.getSeconds().toString().padStart(2, "0")}`;
 
-  console.log(formattedDate); // Output the formatted date
+  return formattedDate;
+  // console.log(formattedDate); // Output the formatted date
 };

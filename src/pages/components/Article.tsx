@@ -22,8 +22,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           <Image
             src={image}
             layout="fill"
-            objectFit="cover"
-            className="rounded-t-lg"
+            // objectFit="cover"
+            className="rounded-t-lg object-cover"
             alt=""
           />
         </div>
