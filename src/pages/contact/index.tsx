@@ -42,7 +42,7 @@ const ContactForm = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const [alert, setAlert] = useState<AlertState>({
-    message: "Thanks you for Contacting. Will get back to You !",
+    message: "Thank you for contacting. Will get back soon !",
     severity: "success",
     showConfetti: false,
   });
@@ -91,7 +91,7 @@ const ContactForm = () => {
       });
 
       setAlert({
-        message: "Thanks you for Contacting. Will get back to You !",
+        message: "Thank you for contacting. Will get back soon !",
         severity: "success",
         showConfetti: true,
       });
