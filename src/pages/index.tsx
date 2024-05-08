@@ -10,7 +10,15 @@ import "../app/globals.css";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
+
 // import Testimonial from "./components/Testimonial";
+
+import Hotjar from "@hotjar/browser";
+
+const siteId = 4974720;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
 
 const Home = () => {
   return (
