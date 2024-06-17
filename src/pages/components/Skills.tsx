@@ -1,7 +1,8 @@
 import React from "react";
-import { skills } from "@/context/SkillsContext";
+import { skills, skillSlug } from "@/context/SkillsContext";
 import { cn } from "@/utils/cn";
 import { calsans } from "@/utils/fonts";
+import IconCloud from "@/components/ui/icon-cloud";
 
 const Skills = () => {
   return (
@@ -11,16 +12,21 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="flex gap-2 flex-wrap w-full">
-        {skills.map((skill, index) => (
-          <Badge
-            title={skill.name}
-            key={index} // Use index as key since skill names might not be unique
-            icon={skill.img}
-            bgClass={skill.bgClass}
-            color={skill.colorClass}
-          />
-        ))}
+      <div className="relative lg:h-[75vh] md:h-[75vh] sm:h-[75vh] h-[100vh]">
+        <div className="absolute bg-[rgb(255,255,255,0.5)] w-full ">
+          <IconCloud iconSlugs={skillSlug} />
+        </div>
+        <div className="absolute flex gap-2 flex-wrap w-full z-10 lg:mt-[35vh] md:mt-[25vh] sm:mt-[10vh]">
+          {skills.map((skill, index) => (
+            <Badge
+              title={skill.name}
+              key={index} // Use index as key since skill names might not be unique
+              icon={skill.img}
+              bgClass={skill.bgClass}
+              color={skill.colorClass}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

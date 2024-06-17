@@ -5,6 +5,11 @@ import Mocker3 from "../assets/images/mocker/3.webp";
 import Mocker4 from "../assets/images/mocker/4.webp";
 import Mocker5 from "../assets/images/mocker/5.webp";
 
+import CCS1 from "../assets/images/ccs/1.webp";
+import CCS2 from "../assets/images/ccs/2.webp";
+import CCS3 from "../assets/images/ccs/3.webp";
+import CCS4 from "../assets/images/ccs/4.webp";
+
 import Bloggram1 from "../assets/images/bloggram/1.webp";
 import Bloggram2 from "../assets/images/bloggram/2.webp";
 import Bloggram3 from "../assets/images/bloggram/3.webp";
@@ -86,6 +91,51 @@ export const projects: Project[] = [
     code: "https://github.com/shelcia/mocker",
     forks: 29,
     stars: 17,
+  },
+
+  {
+    id: "ccs-knowledge",
+    name: "CCS Knowledge",
+    mockup: CCS2,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Landing Page" />,
+        className: "col-span-6",
+        thumbnail: CCS1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Reporting Analytics Page" />,
+        className: "col-span-6",
+        thumbnail: CCS2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Outreach Strategies Page" />,
+        className: "col-span-6",
+        thumbnail: CCS3,
+      },
+      {
+        id: 4,
+        content: <ContentTitle title="About Page" />,
+        className: "col-span-6",
+        thumbnail: CCS4,
+      },
+    ],
+    desc: "Report & Analytics Dashboard",
+    image:
+      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
+    description:
+      "I have created this Knowledge Map dashboard with the guidance of Prof. Jackson which has two goals - visualize community responses to environmental surveys and display the representativeness of responses. This understanding will help inform local environmental policymaking and communication, and empower local communities with the capacity to discuss environmental justice solutions.",
+    techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
+    deploy: false,
+    // deployment: "https://bloggram-beta.vercel.app/",
+    code: "https://github.com/madcollab-jrg/ccs-knowledge-map",
+    forks: 0,
+    stars: 0,
   },
 
   {
@@ -177,44 +227,44 @@ export const projects: Project[] = [
     stars: 33,
   },
 
-  {
-    id: "noobcodes",
-    name: "Noob Codes",
-    mockup: NC1,
-    images: [
-      {
-        id: 1,
-        content: <ContentTitle title="Coding Problem's Page" />,
-        className: "col-span-6",
-        thumbnail: NC1,
-      },
-      {
-        id: 2,
-        content: <ContentTitle title="Search Implemented with Algolia" />,
-        className: "col-span-6",
-        thumbnail: NC2,
-      },
-      {
-        id: 3,
-        content: <ContentTitle title="Home Page" />,
-        className: "col-span-6",
-        thumbnail: NC3,
-      },
-    ],
-    desc: "Simplify Python DS&A learning",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
-    imageURL:
-      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_xhCF7dQX1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648373850224",
-    description:
-      "NoobCodes aims to simplify the study of data structures and algorithms in the Python programming language, particularly with the aim of preparing for technical interviews. It likely provides tutorials, examples, and practice problems to help users understand and implement common data structures and algorithms in a clear and straightforward way. The goal is to make it easier for people who are new to computer science or are preparing for an interview to learn these concepts and become more confident in their coding abilities.",
-    techstack: ["React", "Docusauras", "Mdx"],
-    deploy: true,
-    deployment: "https://noobcodes-docs.netlify.app/",
-    code: "https://github.com/shelcia/noobcodes-docs",
-    forks: 26,
-    stars: 6,
-  },
+  // {
+  //   id: "noobcodes",
+  //   name: "Noob Codes",
+  //   mockup: NC1,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       content: <ContentTitle title="Coding Problem's Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC1,
+  //     },
+  //     {
+  //       id: 2,
+  //       content: <ContentTitle title="Search Implemented with Algolia" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC2,
+  //     },
+  //     {
+  //       id: 3,
+  //       content: <ContentTitle title="Home Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC3,
+  //     },
+  //   ],
+  //   desc: "Simplify Python DS&A learning",
+  //   image:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
+  //   imageURL:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_xhCF7dQX1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648373850224",
+  //   description:
+  //     "NoobCodes aims to simplify the study of data structures and algorithms in the Python programming language, particularly with the aim of preparing for technical interviews. It likely provides tutorials, examples, and practice problems to help users understand and implement common data structures and algorithms in a clear and straightforward way. The goal is to make it easier for people who are new to computer science or are preparing for an interview to learn these concepts and become more confident in their coding abilities.",
+  //   techstack: ["React", "Docusauras", "Mdx"],
+  //   deploy: true,
+  //   deployment: "https://noobcodes-docs.netlify.app/",
+  //   code: "https://github.com/shelcia/noobcodes-docs",
+  //   forks: 26,
+  //   stars: 6,
+  // },
   {
     id: "socialgram",
     name: "Social Gram",
