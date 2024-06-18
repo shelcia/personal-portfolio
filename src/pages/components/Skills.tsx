@@ -13,7 +13,7 @@ const Skills = () => {
         Skills
       </h1>
       <div className="relative lg:h-[75vh] md:h-[75vh] sm:h-[75vh] h-[100vh]">
-        <div className="absolute bg-[rgb(255,255,255,0.5)] w-full ">
+        <div className="absolute bg-[rgba(255,255,255,0.95)] w-full opacity-35">
           <IconCloud iconSlugs={skillSlug} />
         </div>
         <div className="absolute flex gap-2 flex-wrap w-full z-10 lg:mt-[35vh] md:mt-[25vh] sm:mt-[10vh]">
