@@ -81,7 +81,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
 
   return (
     // @ts-ignore
-    <Cloud {...cloudProps} maxSpeed={0.02}>
+    <Cloud {...cloudProps} maxSpeed={0.01}>
       <>{renderedIcons}</>
     </Cloud>
   );
