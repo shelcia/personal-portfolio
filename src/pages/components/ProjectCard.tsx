@@ -153,16 +153,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Link> */}
 
         <div className="flex justify-between items-center mt-8">
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={link}
-            target="__blank"
-            className="px-4 py-2 rounded-md text-base font-normal dark:text-white"
-          >
-            Try now →
-          </CardItem>
-          <Link href={`works/${name}`}>
+          {link && (
+            <CardItem
+              translateZ={20}
+              as={Link}
+              href={link}
+              target="__blank"
+              className="px-4 py-2 rounded-md text-base font-normal dark:text-white"
+            >
+              Try now →
+            </CardItem>
+          )}
+
+          <Link href={`works/${name}`} className="ml-auto">
             <CardItem
               translateZ={20}
               as="button"
