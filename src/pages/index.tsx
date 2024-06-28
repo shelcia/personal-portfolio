@@ -10,6 +10,7 @@ import "../app/globals.css";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import MicrosoftClarity from "@/components/common/Metrics";
 
 // import Testimonial from "./components/Testimonial";
 
@@ -39,6 +40,7 @@ const Home = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://www.shelcia-dev.me/" />
         <meta property="og:type" content="website" />
+        <MicrosoftClarity />
       </Head>
       <main suppressHydrationWarning={true}>
         <Header />
