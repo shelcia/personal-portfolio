@@ -14,12 +14,12 @@ import MicrosoftClarity from "@/components/common/Metrics";
 
 // import Testimonial from "./components/Testimonial";
 
-import Hotjar from "@hotjar/browser";
+// import Hotjar from "@hotjar/browser";
 
-const siteId = 4974720;
-const hotjarVersion = 6;
+// const siteId = 4974720;
+// const hotjarVersion = 6;
 
-Hotjar.init(siteId, hotjarVersion);
+// Hotjar.init(siteId, hotjarVersion);
 
 const Home = () => {
   return (
