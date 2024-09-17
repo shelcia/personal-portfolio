@@ -2,8 +2,23 @@ import { ExperienceItem } from "@/types";
 
 export const experience: ExperienceItem[] = [
   {
-    name: "iSchool - University of Wisconsin-Madison",
-    designation: "Full Stack Developer",
+    name: "NYX Wolves Private Limited",
+    designation: "Full Stack Developer - Graduate Project Assistant",
+    year: "November 2023 - Present",
+    desc: "Developed intuituve internal dashboard tools required for client and delivered the completed project.",
+    skills: [
+      "Typescript",
+      "NodeJs",
+      "Full Stack Development",
+      "AWS",
+      "Express",
+    ],
+    date: "November 2023",
+    timeline: "Nov'23 - Current",
+  },
+  {
+    name: "University of Wisconsin-Madison",
+    designation: "Full Stack Developer - Graduate Project Assistant",
     year: "November 2023 - Present",
     desc: "Spearheading the development and design of a UI interface for a platform highlighting the social impacts of diverse demographics on climate change using Typescript, NodeJs and R Shiny.",
     skills: [

@@ -17,6 +17,7 @@ import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
 // import RootLayout from "@/app/layout";
 import Head from "next/head";
 import Link from "next/link";
+import Cal from "../components/Cal";
 
 interface AlertState {
   message: string;
@@ -241,6 +242,7 @@ const ContactForm = () => {
         <BackgroundBeams />
       </main>
       <Footer />
+      <Cal />
     </>
   );
 };
