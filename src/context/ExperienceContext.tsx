@@ -3,9 +3,9 @@ import { ExperienceItem } from "@/types";
 export const experience: ExperienceItem[] = [
   {
     name: "NYX Wolves Private Limited",
-    designation: "Full Stack Developer - Graduate Project Assistant",
-    year: "November 2023 - Present",
-    desc: "Developed intuituve internal dashboard tools required for client and delivered the completed project.",
+    designation: "Software Developer Intern",
+    year: "June 2024 - August 2024",
+    desc: "Collaborated with cross-functional teams to design and develop client projects using ReactJS and Node.js. Implemented tailored solutions that met clients' unique requirements and business objectives. Contributed to the success of Nyx Wolves by delivering high-quality software solutions remotely.",
     skills: [
       "Typescript",
       "NodeJs",
