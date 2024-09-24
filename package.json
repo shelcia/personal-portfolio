@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@calcom/embed-react": "^1.5.0",
+    "@calcom/embed-react": "^1.5.1",
     "@hotjar/browser": "^1.0.9",
     "@next/third-parties": "^14.2.13",
     "@radix-ui/react-dialog": "^1.1.1",
