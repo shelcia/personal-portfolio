@@ -157,6 +157,11 @@ const ProjectPage = () => {
             </div>
           )}
         </div>
+        <div className="text-center	mt-4">
+          <Link href="/works">
+            <ShimmerButton title="See More Projects !" />
+          </Link>
+        </div>
       </main>
       <Footer />
     </>

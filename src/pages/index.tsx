@@ -11,6 +11,8 @@ import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import MicrosoftClarity from "@/components/common/Metrics";
+import Link from "next/link";
+import { ShimmerButton } from "@/components/common/CustomButtons";
 
 // import Testimonial from "./components/Testimonial";
 
@@ -69,6 +71,11 @@ const Home = () => {
                     name={project.id}
                   />
                 ))}
+            </div>
+            <div className="text-center	mt-4">
+              <Link href="/works">
+                <ShimmerButton title="See More Projects !" />
+              </Link>
             </div>
           </div>
           {/* <div className="p-4 max-w-7xl mx-auto relative z-10">

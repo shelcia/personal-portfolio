@@ -1,7 +1,8 @@
 import { Project } from "@/types";
 import MockerMockup from "@/assets/images/mocker/4.webp";
-import BloggramMockup from "@/assets/images/bloggram/1.webp";
+// import BloggramMockup from "@/assets/images/bloggram/1.webp";
 import DPMockup from "@/assets/images/dynamic-portfolio/2.webp";
+import CCSMapMockup from "@/assets/images/ccs/2.webp";
 
 export const featuredProjects: Project[] = [
   {
@@ -28,17 +29,30 @@ export const featuredProjects: Project[] = [
   //   deployment: "https://mocker-gen.netlify.app/",
   //   code: "https://github.com/shelcia/mocker",
   // },
+  // {
+  //   id: "bloggram",
+  //   name: "Bloggram",
+  //   image: BloggramMockup,
+  //   desc: "Write, Read and Share Blogs",
+  //   techstack: ["React", "NodeJS", "Material UI"],
+  //   deploy: true,
+  //   forks: 19,
+  //   stars: 12,
+  //   deployment: "https://bloggram-beta.vercel.app/",
+  //   code: "https://github.com/shelcia/Blog-website",
+  // },
+
   {
-    id: "bloggram",
-    name: "Bloggram",
-    image: BloggramMockup,
-    desc: "Write, Read and Share Blogs",
-    techstack: ["React", "NodeJS", "Material UI"],
-    deploy: true,
-    forks: 19,
-    stars: 12,
-    deployment: "https://bloggram-beta.vercel.app/",
-    code: "https://github.com/shelcia/Blog-website",
+    id: "ccs-knowledge",
+    name: "CCS Knowledge",
+    image: CCSMapMockup,
+
+    desc: "Report & Analytics Dashboard",
+    techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
+    deploy: false,
+    forks: 0,
+    stars: 0,
+    code: "https://github.com/madcollab-jrg/ccs-knowledge-map",
   },
   {
     id: "dynamic-portfolio",
