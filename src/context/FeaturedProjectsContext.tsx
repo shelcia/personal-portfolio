@@ -49,9 +49,10 @@ export const featuredProjects: Project[] = [
 
     desc: "Report & Analytics Dashboard",
     techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
-    deploy: false,
+    deploy: true,
     forks: 0,
     stars: 0,
+    deployment: "https://connect.doit.wisc.edu/knowledge-map/",
     code: "https://github.com/madcollab-jrg/ccs-knowledge-map",
   },
   {

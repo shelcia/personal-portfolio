@@ -131,8 +131,8 @@ export const projects: Project[] = [
     description:
       "I have created this Knowledge Map dashboard with the guidance of Prof. Jackson which has two goals - visualize community responses to environmental surveys and display the representativeness of responses. This understanding will help inform local environmental policymaking and communication, and empower local communities with the capacity to discuss environmental justice solutions.",
     techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
-    deploy: false,
-    // deployment: "https://bloggram-beta.vercel.app/",
+    deploy: true,
+    deployment: "https://connect.doit.wisc.edu/knowledge-map/",
     code: "https://github.com/madcollab-jrg/ccs-knowledge-map",
     forks: 0,
     stars: 0,
