@@ -112,13 +112,13 @@ export const projects: Project[] = [
       },
       {
         id: 3,
-        content: <ContentTitle title="Outreach Strategies Page" />,
+        content: <ContentTitle title="Information Page" />,
         className: "col-span-6",
         thumbnail: CCS3,
       },
       {
         id: 4,
-        content: <ContentTitle title="About Page" />,
+        content: <ContentTitle title="Data Curated Page" />,
         className: "col-span-6",
         thumbnail: CCS4,
       },

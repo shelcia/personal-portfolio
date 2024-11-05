@@ -172,7 +172,7 @@ const ContactForm = () => {
       <main className="relative">
         <DotBackground>
           <div
-            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} z-30`}
+            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} relative z-30`}
           >
             <TypewriterEffect
               words={words}
@@ -192,8 +192,8 @@ const ContactForm = () => {
               </Link>
             </p>
 
-            <form className="my-8 z-30" onSubmit={sendMessage}>
-              <LabelInputContainer className="mb-4">
+            <form className="my-8 relative z-30" onSubmit={sendMessage}>
+              <LabelInputContainer className="mb-4 relative z-30">
                 <Label htmlFor="name">Name*</Label>
                 <Input
                   id="name"
@@ -204,7 +204,7 @@ const ContactForm = () => {
                 />
               </LabelInputContainer>
 
-              <LabelInputContainer className="mb-4">
+              <LabelInputContainer className="mb-4 relative z-20">
                 <Label htmlFor="email">Email Address*</Label>
                 <Input
                   id="email"
@@ -215,7 +215,7 @@ const ContactForm = () => {
                   onChange={handleInputs}
                 />
               </LabelInputContainer>
-              <LabelInputContainer className="mb-4">
+              <LabelInputContainer className="mb-4 relative z-20">
                 <Label htmlFor="email">Message*</Label>
                 <Input
                   id="message"
@@ -227,7 +227,7 @@ const ContactForm = () => {
                 />
               </LabelInputContainer>
               <button
-                className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+                className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] relative z-20"
                 type="submit"
                 disabled={isLoading}
               >
@@ -239,9 +239,10 @@ const ContactForm = () => {
             </form>
           </div>
         </DotBackground>
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
       </main>
       <Footer />
+      {/* <BackgroundBeams /> */}
       <Cal />
     </>
   );
