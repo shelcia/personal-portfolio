@@ -10,6 +10,11 @@ import CCS2 from "../assets/images/ccs/2.webp";
 import CCS3 from "../assets/images/ccs/3.webp";
 import CCS4 from "../assets/images/ccs/4.webp";
 
+import Bloggram1 from "../assets/images/bloggram/1.webp";
+import Bloggram2 from "../assets/images/bloggram/2.webp";
+import Bloggram3 from "../assets/images/bloggram/3.webp";
+import Bloggram4 from "../assets/images/bloggram/4.webp";
+
 import DP1 from "../assets/images/dynamic-portfolio/2.webp";
 import DP2 from "../assets/images/dynamic-portfolio/1.webp";
 import DP3 from "../assets/images/dynamic-portfolio/3.webp";
@@ -19,10 +24,15 @@ import Socialgram1 from "../assets/images/socialgram/2-1.webp";
 import Socialgram2 from "../assets/images/socialgram/1.webp";
 import Socialgram3 from "../assets/images/socialgram/3.webp";
 
+import NC1 from "../assets/images/noobcodes/1.webp";
+import NC2 from "../assets/images/noobcodes/2.webp";
+import NC3 from "../assets/images/noobcodes/3.webp";
+
 import Samgatha1 from "../assets/images/samgatha/1.webp";
 import Samgatha2 from "../assets/images/samgatha/2.webp";
 import Samgatha3 from "../assets/images/samgatha/3.webp";
 
+// import AUV from "../assets/images/auv/1.webp";
 import Tradluxe1 from "../assets/images/tradluxe/1.webp";
 import Tradluxe2 from "../assets/images/tradluxe/2.webp";
 import Tradluxe3 from "../assets/images/tradluxe/3.webp";
@@ -60,6 +70,7 @@ export const projects: Project[] = [
       },
       {
         id: 3,
+        // content: <ContentTitle title="Authentication Page" />,
         content: <ContentTitle title="Documentation Page" />,
         className: "col-span-6",
         thumbnail: Mocker5,
@@ -76,8 +87,10 @@ export const projects: Project[] = [
     desc: "Generate mockup data for testing and prototyping",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/mocker_g1ypry6O-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869830",
     description:
-      "I developed Mocker as a powerful mock data generation tool to streamline the development and testing process. Using Faker.js, I built a system that provides developers with realistic, customizable test data through API endpoints. My implementation allows users to generate comprehensive datasets including names, addresses, phone numbers, and more in various formats. I designed the tool to be particularly valuable for developers who need to test applications with realistic data scenarios, prototype features before real data is available, or create consistent test environments. The API-first approach I implemented enables seamless integration into existing development workflows and testing pipelines.",
+      "Mocker is a tool that allows you to generate fake, or 'mock', data that can be used for testing or prototyping purposes. It uses a library called Faker.js, which generates fake data such as names, addresses, and phone numbers in a variety of formats. By creating an API endpoint, the tool enables users to create a mocked data set and use it for testing of applications or as a substitute for data that is not yet available in a development stage, also enable a client to test their apps and other functions, in a more realistic scenario.",
     techstack: ["React", "NodeJS", "Material UI", "FakerJs"],
     deploy: true,
     deployment: "https://mocker-gen.netlify.app/",
@@ -119,8 +132,10 @@ export const projects: Project[] = [
     desc: "Report & Analytics Dashboard",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
     description:
-      "I developed this Knowledge Map dashboard under the guidance of Prof. Jackson to visualize and analyze environmental survey data. I created a platform serving two critical functions: visualizing community responses to environmental surveys and evaluating the representativeness of these responses across different demographics. Through my implementation, the tool empowers local communities to engage in environmental justice discussions and supports evidence-based environmental policymaking. I focused on making complex survey data accessible and understandable, effectively bridging the gap between community insights and policy decisions.",
+      "I have created this Knowledge Map dashboard with the guidance of Prof. Jackson which has two goals - visualize community responses to environmental surveys and display the representativeness of responses. This understanding will help inform local environmental policymaking and communication, and empower local communities with the capacity to discuss environmental justice solutions.",
     techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
     deploy: true,
     deployment: "https://connect.doit.wisc.edu/knowledge-map/",
@@ -137,38 +152,82 @@ export const projects: Project[] = [
     images: [
       {
         id: 1,
-        content: <ContentTitle title="Scenario's Page" />,
+        content: <ContentTitle title="Landing Page" />,
         className: "col-span-6",
         thumbnail: AI2,
       },
       {
         id: 2,
-        content: <ContentTitle title="Audit Page" />,
+        content: <ContentTitle title="Product's Page" />,
         className: "col-span-6",
         thumbnail: AI3,
       },
       {
         id: 3,
-        content: <ContentTitle title="Survey Page" />,
+        content: <ContentTitle title="Brand's Page" />,
         className: "col-span-6",
         thumbnail: AI4,
       },
       {
         id: 4,
-        content: <ContentTitle title="Thank you Page" />,
+        content: <ContentTitle title="About Page" />,
         className: "col-span-6",
         thumbnail: AI5,
       },
     ],
-    description:
-      "I developed AI Audit as a sophisticated survey and analysis platform to evaluate the societal impact of AI systems. I implemented carefully crafted scenarios where the platform collects user insights about how AI decision-making affects various demographic groups, with particular attention to potential risks for minority communities. I built a comprehensive admin dashboard that enables researchers to customize scenarios, manage survey questions, and analyze responses through interactive data visualizations. I included CSV export functionality for deeper analysis. Through this feedback loop I designed, the platform provides crucial insights to AI developers, helping them create more equitable and inclusive AI systems that better serve all communities.",
-    techstack: ["NextJS", "React", "NodeJS", "Typescript", "MongoDB", "MUI"],
+    description: "Comprehensive Survey Tool",
+    techstack: ["NextJs", "React", "NodeJS", "Typescript"],
     deploy: true,
     forks: 0,
     stars: 0,
     deployment: "https://ai-fairness.vercel.app/",
     code: "https://github.com/ai-fairness-research/ai-fairness-web-app",
   },
+
+  // {
+  //   id: "bloggram",
+  //   name: "Bloggram",
+  //   mockup: Bloggram1,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       content: <ContentTitle title="Home Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: Bloggram1,
+  //     },
+  //     {
+  //       id: 2,
+  //       content: <ContentTitle title="Article Page in Dark Mode" />,
+  //       className: "col-span-6",
+  //       thumbnail: Bloggram2,
+  //     },
+  //     {
+  //       id: 3,
+  //       content: <ContentTitle title="Author's Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: Bloggram3,
+  //     },
+  //     {
+  //       id: 4,
+  //       content: <ContentTitle title="User's Dashboard" />,
+  //       className: "col-span-6",
+  //       thumbnail: Bloggram4,
+  //     },
+  //   ],
+  //   desc: "Write, Read and Share Blogs",
+  //   image:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
+  //   imageURL:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/bloggram_sI3LlPN0t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611517394",
+  //   description:
+  //     "I have created a dynamic and interactive blog website as a hobby project. The feature of allowing users to edit, add, and react to blogs is a great way to make the platform more engaging and encourage user participation. Additionally, having separate comment sections or discussions for users across all blogs will also help foster a community and make it easier for users to engage with each other's ideas. The choice of a minimalistic UI will give the website clean and uncluttered appearance and also focuses on user experience. This type of blog website will be a great way for users to share their thoughts and ideas, as well as learn from others, it will be a great addition to the collection of personal projects.",
+  //   techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+  //   deploy: true,
+  //   deployment: "https://bloggram-beta.vercel.app/",
+  //   code: "https://github.com/shelcia/Blog-website",
+  //   forks: 9,
+  //   stars: 9,
+  // },
   {
     id: "dynamic-portfolio",
     name: "Dynamic Portfolio Maker",
@@ -202,8 +261,10 @@ export const projects: Project[] = [
     desc: "Build websites by filling up forms",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/dynamic-portfolio-demo_0mw4NjwRu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985852086",
     description:
-      "I created Dynamic Portfolio as an innovative website building platform that transforms the traditional web development process into a simple form-filling experience. I designed it for professionals who need an online presence without coding knowledge, allowing users to create customized websites in under five minutes. I developed three distinct templates and built an intuitive interface for content management. Each template I created is optimized for professional presentation while maintaining flexibility for personal customization. Through this tool, I aimed to bridge the gap between sophisticated web development and accessible website creation.",
+      "Dynamic Portfolio is a website building tool that allows users to create a website by filling out forms under five minutes. Instead of having to write code or use specialized software, users can use pre-built templates and input their own content using an intuitive user interface. This can make it faster and easier for people with limited technical experience to create a website. We currently have three templates.",
     techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
     deploy: true,
     deployment: "https://dynamic--portfolio.vercel.app/",
@@ -211,6 +272,45 @@ export const projects: Project[] = [
     forks: 75,
     stars: 33,
   },
+
+  // {
+  //   id: "noobcodes",
+  //   name: "Noob Codes",
+  //   mockup: NC1,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       content: <ContentTitle title="Coding Problem's Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC1,
+  //     },
+  //     {
+  //       id: 2,
+  //       content: <ContentTitle title="Search Implemented with Algolia" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC2,
+  //     },
+  //     {
+  //       id: 3,
+  //       content: <ContentTitle title="Home Page" />,
+  //       className: "col-span-6",
+  //       thumbnail: NC3,
+  //     },
+  //   ],
+  //   desc: "Simplify Python DS&A learning",
+  //   image:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/noobcodes_9V2BhFCKA.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648374969800",
+  //   imageURL:
+  //     "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/noobcodes_xhCF7dQX1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1648373850224",
+  //   description:
+  //     "NoobCodes aims to simplify the study of data structures and algorithms in the Python programming language, particularly with the aim of preparing for technical interviews. It likely provides tutorials, examples, and practice problems to help users understand and implement common data structures and algorithms in a clear and straightforward way. The goal is to make it easier for people who are new to computer science or are preparing for an interview to learn these concepts and become more confident in their coding abilities.",
+  //   techstack: ["React", "Docusauras", "Mdx"],
+  //   deploy: true,
+  //   deployment: "https://noobcodes-docs.netlify.app/",
+  //   code: "https://github.com/shelcia/noobcodes-docs",
+  //   forks: 26,
+  //   stars: 6,
+  // },
   {
     id: "socialgram",
     name: "Social Gram",
@@ -238,8 +338,10 @@ export const projects: Project[] = [
     desc: "Share, engage with posts.",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/socialgram1_DKSivHFxu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668873869834",
     description:
-      "I developed Socialgram as a feature-rich social media platform that combines the best elements of modern social networking. I implemented functionality for users to create, share, and engage with content through a clean, intuitive interface. I built support for multimedia posts, real-time interactions through likes and comments, and comprehensive user profiles. Using React and Redux for seamless state management, I ensured responsive performance and a smooth user experience. I continue to evolve the platform with regular feature updates and performance improvements to enhance user engagement and community building.",
+      "Social Gram is a social media website that allows users to create and share content, similar to other popular platforms such as Twitter and Facebook. Users will be able to create posts, and share them with others. The platform also allows for users to react and engage with other user's content, such as by liking, commenting, or sharing. It is a social website with all basic features where users can share and react to the post with text and media. I am working on adding more features as well.",
     techstack: [
       "React",
       "Material UI",
@@ -281,15 +383,17 @@ export const projects: Project[] = [
     desc: "Dark, minimalist theme for VS Code",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/irultheme_lCGSTTLPr.png?updatedAt=1627452469440",
     description:
-      "I created IRUL (meaning 'Dark' in Tamil) as a carefully crafted Visual Studio Code theme designed for extended coding sessions. I based it on the sophisticated Halcyon color palette, ensuring optimal contrast and color selection to reduce eye strain while maintaining code readability. I developed two variants to suit different preferences, and the theme has garnered a community of over 1,200 active users. In my design, I focused on a minimalist approach that emphasizes essential syntax highlighting while eliminating visual distractions, making it ideal for developers who spend long hours coding.",
+      "IRUL is a dark theme for the Visual Studio Code (VS Code) code editor, it's name meaning 'Dark; in Tamil. The theme is based on the Halcyon color palette, which is known for its aesthetic and easy-on-the-eyes look. It's designed to be easy to look at during long coding sessions, making it a popular choice among developers. The IRUL theme is designed for being a dark minimal theme for Visual studio code, with two versions available for use in the VS Code marketplace. Currently over 1200 users use the theme.",
     techstack: ["JSON", "VSCODE"],
     deploy: true,
     deployment:
       "https://marketplace.visualstudio.com/items?itemName=shelcia.irul-theme",
     code: "https://github.com/shelcia/irul-theme",
-    forks: 2565,
-    stars: 2565,
+    forks: 2287,
+    stars: 2287,
   },
   {
     id: "samgatha",
@@ -318,8 +422,10 @@ export const projects: Project[] = [
     desc: "IIITDM College Fest Website 2019-20",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/samgatha_fGPvUsO2e.png?updatedAt=1627449846491",
     description:
-      "I worked as part of a two-member web development team to create the official website for IIITDM's college festival, Samgatha 2020. I helped design the website around the theme 'DREAM', incorporating modern design principles with practical functionality. Using Bootstrap for responsive design and NodeJS for backend operations, I implemented efficient event information management through MongoDB integration. The website I helped develop served as the primary information hub for festival activities, event registrations, and updates.",
+      "I was part of the web development team (consisting of two members) who built the website for the college fest of IIITDM. We used Bootstrap for the frontend and NodeJS for the backend. The design focused on the theme DREAM. We used Nodejs to fetch event data from the database.",
     deploy: true,
     techstack: ["Bootstrap", "MongoDB", "NodeJS"],
     deployment: "https://samgatha-2020.glitch.me/",
@@ -360,8 +466,10 @@ export const projects: Project[] = [
     desc: "Tradluxe E-commerce website based in Singapore",
     image:
       "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
+    imageURL:
+      "https://ik.imagekit.io/shelcia/my_portfolio/demo_images/auv_eLHyBxXD_.png?updatedAt=1627449817894",
     description:
-      "As the sole developer, I built this custom e-commerce platform for a Singapore-based luxury goods company, Tradluxe. I created a comprehensive digital solution that showcases their premium product line while maintaining brand integrity. I implemented dynamic product catalogs, an integrated blog system, and developed custom API endpoints for form submissions using Nodemailer. I crafted the design using Adobe XD, emphasizing luxury brand aesthetics while ensuring optimal user experience and conversion optimization.",
+      "I got commissioned to build a website for Singapor based E Commerce Company called Tradluxe. I was the sole developer until completion. I had to showcase their products, blogs and lure more customer. Furthermore, I have created an API to send form responses through the mail.",
     techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],
     deploy: true,
     deployment: "https://www.tradluxe.com/",
