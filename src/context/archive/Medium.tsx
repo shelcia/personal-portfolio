@@ -2,15 +2,21 @@ import { MediumArticle } from "@/types";
 
 export const articles: MediumArticle[] = [
   {
-    title: "NodeJs Authentication With JWT",
-    pubDate: "2021-01-05 19:00:41",
-    link: "https://medium.com/swlh/nodejs-with-jwt-authentication-feb961763541?source=rss-dd838a6f81c8------2",
+    title: "Surveys — Non Response Bias",
+    pubDate: "2024-02-21 13:42:02",
+    link: "https://shelcia.medium.com/surveys-non-response-bias-39d4ac69a13e?source=rss-dd838a6f81c8------2",
     thumbnail:
-      "https://miro.medium.com/v2/resize:fill:224:224/1*tOWLVJQWaV4XcfHLw62TtQ.jpeg",
-    categories: ["nodeje", "authentication"],
+      "https://miro.medium.com/v2/resize:fill:224:224/1*Ok8DZYhB_jBIw33NrIovdg.png",
     content:
-      "This is for people who are new to NodeJs and trying to figure out how to build basic authentication with JSON web tokens and integrate it with their frontend. You will either need postman installed on your PC",
-    published: "The Startup",
+      "Understanding Non Response Bias while conducting UX research surveys. This is a part of my class Assignment at UW Madison.",
+    categories: [
+      "user-stories",
+      "user-experience",
+      "user-research",
+      "surveys",
+      "user-experience-design",
+    ],
+    published: null,
   },
   {
     title: "Apartment Hunting — UX Study",
@@ -28,23 +34,6 @@ export const articles: MediumArticle[] = [
       "user-experience",
     ],
     published: "Bootcamp",
-  },
-  {
-    title: "Surveys — Non Response Bias",
-    pubDate: "2024-02-21 13:42:02",
-    link: "https://shelcia.medium.com/surveys-non-response-bias-39d4ac69a13e?source=rss-dd838a6f81c8------2",
-    thumbnail:
-      "https://miro.medium.com/v2/resize:fill:224:224/1*Ok8DZYhB_jBIw33NrIovdg.png",
-    content:
-      "Understanding Non Response Bias while conducting UX research surveys. This is a part of my class Assignment at UW Madison.",
-    categories: [
-      "user-stories",
-      "user-experience",
-      "user-research",
-      "surveys",
-      "user-experience-design",
-    ],
-    published: null,
   },
   {
     title: "Quick SASS tutorial with VS Code",
@@ -194,6 +183,50 @@ export const articles: MediumArticle[] = [
       "Google Search — Still can’t beat this ! — This is a part of my class Assignment at UW Madison. Recently, I attempted to purchase tickets for an Indian movie titled “Jawan” while in the United States. As a firs",
     published: null,
   },
+  // {
+  //   title: "Dev Website which will pay for your articles",
+  //   pubDate: "2022-11-22 17:47:09",
+  //   link: "https://shelcia.medium.com/dev-website-which-will-pay-for-your-articles-2ab94f0b1c90?",
+  //   thumbnail:
+  //     "https://miro.medium.com/v2/resize:fill:224:224/1*QgLRbvc0pmuZZ90tMV7_7g.png",
+  //   categories: ["development", "writing", "writing-life", "paid", "technical"],
+  //   content:
+  //     "It is always good to have an additional source of income. If you want to earn few bucks writing blogs, do check out the websites below. Neptune.ai They are looking for ML engineers or Data scientists to",
+  //   published: null,
+  // },
+  // {
+  //   title: "Auto Commit on Github everyday",
+  //   pubDate: "2022-11-19 15:34:34",
+  //   link: "https://shelcia.medium.com/auto-commit-on-github-everyday-c726c6a7240c?source=rss-dd838a6f81c8------2",
+  //   thumbnail:
+  //     "https://miro.medium.com/v2/resize:fill:224:224/1*bdGi_GOSbF07F8kpVN_rbg.png",
+  //   categories: ["automation", "commit", "cron", "workflow", "github"],
+  //   content:
+  //     "A Powerful Tool for Understanding UX — Journey mapping is a visual representation of the user’s experience as they interact with a product or service over time. It involves capturing the user’s actions, thoughts,",
+  //   published: null,
+  // },
+  // {
+  //   title: "Building Sliding Puzzle in Vanilla Javascript",
+  //   pubDate: "2022-04-15 10:32:52",
+  //   link: "https://shelcia.medium.com/building-sliding-puzzle-in-vanilla-javascript-42ae4198b4ff?source=rss-dd838a6f81c8------2",
+  //   thumbnail:
+  //     "https://miro.medium.com/v2/resize:fill:224:224/1*Fpa6oVP5zsZBL39ipkH3YQ.png",
+  //   categories: ["sliding-puzzle"],
+  //   content:
+  //     "This will be exciting to build. Demo: https://sliding-puzzle-basic.netlify.app/ Prerequisites Bootstrap Javascript CSS/SASS Introduction Step 1: Let’s create index.html file , in there we will add",
+  //   published: null,
+  // },
+  // {
+  //   title: "Fetching Recent Medium Posts and displaying it on Readme",
+  //   pubDate: "2022-04-07 19:00:41",
+  //   link: "https://shelcia.medium.com/fetching-recent-medium-posts-and-displaying-it-on-readme-a8f6852ed7cf?source=rss-dd838a6f81c8------2",
+  //   thumbnail:
+  //     "https://miro.medium.com/v2/resize:fill:224:224/1*GBUMcQ-MlBcttfApUsYhCQ.png",
+  //   categories: ["readme", "workflow", "automation", "medium", "github-readme"],
+  //   content:
+  //     "Let’s say you want to show blog post on Github readme, but you don’t want to add it every time when you create an article. We can easily",
+  //   published: null,
+  // },
   {
     title: "Create a Video Call Web App in 10 minutes with Jitsi and React",
     pubDate: "2022-03-26 19:00:41",
@@ -215,6 +248,17 @@ export const articles: MediumArticle[] = [
     content:
       "We will look into using “Nodemailer” to send emails Prerequisites NodeJS REST API Code Editor (I will be using VS code) Postman installed or Postman web account with CORS extension for chrome",
     published: null,
+  },
+  {
+    title: "NodeJs Authentication With JWT",
+    pubDate: "2021-01-05 19:00:41",
+    link: "https://medium.com/swlh/nodejs-with-jwt-authentication-feb961763541?source=rss-dd838a6f81c8------2",
+    thumbnail:
+      "https://miro.medium.com/v2/resize:fill:224:224/1*tOWLVJQWaV4XcfHLw62TtQ.jpeg",
+    categories: ["nodeje", "authentication"],
+    content:
+      "This is for people who are new to NodeJs and trying to figure out how to build basic authentication with JSON web tokens and integrate it with their frontend. You will either need postman installed on your PC",
+    published: "The Startup",
   },
   {
     title: "Build Your First Discord GIF BOT and Deploy",
