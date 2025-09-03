@@ -11,16 +11,16 @@ const Experience = () => {
       >
         Experience
       </h1>
-      <ol className="relative border-s border-gray-200 dark:border-gray-700">
+      <ol className="relative border-s border-gray-200">
         {experience.map((itm) => (
           <li className="mb-10 ms-6" key={itm.name}>
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
               <Icon />
               {/* <ExperienceIcon /> */}
             </span>
             <h3
               className={cn(
-                "flex items-center mb-1 text-lg font-semibold text-zinc-800 dark:text-white",
+                "flex items-center mb-1 text-lg font-semibold text-zinc-800",
                 calsans.className
               )}
             >
@@ -28,7 +28,7 @@ const Experience = () => {
             </h3>
             <time
               className={cn(
-                "block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-500",
+                "block mb-2 text-sm font-normal leading-none text-gray-500",
                 dmsans.className
               )}
             >
@@ -36,7 +36,7 @@ const Experience = () => {
             </time>
             <p
               className={cn(
-                "mb-4 text-base font-normal text-gray-500 dark:text-gray-400",
+                "mb-4 text-base font-normal text-gray-500",
                 dmsans.className
               )}
             >
@@ -58,7 +58,7 @@ export default Experience;
 
 const Icon = () => (
   <svg
-    className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+    className="w-2.5 h-2.5 text-blue-800"
     aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
@@ -69,7 +69,7 @@ const Icon = () => (
 );
 
 export const Badge = ({ title }: { title: string }) => (
-  <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+  <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded">
     {title}
   </span>
 );

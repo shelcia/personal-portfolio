@@ -3,9 +3,9 @@ import React from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 import { cn } from "@/utils/cn";
 import { calsans, dmsans } from "@/utils/fonts";
-import { ImageItm, ImgContentProps } from "@/types";
+import { Card, ImgContentProps } from "@/types";
 
-const ProjectImages = ({ images }: { images: ImageItm[] }) => {
+const ProjectImages = ({ images }: { images: Card[] }) => {
   return (
     <div className="h-screen w-full">
       <LayoutGrid cards={images} />

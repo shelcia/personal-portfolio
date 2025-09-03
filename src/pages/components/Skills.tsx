@@ -48,7 +48,7 @@ const Badge = ({
   <span
     style={{ backgroundColor: bgClass, color: color }}
     className={cn(
-      "text-sm font-medium px-4 py-2.5 rounded dark:text-blue-300 flex items-center",
+      "text-sm font-medium px-4 py-2.5 rounded flex items-center",
       calsans.className
     )}
   >

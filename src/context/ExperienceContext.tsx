@@ -2,24 +2,18 @@ import { ExperienceItem } from "@/types";
 
 export const experience: ExperienceItem[] = [
   {
-    name: "NYX Wolves Private Limited",
-    designation: "Software Developer Intern",
-    year: "June 2024 - August 2024",
-    desc: "Collaborated with cross-functional teams to design and develop client projects using ReactJS and Node.js. Implemented tailored solutions that met clients' unique requirements and business objectives. Contributed to the success of Nyx Wolves by delivering high-quality software solutions remotely.",
-    skills: [
-      "Typescript",
-      "NodeJs",
-      "Full Stack Development",
-      "AWS",
-      "Express",
-    ],
-    date: "November 2023",
-    timeline: "Nov'23 - Current",
+    name: "Nimble",
+    designation: "UI Developer II",
+    year: "June 2025 - Present",
+    desc: "Developed and shipped polished features using React, TypeScript and Go, translating Figma mock-ups into production-ready code.",
+    skills: ["React", "Typescript", "Go", "Full Stack Development", "AWS"],
+    date: "June 2025",
+    timeline: "Jun'25 - Current",
   },
   {
     name: "University of Wisconsin-Madison",
     designation: "Full Stack Developer - Graduate Project Assistant",
-    year: "November 2023 - Present",
+    year: "November 2023 - May 2025",
     desc: "Spearheading the development and design of a UI interface for a platform highlighting the social impacts of diverse demographics on climate change using Typescript, NodeJs and R Shiny.",
     skills: [
       "R shiny",
@@ -29,12 +23,12 @@ export const experience: ExperienceItem[] = [
       "Full Stack Development",
     ],
     date: "November 2023",
-    timeline: "Nov'23 - Current",
+    timeline: "Nov'23 - May'25",
   },
   {
     name: "University of Wisconsin-Madison",
     designation: "Master of Science in Information",
-    year: "August 2023 - Present",
+    year: "August 2023 - May 2025",
     // desc: "Learning and Exploring. UW Makeathon Winner (https://making.engr.wisc.edu/makeathon/). UX Club President.",
     desc: "Learning and Exploring. UW Makeathon Winner | UX Club President.",
     skills: [
@@ -48,7 +42,7 @@ export const experience: ExperienceItem[] = [
       "Human Computer Interaction",
     ],
     date: "August 2023",
-    timeline: "Aug'23 - Dec'24",
+    timeline: "Aug'23 - May'25",
   },
   {
     name: "NASDAQ",

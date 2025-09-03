@@ -1,7 +1,7 @@
 import { Project } from "@/types";
 import Mocker1 from "../assets/images/mocker/1-1.webp";
 import Mocker2 from "../assets/images/mocker/2.webp";
-import Mocker3 from "../assets/images/mocker/3.webp";
+// import Mocker3 from "../assets/images/mocker/3.webp";
 import Mocker4 from "../assets/images/mocker/4.webp";
 import Mocker5 from "../assets/images/mocker/5.webp";
 
@@ -132,6 +132,7 @@ export const projects: Project[] = [
   {
     id: "ai-audit",
     name: "AI Audit",
+    desc: "Comprehensive Survey Tool",
     image: AI1,
     mockup: AI1,
     images: [
