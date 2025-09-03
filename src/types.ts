@@ -1,11 +1,11 @@
 import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+import { JSX, ReactNode } from "react";
 
 export interface Project {
   id: string;
   name: string;
   mockup?: string | StaticImageData;
-  images?: ImageItm[];
+  images?: Card[];
   image: string | StaticImageData;
   imageURL?: string;
   desc?: string;
@@ -81,4 +81,11 @@ export interface ImageItm {
 export interface ImgContentProps {
   title?: string;
   description?: string;
+}
+
+export interface Card {
+  id: number;
+  content: JSX.Element | React.ReactNode | string;
+  className: string;
+  thumbnail: string | StaticImageData;
 }

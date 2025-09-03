@@ -12,6 +12,21 @@ export const designs: Design = {
   },
   items: [
     {
+      title: "Apartment Hunting - UX Study",
+      pubDate: "2024-11-25 08:31:32",
+      link: "https://www.behance.net/gallery/213286859/Apartment-Hunting-UX-Study",
+      guid: "https://www.behance.net/gallery/213286859/Apartment-Hunting-UX-Study",
+      author: "",
+      thumbnail:
+        "https://mir-s3-cdn-cf.behance.net/projects/404/134e7c213286859.Y3JvcCw0NTg2LDM1ODcsMCww.png",
+      description:
+        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/134e7c213286859.Y3JvcCw0NTg2LDM1ODcsMCww.png"><br>\n',
+      content:
+        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/134e7c213286859.Y3JvcCw0NTg2LDM1ODcsMCww.png"><br>\n',
+      enclosure: {},
+      categories: [],
+    },
+    {
       title: "UPS Madison - Case Study",
       pubDate: "2024-11-20 18:43:54",
       link: "https://www.behance.net/gallery/212977041/UPS-Madison-Case-Study",
@@ -116,20 +131,20 @@ export const designs: Design = {
       enclosure: {},
       categories: [],
     },
-    {
-      title: "Team AUV - IIITDMK",
-      pubDate: "2021-04-08 18:37:23",
-      link: "https://www.behance.net/gallery/117113673/Team-AUV-IIITDMK",
-      guid: "https://www.behance.net/gallery/117113673/Team-AUV-IIITDMK",
-      author: "",
-      thumbnail:
-        "https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png",
-      description:
-        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
-      content:
-        '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
-      enclosure: {},
-      categories: [],
-    },
+    // {
+    //   title: "Team AUV - IIITDMK",
+    //   pubDate: "2021-04-08 18:37:23",
+    //   link: "https://www.behance.net/gallery/117113673/Team-AUV-IIITDMK",
+    //   guid: "https://www.behance.net/gallery/117113673/Team-AUV-IIITDMK",
+    //   author: "",
+    //   thumbnail:
+    //     "https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png",
+    //   description:
+    //     '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
+    //   content:
+    //     '\n<img src="https://mir-s3-cdn-cf.behance.net/projects/404/b8156a117113673.Y3JvcCwyMjkzLDE3OTMsMCww.png"><br>\n',
+    //   enclosure: {},
+    //   categories: [],
+    // },
   ],
 };

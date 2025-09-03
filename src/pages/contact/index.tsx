@@ -14,10 +14,9 @@ import { calsans, dmsans } from "@/utils/fonts";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import CustomConfetti from "@/components/common/CustomConfetti";
 import { DangerToast, SuccessToast } from "@/components/common/CustomToast";
-// import RootLayout from "@/app/layout";
 import Head from "next/head";
-import Link from "next/link";
-import Cal from "../components/Cal";
+// import Link from "next/link";
+// import Cal from "../components/Cal";
 
 interface AlertState {
   message: string;
@@ -37,7 +36,7 @@ const ContactForm = () => {
     },
     {
       text: "!",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
 
@@ -172,24 +171,23 @@ const ContactForm = () => {
       <main className="relative">
         <DotBackground>
           <div
-            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} relative z-30`}
+            className={`max-w-md w-full mx-auto rounded-none md:rounded-2xl p-6 md:p-8 bg-white ${dmsans.className} relative z-30`}
           >
             <TypewriterEffect
               words={words}
-              className={`font-bold text-3xl text-neutral-800 dark:text-neutral-200 ${calsans.className}`}
+              className={`font-bold text-3xl text-neutral-800 ${calsans.className}`}
             />
-            <p
-              className={`text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300 `}
-            >
+            <p className={`text-neutral-600 text-sm max-w-sm mt-2`}>
               Interested in working with me? Submit your project inquiry using
-              the form. Additionally you can look into my resume
+              the form.
+              {/* Additionally you can look into my resume
               <Link
                 href="https://drive.google.com/file/d/1iasR1hd3AZUObecra-vajTD7YgjQp19j/view?usp=sharing"
                 target="_blank"
                 className="ml-1 inline text-blue-500 hover:underline"
               >
                 here
-              </Link>
+              </Link> */}
             </p>
 
             <form className="my-8 relative z-30" onSubmit={sendMessage}>
@@ -227,7 +225,7 @@ const ContactForm = () => {
                 />
               </LabelInputContainer>
               <button
-                className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset] relative z-20"
+                className="bg-gradient-to-br relative group/btn from-black to-neutral-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] relative z-20"
                 type="submit"
                 disabled={isLoading}
               >
@@ -235,15 +233,15 @@ const ContactForm = () => {
                 <BottomGradient />
               </button>
 
-              <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
+              <div className="bg-gradient-to-r from-transparent via-neutral-300 to-transparent my-8 h-[1px] w-full" />
             </form>
           </div>
         </DotBackground>
         {/* <BackgroundBeams /> */}
       </main>
       <Footer />
-      {/* <BackgroundBeams /> */}
-      <Cal />
+      <BackgroundBeams />
+      {/* <Cal /> */}
     </>
   );
 };

@@ -1,15 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { cn } from "@/utils/cn";
-import Image, { StaticImageData } from "next/image";
-
-type Card = {
-  id: number;
-  content: JSX.Element | React.ReactNode | string;
-  className: string;
-  thumbnail: string | StaticImageData;
-};
+import { Card } from "@/types";
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
@@ -26,8 +19,8 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   };
 
   return (
-    <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto gap-4 relative">
-      {cards?.map((card, i) => (
+    <div className="w-full h-full max-w-7xl mx-auto relative grid grid-cols-1 md:grid-cols-2 gap-4">
+      {cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
@@ -35,16 +28,16 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden",
               selected?.id === card.id
-                ? // ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
-                  "rounded-lg cursor-pointer absolute inset-0 h-[400px] w-full md:w-3/4 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                // ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-[400px] md:w-3/4 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                  ? "z-40 bg-white rounded-xl h-full w-full"
+                  : "bg-white rounded-xl h-full w-full"
             )}
-            layout
+            layoutId={`card-${card.id}`}
           >
             {selected?.id === card.id && <SelectedCard selected={selected} />}
-            <BlurImage card={card} />
+            <ImageComponent card={card} />
           </motion.div>
         </div>
       ))}
@@ -60,17 +53,15 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   );
 };
 
-const BlurImage = ({ card }: { card: Card }) => {
-  const [loaded, setLoaded] = useState(false);
+const ImageComponent = ({ card }: { card: Card }) => {
   return (
-    <Image
-      src={card.thumbnail}
+    <motion.img
+      layoutId={`image-${card.id}-image`}
+      src={typeof card.thumbnail === "string" ? card.thumbnail : card.thumbnail.src}
       height="400"
       width="500"
-      onLoad={() => setLoaded(true)}
       className={cn(
-        "object-cover object-center absolute inset-0 h-full w-full transition duration-200",
-        loaded ? "blur-none" : "blur-md"
+        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
       )}
       alt="thumbnail"
     />
@@ -90,6 +81,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
       />
       <motion.div
+        layoutId={`content-${selected?.id}`}
         initial={{
           opacity: 0,
           y: 100,
@@ -97,6 +89,10 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
         animate={{
           opacity: 1,
           y: 0,
+        }}
+        exit={{
+          opacity: 0,
+          y: 100,
         }}
         transition={{
           duration: 0.3,

@@ -1,7 +1,7 @@
 import { Project } from "@/types";
 import Mocker1 from "../assets/images/mocker/1-1.webp";
 import Mocker2 from "../assets/images/mocker/2.webp";
-import Mocker3 from "../assets/images/mocker/3.webp";
+// import Mocker3 from "../assets/images/mocker/3.webp";
 import Mocker4 from "../assets/images/mocker/4.webp";
 import Mocker5 from "../assets/images/mocker/5.webp";
 
@@ -10,10 +10,10 @@ import CCS2 from "../assets/images/ccs/2.webp";
 import CCS3 from "../assets/images/ccs/3.webp";
 import CCS4 from "../assets/images/ccs/4.webp";
 
-import Bloggram1 from "../assets/images/bloggram/1.webp";
-import Bloggram2 from "../assets/images/bloggram/2.webp";
-import Bloggram3 from "../assets/images/bloggram/3.webp";
-import Bloggram4 from "../assets/images/bloggram/4.webp";
+// import Bloggram1 from "../assets/images/bloggram/1.webp";
+// import Bloggram2 from "../assets/images/bloggram/2.webp";
+// import Bloggram3 from "../assets/images/bloggram/3.webp";
+// import Bloggram4 from "../assets/images/bloggram/4.webp";
 
 import DP1 from "../assets/images/dynamic-portfolio/2.webp";
 import DP2 from "../assets/images/dynamic-portfolio/1.webp";
@@ -24,9 +24,9 @@ import Socialgram1 from "../assets/images/socialgram/2-1.webp";
 import Socialgram2 from "../assets/images/socialgram/1.webp";
 import Socialgram3 from "../assets/images/socialgram/3.webp";
 
-import NC1 from "../assets/images/noobcodes/1.webp";
-import NC2 from "../assets/images/noobcodes/2.webp";
-import NC3 from "../assets/images/noobcodes/3.webp";
+// import NC1 from "../assets/images/noobcodes/1.webp";
+// import NC2 from "../assets/images/noobcodes/2.webp";
+// import NC3 from "../assets/images/noobcodes/3.webp";
 
 import Samgatha1 from "../assets/images/samgatha/1.webp";
 import Samgatha2 from "../assets/images/samgatha/2.webp";
@@ -59,20 +59,20 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Generated JSON data" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Mocker1,
       },
       {
         id: 2,
         content: <ContentTitle title="Generated Endpoints" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Mocker2,
       },
       {
         id: 3,
         // content: <ContentTitle title="Authentication Page" />,
         content: <ContentTitle title="Documentation Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Mocker5,
       },
       {
@@ -80,7 +80,7 @@ export const projects: Project[] = [
         content: (
           <ContentTitle title="Editing the scheme for generation of data" />
         ),
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Mocker4,
       },
     ],
@@ -107,25 +107,25 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Landing Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: CCS1,
       },
       {
         id: 2,
         content: <ContentTitle title="Reporting Analytics Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: CCS2,
       },
       {
         id: 3,
         content: <ContentTitle title="Information Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: CCS3,
       },
       {
         id: 4,
         content: <ContentTitle title="Data Curated Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: CCS4,
       },
     ],
@@ -153,25 +153,25 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Landing Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: AI2,
       },
       {
         id: 2,
         content: <ContentTitle title="Product's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: AI3,
       },
       {
         id: 3,
         content: <ContentTitle title="Brand's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: AI4,
       },
       {
         id: 4,
         content: <ContentTitle title="About Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: AI5,
       },
     ],
@@ -192,25 +192,25 @@ export const projects: Project[] = [
   //     {
   //       id: 1,
   //       content: <ContentTitle title="Home Page" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: Bloggram1,
   //     },
   //     {
   //       id: 2,
   //       content: <ContentTitle title="Article Page in Dark Mode" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: Bloggram2,
   //     },
   //     {
   //       id: 3,
   //       content: <ContentTitle title="Author's Page" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: Bloggram3,
   //     },
   //     {
   //       id: 4,
   //       content: <ContentTitle title="User's Dashboard" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: Bloggram4,
   //     },
   //   ],
@@ -236,25 +236,25 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Editing Portfolio Content" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: DP1,
       },
       {
         id: 2,
         content: <ContentTitle title="Home Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: DP2,
       },
       {
         id: 3,
         content: <ContentTitle title="Authentication Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: DP3,
       },
       {
         id: 4,
         content: <ContentTitle title="Portfolio Template 1" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: DP4,
       },
     ],
@@ -281,19 +281,19 @@ export const projects: Project[] = [
   //     {
   //       id: 1,
   //       content: <ContentTitle title="Coding Problem's Page" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: NC1,
   //     },
   //     {
   //       id: 2,
   //       content: <ContentTitle title="Search Implemented with Algolia" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: NC2,
   //     },
   //     {
   //       id: 3,
   //       content: <ContentTitle title="Home Page" />,
-  //       className: "col-span-6",
+  //       className: "w-full",
   //       thumbnail: NC3,
   //     },
   //   ],
@@ -319,19 +319,19 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Share Posts" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Socialgram1,
       },
       {
         id: 2,
         content: <ContentTitle title="User's Feed" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Socialgram2,
       },
       {
         id: 3,
         content: <ContentTitle title="Home Page/Authentication Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Socialgram3,
       },
     ],
@@ -364,19 +364,19 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Neelam Variant" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: IT1,
       },
       {
         id: 2,
         content: <ContentTitle title="Default variant" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: IT2,
       },
       {
         id: 3,
         content: <ContentTitle title="Default variant" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: IT3,
       },
     ],
@@ -403,19 +403,19 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Landing Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Samgatha1,
       },
       {
         id: 2,
         content: <ContentTitle title="Event's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Samgatha2,
       },
       {
         id: 3,
         content: <ContentTitle title="Team's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Samgatha3,
       },
     ],
@@ -441,25 +441,25 @@ export const projects: Project[] = [
       {
         id: 1,
         content: <ContentTitle title="Landing Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Tradluxe1,
       },
       {
         id: 2,
         content: <ContentTitle title="Product's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Tradluxe2,
       },
       {
         id: 3,
         content: <ContentTitle title="Brand's Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Tradluxe3,
       },
       {
         id: 4,
         content: <ContentTitle title="About Page" />,
-        className: "col-span-6",
+        className: "w-full",
         thumbnail: Tradluxe4,
       },
     ],

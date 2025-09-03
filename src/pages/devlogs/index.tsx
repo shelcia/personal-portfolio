@@ -28,7 +28,7 @@ const Devlogs = () => {
         <meta property="og:type" content="website" />
       </Head>
       <Topbar />
-      <main className="dark:bg-black bg-white mb-24">
+      <main className="bg-white mb-24">
         <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
           <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
           <span className="hidden md:block">
@@ -70,7 +70,7 @@ const Devlogs = () => {
           <div className="md:px-24 px-4 mt-4">
             <h3
               className={cn(
-                "text:xl md:text-3xl font-bold text-black dark:text-white my-4",
+                "text:xl md:text-3xl font-bold text-black my-4",
                 calsans.className
               )}
             >

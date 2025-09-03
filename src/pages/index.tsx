@@ -6,7 +6,6 @@ import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
 import Footer from "@/components/common/Footer";
-import "../app/globals.css";
 import RootLayout from "@/app/layout";
 import Head from "next/head";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -87,7 +86,7 @@ const Home = () => {
             <Testimonial />
           </div> */}
         </div>
-        {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-zinc-50 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-zinc-50 items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"

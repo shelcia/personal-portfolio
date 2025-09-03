@@ -66,23 +66,42 @@ const AboutPage = () => {
               ease: [0.4, 0.0, 0.2, 1],
             }}
             className={cn(
-              "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 dark:text-gray-400 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
+              "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
               dmsans.className
             )}
           >
-            Welcome to my corner of the digital world!. With a strong foundation
+            I’m a{" "}
+            <Highlight className="text-black">
+              UI Developer II at Nimble Robotics
+            </Highlight>
+            , where I build and refine logistics and warehouse automation
+            interfaces with React, TypeScript, and Go. With{" "}
+            <Highlight className="text-black">3+ years</Highlight> of experience
+            across startups and enterprises—including{" "}
+            <Highlight className="text-black">
+              NASDAQ, HIRA, NYX Wolves, Solera, and Guvi
+            </Highlight>{" "}
+            bring a unique perspective that bridges full-stack engineering and
+            user-centered design.
+            <br />
+            <br />I hold a Master’s in Information Science (2025) from the
+            <Highlight className="text-black">
+              University of Wisconsin–Madison
+            </Highlight>
+            , where I also served as UX Club President. My background spans UI
+            engineering, system design, and UX research, and I thrive on turning
+            complex problems into intuitive digital experiences.
+            {/* Welcome to my corner of the digital world!. With a strong foundation
             in JavaScript and React, coupled with my enthusiasm for the MERN
             stack, I thrive in dynamic environments where innovation meets
             practicality.
             <br />
             <br />
             Over the past
-            <Highlight className="text-black dark:text-white">
-              three years
-            </Highlight>
-            , I&apos;ve had the privilege of contributing my skills to esteemed
-            companies like
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">three years</Highlight>, I&apos;ve
+            had the privilege of contributing my skills to esteemed companies
+            like
+            <Highlight className="text-black">
               NASDAQ, HIRA, NYX Wolves, Solera, and Guvi,
             </Highlight>
             . I am committed to the ethos of open-source collaboration and
@@ -91,11 +110,11 @@ const AboutPage = () => {
             <br />
             <br />
             Holding a
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">
               Bachelor&apos;s degree from IIIT Chennai
             </Highlight>
             and currently pursuing a
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">
               Master&apos;s in Information at University of Wisconsin-Madison
             </Highlight>
             , I am dedicated to expanding my knowledge and expertise.
@@ -105,9 +124,10 @@ const AboutPage = () => {
             innovative solutions for existing ones, I&apos;m eager to connect
             and explore how my skills can contribute to your success. Let&apos;s
             start a conversation and discover how we can create something
-            remarkable together.
+            remarkable together. */}
+            {/* old content */}
             {/* I am a
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">
               confident and results-driven individual
             </Highlight>
             who thrives in problem-solving. With a strong focus on JavaScript,
@@ -115,11 +135,11 @@ const AboutPage = () => {
             challenges head-on.
             <br />
             With over
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">
               three years of experience
             </Highlight>
             at companies like
-            <Highlight className="text-black dark:text-white">
+            <Highlight className="text-black">
               NASDAQ, HIRA, NYX Wolves, Solera, and Guvi,
             </Highlight>
             I&apos;ve honed my problem-solving skills. I&apos;m committed to

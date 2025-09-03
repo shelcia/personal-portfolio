@@ -12,7 +12,6 @@ import { Badge } from "../components/Experience";
 import Link from "next/link";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
-import RootLayout from "@/app/layout";
 import Head from "next/head";
 
 const ProjectPage = () => {
@@ -52,14 +51,10 @@ const ProjectPage = () => {
         <meta property="og:url" content="https://www.shelcia-dev.me/" />
         <meta property="og:type" content="website" />
       </Head>
-      {/* <Head>
-        <title>{proj?.name}</title>
-        <meta name="description">{proj?.desc}</meta>
-      </Head> */}
       <Topbar />
       <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
         <div
-          className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black ${dmsans.className} mt-2 z-30`}
+          className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white ${dmsans.className} mt-2 z-30`}
         >
           <button
             type="button"
@@ -98,7 +93,7 @@ const ProjectPage = () => {
             <Boxes className="border-slate-200" />
             <TypewriterEffect
               words={words}
-              className={`font-bold text-3xl text-white dark:text-neutral-200 relative z-20 ${calsans.className}`}
+              className={`font-bold text-3xl text-white relative z-20 ${calsans.className}`}
             />
           </div> */}
 
@@ -118,17 +113,17 @@ const ProjectPage = () => {
           </div>
           {proj?.id === "irul-theme" && (
             <div className="mb-4 flex gap-2 flex-wrap">
-              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">
                 {proj?.forks} Downloads
               </kbd>
             </div>
           )}
           {proj?.forks !== 0 && proj?.id !== "irul-theme" && (
             <div className="mb-4 flex gap-2 flex-wrap">
-              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">
                 {proj?.forks} Forks
               </kbd>
-              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">
+              <kbd className="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg">
                 {proj?.stars} Stars
               </kbd>
             </div>
