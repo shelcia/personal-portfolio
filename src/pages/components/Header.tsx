@@ -87,7 +87,6 @@ const IconButton: React.FC<IconButtonProps> = ({
   children,
   link,
   alt,
-  index,
 }) => {
   return (
     <TooltipProvider>

@@ -20,7 +20,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
   return (
     <div className="w-full h-full max-w-7xl mx-auto relative grid grid-cols-1 md:grid-cols-2 gap-4">
-      {cards.map((card, i) => (
+      {cards && cards.map((card, i) => (
         <div key={i} className={cn(card.className, "")}>
           <motion.div
             onClick={() => handleClick(card)}
