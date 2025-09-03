@@ -7,7 +7,7 @@ interface DotBackgroundProps {
 
 const DotBackground: React.FC<DotBackgroundProps> = ({ children }) => {
   return (
-    <div className="relative flex h-full w-full items-center justify-center bg-white">
+    <div className="relative flex h-full w-full items-center justify-center bg-white py-8 md:py-28">
       <div
         className={cn(
           "absolute inset-0",

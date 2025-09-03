@@ -17,6 +17,7 @@ export const TextRevealCard = ({
   className?: string;
 }) => {
   const [widthPercentage, setWidthPercentage] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const cardRef = useRef<HTMLDivElement | any>(null);
   const [left, setLeft] = useState(0);
   const [localWidth, setLocalWidth] = useState(0);
@@ -31,6 +32,7 @@ export const TextRevealCard = ({
     }
   }, []);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function mouseMoveHandler(event: any) {
     event.preventDefault();
 
@@ -83,12 +85,12 @@ export const TextRevealCard = ({
           animate={
             isMouseOver
               ? {
-                  opacity: widthPercentage > 0 ? 1 : 0,
-                  clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
-                }
+                opacity: widthPercentage > 0 ? 1 : 0,
+                clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
+              }
               : {
-                  clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
-                }
+                clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
+              }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
           className="absolute bg-[#1d1c20] z-20  will-change-transform"

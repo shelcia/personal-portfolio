@@ -51,10 +51,6 @@ const ProjectPage = () => {
         <meta property="og:url" content="https://www.shelcia-dev.me/" />
         <meta property="og:type" content="website" />
       </Head>
-      {/* <Head>
-        <title>{proj?.name}</title>
-        <meta name="description">{proj?.desc}</meta>
-      </Head> */}
       <Topbar />
       <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
         <div

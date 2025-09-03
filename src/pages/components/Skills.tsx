@@ -1,10 +1,14 @@
 import React from "react";
-import { skills, skillSlug } from "@/context/SkillsContext";
+import { skills /*, skillSlug */ } from "@/context/SkillsContext";
 import { cn } from "@/utils/cn";
 import { calsans } from "@/utils/fonts";
-import IconCloud from "@/components/ui/icon-cloud";
+// import { IconCloud } from "@/components/ui/icon-cloud";
 
 const Skills = () => {
+  // const images = skillSlug.map(
+  //   (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  // );
+
   return (
     <>
       <h1
@@ -12,11 +16,11 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="relative lg:h-[75vh] md:h-[75vh] sm:h-[75vh] h-[100vh]">
-        <div className="absolute bg-[rgba(255,255,255,0.95)] w-full opacity-35">
-          <IconCloud iconSlugs={skillSlug} />
-        </div>
-        <div className="absolute flex gap-2 flex-wrap w-full z-10 lg:mt-[35vh] md:mt-[25vh] sm:mt-[10vh]">
+      <div className="relative lg:h-full md:h-full sm:h-full h-full min-h-[75vh] lg:min-h-[50vh] md:min-h-[30vh]">
+        {/* <div className="absolute bg-[rgba(255,255,255,0.95)] w-full opacity-35">
+          <IconCloud images={images} />
+        </div> */}
+        <div className="absolute flex gap-2 flex-wrap w-full z-10">
           {skills.map((skill, index) => (
             <Badge
               title={skill.name}

@@ -13,7 +13,7 @@ const Experience = () => {
       </h1>
       <ol className="relative border-s border-gray-200">
         {experience.map((itm) => (
-          <li className="mb-10 ms-6" key={itm.name}>
+          <li className="mb-10 ms-6" key={itm.desc}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
               <Icon />
               {/* <ExperienceIcon /> */}
