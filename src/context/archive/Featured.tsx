@@ -1,7 +1,7 @@
 import { Project } from "@/types";
 import MockerMockup from "@/assets/images/mocker/4.webp";
 // import BloggramMockup from "@/assets/images/bloggram/1.webp";
-import DPMockup from "@/assets/images/dynamic-portfolio/2.webp";
+// import DPMockup from "@/assets/images/dynamic-portfolio/2.webp";
 import CCSMapMockup from "@/assets/images/ccs/2.webp";
 import AiAuditMockup from "@/assets/images/ai-audit/1.webp";
 

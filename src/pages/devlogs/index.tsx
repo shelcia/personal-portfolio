@@ -12,7 +12,6 @@ import Link from "next/link";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { ShimmerButton } from "@/components/common/CustomButtons";
-import RootLayout from "@/app/layout";
 import Head from "next/head";
 
 const Devlogs = () => {

@@ -52,7 +52,7 @@ const Works = () => {
                   dmsans.className
                 )}
               >
-                {projects.map((item) => (
+                {projects && projects.map((item) => (
                   <ProjectCard
                     title={item.name}
                     image={item.mockup}
