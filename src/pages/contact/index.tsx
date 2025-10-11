@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import type { Metadata } from "next";
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
 };
 
 const ContactForm = () => {
+  const isSubmittingRef = useRef<boolean>(false);
+
   const words = [
     {
       text: "Connect",
@@ -59,6 +61,9 @@ const ContactForm = () => {
 
   const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isSubmittingRef.current) return;
+    isSubmittingRef.current = true;
+    if (isLoading) return;
     setIsLoading(true);
     try {
       if (inputs.name === "" || inputs.email === "" || inputs.message === "") {
