@@ -52,9 +52,24 @@ const Header = () => {
         <div
           className={`font-light text-base max-w-7xl md:text-3xl py-4 px-4 md:px-10 text-center ${dmsans.className}`}
         >
-          Experienced Full Stack developer and designer. Contributed to NASDAQ
-          and startups like HIRA, NYX Wolves, Solera, and Guvi. Pursuing
-          Master&apos;s in Information at University of Wisconsin - Madison.
+          Experienced Full Stack developer and designer based in San Franscisco.
+          Contributed to{" "}
+          <Link
+            href="https://www.nimble.ai/"
+            className={"hover:underline"}
+            target="_blank"
+          >
+            Nimble
+          </Link>
+          ,{" "}
+          <Link
+            href="https://www.nasdaq.com/"
+            className={"hover:underline"}
+            target="_blank"
+          >
+            NASDAQ
+          </Link>{" "}
+          and startups like HIRA, NYX Wolves, Solera, and Guvi.
         </div>
         <div className="gap-2 flex">
           {/* <AnimatedTooltip items={icons}></AnimatedTooltip> */}
@@ -83,11 +98,7 @@ interface IconButtonProps {
   children: ReactNode;
 }
 
-const IconButton: React.FC<IconButtonProps> = ({
-  children,
-  link,
-  alt,
-}) => {
+const IconButton: React.FC<IconButtonProps> = ({ children, link, alt }) => {
   return (
     <TooltipProvider>
       <Tooltip>

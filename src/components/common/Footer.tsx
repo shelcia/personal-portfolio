@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className={cn(`bg-zinc-50 rounded-lg`, dmsans.className)}>
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center flex gap-1 flex-wrap items-center">
-          <span>© 2025 Shelcia. Built with love </span>
+          <span>© 2026 Shelcia. Built with love </span>
           <HeartFilledIcon color="rgb(219 39 119)" />
           <span>using Next.js and Tailwind.</span>
         </span>

@@ -15,9 +15,9 @@ import DP2 from "../assets/images/dynamic-portfolio/1.webp";
 import DP3 from "../assets/images/dynamic-portfolio/3.webp";
 import DP4 from "../assets/images/dynamic-portfolio/4.webp";
 
-import Socialgram1 from "../assets/images/socialgram/2-1.webp";
-import Socialgram2 from "../assets/images/socialgram/1.webp";
-import Socialgram3 from "../assets/images/socialgram/3.webp";
+// import Socialgram1 from "../assets/images/socialgram/2-1.webp";
+// import Socialgram2 from "../assets/images/socialgram/1.webp";
+// import Socialgram3 from "../assets/images/socialgram/3.webp";
 
 import Samgatha1 from "../assets/images/samgatha/1.webp";
 import Samgatha2 from "../assets/images/samgatha/2.webp";
@@ -38,9 +38,62 @@ import AI3 from "../assets/images/ai-audit/3.webp";
 import AI4 from "../assets/images/ai-audit/4.webp";
 import AI5 from "../assets/images/ai-audit/5.webp";
 
+import Tracking1 from "../assets/images/nimble-tracking/1.webp";
+import Tracking2 from "../assets/images/nimble-tracking/2.webp";
+import Tracking3 from "../assets/images/nimble-tracking/3.webp";
+import Tracking4 from "../assets/images/nimble-tracking/4.webp";
+
 import { ContentTitle } from "@/pages/components/ProjectImages";
 
 export const projects: Project[] = [
+  {
+    id: "nimble-tracking",
+    name: "Nimble Tracking",
+    mockup: Tracking1,
+    images: [
+      {
+        id: 1,
+        content: <ContentTitle title="Tracking Landing Page" />,
+        className: "w-full",
+        thumbnail: Tracking1,
+      },
+      {
+        id: 2,
+        content: <ContentTitle title="Shipment Dashboard" />,
+        className: "w-full",
+        thumbnail: Tracking2,
+      },
+      {
+        id: 3,
+        content: <ContentTitle title="Order & Package Details" />,
+        className: "w-full",
+        thumbnail: Tracking3,
+      },
+      {
+        id: 4,
+        content: <ContentTitle title="Tracking Status & Timeline" />,
+        className: "w-full",
+        thumbnail: Tracking4,
+      },
+    ],
+    desc: "End-to-end shipment tracking platform for merchants and customers",
+    description:
+      "I designed and developed Nimble Tracking, a scalable end-to-end shipment tracking platform used by merchants and customers to monitor orders in real time. I led the frontend development from Figma designs to a fully responsive, accessible production-ready web application. On the backend, I built microservices that listen to order and package creation and updates, aggregate data from internal Order Management and Transport Management systems, and persist tracking information securely in AWS S3. The system avoids storing personally identifiable information, reduces direct database access, and improves security and performance. I also implemented CI/CD pipelines and infrastructure using Terraform to deploy the service across multiple environments including dev, staging, performance, sandbox, and production.",
+    techstack: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Node.js",
+      "AWS S3",
+      "GraphQL",
+      "Terraform",
+    ],
+    deploy: true,
+    deployment: "https://nmblmsg.com/tracking",
+    code: "", // private repository
+    forks: 0,
+    stars: 0,
+  },
   {
     id: "mocker",
     name: "Mocker",
@@ -74,8 +127,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "Generate mockup data for testing and prototyping",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
     description:
       "I developed Mocker as a powerful mock data generation tool to streamline the development and testing process. Using Faker.js, I built a system that provides developers with realistic, customizable test data through API endpoints. My implementation allows users to generate comprehensive datasets including names, addresses, phone numbers, and more in various formats. I designed the tool to be particularly valuable for developers who need to test applications with realistic data scenarios, prototype features before real data is available, or create consistent test environments. The API-first approach I implemented enables seamless integration into existing development workflows and testing pipelines.",
     techstack: ["React", "NodeJS", "Material UI", "FakerJs"],
@@ -117,8 +168,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "Report & Analytics Dashboard",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/bloggram_MNEIxWCSV.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649611643446",
     description:
       "I developed this Knowledge Map dashboard under the guidance of Prof. Jackson to visualize and analyze environmental survey data. I created a platform serving two critical functions: visualizing community responses to environmental surveys and evaluating the representativeness of these responses across different demographics. Through my implementation, the tool empowers local communities to engage in environmental justice discussions and supports evidence-based environmental policymaking. I focused on making complex survey data accessible and understandable, effectively bridging the gap between community insights and policy decisions.",
     techstack: ["R", "RShiny", "Bootstrap", "NodeJS"],
@@ -133,7 +182,6 @@ export const projects: Project[] = [
     id: "ai-audit",
     name: "AI Audit",
     desc: "Comprehensive Survey Tool",
-    image: AI1,
     mockup: AI1,
     images: [
       {
@@ -201,8 +249,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "Build websites by filling up forms",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/dynamic_portfolio_OTIKucmwE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664985958085",
     description:
       "I created Dynamic Portfolio as an innovative website building platform that transforms the traditional web development process into a simple form-filling experience. I designed it for professionals who need an online presence without coding knowledge, allowing users to create customized websites in under five minutes. I developed three distinct templates and built an intuitive interface for content management. Each template I created is optimized for professional presentation while maintaining flexibility for personal customization. Through this tool, I aimed to bridge the gap between sophisticated web development and accessible website creation.",
     techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
@@ -211,49 +257,6 @@ export const projects: Project[] = [
     code: "https://github.com/shelcia/dynamic-portflio",
     forks: 75,
     stars: 33,
-  },
-  {
-    id: "socialgram",
-    name: "Social Gram",
-    mockup: Socialgram1,
-    images: [
-      {
-        id: 1,
-        content: <ContentTitle title="Share Posts" />,
-        className: "w-full",
-        thumbnail: Socialgram1,
-      },
-      {
-        id: 2,
-        content: <ContentTitle title="User's Feed" />,
-        className: "w-full",
-        thumbnail: Socialgram2,
-      },
-      {
-        id: 3,
-        content: <ContentTitle title="Home Page/Authentication Page" />,
-        className: "w-full",
-        thumbnail: Socialgram3,
-      },
-    ],
-    desc: "Share, engage with posts.",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/socialgram_QZZgEkKTJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874113040",
-    description:
-      "I developed Socialgram as a feature-rich social media platform that combines the best elements of modern social networking. I implemented functionality for users to create, share, and engage with content through a clean, intuitive interface. I built support for multimedia posts, real-time interactions through likes and comments, and comprehensive user profiles. Using React and Redux for seamless state management, I ensured responsive performance and a smooth user experience. I continue to evolve the platform with regular feature updates and performance improvements to enhance user engagement and community building.",
-    techstack: [
-      "React",
-      "Material UI",
-      "MongoDB",
-      "NodeJS",
-      "ExpressJS",
-      "Redux",
-    ],
-    deploy: true,
-    deployment: "https://social--gram.vercel.app/",
-    code: "https://github.com/shelcia/Socialgram",
-    forks: 44,
-    stars: 37,
   },
   {
     id: "irul-theme",
@@ -280,8 +283,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "Dark, minimalist theme for VS Code",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/irul-theme_jpxcz8EG7v.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735788",
     description:
       "I created IRUL (meaning 'Dark' in Tamil) as a carefully crafted Visual Studio Code theme designed for extended coding sessions. I based it on the sophisticated Halcyon color palette, ensuring optimal contrast and color selection to reduce eye strain while maintaining code readability. I developed two variants to suit different preferences, and the theme has garnered a community of over 1,200 active users. In my design, I focused on a minimalist approach that emphasizes essential syntax highlighting while eliminating visual distractions, making it ideal for developers who spend long hours coding.",
     techstack: ["JSON", "VSCODE"],
@@ -317,8 +318,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "IIITDM College Fest Website 2019-20",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/samgatha_zfGoNnO-Sfq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170735314",
     description:
       "I worked as part of a two-member web development team to create the official website for IIITDM's college festival, Samgatha 2020. I helped design the website around the theme 'DREAM', incorporating modern design principles with practical functionality. Using Bootstrap for responsive design and NodeJS for backend operations, I implemented efficient event information management through MongoDB integration. The website I helped develop served as the primary information hub for festival activities, event registrations, and updates.",
     deploy: true,
@@ -359,8 +358,6 @@ export const projects: Project[] = [
       },
     ],
     desc: "Tradluxe E-commerce website based in Singapore",
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/auv_FR1HUEv80j.png?ik-sdk-version=javascript-1.4.3&updatedAt=1644170738839",
     description:
       "As the sole developer, I built this custom e-commerce platform for a Singapore-based luxury goods company, Tradluxe. I created a comprehensive digital solution that showcases their premium product line while maintaining brand integrity. I implemented dynamic product catalogs, an integrated blog system, and developed custom API endpoints for form submissions using Nodemailer. I crafted the design using Adobe XD, emphasizing luxury brand aesthetics while ensuring optimal user experience and conversion optimization.",
     techstack: ["React", "NodeJS", "Nodemailer", "Adobe XD", "Bootstrap"],

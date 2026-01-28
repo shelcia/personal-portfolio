@@ -6,7 +6,7 @@ export interface Project {
   name: string;
   mockup?: string | StaticImageData;
   images?: Card[];
-  image: string | StaticImageData;
+  image?: string | StaticImageData;
   imageURL?: string;
   desc?: string;
   description?: string;

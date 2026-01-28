@@ -38,7 +38,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
           translateZ="60"
           className={cn(
             "text-neutral-500 text-sm max-w-sm mt-2",
-            calsans.className
+            calsans.className,
           )}
         >
           {desc}
@@ -70,7 +70,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
             target="__blank"
             className="px-4 py-2 rounded-xl text-base font-normal"
           >
-            Try now →
+            Live demo →
           </CardItem>
           <Link href={`works/${name}`}>
             <CardItem
@@ -79,7 +79,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
               as="button"
               className="px-4 py-2 rounded-sm bg-black text-white text-xs font-bold"
             >
-              View Project
+              View case study
             </CardItem>
           </Link>
         </div>
@@ -111,7 +111,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           translateZ="60"
           className={cn(
             "text-neutral-500 text-sm max-w-sm mt-2",
-            calsans.className
+            calsans.className,
           )}
         >
           {desc}
@@ -155,7 +155,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="__blank"
               className="px-4 py-2 rounded-md text-base font-normal"
             >
-              Try now →
+              Live demo →
             </CardItem>
           )}
 
@@ -165,7 +165,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               as="button"
               className="px-4 py-2 rounded-md text-white text-xs font-bold animate-shimmer-sm bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors"
             >
-              View Project
+              View case study
             </CardItem>
           </Link>
         </div>
