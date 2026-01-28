@@ -46,7 +46,7 @@ const AboutPage = () => {
         <h1
           className={cn(
             "md:text-5xl text-3xl text-bold mb-0",
-            calsans.className
+            calsans.className,
           )}
         >
           Who is Shelcia?
@@ -67,7 +67,7 @@ const AboutPage = () => {
             }}
             className={cn(
               "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
-              dmsans.className
+              dmsans.className,
             )}
           >
             I’m a{" "}
@@ -76,7 +76,7 @@ const AboutPage = () => {
             </Highlight>
             , where I build and refine logistics and warehouse automation
             interfaces with React, TypeScript, and Go. With{" "}
-            <Highlight className="text-black">3+ years</Highlight> of experience
+            <Highlight className="text-black">3+ years of experience</Highlight>
             across startups and enterprises—including{" "}
             <Highlight className="text-black">
               NASDAQ, HIRA, NYX Wolves, Solera, and Guvi
