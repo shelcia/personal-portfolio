@@ -41,7 +41,7 @@ const Topbar = () => {
     <header
       className={cn(
         "bg-transparent w-full rounded-lg px-4 sm:px-24 md:py-6 py-3 sticky z-40",
-        dmsans.className
+        dmsans.className,
       )}
     >
       <nav className="bg-transparent">
@@ -60,7 +60,7 @@ const Topbar = () => {
                 <span className="sr-only">Toggle navigation menu</span>
               </button>
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="bg-white">
               <nav className="grid gap-6 text-lg font-medium">
                 <Link
                   href="/"
@@ -71,7 +71,11 @@ const Topbar = () => {
                 {navItems.map((nav) => (
                   <Link
                     href={nav.link}
-                    className="text-muted-foreground hover:text-foreground"
+                    className={
+                      pathname === nav.link
+                        ? "text-blue-500 hover:text-blue-700"
+                        : "text-muted-foreground hover:text-foreground"
+                    }
                     key={nav.name}
                   >
                     {nav.name}
@@ -91,7 +95,7 @@ const Topbar = () => {
                       pathname === nav.link
                         ? "text-blue-500"
                         : "text-muted-foreground",
-                      calsans.className
+                      calsans.className,
                     )}
                     aria-current="page"
                   >
