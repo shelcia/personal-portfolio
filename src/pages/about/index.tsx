@@ -72,7 +72,7 @@ const AboutPage = () => {
           >
             I’m a{" "}
             <Highlight className="text-black">
-              UI Developer II at Nimble Robotics
+              Software Engineer II - Frontend at Nimble Robotics
             </Highlight>
             , where I build and refine logistics and warehouse automation
             interfaces with React, TypeScript, and Go. With{" "}
