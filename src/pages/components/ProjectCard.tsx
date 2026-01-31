@@ -155,7 +155,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               target="__blank"
               className="px-4 py-2 rounded-md text-base font-normal"
             >
-              Live demo →
+              Demo →
             </CardItem>
           )}
 
@@ -165,7 +165,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               as="button"
               className="px-4 py-2 rounded-md text-white text-xs font-bold animate-shimmer-sm bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors"
             >
-              View case study
+              View
             </CardItem>
           </Link>
         </div>

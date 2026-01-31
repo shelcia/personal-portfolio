@@ -21,15 +21,15 @@ const Experience = () => {
             <h3
               className={cn(
                 "flex items-center mb-1 text-lg font-semibold text-zinc-800",
-                calsans.className
+                calsans.className,
               )}
             >
-              {itm.designation}-{itm.name}{" "}
+              {itm.designation} - {itm.name}{" "}
             </h3>
             <time
               className={cn(
                 "block mb-2 text-sm font-normal leading-none text-gray-500",
-                dmsans.className
+                dmsans.className,
               )}
             >
               {itm.year}
@@ -37,7 +37,7 @@ const Experience = () => {
             <p
               className={cn(
                 "mb-4 text-base font-normal text-gray-500",
-                dmsans.className
+                dmsans.className,
               )}
             >
               {itm.desc}

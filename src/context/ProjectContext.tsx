@@ -133,10 +133,9 @@ export const projects: Project[] = [
     deploy: true,
     deployment: "https://mocker-gen.netlify.app/",
     code: "https://github.com/shelcia/mocker",
-    forks: 29,
-    stars: 17,
+    forks: 30,
+    stars: 19,
   },
-
   {
     id: "ccs-knowledge",
     name: "CCS Knowledge",
@@ -290,8 +289,8 @@ export const projects: Project[] = [
     deployment:
       "https://marketplace.visualstudio.com/items?itemName=shelcia.irul-theme",
     code: "https://github.com/shelcia/irul-theme",
-    forks: 2565,
-    stars: 2565,
+    forks: 2952,
+    stars: 2952,
   },
   {
     id: "samgatha",
