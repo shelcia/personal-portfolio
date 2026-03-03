@@ -49,19 +49,20 @@ const Works = () => {
               <div
                 className={cn(
                   "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 gap-4",
-                  dmsans.className
+                  dmsans.className,
                 )}
               >
-                {projects && projects.map((item) => (
-                  <ProjectCard
-                    title={item.name}
-                    image={item.mockup}
-                    link={item.deployment}
-                    key={item.id}
-                    desc={item.desc}
-                    name={item.id}
-                  />
-                ))}
+                {projects &&
+                  projects.map((item) => (
+                    <ProjectCard
+                      title={item.name}
+                      image={item.mockup}
+                      link={item.deployment}
+                      key={item.id}
+                      desc={item.desc}
+                      name={item.id}
+                    />
+                  ))}
               </div>
             </motion.div>
             <div className="w-full flex justify-end">
@@ -104,10 +105,7 @@ const Works = () => {
                 ))}
               </div>
               <div className="w-full flex justify-end mt-8">
-                <Link
-                  href="https://github.com/shelcia?tab=repositories"
-                  target="_blank"
-                >
+                <Link href="https://www.behance.net/shelcia" target="_blank">
                   <ShimmerButton title="View More on Behance" />
                 </Link>
               </div>

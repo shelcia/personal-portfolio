@@ -3,9 +3,9 @@ import { ExperienceItem } from "@/types";
 export const experience: ExperienceItem[] = [
   {
     name: "Nimble Robotics",
-    designation: "UI Developer II (Frontend Engineer II)",
+    designation: "UI Developer III (Frontend Engineer III)",
     year: "June 2025 - Present",
-    desc: "Developing and shipping production-grade features for Nimble’s customer and merchant-facing platforms using React, TypeScript, and Go. I translate Figma designs into accessible, high-performance UIs, collaborate closely with backend and product teams, and contribute across the stack to deliver scalable, reliable solutions. My work focuses on code quality, performance, and maintainability in a fast-moving production environment.",
+    desc: "Got promoted from UI Developer II to UI Developer III. Developing and shipping production-grade features for Nimble’s customer and merchant-facing platforms using React, TypeScript, and Go. I translate Figma designs into accessible, high-performance UIs, collaborate closely with backend and product teams, and contribute across the stack to deliver scalable, reliable solutions. My work focuses on code quality, performance, and maintainability in a fast-moving production environment.",
     skills: [
       "React",
       "Typescript",
