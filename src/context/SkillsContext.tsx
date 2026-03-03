@@ -5,8 +5,8 @@ import ReactNativeIcon from "@/assets/skills-icons/ReactNativeIcon";
 import TSIcon from "@/assets/skills-icons/TSIcon";
 import NodeIcon from "@/assets/skills-icons/NodeIcon";
 import NextIcon from "@/assets/skills-icons/NextIcon";
-import PythonIcon from "@/assets/skills-icons/PythonIcon";
-import VueIcon from "@/assets/skills-icons/VueIcon";
+// import PythonIcon from "@/assets/skills-icons/PythonIcon";
+// import VueIcon from "@/assets/skills-icons/VueIcon";
 import GoIcon from "@/assets/skills-icons/GoIcon";
 import SASSIcon from "@/assets/skills-icons/SASSIcon";
 import FigmaIcon from "@/assets/skills-icons/FigmaIcon";
@@ -21,6 +21,10 @@ import DockerIcon from "@/assets/skills-icons/DockerIcon";
 import SQLIcon from "@/assets/skills-icons/SQLIcon";
 import VSIcon from "@/assets/skills-icons/VSIcon";
 import ViteIcon from "@/assets/skills-icons/ViteIcon";
+import ExpoIcon from "@/assets/skills-icons/ExpoIcon";
+import ReduxIcon from "@/assets/skills-icons/ReduxIcon";
+import PostmanIcon from "@/assets/skills-icons/PostmanIcon";
+import AWSIcon from "@/assets/skills-icons/AWSIcon";
 
 export const skills: SkillItem[] = [
   {
@@ -59,18 +63,18 @@ export const skills: SkillItem[] = [
     bgClass: "rgb(229 231 235)",
     colorClass: "rgb(31 41 55)",
   },
-  {
-    name: "Python",
-    img: <PythonIcon />,
-    bgClass: "rgb(254 249 195)",
-    colorClass: "rgb(202 138 4)",
-  },
-  {
-    name: "Vue",
-    img: <VueIcon />,
-    bgClass: "rgb(220 252 231)",
-    colorClass: "rgb(22 163 74)",
-  },
+  // {
+  //   name: "Python",
+  //   img: <PythonIcon />,
+  //   bgClass: "rgb(254 249 195)",
+  //   colorClass: "rgb(202 138 4)",
+  // },
+  // {
+  //   name: "Vue",
+  //   img: <VueIcon />,
+  //   bgClass: "rgb(220 252 231)",
+  //   colorClass: "rgb(22 163 74)",
+  // },
   {
     name: "GoLang",
     img: <GoIcon />,
@@ -118,6 +122,27 @@ export const skills: SkillItem[] = [
   },
 
   {
+    name: "Expo",
+    img: <ExpoIcon />,
+    bgClass: "rgb(229 231 235)",
+    colorClass: "rgb(31 41 55)",
+  },
+
+  {
+    name: "Redux",
+    img: <ReduxIcon />,
+    bgClass: "rgb(243 232 255)",
+    colorClass: "#764abc",
+  },
+
+  {
+    name: "Postman",
+    img: <PostmanIcon />,
+    bgClass: "#fde4da",
+    colorClass: "#f37036",
+  },
+
+  {
     name: "GIT",
     img: <GITIcon />,
     bgClass: "rgb(254 226 226)",
@@ -160,42 +185,16 @@ export const skills: SkillItem[] = [
   },
 
   {
+    name: "AWS",
+    img: <AWSIcon />,
+    bgClass: "rgb(255, 242, 222)",
+    colorClass: "#f90",
+  },
+
+  {
     name: "Vite",
     img: <ViteIcon />,
     bgClass: "rgb(221 214 254)",
     colorClass: "rgb(109 40 217)",
   },
-];
-
-export const skillSlug: string[] = [
-  "typescript",
-  "javascript",
-  "react",
-  "html5",
-  "css",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  // "amazonaws",
-  "firebase",
-  "vercel",
-  "jest",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
-  // "visualstudiocode",
-  "figma",
-  "mongodb",
-  "python",
-  "sass",
-  // "reactnative",
-  "r",
-  "mysql",
-  "mui",
-  "bootstrap",
-  "tailwindcss",
-  "vite",
-  "go",
 ];
