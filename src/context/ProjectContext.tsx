@@ -321,7 +321,7 @@ export const projects: Project[] = [
       "I worked as part of a two-member web development team to create the official website for IIITDM's college festival, Samgatha 2020. I helped design the website around the theme 'DREAM', incorporating modern design principles with practical functionality. Using Bootstrap for responsive design and NodeJS for backend operations, I implemented efficient event information management through MongoDB integration. The website I helped develop served as the primary information hub for festival activities, event registrations, and updates.",
     deploy: true,
     techstack: ["Bootstrap", "MongoDB", "NodeJS"],
-    deployment: "https://samgatha-2020.glitch.me/",
+    deployment: "https://samgatha-2020.vercel.app/",
     code: "https://github.com/shelcia/Samgatha-2020",
     forks: 0,
     stars: 0,
