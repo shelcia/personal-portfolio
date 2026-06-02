@@ -63,7 +63,6 @@ const ContactForm = () => {
     e.preventDefault();
     if (isSubmittingRef.current) return;
     isSubmittingRef.current = true;
-    if (isLoading) return;
     setIsLoading(true);
     try {
       if (inputs.name === "" || inputs.email === "" || inputs.message === "") {
@@ -84,15 +83,13 @@ const ContactForm = () => {
         },
       };
 
-      // console.log(process.env.AIRTABLE_API_KEY);
-
       await fetch("https://api.airtable.com/v0/appTbgDq2M8MBUNrR/emails", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(body), // Convert the body to a JSON string
+        body: JSON.stringify(body),
       });
 
       setAlert({
@@ -102,7 +99,6 @@ const ContactForm = () => {
       });
 
       setOpen(true);
-      setIsLoading(false);
     } catch (err) {
       console.log(err);
       setAlert({
@@ -111,7 +107,9 @@ const ContactForm = () => {
         showConfetti: false,
       });
       setOpen(true);
+    } finally {
       setIsLoading(false);
+      isSubmittingRef.current = false;
     }
   };
 
@@ -120,7 +118,7 @@ const ContactForm = () => {
 
   const handleClose = (
     event: React.SyntheticEvent | React.MouseEvent,
-    reason?: string
+    reason?: string,
   ) => {
     // console.log(event.target);
     if (reason === "clickaway") {
@@ -230,15 +228,15 @@ const ContactForm = () => {
                 />
               </LabelInputContainer>
               <button
-                className="bg-gradient-to-br relative group/btn from-black to-neutral-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] relative z-20"
+                className="bg-linear-to-br relative group/btn from-black to-neutral-600 block w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] z-20 disabled:opacity-60 disabled:cursor-not-allowed"
                 type="submit"
                 disabled={isLoading}
               >
-                Send Message
+                {isLoading ? "Sending..." : "Send Message"}
                 <BottomGradient />
               </button>
 
-              <div className="bg-gradient-to-r from-transparent via-neutral-300 to-transparent my-8 h-[1px] w-full" />
+              <div className="bg-linear-to-r from-transparent via-neutral-300 to-transparent my-8 h-px w-full" />
             </form>
           </div>
         </DotBackground>
@@ -254,8 +252,8 @@ const ContactForm = () => {
 const BottomGradient = () => {
   return (
     <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-linear-to-r from-transparent via-cyan-500 to-transparent" />
+      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-linear-to-r from-transparent via-indigo-500 to-transparent" />
     </>
   );
 };
