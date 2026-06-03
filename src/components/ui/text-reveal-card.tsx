@@ -72,7 +72,7 @@ export const TextRevealCard = ({
       className={cn(
         "bg-[#1d1c20] w-full rounded-lg p-8 relative overflow-hidden",
         className,
-        calsans.className
+        calsans.className,
       )}
     >
       {children}
@@ -85,12 +85,12 @@ export const TextRevealCard = ({
           animate={
             isMouseOver
               ? {
-                opacity: widthPercentage > 0 ? 1 : 0,
-                clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
-              }
+                  opacity: widthPercentage > 0 ? 1 : 0,
+                  clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
+                }
               : {
-                clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
-              }
+                  clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
+                }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
           className="absolute bg-[#1d1c20] z-20  will-change-transform"
@@ -99,7 +99,7 @@ export const TextRevealCard = ({
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-5xl md:text-7xl py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-center"
+            className="text-5xl md:text-7xl py-10 font-bold bg-clip-text text-transparent bg-linear-to-b from-white to-neutral-300 text-center"
           >
             {revealText}
           </p>
@@ -111,10 +111,10 @@ export const TextRevealCard = ({
             opacity: widthPercentage > 0 ? 1 : 0,
           }}
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
+          className="h-40 w-2 bg-linear-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
         ></motion.div>
 
-        <div className=" overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
+        <div className=" overflow-hidden mask-[linear-gradient(to_bottom,transparent,white,transparent)]">
           <p className="text-5xl md:text-7xl py-10 font-bold bg-clip-text text-transparent bg-[#323238] text-center">
             {text}
           </p>

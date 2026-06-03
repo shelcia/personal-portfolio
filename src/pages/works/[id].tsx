@@ -74,14 +74,14 @@ const ProjectPage = () => {
             <div
               className={cn(
                 "bg-[#1d1c20] w-full rounded-lg p-4 relative overflow-hidden",
-                calsans.className
+                calsans.className,
               )}
             >
               <p
                 style={{
                   textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
                 }}
-                className="text-3xl py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-center"
+                className="text-3xl py-10 font-bold bg-clip-text text-transparent bg-linear-to-b from-white to-neutral-300 text-center"
               >
                 {proj?.name}
               </p>
@@ -106,7 +106,7 @@ const ProjectPage = () => {
           <div
             className={cn(
               "max-w-4xl font-medium text-gray-800 mx-auto my-4",
-              dmsans.className
+              dmsans.className,
             )}
           >
             {proj?.description}

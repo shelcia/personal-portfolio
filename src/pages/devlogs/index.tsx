@@ -29,14 +29,14 @@ const Devlogs = () => {
       <Topbar />
       <main className="bg-white mb-24">
         <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
-          <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+          <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 mask-[radial-gradient(transparent,white)] pointer-events-none" />
           <span className="hidden md:block">
             <Boxes />
           </span>
           <h1
             className={cn(
               "md:text-6xl text-3xl text-white relative z-20",
-              calsans.className
+              calsans.className,
             )}
           >
             Devlogs{" "}
@@ -44,7 +44,7 @@ const Devlogs = () => {
           <p
             className={cn(
               "text-center mt-2 text-neutral-300 relative z-20",
-              calsans.className
+              calsans.className,
             )}
           >
             Check out my tech articles on
@@ -70,7 +70,7 @@ const Devlogs = () => {
             <h3
               className={cn(
                 "text:xl md:text-3xl font-bold text-black my-4",
-                calsans.className
+                calsans.className,
               )}
             >
               Selected Articles

@@ -26,7 +26,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
     <CardContainer
       className={`${dmsans.className} w-full flex flex-wrap justify-center`}
     >
-      <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6">
+      <CardBody className="bg-gray-50 relative group/card border-black/10 w-auto sm:w-120 h-auto rounded-xl p-6">
         <CardItem
           translateZ="50"
           className={cn("text-xl font-bold text-black", calsans.className)}
@@ -99,7 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <CardContainer
       className={`${dmsans.className} w-full flex flex-wrap justify-center`}
     >
-      <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6">
+      <CardBody className="bg-gray-50 relative group/card border-black/10 w-auto sm:w-120 h-auto rounded-xl p-6">
         <CardItem
           translateZ="50"
           className={cn("text-xl font-bold text-black", calsans.className)}
@@ -163,7 +163,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CardItem
               translateZ={20}
               as="button"
-              className="px-4 py-2 rounded-md text-white text-xs font-bold animate-shimmer-sm bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors"
+              className="px-4 py-2 rounded-md text-white text-xs font-bold animate-shimmer-sm bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-size-[200%_100%] transition-colors"
             >
               View
             </CardItem>

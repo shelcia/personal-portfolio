@@ -52,7 +52,7 @@ const Home = () => {
         <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden pt-16">
           <div className="p-4 max-w-7xl mx-auto relative z-10">
             <h1
-              className={`text-3xl md:text-6xl font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
+              className={`text-3xl md:text-6xl font-bold text-center bg-clip-text bg-linear-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
             >
               Featured Works
             </h1>

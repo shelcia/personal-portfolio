@@ -88,12 +88,12 @@ const Works = () => {
                     title={`View ${design.title} on Behance`}
                     href={design.link}
                   >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full h-[20rem] bg-white">
-                      <h3 className="!m-0 font-bold text-xl text-black">
+                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-full h-80 bg-white">
+                      <h3 className="m-0! font-bold text-xl text-black">
                         {design.title}
                       </h3>
                       <div
-                        className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500"
+                        className="flex flex-1 w-full rounded-lg mt-4 bg-linear-to-br from-violet-500 via-purple-500 to-blue-500"
                         style={{
                           backgroundImage: `url(${design.thumbnail})`,
                           backgroundRepeat: "no-repeat",

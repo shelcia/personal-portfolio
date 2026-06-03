@@ -66,7 +66,7 @@ const AboutPage = () => {
               ease: [0.4, 0.0, 0.2, 1],
             }}
             className={cn(
-              "md:text-xl text-base px-0 md:text-2xl font- text-slate-800 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
+              "text-base px-0 md:text-2xl font- text-slate-800 w-full leading-relaxed lg:leading-snug  mx-auto py-4",
               dmsans.className,
             )}
           >

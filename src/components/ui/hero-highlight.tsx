@@ -43,9 +43,9 @@ export const HeroHighlight = ({
     >
       <div
         className="pointer-events-none absolute inset-0"
-      // style={{
-      //   backgroundImage: dotPatterns.light.default,
-      // }}
+        // style={{
+        //   backgroundImage: dotPatterns.light.default,
+        // }}
       />
       <motion.div
         className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
@@ -98,7 +98,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block rounded-lg bg-gradient-to-r from-indigo-300 to-purple-300 px-1 pb-1`,
+        `relative inline-block rounded-lg bg-linear-to-r from-indigo-300 to-purple-300 px-1 pb-1`,
         className,
       )}
     >

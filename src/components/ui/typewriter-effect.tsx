@@ -39,7 +39,7 @@ export const TypewriterEffect = ({
           duration: 0.3,
           delay: stagger(0.1),
           ease: "easeInOut",
-        }
+        },
       );
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -71,7 +71,7 @@ export const TypewriterEffect = ({
     <div
       className={cn(
         "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold mb-4",
-        className
+        className,
       )}
     >
       {renderWords()}
@@ -88,8 +88,8 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
-          cursorClassName
+          "inline-block rounded-sm w-1 h-4 md:h-6 lg:h-10 bg-blue-500",
+          cursorClassName,
         )}
       ></motion.span>
     </div>
@@ -176,8 +176,8 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
-          cursorClassName
+          "block rounded-sm w-1 h-4 sm:h-6 xl:h-12 bg-blue-500",
+          cursorClassName,
         )}
       ></motion.span>
     </div>
