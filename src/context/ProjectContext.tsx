@@ -1,9 +1,8 @@
 import { Project } from "@/types";
-import Mocker1 from "../assets/images/mocker/1-1.webp";
+import Mocker1 from "../assets/images/mocker/1.webp";
 import Mocker2 from "../assets/images/mocker/2.webp";
-// import Mocker3 from "../assets/images/mocker/3.webp";
+import Mocker3 from "../assets/images/mocker/3.webp";
 import Mocker4 from "../assets/images/mocker/4.webp";
-import Mocker5 from "../assets/images/mocker/5.webp";
 
 import CCS1 from "../assets/images/ccs/1.webp";
 import CCS2 from "../assets/images/ccs/2.webp";
@@ -101,27 +100,25 @@ export const projects: Project[] = [
     images: [
       {
         id: 1,
-        content: <ContentTitle title="Generated JSON data" />,
+        content: <ContentTitle title="Landing Page" />,
         className: "w-full",
         thumbnail: Mocker1,
       },
       {
         id: 2,
-        content: <ContentTitle title="Generated Endpoints" />,
+        content: <ContentTitle title="Project Details" />,
         className: "w-full",
         thumbnail: Mocker2,
       },
       {
         id: 3,
-        content: <ContentTitle title="Documentation Page" />,
+        content: <ContentTitle title="Generated JSON data" />,
         className: "w-full",
-        thumbnail: Mocker5,
+        thumbnail: Mocker3,
       },
       {
         id: 4,
-        content: (
-          <ContentTitle title="Editing the scheme for generation of data" />
-        ),
+        content: <ContentTitle title="All Projects" />,
         className: "w-full",
         thumbnail: Mocker4,
       },
