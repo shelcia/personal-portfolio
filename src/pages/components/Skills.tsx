@@ -1,5 +1,5 @@
 import React from "react";
-import { skills } from "@/context/SkillsContext";
+import { skillGroups } from "@/context/SkillsContext";
 import { cn } from "@/utils/cn";
 import { calsans } from "@/utils/fonts";
 
@@ -11,21 +11,30 @@ const Skills = () => {
       >
         Skills
       </h1>
-      <div className="relative lg:h-full md:h-full sm:h-full h-full min-h-[75vh] lg:min-h-[50vh] md:min-h-[30vh]">
-        {/* <div className="absolute bg-[rgba(255,255,255,0.95)] w-full opacity-35">
-          <IconCloud images={images} />
-        </div> */}
-        <div className="absolute flex gap-2 flex-wrap w-full z-10">
-          {skills.map((skill, index) => (
-            <Badge
-              title={skill.name}
-              key={index}
-              icon={skill.img}
-              bgClass={skill.bgClass}
-              color={skill.colorClass}
-            />
-          ))}
-        </div>
+      <div className="flex flex-col gap-8">
+        {skillGroups.map((group) => (
+          <section key={group.title}>
+            <h2
+              className={cn(
+                "text-xl md:text-2xl text-neutral-800 mb-3",
+                calsans.className,
+              )}
+            >
+              {group.title}
+            </h2>
+            <div className="flex gap-2 flex-wrap">
+              {group.skills.map((skill) => (
+                <Badge
+                  title={skill.name}
+                  key={skill.name}
+                  icon={skill.img}
+                  bgClass={skill.bgClass}
+                  color={skill.colorClass}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
     </>
   );
@@ -40,7 +49,7 @@ const Badge = ({
   color,
 }: {
   title: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   bgClass: string;
   color: string;
 }) => (
@@ -51,7 +60,7 @@ const Badge = ({
       calsans.className,
     )}
   >
-    <span className="h-4 w-4 inline-block me-2">{icon}</span>
+    {icon && <span className="h-4 w-4 inline-block me-2">{icon}</span>}
     {title}
   </span>
 );

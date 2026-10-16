@@ -66,9 +66,14 @@ export interface ExperienceItem {
 
 export interface SkillItem {
   name: string;
-  img: ReactNode;
+  img?: ReactNode;
   bgClass: string;
   colorClass: string;
+}
+
+export interface SkillGroup {
+  title: string;
+  skills: SkillItem[];
 }
 
 export interface ImageItm {
