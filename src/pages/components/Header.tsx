@@ -52,7 +52,7 @@ const Header = () => {
         <div
           className={`font-light text-base max-w-7xl md:text-3xl py-4 px-4 md:px-10 text-center ${dmsans.className}`}
         >
-          Experienced Full Stack developer and designer based in San Franscisco.
+          Experienced Full Stack developer and designer based in San Francisco.
           Contributed to{" "}
           <Link
             href="https://www.nimble.ai/"

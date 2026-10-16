@@ -96,6 +96,7 @@ export const TextRevealCard = ({
           className="absolute bg-[#1d1c20] z-20  will-change-transform"
         >
           <p
+            aria-hidden="true"
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}

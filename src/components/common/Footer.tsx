@@ -5,8 +5,8 @@ import { cn } from "@/utils/cn";
 import { dmsans } from "@/utils/fonts";
 
 const links = [
-  { href: "https://github.com/shelcia", label: "Github" },
-  { href: "https://www.linkedin.com/in/shelcia/", label: "Linkedin" },
+  { href: "https://github.com/shelcia", label: "GitHub" },
+  { href: "https://www.linkedin.com/in/shelcia/", label: "LinkedIn" },
   { href: "https://medium.com/@shelcia", label: "Medium" },
   { href: "https://www.behance.net/shelcia", label: "Behance" },
 ];

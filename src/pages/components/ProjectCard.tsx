@@ -55,7 +55,7 @@ export const FeaturedProjectCard: React.FC<ProjectCardProps> = ({
               height="750"
               width="750"
               className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
+              alt={`${title} project screenshot`}
               // priority={true}
               priority={name === "mocker"}
             />
@@ -128,7 +128,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               height="500"
               width="750"
               className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
+              alt={`${title} project screenshot`}
               priority={true}
             />
           </CardItem>
@@ -140,7 +140,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               height="500"
               width="750"
               className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
+              alt={`${title} project screenshot`}
               priority={true}
             />
           </CardItem>

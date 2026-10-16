@@ -17,7 +17,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 }) => {
   return (
     <div className="max-w-sm bg-white rounded-lg relative z-20 h-full">
-      <a href={link} target="_blank" aria-label="article-image">
+      <a href={link} target="_blank" aria-label={title}>
         <div className="relative w-full h-40">
           <Image
             src={image}

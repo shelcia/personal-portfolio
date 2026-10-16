@@ -27,7 +27,7 @@ const Works = () => {
         <meta property="og:image" content="/social-graph-image.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/" />
+        <meta property="og:url" content="https://www.shelcia-dev.me/works" />
         <meta property="og:type" content="website" />
       </Head>
       <Topbar />

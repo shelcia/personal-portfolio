@@ -1,4 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import type {
+  GetStaticPaths,
+  GetStaticProps,
+  InferGetStaticPropsType,
+} from "next";
 import Footer from "@/components/common/Footer";
 import Topbar from "@/components/common/Topbar";
 import { useRouter } from "next/router";
@@ -14,41 +19,33 @@ import { ShimmerButton } from "@/components/common/CustomButtons";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import Head from "next/head";
 
-const ProjectPage = () => {
+const SITE_URL = "https://www.shelcia-dev.me";
+
+export const getStaticPaths: GetStaticPaths = () => ({
+  paths: projects.map((itm) => ({ params: { id: itm.id } })),
+  fallback: false,
+});
+
+// Project data holds JSX and image imports, so only the id goes through props.
+export const getStaticProps: GetStaticProps<{ id: string }> = ({ params }) => ({
+  props: { id: String(params?.id) },
+});
+
+const ProjectPage = ({
+  id,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
-
-  const [proj, setProj] = useState<Project>({
-    id: "mocker",
-    name: "Mocker",
-    mockup:
-      "https://ik.imagekit.io/shelcia/my_portfolio/mockup/mocker_FhIiA_GE6v.webp?updatedAt=1701194092672",
-    images: [],
-    image:
-      "https://ik.imagekit.io/shelcia/my_portfolio/display-demo/mocker_c9ZHHjepY9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1668874004199",
-    description:
-      "Mocker is a tool that allows you to generate fake, or 'mock', data that can be used for testing or prototyping purposes. It uses a library called Faker.js, which generates fake data such as names, addresses, and phone numbers in a variety of formats. By creating an API endpoint, the tool enables users to create a mocked data set and use it for testing of applications or as a substitute for data that is not yet available in a development stage, also enable a client to test their apps and other functions, in a more realistic scenario.",
-    techstack: ["React", "NodeJS", "Material UI", "FakerJs"],
-    deploy: true,
-    deployment: "https://mocker-gen.netlify.app/",
-    code: "https://github.com/shelcia/mocker",
-    forks: 19,
-    stars: 12,
-  });
-
-  useEffect(() => {
-    const req = projects.filter((itm) => itm.id === router.query.id);
-    setProj(req[0]);
-  }, [router.query.id]);
+  const proj = projects.find((itm) => itm.id === id) as Project;
 
   return (
     <>
       <Head>
         <title>{proj?.name}</title>
-        <meta name="description" content={`${proj?.desc}`} />
+        <meta name="description" content={proj.desc} />
         <meta property="og:image" content="/social-graph-image.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/" />
+        <meta property="og:url" content={`${SITE_URL}/works/${proj.id}`} />
         <meta property="og:type" content="website" />
       </Head>
       <Topbar />
@@ -152,7 +149,7 @@ const ProjectPage = () => {
         </div>
         <div className="text-center	mt-4">
           <Link href="/works">
-            <ShimmerButton title="See More Projects !" />
+            <ShimmerButton title="See More Projects!" />
           </Link>
         </div>
       </main>

@@ -29,11 +29,11 @@ const Home = () => {
         <title>Shelcia David&apos;s Portfolio</title>
         <meta
           name="description"
-          content="Experienced Full Stack developer and designer.
-          Contributed to NASDAQ and startups like HIRA, NYX Wolves, Solera, and
-          Guvi. Pursuing Master's in Information at the University of
-          Wisconsin - Madison. Explore my portfolio for innovative solutions and
-          designs"
+          content="Full Stack developer and designer based in San Francisco.
+          UI Developer III at Nimble Robotics, previously at NASDAQ and
+          startups like HIRA, NYX Wolves, Solera, and Guvi. Master's in
+          Information from the University of Wisconsin-Madison. Explore my
+          projects and designs."
         />
         <meta property="og:image" content="/social-graph-image.webp" />
         <meta property="og:image:width" content="1200" />
@@ -72,7 +72,7 @@ const Home = () => {
             </div>
             <div className="text-center	mt-4">
               <Link href="/works">
-                <ShimmerButton title="See More Projects !" />
+                <ShimmerButton title="See More Projects!" />
               </Link>
             </div>
           </div>
