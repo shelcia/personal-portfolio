@@ -4,11 +4,11 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "standalone",
   images: {
-    domains: [
-      "images.unsplash.com",
-      "ik.imagekit.io",
-      "miro.medium.com",
-      "pbs.twimg.com",
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "ik.imagekit.io" },
+      { protocol: "https", hostname: "miro.medium.com" },
+      { protocol: "https", hostname: "pbs.twimg.com" },
     ],
   },
   env: {

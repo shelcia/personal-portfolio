@@ -23,8 +23,6 @@
     "react": "^19.3.1",
     "react-confetti": "^6.4.0",
     "react-dom": "^19.3.1",
-    "react-element-to-jsx-string": "^18.0.0",
-    "react-icon-cloud": "^4.1.7",
     "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {

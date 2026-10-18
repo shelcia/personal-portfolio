@@ -64,7 +64,7 @@ const Works = () => {
             </motion.div>
             <div className="w-full flex justify-end">
               <ShimmerButton
-                title="View More on Github"
+                title="View More on GitHub"
                 href="https://github.com/shelcia?tab=repositories"
                 external
               />

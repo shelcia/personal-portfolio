@@ -136,7 +136,7 @@ const ProjectPage = ({
               />
             )}
             {proj?.code && proj.code !== "" && (
-              <ShimmerButton title="Code on Github" href={proj.code} external />
+              <ShimmerButton title="Code on GitHub" href={proj.code} external />
             )}
           </div>
           {proj?.images && (
