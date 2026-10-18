@@ -69,22 +69,15 @@ const ContactForm = () => {
         return;
       }
 
-      const body = {
-        fields: {
-          name: inputs.name,
-          email: inputs.email,
-          message: inputs.message,
-        },
-      };
-
-      await fetch("https://api.airtable.com/v0/appTbgDq2M8MBUNrR/emails", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${process.env.AIRTABLE_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(inputs),
       });
+
+      if (!res.ok) {
+        throw new Error(`Contact request failed: ${res.status}`);
+      }
 
       setAlert({
         message: "Thank you for contacting. Will get back soon !",

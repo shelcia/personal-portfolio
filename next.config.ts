@@ -11,9 +11,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "pbs.twimg.com" },
     ],
   },
-  env: {
-    AIRTABLE_API_KEY: process.env.AIRTABLE_API_KEY,
-  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
