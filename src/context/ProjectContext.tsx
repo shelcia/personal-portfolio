@@ -9,10 +9,15 @@ import CCS2 from "../assets/images/ccs/2.webp";
 import CCS3 from "../assets/images/ccs/3.webp";
 import CCS4 from "../assets/images/ccs/4.webp";
 
-import DP1 from "../assets/images/dynamic-portfolio/2.webp";
-import DP2 from "../assets/images/dynamic-portfolio/1.webp";
-import DP3 from "../assets/images/dynamic-portfolio/3.webp";
-import DP4 from "../assets/images/dynamic-portfolio/4.webp";
+// import DP1 from "../assets/images/dynamic-portfolio/2.webp";
+// import DP2 from "../assets/images/dynamic-portfolio/1.webp";
+// import DP3 from "../assets/images/dynamic-portfolio/3.webp";
+// import DP4 from "../assets/images/dynamic-portfolio/4.webp";
+
+import TinyCRM1 from "../assets/images/tinycrm/1.webp";
+import TinyCRM2 from "../assets/images/tinycrm/2.webp";
+import TinyCRM3 from "../assets/images/tinycrm/3.webp";
+import TinyCRM4 from "../assets/images/tinycrm/4.webp";
 
 // import Socialgram1 from "../assets/images/socialgram/2-1.webp";
 // import Socialgram2 from "../assets/images/socialgram/1.webp";
@@ -215,45 +220,94 @@ export const projects: Project[] = [
     code: "https://github.com/ai-fairness-research/ai-fairness-web-app",
   },
   {
-    id: "dynamic-portfolio",
-    name: "Dynamic Portfolio Maker",
-    mockup: DP1,
+    id: "tiny-crm",
+    name: "Tiny CRM",
+    mockup: TinyCRM1,
     images: [
       {
         id: 1,
-        content: <ContentTitle title="Editing Portfolio Content" />,
+        content: <ContentTitle title="Dashboard Overview" />,
         className: "w-full",
-        thumbnail: DP1,
+        thumbnail: TinyCRM1,
       },
       {
         id: 2,
-        content: <ContentTitle title="Home Page" />,
+        content: <ContentTitle title="Deal Pipeline" />,
         className: "w-full",
-        thumbnail: DP2,
+        thumbnail: TinyCRM4,
       },
       {
         id: 3,
-        content: <ContentTitle title="Authentication Page" />,
+        content: <ContentTitle title="Contacts Management" />,
         className: "w-full",
-        thumbnail: DP3,
+        thumbnail: TinyCRM3,
       },
       {
         id: 4,
-        content: <ContentTitle title="Portfolio Template 1" />,
+        content: <ContentTitle title="Project Board (Dark Mode)" />,
         className: "w-full",
-        thumbnail: DP4,
+        thumbnail: TinyCRM2,
       },
     ],
-    desc: "Build websites by filling up forms",
+    desc: "Full-stack CRM with role-based access, built with React and Go",
     description:
-      "I created Dynamic Portfolio as an innovative website building platform that transforms the traditional web development process into a simple form-filling experience. I designed it for professionals who need an online presence without coding knowledge, allowing users to create customized websites in under five minutes. I developed three distinct templates and built an intuitive interface for content management. Each template I created is optimized for professional presentation while maintaining flexibility for personal customization. Through this tool, I aimed to bridge the gap between sophisticated web development and accessible website creation.",
-    techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+      "I built Tiny CRM, a full-stack customer relationship management app with role-based access for admins, managers, and employees. On the frontend I used React, TypeScript, Vite, Tailwind CSS and shadcn/ui, with TanStack Table powering contact management with server-side search, filters, and CSV import/export. The app brings together contacts, support tickets, a Kanban deal pipeline, drag-and-drop project boards, and an email module with a template builder. On the backend I wrote a Go (Gin) API backed by MongoDB, with JWT authentication, AES-256-GCM encryption for sensitive data, and a background goroutine scheduler that sends one-time and recurring emails over SMTP. The whole stack can be run locally with Docker Compose.",
+    techstack: [
+      "React",
+      "TypeScript",
+      "Go",
+      "Gin",
+      "MongoDB",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Docker",
+    ],
     deploy: true,
-    deployment: "https://dynamic--portfolio.vercel.app/",
-    code: "https://github.com/shelcia/dynamic-portflio",
-    forks: 75,
-    stars: 33,
+    deployment: "https://tiny-crm-beta.vercel.app/",
+    code: "https://github.com/shelcia/CRM",
+    forks: 32,
+    stars: 91,
   },
+  // {
+  //   id: "dynamic-portfolio",
+  //   name: "Dynamic Portfolio Maker",
+  //   mockup: DP1,
+  //   images: [
+  //     {
+  //       id: 1,
+  //       content: <ContentTitle title="Editing Portfolio Content" />,
+  //       className: "w-full",
+  //       thumbnail: DP1,
+  //     },
+  //     {
+  //       id: 2,
+  //       content: <ContentTitle title="Home Page" />,
+  //       className: "w-full",
+  //       thumbnail: DP2,
+  //     },
+  //     {
+  //       id: 3,
+  //       content: <ContentTitle title="Authentication Page" />,
+  //       className: "w-full",
+  //       thumbnail: DP3,
+  //     },
+  //     {
+  //       id: 4,
+  //       content: <ContentTitle title="Portfolio Template 1" />,
+  //       className: "w-full",
+  //       thumbnail: DP4,
+  //     },
+  //   ],
+  //   desc: "Build websites by filling up forms",
+  //   description:
+  //     "I created Dynamic Portfolio as an innovative website building platform that transforms the traditional web development process into a simple form-filling experience. I designed it for professionals who need an online presence without coding knowledge, allowing users to create customized websites in under five minutes. I developed three distinct templates and built an intuitive interface for content management. Each template I created is optimized for professional presentation while maintaining flexibility for personal customization. Through this tool, I aimed to bridge the gap between sophisticated web development and accessible website creation.",
+  //   techstack: ["React", "Bootstrap", "NodeJS", "MongoDB"],
+  //   deploy: true,
+  //   deployment: "https://dynamic--portfolio.vercel.app/",
+  //   code: "https://github.com/shelcia/dynamic-portflio",
+  //   forks: 75,
+  //   stars: 33,
+  // },
   {
     id: "irul-theme",
     name: "Irul Theme",
