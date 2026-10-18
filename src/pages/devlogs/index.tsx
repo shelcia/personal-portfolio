@@ -7,27 +7,27 @@ import { Boxes } from "@/components/ui/background-boxes";
 import { cn } from "@/utils/cn";
 import { articles } from "@/context/MediumContext";
 import Footer from "@/components/common/Footer";
-import ArticleSection from "../components/ArticleSection";
+import ArticleSection from "@/components/sections/ArticleSection";
 import Link from "next/link";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { ShimmerButton } from "@/components/common/CustomButtons";
-import Head from "next/head";
+import Seo from "@/components/common/Seo";
 
 const Devlogs = () => {
   return (
     <>
-      <Head>
-        <title>Devlogs | Shelcia David</title>
-        <meta name="description" content="Selected Articles from Medium" />
-        <meta property="og:image" content="/social-graph-image.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/devlogs" />
-        <meta property="og:type" content="website" />
-      </Head>
+      <Seo
+        title="Devlogs | Shelcia David"
+        description="Articles by Shelcia David on React, TypeScript, Node.js, contract testing and UX research, published on Medium."
+        path="/devlogs"
+      />
       <Topbar />
-      <main className="bg-white mb-24">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="outline-none bg-white mb-24"
+      >
         <div className="h-48 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
           <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 mask-[radial-gradient(transparent,white)] pointer-events-none" />
           <span className="hidden md:block">
@@ -67,19 +67,21 @@ const Devlogs = () => {
           }}
         >
           <div className="md:px-24 px-4 mt-4">
-            <h3
+            <h2
               className={cn(
                 "text:xl md:text-3xl font-bold text-black my-4",
                 calsans.className,
               )}
             >
               Selected Articles
-            </h3>
+            </h2>
             <ArticleSection items={articles} />
             <div className="mt-4 w-full text-end">
-              <Link href="https://shelcia.medium.com/" target="_blank">
-                <ShimmerButton title="Read More on Medium" />
-              </Link>
+              <ShimmerButton
+                title="Read More on Medium"
+                href="https://shelcia.medium.com/"
+                external
+              />
             </div>
           </div>
         </motion.div>

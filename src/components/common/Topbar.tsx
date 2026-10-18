@@ -55,7 +55,7 @@ const Topbar = () => {
           </Link>
           <Sheet>
             <SheetTrigger asChild>
-              <button className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+              <button className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-700">
                 <HamburgerMenuIcon className="h-5 w-5" />
                 <span className="sr-only">Toggle navigation menu</span>
               </button>

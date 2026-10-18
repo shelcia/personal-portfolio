@@ -48,7 +48,7 @@
 // import AI4 from "../assets/images/ai-audit/4.webp";
 // import AI5 from "../assets/images/ai-audit/5.webp";
 
-// import { ContentTitle } from "@/pages/components/ProjectImages";
+// import { ContentTitle } from "@/components/sections/ProjectImages";
 
 // export const projects: Project[] = [
 // {

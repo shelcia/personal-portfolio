@@ -42,7 +42,7 @@ import Tracking2 from "../assets/images/nimble-tracking/2.webp";
 import Tracking3 from "../assets/images/nimble-tracking/3.webp";
 import Tracking4 from "../assets/images/nimble-tracking/4.webp";
 
-import { ContentTitle } from "@/pages/components/ProjectImages";
+import { ContentTitle } from "@/components/sections/ProjectImages";
 
 export const projects: Project[] = [
   {

@@ -21,7 +21,7 @@ export const ContentTitle: React.FC<ImgContentProps> = ({
     <p
       className={cn(
         "font-bold text-xl md:text-3xl text-white",
-        calsans.className
+        calsans.className,
       )}
     >
       {title}
@@ -31,7 +31,7 @@ export const ContentTitle: React.FC<ImgContentProps> = ({
       <p
         className={cn(
           "font-normal text-base my-4 max-w-lg text-neutral-200",
-          dmsans.className
+          dmsans.className,
         )}
       >
         {description}

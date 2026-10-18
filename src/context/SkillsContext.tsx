@@ -31,6 +31,8 @@ import NetlifyIcon from "@/assets/skills-icons/NetlifyIcon";
 import VercelIcon from "@/assets/skills-icons/VercelIcon";
 import GoogleAnalyticsIcon from "@/assets/skills-icons/GoogleAnalyticsIcon";
 import RybbitIcon from "@/assets/skills-icons/RybbitIcon";
+import ClaudeCodeIcon from "@/assets/skills-icons/ClaudeCodeIcon";
+import CursorIcon from "@/assets/skills-icons/CursorIcon";
 import {
   AccessibilityIcon,
   CheckCircledIcon,
@@ -63,13 +65,13 @@ export const skillGroups: SkillGroup[] = [
         name: "TypeScript",
         img: <TSIcon />,
         bgClass: "rgb(186 230 253)",
-        colorClass: "rgb(2 132 199)",
+        colorClass: "rgb(0 97 147)",
       },
       {
         name: "JavaScript",
         img: <JSIcon />,
         bgClass: "rgb(254 249 195)",
-        colorClass: "rgb(202 138 4)",
+        colorClass: "rgb(148 102 0)",
       },
       {
         name: "Next.js",
@@ -105,7 +107,7 @@ export const skillGroups: SkillGroup[] = [
         name: "MUI",
         img: <MUIIcon />,
         bgClass: "rgb(224 242 254)",
-        colorClass: "rgb(2 132 199)",
+        colorClass: "rgb(0 113 172)",
       },
       {
         name: "Vite",
@@ -125,7 +127,7 @@ export const skillGroups: SkillGroup[] = [
         name: "Figma",
         img: <FigmaIcon />,
         bgClass: "rgb(255 228 230)",
-        colorClass: "rgb(225 29 72)",
+        colorClass: "rgb(194 24 61)",
       },
     ],
   },
@@ -136,7 +138,7 @@ export const skillGroups: SkillGroup[] = [
         name: "Node.js",
         img: <NodeIcon />,
         bgClass: "rgb(217 249 157)",
-        colorClass: "rgb(77 124 15)",
+        colorClass: "rgb(71 115 13)",
       },
       {
         name: "Express.js",
@@ -148,7 +150,7 @@ export const skillGroups: SkillGroup[] = [
         name: "Go",
         img: <GoIcon />,
         bgClass: "rgb(224 242 254)",
-        colorClass: "rgb(2 132 199)",
+        colorClass: "rgb(0 113 172)",
       },
       {
         name: "GraphQL",
@@ -167,7 +169,7 @@ export const skillGroups: SkillGroup[] = [
         name: "SQL",
         img: <SQLIcon />,
         bgClass: "rgb(224 242 254)",
-        colorClass: "rgb(2 132 199)",
+        colorClass: "rgb(0 113 172)",
       },
       {
         name: "Socket.io",
@@ -215,7 +217,7 @@ export const skillGroups: SkillGroup[] = [
         name: "AWS",
         img: <AWSIcon />,
         bgClass: "rgb(255, 242, 222)",
-        colorClass: "#f90",
+        colorClass: "rgb(150 90 0)",
       },
       {
         name: "Microsoft Azure",
@@ -267,6 +269,23 @@ export const skillGroups: SkillGroup[] = [
         colorClass: "rgb(21 128 61)",
       },
       plain("SEO", <MagnifyingGlassIcon />),
+    ],
+  },
+  {
+    title: "AI Tools",
+    skills: [
+      {
+        name: "Claude Code",
+        img: <ClaudeCodeIcon />,
+        bgClass: "rgb(255 237 228)",
+        colorClass: "rgb(167 77 46)",
+      },
+      {
+        name: "Cursor",
+        img: <CursorIcon />,
+        bgClass: "rgb(229 231 235)",
+        colorClass: "rgb(31 41 55)",
+      },
     ],
   },
 ];

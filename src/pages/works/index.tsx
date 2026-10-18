@@ -7,36 +7,33 @@ import "../../app/globals.css";
 import { calsans, dmsans } from "@/utils/fonts";
 import { projects } from "@/context/ProjectContext";
 import Footer from "@/components/common/Footer";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "@/components/sections/ProjectCard";
 import { cn } from "@/utils/cn";
 import { ShimmerButton } from "@/components/common/CustomButtons";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import Head from "next/head";
+import Seo from "@/components/common/Seo";
 import GridBackground from "@/components/ui/grid-bg";
 
 const Works = () => {
   return (
     <>
-      <Head>
-        <title>Shelcia David | Works</title>
-        <meta
-          name="description"
-          content="All my development and design works"
-        />
-        <meta property="og:image" content="/social-graph-image.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/works" />
-        <meta property="og:type" content="website" />
-      </Head>
+      <Seo
+        title="Works | Shelcia David"
+        description="Development and design projects by Shelcia David, including Nimble Tracking, Mocker, AI Audit and UX case studies."
+        path="/works"
+      />
       <Topbar />
       <GridBackground>
-        <main className="mt-0 pb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]">
+        <main
+          id="main-content"
+          tabIndex={-1}
+          className="outline-none mt-0 pb-32 md:px-24 px-4 w-full relative bg-grid-black/[0.05]"
+        >
           <div className="relative z-10">
-            <h1 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
+            <h1 className="sr-only">Works</h1>
+            <h2 className={`${calsans.className} mb-4 text-4xl md:text-6xl`}>
               Development
-            </h1>
+            </h2>
             <motion.div
               initial={{ opacity: 0.0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,18 +63,17 @@ const Works = () => {
               </div>
             </motion.div>
             <div className="w-full flex justify-end">
-              <Link
+              <ShimmerButton
+                title="View More on Github"
                 href="https://github.com/shelcia?tab=repositories"
-                target="_blank"
-              >
-                <ShimmerButton title="View More on Github" />
-              </Link>
+                external
+              />
             </div>
-            <h1
+            <h2
               className={`${calsans.className} mt-8 mb-8 text-4xl md:text-6xl`}
             >
               Design
-            </h1>
+            </h2>
             <div className="relative z-20">
               <div
                 className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ${dmsans.className}`}
@@ -105,9 +101,11 @@ const Works = () => {
                 ))}
               </div>
               <div className="w-full flex justify-end mt-8">
-                <Link href="https://www.behance.net/shelcia" target="_blank">
-                  <ShimmerButton title="View More on Behance" />
-                </Link>
+                <ShimmerButton
+                  title="View More on Behance"
+                  href="https://www.behance.net/shelcia"
+                  external
+                />
               </div>
             </div>
           </div>

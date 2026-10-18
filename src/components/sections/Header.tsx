@@ -42,13 +42,15 @@ const Header = () => {
           duration: 0.3,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
+        id="main-content"
+        tabIndex={-1}
+        className="relative flex flex-col gap-4 items-center justify-center px-4 outline-none"
       >
-        <div
+        <h1
           className={`text-5xl md:text-7xl md:mt-16 mt-8 font-bold text-center ${calsans.className} `}
         >
           Shelcia David
-        </div>
+        </h1>
         <div
           className={`font-light text-base max-w-7xl md:text-3xl py-4 px-4 md:px-10 text-center ${dmsans.className}`}
         >
@@ -59,7 +61,7 @@ const Header = () => {
             className={"hover:underline"}
             target="_blank"
           >
-            Nimble
+            Nimble Robotics
           </Link>
           ,{" "}
           <Link
@@ -68,8 +70,8 @@ const Header = () => {
             target="_blank"
           >
             NASDAQ
-          </Link>{" "}
-          and startups like HIRA, NYX Wolves, Solera, and Guvi.
+          </Link>
+          , and several early-stage startups.
         </div>
         <div className="gap-2 flex">
           {/* <AnimatedTooltip items={icons}></AnimatedTooltip> */}
@@ -81,9 +83,7 @@ const Header = () => {
             </div>
           ))}
         </div>
-        <Link href="/contact">
-          <ShimmerButton title="Connect with me" />
-        </Link>
+        <ShimmerButton title="Connect with me" href="/contact" />
       </motion.div>
     </AuroraBackground>
   );

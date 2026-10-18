@@ -30,9 +30,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
       </a>
       <div className="p-5">
         <a href={link} target="_blank">
-          <h5 className="mb-2 text-lg md:text-xl font-bold tracking-tight text-gray-900">
+          <h3 className="mb-2 text-lg md:text-xl font-bold tracking-tight text-gray-900">
             {title}
-          </h5>
+          </h3>
         </a>
         <p className="mb-3 font-normal text-gray-700 overflow-hidden line-clamp-2">
           {description}
@@ -40,10 +40,11 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         <a
           href={link}
           target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex px-4 py-2 rounded-sm bg-black text-white text-xs font-bold"
           // className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
-          Read more
+          Read more<span className="sr-only">: {title}</span>
           {/* <Icon /> */}
         </a>
       </div>

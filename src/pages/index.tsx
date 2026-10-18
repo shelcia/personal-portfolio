@@ -1,18 +1,18 @@
 // pages/index.js
 import React from "react";
-import Header from "./components/Header";
-import { FeaturedProjectCard } from "./components/ProjectCard";
+import Header from "@/components/sections/Header";
+import { FeaturedProjectCard } from "@/components/sections/ProjectCard";
 import { Project } from "@/types";
 import { featuredProjects } from "@/context/FeaturedProjectsContext";
 import { calsans } from "@/utils/fonts";
 import Footer from "@/components/common/Footer";
 import Head from "next/head";
+import Seo from "@/components/common/Seo";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import MicrosoftClarity from "@/components/common/Metrics";
-import Link from "next/link";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 
-// import Testimonial from "./components/Testimonial";
+// import Testimonial from "@/components/sections/Testimonial";
 
 // import Hotjar from "@hotjar/browser";
 
@@ -24,22 +24,13 @@ import { ShimmerButton } from "@/components/common/CustomButtons";
 const Home = () => {
   return (
     <>
+      <Seo
+        title="Shelcia David | Full Stack Developer & Designer"
+        description="Full Stack developer and designer based in San Francisco. UI Developer III at Nimble Robotics, previously at NASDAQ and early-stage startups. Master's in Information from the University of Wisconsin-Madison."
+        path="/"
+      />
       <Head>
         <GoogleAnalytics gaId="G-CCSE78VCSN" />
-        <title>Shelcia David&apos;s Portfolio</title>
-        <meta
-          name="description"
-          content="Full Stack developer and designer based in San Francisco.
-          UI Developer III at Nimble Robotics, previously at NASDAQ and
-          startups like HIRA, NYX Wolves, Solera, and Guvi. Master's in
-          Information from the University of Wisconsin-Madison. Explore my
-          projects and designs."
-        />
-        <meta property="og:image" content="/social-graph-image.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/" />
-        <meta property="og:type" content="website" />
         <MicrosoftClarity />
       </Head>
       <main suppressHydrationWarning={true}>
@@ -51,11 +42,11 @@ const Home = () => {
         > */}
         <div className="w-full rounded-md bg-zinc-50 antialiased relative overflow-hidden pt-16">
           <div className="p-4 max-w-7xl mx-auto relative z-10">
-            <h1
+            <h2
               className={`text-3xl md:text-6xl font-bold text-center bg-clip-text bg-linear-to-b from-neutral-50 to-neutral-400 bg-opacity-50 mb-2 ${calsans.className}`}
             >
               Featured Works
-            </h1>
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:mt-16 mt-4">
               {featuredProjects &&
@@ -71,9 +62,7 @@ const Home = () => {
                 ))}
             </div>
             <div className="text-center	mt-4">
-              <Link href="/works">
-                <ShimmerButton title="See More Projects!" />
-              </Link>
+              <ShimmerButton title="See More Projects!" href="/works" />
             </div>
           </div>
           {/* <div className="p-4 max-w-7xl mx-auto relative z-10">

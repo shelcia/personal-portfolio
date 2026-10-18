@@ -6,11 +6,11 @@ import React from "react";
 const Experience = () => {
   return (
     <>
-      <h1
+      <h2
         className={cn("md:text-5xl text-3xl text-bold mb-8", calsans.className)}
       >
         Experience
-      </h1>
+      </h2>
       <ol className="relative border-s border-gray-200">
         {experience.map((itm) => (
           <li className="mb-10 ms-6" key={itm.desc}>

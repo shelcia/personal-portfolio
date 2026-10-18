@@ -1,2 +1,4 @@
 user-agent: *
 disallow: /downloads/
+
+Sitemap: https://www.shelcia-dev.me/sitemap.xml

@@ -11,15 +11,12 @@ import { projects } from "@/context/ProjectContext";
 import { Project } from "@/types";
 import { calsans, dmsans } from "@/utils/fonts";
 import { cn } from "@/utils/cn";
-import ProjectImages from "../components/ProjectImages";
+import ProjectImages from "@/components/sections/ProjectImages";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
-import { Badge } from "../components/Experience";
-import Link from "next/link";
+import { Badge } from "@/components/sections/Experience";
 import { ShimmerButton } from "@/components/common/CustomButtons";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
-import Head from "next/head";
-
-const SITE_URL = "https://www.shelcia-dev.me";
+import Seo from "@/components/common/Seo";
 
 export const getStaticPaths: GetStaticPaths = () => ({
   paths: projects.map((itm) => ({ params: { id: itm.id } })),
@@ -39,17 +36,20 @@ const ProjectPage = ({
 
   return (
     <>
-      <Head>
-        <title>{proj?.name}</title>
-        <meta name="description" content={proj.desc} />
-        <meta property="og:image" content="/social-graph-image.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`${SITE_URL}/works/${proj.id}`} />
-        <meta property="og:type" content="website" />
-      </Head>
+      <Seo
+        title={`${proj.name} | Shelcia David`}
+        description={proj.desc ?? proj.name}
+        path={`/works/${proj.id}`}
+      />
       <Topbar />
-      <main className={cn("mb-32 md:px-24 px-4 relative", dmsans.className)}>
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className={cn(
+          "outline-none mb-32 md:px-24 px-4 relative",
+          dmsans.className,
+        )}
+      >
         <div
           className={`md:max-w-4xl max-w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white ${dmsans.className} mt-2 z-30`}
         >
@@ -60,14 +60,15 @@ const ProjectPage = ({
           >
             <ArrowLeftIcon /> Go back
           </button>
-          <span className="hidden md:block">
+          <h1 className="sr-only">{proj.name}</h1>
+          <span className="hidden md:block" aria-hidden="true">
             <TextRevealCard
               text={proj?.name}
               revealText={proj?.name}
             ></TextRevealCard>
           </span>
 
-          <span className="md:hidden block">
+          <span className="md:hidden block" aria-hidden="true">
             <div
               className={cn(
                 "bg-[#1d1c20] w-full rounded-lg p-4 relative overflow-hidden",
@@ -128,29 +129,27 @@ const ProjectPage = ({
 
           <div className="flex flex-wrap gap-2">
             {proj?.deployment && (
-              <Link href={proj.deployment} target="_blank">
-                <ShimmerButton title="Deployment" />
-              </Link>
+              <ShimmerButton
+                title="Deployment"
+                href={proj.deployment}
+                external
+              />
             )}
             {proj?.code && proj.code !== "" && (
-              <Link href={proj.code} target="_blank">
-                <ShimmerButton title="Code on Github" />
-              </Link>
+              <ShimmerButton title="Code on Github" href={proj.code} external />
             )}
           </div>
           {proj?.images && (
             <div className="mt-8">
-              <h3 className={cn("text-2xl text-black mb-4", calsans.className)}>
+              <h2 className={cn("text-2xl text-black mb-4", calsans.className)}>
                 Screengrabs from website
-              </h3>
+              </h2>
               <ProjectImages images={proj.images} />
             </div>
           )}
         </div>
         <div className="text-center	mt-4">
-          <Link href="/works">
-            <ShimmerButton title="See More Projects!" />
-          </Link>
+          <ShimmerButton title="See More Projects!" href="/works" />
         </div>
       </main>
       <Footer />

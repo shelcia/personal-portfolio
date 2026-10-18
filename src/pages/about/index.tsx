@@ -2,14 +2,14 @@ import React, { useRef } from "react";
 import "../../app/globals.css";
 import Topbar from "@/components/common/Topbar";
 import Footer from "@/components/common/Footer";
-import Experience from "../components/Experience";
-import Skills from "../components/Skills";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
 import { cn } from "@/utils/cn";
 import { calsans, dmsans } from "@/utils/fonts";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { ShimmerButton } from "@/components/common/CustomButtons";
-import Head from "next/head";
+import Seo from "@/components/common/Seo";
 
 const AboutPage = () => {
   const experienceRef = useRef<HTMLDivElement>(null);
@@ -29,20 +29,17 @@ const AboutPage = () => {
 
   return (
     <>
-      <Head>
-        <title>About | Shelcia David</title>
-        <meta
-          name="description"
-          content="About Shelcia David | Experience | Skills"
-        />
-        <meta property="og:image" content="/social-graph-image.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.shelcia-dev.me/about" />
-        <meta property="og:type" content="website" />
-      </Head>
+      <Seo
+        title="About | Shelcia David"
+        description="Shelcia David is a full stack engineer at Nimble Robotics with 3.5+ years of experience across NASDAQ and startups. Experience, education and skills in React, TypeScript, Go and UX design."
+        path="/about"
+      />
       <Topbar />
-      <main className="px-4 sm:px-24 mb-8 md:pt-8 pt-4">
+      <main
+        id="main-content"
+        tabIndex={-1}
+        className="outline-none px-4 sm:px-24 mb-8 md:pt-8 pt-4"
+      >
         <h1
           className={cn(
             "md:text-5xl text-3xl text-bold mb-0",
@@ -52,7 +49,7 @@ const AboutPage = () => {
           Who is Shelcia?
         </h1>
         <HeroHighlight>
-          <motion.h1
+          <motion.p
             initial={{
               opacity: 0,
               y: 20,
@@ -76,13 +73,13 @@ const AboutPage = () => {
             </Highlight>
             , where I build and refine logistics and warehouse automation
             interfaces with React, TypeScript, and Go. With{" "}
-            <Highlight className="text-black">3+ years of experience</Highlight>
-            across startups and enterprises—including{" "}
             <Highlight className="text-black">
-              NASDAQ, HIRA, NYX Wolves, Solera, and Guvi
-            </Highlight>{" "}
-            bring a unique perspective that bridges full-stack engineering and
-            user-centered design.
+              3.5+ years of experience
+            </Highlight>
+            across enterprises like{" "}
+            <Highlight className="text-black">NASDAQ</Highlight> and early-stage
+            startups, I bring a unique perspective that bridges full-stack
+            engineering and user-centered design.
             <br />
             <br />I hold a Master’s in Information Science (2025) from the
             <Highlight className="text-black">
@@ -151,7 +148,7 @@ const AboutPage = () => {
             <br />
             Let&apos;s connect and explore opportunities to collaborate or
             discuss how my skills can benefit your projects. */}
-          </motion.h1>
+          </motion.p>
         </HeroHighlight>
         <div className="flex gap-2 wrap">
           <ShimmerButton

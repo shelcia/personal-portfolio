@@ -6,22 +6,22 @@ import { calsans } from "@/utils/fonts";
 const Skills = () => {
   return (
     <>
-      <h1
+      <h2
         className={cn("md:text-5xl text-3xl text-bold mb-8", calsans.className)}
       >
         Skills
-      </h1>
+      </h2>
       <div className="flex flex-col gap-8">
         {skillGroups.map((group) => (
           <section key={group.title}>
-            <h2
+            <h3
               className={cn(
                 "text-xl md:text-2xl text-neutral-800 mb-3",
                 calsans.className,
               )}
             >
               {group.title}
-            </h2>
+            </h3>
             <div className="flex gap-2 flex-wrap">
               {group.skills.map((skill) => (
                 <Badge

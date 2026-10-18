@@ -9,7 +9,7 @@ const Testimonial = () => {
     <div
       className={cn(
         "grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full my-4",
-        dmsans.className
+        dmsans.className,
       )}
     >
       <WobbleCard
@@ -35,7 +35,7 @@ const Testimonial = () => {
         <p
           className={cn(
             "mt-4 text-left text-xl text-neutral-200",
-            calsans.className
+            calsans.className,
           )}
         >
           Moon
@@ -51,7 +51,7 @@ const Testimonial = () => {
         <p
           className={cn(
             "mt-4 text-left text-xl text-neutral-200",
-            calsans.className
+            calsans.className,
           )}
         >
           Moon
@@ -77,7 +77,7 @@ const Testimonial = () => {
           <p
             className={cn(
               "mt-4 text-left text-xl text-neutral-200",
-              calsans.className
+              calsans.className,
             )}
           >
             Moon
